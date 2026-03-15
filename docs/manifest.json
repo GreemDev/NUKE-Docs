@@ -42,6 +42,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Build.CICD.IEnvironment-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Build.CICD.IEnvironment-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Build.CICD.IEnvironment<TEnvironment>",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Build.CICD.IEnvironment-1.yml\" sourcestartlinenumber=\"1\">Represents a CI/CD build environment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Build.CICD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Build.CICD.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Build.CICD",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.CodeGeneration.CodeGenerator.yml",
       "output": {
         ".html": {
@@ -1018,7 +1046,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.CI.Bitrise.Bitrise",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.Bitrise.Bitrise.yml\" sourcestartlinenumber=\"1\">Interface according to the <a href=\"http://devcenter.bitrise.io/faq/available-environment-variables/#exposed-by-bitriseio\">official website</a>.</p>\n"
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.Bitrise.Bitrise.yml\" sourcestartlinenumber=\"1\">Interface according to the <a href=\"https://docs.bitrise.io/en/bitrise-ci/references/available-environment-variables.html\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",

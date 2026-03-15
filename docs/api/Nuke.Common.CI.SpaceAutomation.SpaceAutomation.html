@@ -104,7 +104,7 @@ Class SpaceAutomation  <a class="header-action link-secondary" title="View sourc
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
 [ExcludeFromCodeCoverage]
-public class SpaceAutomation : Host, IBuildServer</code></pre>
+public class SpaceAutomation : Host, IBuildServer, IEnvironment&lt;SpaceAutomation&gt;</code></pre>
   </div>
 
 
@@ -123,6 +123,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Nuke.Common.CI.IBuildServer.html">IBuildServer</a></div>
+      <div><a class="xref" href="Nuke.Build.CICD.IEnvironment-1.html">IEnvironment</a>&lt;<a class="xref" href="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.html">SpaceAutomation</a>&gt;</div>
     </dd>
   </dl>
 
@@ -242,7 +243,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ApiUrl" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ApiUrl">
   ApiUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -273,7 +274,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ClientId" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ClientId">
   ClientId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -304,7 +305,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ClientSecret" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ClientSecret">
   ClientSecret
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -335,7 +336,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ClientToken" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ClientToken">
   ClientToken
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -362,11 +363,42 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
 
 
+  <a id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_EnvironmentVariablePrefix_" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.EnvironmentVariablePrefix*"></a>
+
+  <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_EnvironmentVariablePrefix" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.EnvironmentVariablePrefix">
+  EnvironmentVariablePrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EnvironmentVariablePrefix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ExecutionId_" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ExecutionId*"></a>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ExecutionId" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ExecutionId">
   ExecutionId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -397,7 +429,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ExecutionNumber" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ExecutionNumber">
   ExecutionNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -428,7 +460,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ExecutionUrl" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ExecutionUrl">
   ExecutionUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -459,7 +491,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_FileSharePath" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.FileSharePath">
   FileSharePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -490,7 +522,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_GitBranch" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.GitBranch">
   GitBranch
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -521,7 +553,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_GitRevision" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.GitRevision">
   GitRevision
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -552,7 +584,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_Instance" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.Instance">
   Instance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -583,7 +615,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ProjectId" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ProjectId">
   ProjectId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -614,7 +646,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_ProjectKey" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.ProjectKey">
   ProjectKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -645,7 +677,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_RepositoryName" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.RepositoryName">
   RepositoryName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -676,7 +708,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_StepDataPath" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.StepDataPath">
   StepDataPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -707,7 +739,7 @@ public class SpaceAutomation : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_SpaceAutomation_SpaceAutomation_WorkDirPath" data-uid="Nuke.Common.CI.SpaceAutomation.SpaceAutomation.WorkDirPath">
   WorkDirPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/SpaceAutomation/SpaceAutomation.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

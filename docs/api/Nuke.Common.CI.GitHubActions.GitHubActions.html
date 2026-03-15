@@ -104,7 +104,7 @@ Class GitHubActions  <a class="header-action link-secondary" title="View source"
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
 [ExcludeFromCodeCoverage]
-public class GitHubActions : Host, IBuildServer</code></pre>
+public class GitHubActions : Host, IBuildServer, IEnvironment&lt;GitHubActions&gt;</code></pre>
   </div>
 
 
@@ -123,6 +123,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Nuke.Common.CI.IBuildServer.html">IBuildServer</a></div>
+      <div><a class="xref" href="Nuke.Build.CICD.IEnvironment-1.html">IEnvironment</a>&lt;<a class="xref" href="Nuke.Common.CI.GitHubActions.GitHubActions.html">GitHubActions</a>&gt;</div>
     </dd>
   </dl>
 
@@ -230,7 +231,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Action" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Action">
   Action
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the action.</p>
@@ -262,7 +263,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Actor" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Actor">
   Actor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the person or app that initiated the workflow. For example, <code>octocat</code>.</p>
@@ -294,7 +295,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_BaseRef" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.BaseRef">
   BaseRef
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only set for forked repositories. The branch of the base repository.</p>
@@ -326,7 +327,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Ci" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Ci">
   Ci
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Always set to <code>true</code>.</p>
@@ -354,11 +355,42 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
 
 
+  <a id="Nuke_Common_CI_GitHubActions_GitHubActions_EnvironmentVariablePrefix_" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.EnvironmentVariablePrefix*"></a>
+
+  <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_EnvironmentVariablePrefix" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.EnvironmentVariablePrefix">
+  EnvironmentVariablePrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EnvironmentVariablePrefix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_CI_GitHubActions_GitHubActions_EventName_" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.EventName*"></a>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_EventName" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.EventName">
   EventName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the webhook event that triggered the workflow.</p>
@@ -390,7 +422,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_EventPath" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.EventPath">
   EventPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The path of the file with the complete webhook event payload. For example, <code>/github/workflow/event.json</code>.</p>
@@ -422,7 +454,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_GitHubEvent" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.GitHubEvent">
   GitHubEvent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -453,7 +485,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_HeadRef" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.HeadRef">
   HeadRef
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only set for forked repositories. The branch of the head repository.</p>
@@ -485,7 +517,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Home" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Home">
   Home
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The path to the GitHub home directory used to store user data. For example, <code>/github/home</code>.</p>
@@ -517,7 +549,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Instance" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Instance">
   Instance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -548,7 +580,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_IsPullRequest" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.IsPullRequest">
   IsPullRequest
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -579,7 +611,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Job" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Job">
   Job
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -610,7 +642,7 @@ public class GitHubActions : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_PullRequestAction" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.PullRequestAction">
   PullRequestAction
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -642,7 +674,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_PullRequestNumber" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.PullRequestNumber">
   PullRequestNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -673,7 +705,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Ref" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Ref">
   Ref
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The fully-formed ref of the branch or tag that triggered the workflow run. For workflows triggered by <code>push</code>, this is the branch or tag ref that was pushed. For workflows triggered by <code>pull_request</code>, this is the pull request merge branch. For workflows triggered by <code>release</code>, this is the release tag created. For other triggers, this is the branch or tag ref that triggered the workflow run. This is only set if a branch or tag is available for the event type. The ref given is fully-formed, meaning that for branches the format is <code>refs/heads/&lt;branch_name&gt;</code>, for pull requests it is <code>refs/pull/&lt;pr_number&gt;/merge</code>, and for tags it is <code>refs/tags/&lt;tag_name&gt;</code>. For example, <code>refs/heads/feature-branch-1</code>.</p>
@@ -705,7 +737,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_RefName" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.RefName">
   RefName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The short ref name of the branch or tag that triggered the workflow run. This value matches the branch or tag name shown on GitHub. For example, <code>feature-branch-1</code>.</p>
@@ -737,7 +769,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_RefType" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.RefType">
   RefType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The type of ref that triggered the workflow run. Valid values are <code>branch</code> or <code>tag</code>.</p>
@@ -769,7 +801,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Repository" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Repository">
   Repository
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The owner and repository name. For example, <code>octocat/Hello-World</code>.</p>
@@ -801,7 +833,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_RepositoryOwner" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.RepositoryOwner">
   RepositoryOwner
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The owner name. For example, <code>octocat</code>.</p>
@@ -833,7 +865,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_RunAttempt" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.RunAttempt">
   RunAttempt
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -864,7 +896,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_RunId" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.RunId">
   RunId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -895,7 +927,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_RunNumber" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.RunNumber">
   RunNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -926,7 +958,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_ServerUrl" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.ServerUrl">
   ServerUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -957,7 +989,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Sha" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Sha">
   Sha
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The commit SHA that triggered the workflow. For example, <code>ffac537e6cbbf934b08745a378932722df287a53</code>.</p>
@@ -989,7 +1021,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_StepSummaryFile" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.StepSummaryFile">
   StepSummaryFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1020,7 +1052,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Workflow" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Workflow">
   Workflow
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the workflow.</p>
@@ -1052,7 +1084,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Workspace" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Workspace">
   Workspace
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The GitHub workspace directory path. The workspace directory contains a subdirectory with a copy of your repository if your workflow uses the <code>actions/checkout</code> action. If you don't use the <code>actions/checkout</code> action, the directory will be empty. For example, <code>/home/runner/work/my-repo-name/my-repo-name</code>.</p>
@@ -1088,7 +1120,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_EndGroup_System_String_" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.EndGroup(System.String)">
   EndGroup(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1155,7 +1187,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_Group_System_String_" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.Group(System.String)">
   Group(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1288,7 +1320,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_WriteCommand_System_String_System_String_Nuke_Common_Tooling_Configure_System_Collections_Generic_Dictionary_System_String_System_Object___" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.WriteCommand(System.String,System.String,Nuke.Common.Tooling.Configure{System.Collections.Generic.Dictionary{System.String,System.Object}})">
   WriteCommand(string, string, Configure&lt;Dictionary&lt;string, object&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1323,7 +1355,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_WriteDebug_System_String_" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.WriteDebug(System.String)">
   WriteDebug(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1354,7 +1386,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_WriteError_System_String_" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.WriteError(System.String)">
   WriteError(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1385,7 +1417,7 @@ public string PullRequestAction { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_GitHubActions_GitHubActions_WriteWarning_System_String_" data-uid="Nuke.Common.CI.GitHubActions.GitHubActions.WriteWarning(System.String)">
   WriteWarning(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/GitHubActions/GitHubActions.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

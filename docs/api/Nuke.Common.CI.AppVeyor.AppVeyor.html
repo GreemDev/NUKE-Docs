@@ -104,7 +104,7 @@ Class AppVeyor  <a class="header-action link-secondary" title="View source" href
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
 [ExcludeFromCodeCoverage]
-public class AppVeyor : Host, IBuildServer</code></pre>
+public class AppVeyor : Host, IBuildServer, IEnvironment&lt;AppVeyor&gt;</code></pre>
   </div>
 
 
@@ -123,6 +123,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Nuke.Common.CI.IBuildServer.html">IBuildServer</a></div>
+      <div><a class="xref" href="Nuke.Build.CICD.IEnvironment-1.html">IEnvironment</a>&lt;<a class="xref" href="Nuke.Common.CI.AppVeyor.AppVeyor.html">AppVeyor</a>&gt;</div>
     </dd>
   </dl>
 
@@ -228,40 +229,6 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
 
 
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_MessageLimit" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.MessageLimit">
-  MessageLimit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L40"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MessageLimit</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -270,7 +237,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_AccountName" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.AccountName">
   AccountName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -301,7 +268,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_ApiUrl" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.ApiUrl">
   ApiUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -332,7 +299,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_BuildFolder" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.BuildFolder">
   BuildFolder
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -363,14 +330,14 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_BuildId" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.BuildId">
   BuildId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int BuildId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long BuildId { get; }</code></pre>
   </div>
 
 
@@ -379,7 +346,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -394,14 +361,14 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_BuildNumber" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.BuildNumber">
   BuildNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int BuildNumber { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long BuildNumber { get; }</code></pre>
   </div>
 
 
@@ -410,7 +377,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -425,7 +392,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_BuildVersion" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.BuildVersion">
   BuildVersion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -456,7 +423,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_BuildWorkerImage" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.BuildWorkerImage">
   BuildWorkerImage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -487,7 +454,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_Cli" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.Cli">
   Cli
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -518,7 +485,7 @@ public class AppVeyor : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_Configuration" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.Configuration">
   Configuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -546,11 +513,42 @@ public string Configuration { get; }</code></pre>
 
 
 
+  <a id="Nuke_Common_CI_AppVeyor_AppVeyor_EnvironmentVariablePrefix_" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.EnvironmentVariablePrefix*"></a>
+
+  <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_EnvironmentVariablePrefix" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.EnvironmentVariablePrefix">
+  EnvironmentVariablePrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EnvironmentVariablePrefix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_CI_AppVeyor_AppVeyor_ForcedBuild_" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.ForcedBuild*"></a>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_ForcedBuild" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.ForcedBuild">
   ForcedBuild
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -581,7 +579,7 @@ public string Configuration { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_Instance" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.Instance">
   Instance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -612,7 +610,7 @@ public string Configuration { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_JobId" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.JobId">
   JobId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -643,7 +641,7 @@ public string Configuration { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_JobName" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.JobName">
   JobName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -675,14 +673,14 @@ public string JobName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_JobNumber" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.JobNumber">
   JobNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int JobNumber { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long JobNumber { get; }</code></pre>
   </div>
 
 
@@ -691,7 +689,7 @@ public string JobName { get; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -706,7 +704,7 @@ public string JobName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_Platform" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.Platform">
   Platform
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -738,14 +736,14 @@ public string Platform { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_ProjectId" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.ProjectId">
   ProjectId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ProjectId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long ProjectId { get; }</code></pre>
   </div>
 
 
@@ -754,7 +752,7 @@ public string Platform { get; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -769,7 +767,7 @@ public string Platform { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_ProjectName" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.ProjectName">
   ProjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -800,7 +798,7 @@ public string Platform { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_ProjectSlug" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.ProjectSlug">
   ProjectSlug
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -831,7 +829,7 @@ public string Platform { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_PullRequestHeadCommit" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.PullRequestHeadCommit">
   PullRequestHeadCommit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -863,7 +861,7 @@ public string PullRequestHeadCommit { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_PullRequestHeadRepositoryBranch" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.PullRequestHeadRepositoryBranch">
   PullRequestHeadRepositoryBranch
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -895,7 +893,7 @@ public string PullRequestHeadRepositoryBranch { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_PullRequestHeadRepositoryName" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.PullRequestHeadRepositoryName">
   PullRequestHeadRepositoryName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -927,7 +925,7 @@ public string PullRequestHeadRepositoryName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_PullRequestNumber" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.PullRequestNumber">
   PullRequestNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -935,7 +933,7 @@ public string PullRequestHeadRepositoryName { get; }</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[CanBeNull]
-public int? PullRequestNumber { get; }</code></pre>
+public long? PullRequestNumber { get; }</code></pre>
   </div>
 
 
@@ -944,7 +942,7 @@ public int? PullRequestNumber { get; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
     <dd></dd>
   </dl>
 
@@ -959,7 +957,7 @@ public int? PullRequestNumber { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_PullRequestTitle" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.PullRequestTitle">
   PullRequestTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -991,7 +989,7 @@ public string PullRequestTitle { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_Rebuild" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.Rebuild">
   Rebuild
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1022,7 +1020,7 @@ public string PullRequestTitle { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryBranch" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryBranch">
   RepositoryBranch
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1053,7 +1051,7 @@ public string PullRequestTitle { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryCommitAuthor" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryCommitAuthor">
   RepositoryCommitAuthor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1084,7 +1082,7 @@ public string PullRequestTitle { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryCommitAuthorEmail" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryCommitAuthorEmail">
   RepositoryCommitAuthorEmail
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1115,7 +1113,7 @@ public string PullRequestTitle { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryCommitMessage" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryCommitMessage">
   RepositoryCommitMessage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1146,7 +1144,7 @@ public string PullRequestTitle { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryCommitMessageExtended" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryCommitMessageExtended">
   RepositoryCommitMessageExtended
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1178,7 +1176,7 @@ public string RepositoryCommitMessageExtended { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryCommitSha" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryCommitSha">
   RepositoryCommitSha
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1209,7 +1207,7 @@ public string RepositoryCommitMessageExtended { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryCommitTimestamp" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryCommitTimestamp">
   RepositoryCommitTimestamp
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1240,7 +1238,7 @@ public string RepositoryCommitMessageExtended { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryName" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryName">
   RepositoryName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1271,7 +1269,7 @@ public string RepositoryCommitMessageExtended { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryProvider" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryProvider">
   RepositoryProvider
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1302,7 +1300,7 @@ public string RepositoryCommitMessageExtended { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryScm" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryScm">
   RepositoryScm
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1333,7 +1331,7 @@ public string RepositoryCommitMessageExtended { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryTag" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryTag">
   RepositoryTag
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1364,7 +1362,7 @@ public string RepositoryCommitMessageExtended { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_RepositoryTagName" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.RepositoryTagName">
   RepositoryTagName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1396,7 +1394,7 @@ public string RepositoryTagName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_ScheduledBuild" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.ScheduledBuild">
   ScheduledBuild
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1427,7 +1425,7 @@ public string RepositoryTagName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_Url" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.Url">
   Url
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1462,7 +1460,7 @@ public string RepositoryTagName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_PushArtifact_System_String_System_String_" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.PushArtifact(System.String,System.String)">
   PushArtifact(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1561,7 +1559,7 @@ public string RepositoryTagName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_UpdateBuildVersion_System_String_" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.UpdateBuildVersion(System.String)">
   UpdateBuildVersion(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1592,7 +1590,7 @@ public string RepositoryTagName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_WriteError_System_String_System_String_" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.WriteError(System.String,System.String)">
   WriteError(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1625,7 +1623,7 @@ public string RepositoryTagName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_WriteInformation_System_String_System_String_" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.WriteInformation(System.String,System.String)">
   WriteInformation(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1658,7 +1656,7 @@ public string RepositoryTagName { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_AppVeyor_AppVeyor_WriteWarning_System_String_System_String_" data-uid="Nuke.Common.CI.AppVeyor.AppVeyor.WriteWarning(System.String,System.String)">
   WriteWarning(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/AppVeyor/AppVeyor.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

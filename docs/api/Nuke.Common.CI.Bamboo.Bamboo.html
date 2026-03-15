@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_CI_Bamboo_Bamboo" data-uid="Nuke.Common.CI.Bamboo.Bamboo" class="text-break">
-Class Bamboo  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class Bamboo  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -104,7 +104,7 @@ Class Bamboo  <a class="header-action link-secondary" title="View source" href="
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
 [ExcludeFromCodeCoverage]
-public class Bamboo : Host, IBuildServer</code></pre>
+public class Bamboo : Host, IBuildServer, IEnvironment&lt;Bamboo&gt;</code></pre>
   </div>
 
 
@@ -123,6 +123,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Nuke.Common.CI.IBuildServer.html">IBuildServer</a></div>
+      <div><a class="xref" href="Nuke.Build.CICD.IEnvironment-1.html">IEnvironment</a>&lt;<a class="xref" href="Nuke.Common.CI.Bamboo.Bamboo.html">Bamboo</a>&gt;</div>
     </dd>
   </dl>
 
@@ -242,7 +243,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_AgentHome" data-uid="Nuke.Common.CI.Bamboo.Bamboo.AgentHome">
   AgentHome
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -273,7 +274,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_AgentId" data-uid="Nuke.Common.CI.Bamboo.Bamboo.AgentId">
   AgentId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -304,7 +305,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_AgentWorkingDirectory" data-uid="Nuke.Common.CI.Bamboo.Bamboo.AgentWorkingDirectory">
   AgentWorkingDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -335,7 +336,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildFailed" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildFailed">
   BuildFailed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -366,7 +367,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildKey" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildKey">
   BuildKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -397,7 +398,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildNumber" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildNumber">
   BuildNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -428,7 +429,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildPlanName" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildPlanName">
   BuildPlanName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -459,7 +460,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildResultsKey" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildResultsKey">
   BuildResultsKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -490,7 +491,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildResultsUrl" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildResultsUrl">
   BuildResultsUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -521,7 +522,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildTimeStamp" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildTimeStamp">
   BuildTimeStamp
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -552,7 +553,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_BuildWorkingDirectory" data-uid="Nuke.Common.CI.Bamboo.Bamboo.BuildWorkingDirectory">
   BuildWorkingDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -579,11 +580,42 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
 
 
+  <a id="Nuke_Common_CI_Bamboo_Bamboo_EnvironmentVariablePrefix_" data-uid="Nuke.Common.CI.Bamboo.Bamboo.EnvironmentVariablePrefix*"></a>
+
+  <h3 id="Nuke_Common_CI_Bamboo_Bamboo_EnvironmentVariablePrefix" data-uid="Nuke.Common.CI.Bamboo.Bamboo.EnvironmentVariablePrefix">
+  EnvironmentVariablePrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EnvironmentVariablePrefix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_CI_Bamboo_Bamboo_Instance_" data-uid="Nuke.Common.CI.Bamboo.Bamboo.Instance*"></a>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_Instance" data-uid="Nuke.Common.CI.Bamboo.Bamboo.Instance">
   Instance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -614,7 +646,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_PlanKey" data-uid="Nuke.Common.CI.Bamboo.Bamboo.PlanKey">
   PlanKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -645,7 +677,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_PlanName" data-uid="Nuke.Common.CI.Bamboo.Bamboo.PlanName">
   PlanName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -676,7 +708,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_PlanResultsUrl" data-uid="Nuke.Common.CI.Bamboo.Bamboo.PlanResultsUrl">
   PlanResultsUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -707,7 +739,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_PlanStorageTag" data-uid="Nuke.Common.CI.Bamboo.Bamboo.PlanStorageTag">
   PlanStorageTag
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -738,7 +770,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_ShortJobKey" data-uid="Nuke.Common.CI.Bamboo.Bamboo.ShortJobKey">
   ShortJobKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -769,7 +801,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_ShortJobName" data-uid="Nuke.Common.CI.Bamboo.Bamboo.ShortJobName">
   ShortJobName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -800,7 +832,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_ShortPlanKey" data-uid="Nuke.Common.CI.Bamboo.Bamboo.ShortPlanKey">
   ShortPlanKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -831,7 +863,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bamboo_Bamboo_ShortPlanName" data-uid="Nuke.Common.CI.Bamboo.Bamboo.ShortPlanName">
   ShortPlanName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -862,7 +894,7 @@ public class Bamboo : Host, IBuildServer</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bamboo/Bamboo.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

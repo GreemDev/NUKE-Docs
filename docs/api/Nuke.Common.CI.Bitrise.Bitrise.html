@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_CI_Bitrise_Bitrise" data-uid="Nuke.Common.CI.Bitrise.Bitrise" class="text-break">
-Class Bitrise  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class Bitrise  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,14 +97,14 @@ Class Bitrise  <a class="header-action link-secondary" title="View source" href=
   <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Interface according to the <a href="http://devcenter.bitrise.io/faq/available-environment-variables/#exposed-by-bitriseio">official website</a>.</p>
+  <div class="markdown summary"><p>Interface according to the <a href="https://docs.bitrise.io/en/bitrise-ci/references/available-environment-variables.html">official website</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
 [ExcludeFromCodeCoverage]
-public class Bitrise : Host, IBuildServer</code></pre>
+public class Bitrise : Host, IBuildServer, IEnvironment&lt;Bitrise&gt;</code></pre>
   </div>
 
 
@@ -123,6 +123,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Nuke.Common.CI.IBuildServer.html">IBuildServer</a></div>
+      <div><a class="xref" href="Nuke.Build.CICD.IEnvironment-1.html">IEnvironment</a>&lt;<a class="xref" href="Nuke.Common.CI.Bitrise.Bitrise.html">Bitrise</a>&gt;</div>
     </dd>
   </dl>
 
@@ -242,7 +243,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_AppSlug" data-uid="Nuke.Common.CI.Bitrise.Bitrise.AppSlug">
   AppSlug
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -273,7 +274,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_AppTitle" data-uid="Nuke.Common.CI.Bitrise.Bitrise.AppTitle">
   AppTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -304,7 +305,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_AppUrl" data-uid="Nuke.Common.CI.Bitrise.Bitrise.AppUrl">
   AppUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -335,7 +336,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_BuildNumber" data-uid="Nuke.Common.CI.Bitrise.Bitrise.BuildNumber">
   BuildNumber
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -366,7 +367,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_BuildSlug" data-uid="Nuke.Common.CI.Bitrise.Bitrise.BuildSlug">
   BuildSlug
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -397,7 +398,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_BuildTriggerTimestamp" data-uid="Nuke.Common.CI.Bitrise.Bitrise.BuildTriggerTimestamp">
   BuildTriggerTimestamp
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -428,7 +429,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_BuildUrl" data-uid="Nuke.Common.CI.Bitrise.Bitrise.BuildUrl">
   BuildUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -459,7 +460,7 @@ public class Bitrise : Host, IBuildServer</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_CertificatePassphrase" data-uid="Nuke.Common.CI.Bitrise.Bitrise.CertificatePassphrase">
   CertificatePassphrase
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -491,7 +492,7 @@ public string CertificatePassphrase { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_CertificateUrl" data-uid="Nuke.Common.CI.Bitrise.Bitrise.CertificateUrl">
   CertificateUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -519,11 +520,42 @@ public string CertificateUrl { get; }</code></pre>
 
 
 
+  <a id="Nuke_Common_CI_Bitrise_Bitrise_EnvironmentVariablePrefix_" data-uid="Nuke.Common.CI.Bitrise.Bitrise.EnvironmentVariablePrefix*"></a>
+
+  <h3 id="Nuke_Common_CI_Bitrise_Bitrise_EnvironmentVariablePrefix" data-uid="Nuke.Common.CI.Bitrise.Bitrise.EnvironmentVariablePrefix">
+  EnvironmentVariablePrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EnvironmentVariablePrefix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_CI_Bitrise_Bitrise_GitBranch_" data-uid="Nuke.Common.CI.Bitrise.Bitrise.GitBranch*"></a>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_GitBranch" data-uid="Nuke.Common.CI.Bitrise.Bitrise.GitBranch">
   GitBranch
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -554,7 +586,7 @@ public string CertificateUrl { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_GitCommit" data-uid="Nuke.Common.CI.Bitrise.Bitrise.GitCommit">
   GitCommit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -586,7 +618,7 @@ public string GitCommit { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_GitMessage" data-uid="Nuke.Common.CI.Bitrise.Bitrise.GitMessage">
   GitMessage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -618,7 +650,7 @@ public string GitMessage { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_GitTag" data-uid="Nuke.Common.CI.Bitrise.Bitrise.GitTag">
   GitTag
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -650,7 +682,7 @@ public string GitTag { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_Instance" data-uid="Nuke.Common.CI.Bitrise.Bitrise.Instance">
   Instance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -681,7 +713,7 @@ public string GitTag { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_ProvisionUrl" data-uid="Nuke.Common.CI.Bitrise.Bitrise.ProvisionUrl">
   ProvisionUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -713,7 +745,7 @@ public string ProvisionUrl { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_PullRequest" data-uid="Nuke.Common.CI.Bitrise.Bitrise.PullRequest">
   PullRequest
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -745,7 +777,7 @@ public long? PullRequest { get; }</code></pre>
 
   <h3 id="Nuke_Common_CI_Bitrise_Bitrise_RepositoryUrl" data-uid="Nuke.Common.CI.Bitrise.Bitrise.RepositoryUrl">
   RepositoryUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -776,7 +808,7 @@ public long? PullRequest { get; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/Bitrise/Bitrise.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 
