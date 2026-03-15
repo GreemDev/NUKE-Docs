@@ -42,34 +42,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Build.CICD.IEnvironment-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Build.CICD.IEnvironment-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Build.CICD.IEnvironment<TEnvironment>",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Build.CICD.IEnvironment-1.yml\" sourcestartlinenumber=\"1\">Represents a CI/CD build environment.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Build.CICD.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Build.CICD.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Build.CICD",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.CodeGeneration.CodeGenerator.yml",
       "output": {
         ".html": {
@@ -1568,6 +1540,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.IEnvironment-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.IEnvironment-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.IEnvironment<TEnvironment>",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.IEnvironment-1.yml\" sourcestartlinenumber=\"1\">Represents a CI/CD build environment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.CI.InvokeBuildServerConfigurationGenerationAttribute.yml",
       "output": {
         ".html": {
@@ -2320,6 +2306,48 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.CI.TravisCI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.yml\" sourcestartlinenumber=\"1\">Interface according to the <a href=\"https://woodpecker-ci.org/docs/usage/environment\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.yml\" sourcestartlinenumber=\"1\">Enumeration according to the <a href=\"https://woodpecker-ci.org/docs/usage/workflow-syntax#event\">documentation</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI",
       "Summary": null
     },
     {
@@ -23012,6 +23040,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Utilities.CustomFileWriter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Utilities.DateTimeUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Utilities.DateTimeUtilities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Utilities.DateTimeUtilities",
       "Summary": null
     },
     {

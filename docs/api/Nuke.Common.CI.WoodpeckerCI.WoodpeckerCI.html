@@ -1,0 +1,2729 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WoodpeckerCI | gruke </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WoodpeckerCI | gruke ">
+      
+      <meta name="description" content="Interface according to the official website.">
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI.md&amp;value=---%0Auid%3A%20Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI">
+
+
+
+  <h1 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI" class="text-break">
+Class WoodpeckerCI  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.CI.html">CI</a>.<a class="xref" href="Nuke.Common.CI.WoodpeckerCI.html">WoodpeckerCI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Interface according to the <a href="https://woodpecker-ci.org/docs/usage/environment">official website</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[ExcludeFromCodeCoverage]
+public class WoodpeckerCI : Host, IBuildServer, IEnvironment&lt;WoodpeckerCI&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Nuke.Common.Host.html">Host</a></div>
+      <div><span class="xref">WoodpeckerCI</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Nuke.Common.CI.IBuildServer.html">IBuildServer</a></div>
+      <div><a class="xref" href="Nuke.Common.CI.IEnvironment-1.html">IEnvironment</a>&lt;<a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.html">WoodpeckerCI</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteLogo">Host.WriteLogo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteBlock_System_String_">Host.WriteBlock(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_ReportWarning_System_String_System_String_">Host.ReportWarning(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_ReportError_System_String_System_String_">Host.ReportError(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_FilterMessage_System_String_">Host.FilterMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteErrorsAndWarnings">Host.WriteErrorsAndWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteTargetOutcome_Nuke_Common_INukeBuild_">Host.WriteTargetOutcome(INukeBuild)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteBuildOutcome_Nuke_Common_INukeBuild_">Host.WriteBuildOutcome(INukeBuild)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_ToPropertyDictionary__3___0_System_Func_System_Reflection_PropertyInfo___1__System_Func_System_Object___2__">EnumerableExtensions.ToPropertyDictionary&lt;T, TKey, TValue&gt;(T, Func&lt;PropertyInfo, TKey&gt;, Func&lt;object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.JsonExtensions.html#Nuke_Common_Utilities_JsonExtensions_ToJson__1___0_Newtonsoft_Json_JsonSerializerSettings_Newtonsoft_Json_Formatting_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerSettings, Formatting)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Apply__2___0_System_Func___0___1__">ObjectExtensions.Apply&lt;TInput, TOutput&gt;(TInput, Func&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Clone__1___0_">ObjectExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_WhenNotNull__2___0___1_System_Func___0___1___0__">ObjectExtensions.WhenNotNull&lt;T, TObject&gt;(T, TObject, Func&lt;T, TObject, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_When__1___0_System_Boolean_System_Func___0___0__">ObjectExtensions.When&lt;T&gt;(T, bool, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.XmlExtensions.html#Nuke_Common_Utilities_XmlExtensions_ToXml__1___0_System_Xml_Linq_SaveOptions_">XmlExtensions.ToXml&lt;T&gt;(T, SaveOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_ToJObject_System_Object_Newtonsoft_Json_JsonSerializer_">ObjectExtensions.ToJObject(object, JsonSerializer)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitAuthor_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitAuthor*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitAuthor" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitAuthor">
+  CommitAuthor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommitAuthor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitAuthorEmail_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitAuthorEmail*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitAuthorEmail" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitAuthorEmail">
+  CommitAuthorEmail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommitAuthorEmail { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitBranch_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitBranch*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitBranch" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitBranch">
+  CommitBranch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Commit branch (equals target branch for pull requests)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommitBranch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitMessage_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitMessage*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitMessage" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitMessage">
+  CommitMessage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommitMessage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPrerelease_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPrerelease*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPrerelease" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPrerelease">
+  CommitPrerelease
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Release is a pre-release (null if event is not <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Release">Release</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? CommitPrerelease { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPullRequest_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPullRequest*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPullRequest" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPullRequest">
+  CommitPullRequest
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Commit pull request number (set only for pull request events)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public long? CommitPullRequest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPullRequestLabels_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPullRequestLabels*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPullRequestLabels" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPullRequestLabels">
+  CommitPullRequestLabels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Labels assigned to pull request (set only for pull request events)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string CommitPullRequestLabels { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPullRequestMilestone_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPullRequestMilestone*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitPullRequestMilestone" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitPullRequestMilestone">
+  CommitPullRequestMilestone
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Milestone assigned to pull request (set only if <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineEvent">PipelineEvent</a>
+is <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequest">PullRequest</a> or <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequestClosed">PullRequestClosed</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string CommitPullRequestMilestone { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitRef_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitRef*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitRef" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitRef">
+  CommitRef
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommitRef { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitRefSpec_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitRefSpec*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitRefSpec" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitRefSpec">
+  CommitRefSpec
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommitRefSpec { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitSha_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitSha*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitSha" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitSha">
+  CommitSha
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommitSha { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitSourceBranch_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitSourceBranch*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitSourceBranch" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitSourceBranch">
+  CommitSourceBranch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Commit source branch (set only for pull request events)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string CommitSourceBranch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitTag_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitTag*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitTag" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitTag">
+  CommitTag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Commit tag name (null if <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineEvent">PipelineEvent</a> is not <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Tag">Tag</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string CommitTag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitTargetBranch_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitTargetBranch*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_CommitTargetBranch" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.CommitTargetBranch">
+  CommitTargetBranch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Commit target branch (set only for pull request events)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string CommitTargetBranch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_EnvironmentVariablePrefix_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.EnvironmentVariablePrefix*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_EnvironmentVariablePrefix" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.EnvironmentVariablePrefix">
+  EnvironmentVariablePrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EnvironmentVariablePrefix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_ForgeName_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.ForgeName*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_ForgeName" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.ForgeName">
+  ForgeName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of forge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ForgeName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_ForgeName_examples">Examples</h4>
+  <p><code>bitbucket</code>, <code>bitbucket_dc</code>, <code>forgejo</code>, <code>gitea</code>, <code>github</code>, <code>gitlab</code></p>
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_ForgeUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.ForgeUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_ForgeUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.ForgeUrl">
+  ForgeUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Root URL of configured forge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ForgeUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_ForgeUrl_examples">Examples</h4>
+  <p><code>https://git.example.com</code></p>
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_Instance_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.Instance*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_Instance" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.Instance">
+  Instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WoodpeckerCI Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.html">WoodpeckerCI</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineAuthor_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineAuthor*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineAuthor" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineAuthor">
+  PipelineAuthor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PipelineAuthor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineAuthorAvatar_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineAuthorAvatar*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineAuthorAvatar" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineAuthorAvatar">
+  PipelineAuthorAvatar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pipeline author avatar URL from the git forge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PipelineAuthorAvatar { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineCreatedAt_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineCreatedAt*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineCreatedAt" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineCreatedAt">
+  PipelineCreatedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime PipelineCreatedAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineDeployTarget_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineDeployTarget*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineDeployTarget" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineDeployTarget">
+  PipelineDeployTarget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pipeline deploy target for <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Deployment">Deployment</a> events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PipelineDeployTarget { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineDeployTask_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineDeployTask*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineDeployTask" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineDeployTask">
+  PipelineDeployTask
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pipeline deploy task for <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Deployment">Deployment</a> events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PipelineDeployTask { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineEvent_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineEvent*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineEvent" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineEvent">
+  PipelineEvent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pipeline event (see <a href="https://woodpecker-ci.org/docs/usage/workflow-syntax#event">event</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WoodpeckerCIEventType PipelineEvent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html">WoodpeckerCIEventType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineEventReason_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineEventReason*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineEventReason" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineEventReason">
+  PipelineEventReason
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Exact reason why <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequestMetadata">PullRequestMetadata</a> event was sent.
+<br>
+It is forge instance specific and can change.</p>
+<example>
+<code>label_updated</code>, <code>milestoned</code>, <code>demilestoned</code>, <code>assigned</code>, <code>edited</code>, ...
+</example>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string PipelineEventReason { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineFiles_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineFiles*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineFiles" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineFiles">
+  PipelineFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A list of the changed files (empty if event is not <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Push">Push</a> or <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequest">PullRequest</a>).
+<br>
+It is null if more than 500 files are touched.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public IReadOnlyList&lt;string&gt; PipelineFiles { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineForgeUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineForgeUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineForgeUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineForgeUrl">
+  PipelineForgeUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Link to the forge's web UI for the commit(s) or tag that triggered the pipeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PipelineForgeUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineNumber_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineNumber*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineNumber" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineNumber">
+  PipelineNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long PipelineNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineParentNumber_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineParentNumber*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineParentNumber" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineParentNumber">
+  PipelineParentNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long PipelineParentNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineStartedAt_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineStartedAt*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineStartedAt" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineStartedAt">
+  PipelineStartedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime PipelineStartedAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PipelineUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PipelineUrl">
+  PipelineUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Link to the web UI for the pipeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PipelineUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitAuthor_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitAuthor*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitAuthor" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitAuthor">
+  PreviousCommitAuthor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitAuthor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitAuthorEmail_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitAuthorEmail*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitAuthorEmail" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitAuthorEmail">
+  PreviousCommitAuthorEmail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitAuthorEmail { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitBranch_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitBranch*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitBranch" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitBranch">
+  PreviousCommitBranch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitBranch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitMessage_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitMessage*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitMessage" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitMessage">
+  PreviousCommitMessage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitMessage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitRef_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitRef*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitRef" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitRef">
+  PreviousCommitRef
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitRef { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitRefSpec_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitRefSpec*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitRefSpec" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitRefSpec">
+  PreviousCommitRefSpec
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitRefSpec { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitSha_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitSha*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitSha" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitSha">
+  PreviousCommitSha
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitSha { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitSourceBranch_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitSourceBranch*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitSourceBranch" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitSourceBranch">
+  PreviousCommitSourceBranch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous commit source branch (set only for pull request events)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string PreviousCommitSourceBranch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitTargetBranch_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitTargetBranch*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitTargetBranch" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitTargetBranch">
+  PreviousCommitTargetBranch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous commit target branch (set only for pull request events)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string PreviousCommitTargetBranch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousCommitUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousCommitUrl">
+  PreviousCommitUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous commit link in forge UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousCommitUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineAuthor_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineAuthor*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineAuthor" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineAuthor">
+  PreviousPipelineAuthor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousPipelineAuthor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineAuthorAvatar_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineAuthorAvatar*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineAuthorAvatar" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineAuthorAvatar">
+  PreviousPipelineAuthorAvatar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous pipeline author avatar URL from the git forge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousPipelineAuthorAvatar { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineCreatedAt_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineCreatedAt*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineCreatedAt" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineCreatedAt">
+  PreviousPipelineCreatedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime PreviousPipelineCreatedAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineDeployTarget_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineDeployTarget*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineDeployTarget" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineDeployTarget">
+  PreviousPipelineDeployTarget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous pipeline deploy target for <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Deployment">Deployment</a> events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousPipelineDeployTarget { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineDeployTask_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineDeployTask*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineDeployTask" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineDeployTask">
+  PreviousPipelineDeployTask
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous pipeline deploy task for <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Deployment">Deployment</a> events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousPipelineDeployTask { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineEvent_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineEvent*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineEvent" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineEvent">
+  PreviousPipelineEvent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous pipeline event (see <a href="https://woodpecker-ci.org/docs/usage/workflow-syntax#event">event</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WoodpeckerCIEventType PreviousPipelineEvent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html">WoodpeckerCIEventType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineEventReason_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineEventReason*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineEventReason" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineEventReason">
+  PreviousPipelineEventReason
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Previous exact reason why <a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.html#Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequestMetadata">PullRequestMetadata</a> event was sent.
+<br>
+It is forge instance specific and can change.</p>
+<example>
+<code>label_updated</code>, <code>milestoned</code>, <code>demilestoned</code>, <code>assigned</code>, <code>edited</code>, ...
+</example>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string PreviousPipelineEventReason { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineFinishedAt_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineFinishedAt*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineFinishedAt" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineFinishedAt">
+  PreviousPipelineFinishedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime PreviousPipelineFinishedAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineForgeUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineForgeUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineForgeUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineForgeUrl">
+  PreviousPipelineForgeUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Link to the forge's web UI for the commit(s) or tag that triggered the previous pipeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousPipelineForgeUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineNumber_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineNumber*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineNumber" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineNumber">
+  PreviousPipelineNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long PreviousPipelineNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineParentNumber_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineParentNumber*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineParentNumber" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineParentNumber">
+  PreviousPipelineParentNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long PreviousPipelineParentNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineStartedAt_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineStartedAt*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineStartedAt" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineStartedAt">
+  PreviousPipelineStartedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime PreviousPipelineStartedAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineStatus_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineStatus*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineStatus" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineStatus">
+  PreviousPipelineStatus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousPipelineStatus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineStatus_examples">Examples</h4>
+  <p><code>success</code>, <code>failure</code></p>
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_PreviousPipelineUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.PreviousPipelineUrl">
+  PreviousPipelineUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Link to the web UI for the previous pipeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousPipelineUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_Repository_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.Repository*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_Repository" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.Repository">
+  Repository
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Repository full name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Repository { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_Repository_examples">Examples</h4>
+  <p><code>&lt;owner&gt;/&lt;name&gt;</code></p>
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryCloneSshUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryCloneSshUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryCloneSshUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryCloneSshUrl">
+  RepositoryCloneSshUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryCloneSshUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryCloneUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryCloneUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryCloneUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryCloneUrl">
+  RepositoryCloneUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryCloneUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryDefaultBranch_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryDefaultBranch*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryDefaultBranch" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryDefaultBranch">
+  RepositoryDefaultBranch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryDefaultBranch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryHasTrustedNetworkAccess_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryHasTrustedNetworkAccess*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryHasTrustedNetworkAccess" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryHasTrustedNetworkAccess">
+  RepositoryHasTrustedNetworkAccess
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RepositoryHasTrustedNetworkAccess { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryHasTrustedSecurityAccess_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryHasTrustedSecurityAccess*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryHasTrustedSecurityAccess" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryHasTrustedSecurityAccess">
+  RepositoryHasTrustedSecurityAccess
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RepositoryHasTrustedSecurityAccess { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryHasTrustedVolumesAccess_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryHasTrustedVolumesAccess*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryHasTrustedVolumesAccess" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryHasTrustedVolumesAccess">
+  RepositoryHasTrustedVolumesAccess
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RepositoryHasTrustedVolumesAccess { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryIsPrivate_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryIsPrivate*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryIsPrivate" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryIsPrivate">
+  RepositoryIsPrivate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RepositoryIsPrivate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryName_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryName*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryName" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryName">
+  RepositoryName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryOwner_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryOwner*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryOwner" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryOwner">
+  RepositoryOwner
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryOwner { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryRemoteId_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryRemoteId*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryRemoteId" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryRemoteId">
+  RepositoryRemoteId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unique ID number the repository has on the git forge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryRemoteId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_RepositoryUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.RepositoryUrl">
+  RepositoryUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepName_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepName*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepName" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepName">
+  StepName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StepName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepNumber_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepNumber*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepNumber" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepNumber">
+  StepNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long StepNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepStartedAt_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepStartedAt*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepStartedAt" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepStartedAt">
+  StepStartedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime StepStartedAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_StepUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.StepUrl">
+  StepUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Link to step in web UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StepUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemHost_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemHost*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemHost" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemHost">
+  SystemHost
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hostname of CI server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SystemHost { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemName_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemName*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemName" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemName">
+  SystemName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the CI system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SystemName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemName_examples">Examples</h4>
+  <p><code>woodpecker</code></p>
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemUrl_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemUrl*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemUrl" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemUrl">
+  SystemUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Link to CI system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SystemUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemVersion_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemVersion*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_SystemVersion" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.SystemVersion">
+  SystemVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Version of the server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SystemVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_WorkflowName_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.WorkflowName*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_WorkflowName" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.WorkflowName">
+  WorkflowName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WorkflowName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_Workspace_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.Workspace*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCI_Workspace" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.Workspace">
+  Workspace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Path that source code gets cloned to for this project</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Workspace { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCI.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          The next-generation .NET build automation system.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
