@@ -77,7 +77,8 @@ nav:
     - GitLab: cicd/gitlab.md
     - Jenkins: cicd/jenkins.md
     - "Space Automation": cicd/space-automation.md
-    - "TeamCity": cicd/teamcity.md
+    - TeamCity: cicd/teamcity.md
+    - "Woodpecker CI": cicd/woodpecker-ci.md
   - "Global Tool":
     - "Shell Completion": global-tool/shell-completion.md
     - "Adding NuGet Packages": global-tool/packages.md
