@@ -1120,6 +1120,188 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.CodebergRunners.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.CodebergRunners.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.CodebergRunners",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.ForgejoActions.CodebergRunners.yml\" sourcestartlinenumber=\"1\">The constants on this class and their accompanying documentation were sourced from the <a href=\"https://codeberg.org/actions/meta\">official Codeberg actions/meta repository for their Forgejo Actions.</a>\n<br><br><br>\nCodeberg has two hosted CI/CD solutions:\n<a href=\"https://docs.codeberg.org/ci/#using-codeberg's-instance-of-woodpecker-ci\">Woodpecker CI</a>\nand\n<a href=\"https://forgejo.org/docs/next/user/actions/overview/\">Forgejo Actions</a>.\n<br>\nThis class is related to Forgejo Actions hosted by Codeberg,\nbut you can easily <a href=\"https://forgejo.org/docs/next/admin/actions/runner-installation/\">set up the runner on your own machine</a>.\n<br><br>\nThe Hosted Forgejo Actions is in open beta. It has worked reliably for a several months, and the Forgejo runner matured a lot in this time.\n<br>\nCurrently, the runner has less capacity than the hosted Woodpecker CI. Capacity and offer expansion is expected through the next year;\nconsider <a href=\"https://donate.codeberg.org/\">chipping in financially</a>, if you can.</p>\n<p sourcefile=\"apimeta/Nuke.Common.CI.ForgejoActions.CodebergRunners.yml\" sourcestartlinenumber=\"16\">The constants in this class are runners available on Codeberg.\nThe specs in the in-code docs are guidelines for how many resources builds are allowed to take at most, but Codeberg relies on &quot;fair use&quot;.\nLet's not abuse what is given to us so generously; with no predatory ads, monetization policies, or data harvesting.</p>\n<p sourcefile=\"apimeta/Nuke.Common.CI.ForgejoActions.CodebergRunners.yml\" sourcestartlinenumber=\"20\"><br><br><br>\nRules and conditions\n<br>\nIn short:<br>\n- project must be <b>public</b> (<b>and available under a free/libre license</b> as per the <a href=\"https://codeberg.org/Codeberg/org/src/branch/main/TermsOfUse.md\">Terms of Use</a>)<br>\n- be excellent to each other: <b>Don't jam the queue</b> so other projects can also benefit from the offer<br>\n- only use the <b>resources you really need</b><br><br></p>\n<p sourcefile=\"apimeta/Nuke.Common.CI.ForgejoActions.CodebergRunners.yml\" sourcestartlinenumber=\"28\">Running CI/CD pipelines can use significant amounts of energy.\nAs much as it is tempting to have green checkmarks everywhere, running the jobs costs real money and has environmental costs.\n<br><br>\nUnlike other giant platforms, Codeberg does not encourage you to write &quot;heavy&quot; pipelines, then charge you for the cost later.\nYou are expected to carefully consider the costs and benefits from your pipelines and reduce CI/CD usage\nto a minimum amount necessary to guarantee consistent quality for your projects.\n<br><br>\nCodeberg invites you to participate in discussions with them on how to optimize pipelines and save unnecessary runs where possible.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsArtifactStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsArtifactStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsArtifactStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsCacheStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsCacheStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsCacheStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsCheckoutStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsCheckoutStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsCheckoutStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsDetailedTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsDetailedTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsDetailedTrigger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsRunStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsRunStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsRunStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsScheduledTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsScheduledTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsScheduledTrigger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsVcsTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsVcsTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsVcsTrigger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsWorkflowDispatchTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsWorkflowDispatchTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration.ForgejoActionsWorkflowDispatchTrigger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.ForgejoActions.yml",
       "output": {
         ".html": {
@@ -1131,6 +1313,62 @@
       "IsMRef": true,
       "Title": "Nuke.Common.CI.ForgejoActions.ForgejoActions",
       "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.ForgejoActions.ForgejoActions.yml\" sourcestartlinenumber=\"1\">Interface according to the <a href=\"https://forgejo.org/docs/next/user/actions/reference/#env-1\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.ForgejoActionsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.ForgejoActionsAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.ForgejoActionsAttribute",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.ForgejoActions.ForgejoActionsAttribute.yml\" sourcestartlinenumber=\"1\">Interface according to the <a href=\"https://forgejo.org/docs/next/user/actions/reference/#workflow-syntax\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.ForgejoActionsPermissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.ForgejoActionsPermissions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.ForgejoActionsPermissions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.ForgejoActionsSubmodules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.ForgejoActionsSubmodules.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.ForgejoActionsSubmodules",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.ForgejoActions.ForgejoActionsTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.ForgejoActions.ForgejoActionsTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.ForgejoActions.ForgejoActionsTrigger",
+      "Summary": null
     },
     {
       "type": "ManagedReference",

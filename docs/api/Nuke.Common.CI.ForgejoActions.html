@@ -95,9 +95,65 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="Nuke.Common.CI.ForgejoActions.CodebergRunners.html">CodebergRunners</a></dt>
+      <dd><p>The constants on this class and their accompanying documentation were sourced from the <a href="https://codeberg.org/actions/meta">official Codeberg actions/meta repository for their Forgejo Actions.</a>
+<br><br><br>
+Codeberg has two hosted CI/CD solutions:
+<a href="https://docs.codeberg.org/ci/#using-codeberg's-instance-of-woodpecker-ci">Woodpecker CI</a>
+and
+<a href="https://forgejo.org/docs/next/user/actions/overview/">Forgejo Actions</a>.
+<br>
+This class is related to Forgejo Actions hosted by Codeberg,
+but you can easily <a href="https://forgejo.org/docs/next/admin/actions/runner-installation/">set up the runner on your own machine</a>.
+<br><br>
+The Hosted Forgejo Actions is in open beta. It has worked reliably for a several months, and the Forgejo runner matured a lot in this time.
+<br>
+Currently, the runner has less capacity than the hosted Woodpecker CI. Capacity and offer expansion is expected through the next year;
+consider <a href="https://donate.codeberg.org/">chipping in financially</a>, if you can.</p>
+<p>The constants in this class are runners available on Codeberg.
+The specs in the in-code docs are guidelines for how many resources builds are allowed to take at most, but Codeberg relies on &quot;fair use&quot;.
+Let's not abuse what is given to us so generously; with no predatory ads, monetization policies, or data harvesting.</p>
+<p><br><br><br>
+Rules and conditions
+<br>
+In short:<br>
+- project must be <b>public</b> (<b>and available under a free/libre license</b> as per the <a href="https://codeberg.org/Codeberg/org/src/branch/main/TermsOfUse.md">Terms of Use</a>)<br>
+- be excellent to each other: <b>Don't jam the queue</b> so other projects can also benefit from the offer<br>
+- only use the <b>resources you really need</b><br><br></p>
+<p>Running CI/CD pipelines can use significant amounts of energy.
+As much as it is tempting to have green checkmarks everywhere, running the jobs costs real money and has environmental costs.
+<br><br>
+Unlike other giant platforms, Codeberg does not encourage you to write &quot;heavy&quot; pipelines, then charge you for the cost later.
+You are expected to carefully consider the costs and benefits from your pipelines and reduce CI/CD usage
+to a minimum amount necessary to guarantee consistent quality for your projects.
+<br><br>
+Codeberg invites you to participate in discussions with them on how to optimize pipelines and save unnecessary runs where possible.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Nuke.Common.CI.ForgejoActions.ForgejoActions.html">ForgejoActions</a></dt>
       <dd><p>Interface according to the <a href="https://forgejo.org/docs/next/user/actions/reference/#env-1">official website</a>.</p>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Nuke.Common.CI.ForgejoActions.ForgejoActionsAttribute.html">ForgejoActionsAttribute</a></dt>
+      <dd><p>Interface according to the <a href="https://forgejo.org/docs/next/user/actions/reference/#workflow-syntax">official website</a>.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Nuke.Common.CI.ForgejoActions.ForgejoActionsPermissions.html">ForgejoActionsPermissions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Nuke.Common.CI.ForgejoActions.ForgejoActionsSubmodules.html">ForgejoActionsSubmodules</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Nuke.Common.CI.ForgejoActions.ForgejoActionsTrigger.html">ForgejoActionsTrigger</a></dt>
+      <dd></dd>
     </dl>
 
 
