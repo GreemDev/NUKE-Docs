@@ -266,7 +266,7 @@ public abstract class NukeBuild : INukeBuild</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_AbortedTargets" data-uid="Nuke.Common.NukeBuild.AbortedTargets">
   AbortedTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that were aborted.</p>
@@ -430,7 +430,7 @@ public static AbsolutePath BuildProjectFile { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_Continue" data-uid="Nuke.Common.NukeBuild.Continue">
   Continue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value whether a previous failed build should be continued.</p>
@@ -459,11 +459,47 @@ public bool Continue { get; }</code></pre>
 
 
 
+  <a id="Nuke_Common_NukeBuild_DisableDotNetBuildServers_" data-uid="Nuke.Common.NukeBuild.DisableDotNetBuildServers*"></a>
+
+  <h3 id="Nuke_Common_NukeBuild_DisableDotNetBuildServers" data-uid="Nuke.Common.NukeBuild.DisableDotNetBuildServers">
+  DisableDotNetBuildServers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force .NET SDK commands to ignore any persistent build servers.</p>
+<p>This option provides a consistent way to disable all use of build caching,
+which forces a build from scratch.</p>
+<p>A build that doesn't rely on caches is useful when the caches might be corrupted or incorrect for some reason.</p>
+<p>Available since .NET 7 SDK.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisableDotNetBuildServers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_NukeBuild_EmbeddedPackagesDirectory_" data-uid="Nuke.Common.NukeBuild.EmbeddedPackagesDirectory*"></a>
 
   <h3 id="Nuke_Common_NukeBuild_EmbeddedPackagesDirectory" data-uid="Nuke.Common.NukeBuild.EmbeddedPackagesDirectory">
   EmbeddedPackagesDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -495,7 +531,7 @@ protected virtual string EmbeddedPackagesDirectory { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_ExecutionPlan" data-uid="Nuke.Common.NukeBuild.ExecutionPlan">
   ExecutionPlan
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -526,7 +562,7 @@ protected virtual string EmbeddedPackagesDirectory { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_ExitCode" data-uid="Nuke.Common.NukeBuild.ExitCode">
   ExitCode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the build exit code.
@@ -560,7 +596,7 @@ When set to a non-null value, <a class="xref" href="Nuke.Common.NukeBuild.html#N
 
   <h3 id="Nuke_Common_NukeBuild_FailedTargets" data-uid="Nuke.Common.NukeBuild.FailedTargets">
   FailedTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that have failed.</p>
@@ -592,7 +628,7 @@ When set to a non-null value, <a class="xref" href="Nuke.Common.NukeBuild.html#N
 
   <h3 id="Nuke_Common_NukeBuild_FinishedTargets" data-uid="Nuke.Common.NukeBuild.FinishedTargets">
   FinishedTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that have been finished (failed or succeeded).</p>
@@ -624,7 +660,7 @@ When set to a non-null value, <a class="xref" href="Nuke.Common.NukeBuild.html#N
 
   <h3 id="Nuke_Common_NukeBuild_Help" data-uid="Nuke.Common.NukeBuild.Help">
   Help
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value whether to show the help text for this build assembly.</p>
@@ -690,7 +726,7 @@ public static Host Host { get; set; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_InvokedTargets" data-uid="Nuke.Common.NukeBuild.InvokedTargets">
   InvokedTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that were invoked.</p>
@@ -723,7 +759,7 @@ public IReadOnlyCollection&lt;ExecutableTarget&gt; InvokedTargets { get; }</code
 
   <h3 id="Nuke_Common_NukeBuild_IsFailing" data-uid="Nuke.Common.NukeBuild.IsFailing">
   IsFailing
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -754,7 +790,7 @@ public IReadOnlyCollection&lt;ExecutableTarget&gt; InvokedTargets { get; }</code
 
   <h3 id="Nuke_Common_NukeBuild_IsFinished" data-uid="Nuke.Common.NukeBuild.IsFinished">
   IsFinished
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -847,7 +883,7 @@ public IReadOnlyCollection&lt;ExecutableTarget&gt; InvokedTargets { get; }</code
 
   <h3 id="Nuke_Common_NukeBuild_IsSucceeding" data-uid="Nuke.Common.NukeBuild.IsSucceeding">
   IsSucceeding
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -910,7 +946,7 @@ public static string[] LoadedLocalProfiles { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_NoLogo" data-uid="Nuke.Common.NukeBuild.NoLogo">
   NoLogo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value whether to display the NUKE logo.</p>
@@ -943,7 +979,7 @@ public bool NoLogo { get; set; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_NpmPackageJsonFile" data-uid="Nuke.Common.NukeBuild.NpmPackageJsonFile">
   NpmPackageJsonFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -975,7 +1011,7 @@ protected virtual AbsolutePath NpmPackageJsonFile { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_NuGetAssetsConfigFile" data-uid="Nuke.Common.NukeBuild.NuGetAssetsConfigFile">
   NuGetAssetsConfigFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1007,7 +1043,7 @@ protected virtual string NuGetAssetsConfigFile { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_NuGetPackagesConfigFile" data-uid="Nuke.Common.NukeBuild.NuGetPackagesConfigFile">
   NuGetPackagesConfigFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1039,7 +1075,7 @@ protected virtual string NuGetPackagesConfigFile { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_Partition" data-uid="Nuke.Common.NukeBuild.Partition">
   Partition
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1071,7 +1107,7 @@ public Partition Partition { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_Plan" data-uid="Nuke.Common.NukeBuild.Plan">
   Plan
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value whether to show the execution plan (HTML).</p>
@@ -1137,7 +1173,7 @@ public static AbsolutePath RootDirectory { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_RunningTargets" data-uid="Nuke.Common.NukeBuild.RunningTargets">
   RunningTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that are running.</p>
@@ -1169,7 +1205,7 @@ public static AbsolutePath RootDirectory { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_ScheduledTargets" data-uid="Nuke.Common.NukeBuild.ScheduledTargets">
   ScheduledTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that are scheduled.</p>
@@ -1201,7 +1237,7 @@ public static AbsolutePath RootDirectory { get; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_SkippedTargets" data-uid="Nuke.Common.NukeBuild.SkippedTargets">
   SkippedTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that are skipped.</p>
@@ -1234,7 +1270,7 @@ public IReadOnlyCollection&lt;ExecutableTarget&gt; SkippedTargets { get; }</code
 
   <h3 id="Nuke_Common_NukeBuild_SucceededTargets" data-uid="Nuke.Common.NukeBuild.SucceededTargets">
   SucceededTargets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of targets that have succeeded.</p>
@@ -1335,7 +1371,7 @@ public static Verbosity Verbosity { get; set; }</code></pre>
 
   <h3 id="Nuke_Common_NukeBuild_Execute__1_System_Linq_Expressions_Expression_System_Func___0_Nuke_Common_Target_____" data-uid="Nuke.Common.NukeBuild.Execute``1(System.Linq.Expressions.Expression{System.Func{``0,Nuke.Common.Target}}[])">
   Execute&lt;T&gt;(params Expression&lt;Func&lt;T, Target&gt;&gt;[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the build. The provided expression defines the <em>default</em> target that is invoked,
@@ -1587,7 +1623,7 @@ if no targets have been specified via command-line arguments.</p>
 
   <h3 id="Nuke_Common_NukeBuild_ReportSummary_Nuke_Common_Tooling_Configure_System_Collections_Generic_Dictionary_System_String_System_String___" data-uid="Nuke.Common.NukeBuild.ReportSummary(Nuke.Common.Tooling.Configure{System.Collections.Generic.Dictionary{System.String,System.String}})">
   ReportSummary(Configure&lt;Dictionary&lt;string, string&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/NukeBuild.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings" class="text-break">
-Class DotNetMSBuildSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L520"><i class="bi bi-code-slash"></i></a>
+Class DotNetMSBuildSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L528"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -247,6 +247,9 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
   </div>
   <div>
       <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettingsExtensions.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettingsExtensions_ClearTargets__1___0_">DotNetMSBuildSettingsExtensions.ClearTargets&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettingsExtensions.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettingsExtensions_DisableBuildServers__1___0_">DotNetMSBuildSettingsExtensions.DisableBuildServers&lt;T&gt;(T)</a>
   </div>
   <div>
       <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettingsExtensions.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettingsExtensions_DisableContinuousIntegrationBuild__1___0_">DotNetMSBuildSettingsExtensions.DisableContinuousIntegrationBuild&lt;T&gt;(T)</a>
@@ -760,7 +763,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
 
   <h2 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;targetPath&gt;</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_TargetPath">TargetPath</a></li><li><code>-bl</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_BinaryLog">BinaryLog</a></li><li><code>/detailedsummary</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_DetailedSummary">DetailedSummary</a></li><li><code>/graphBuild</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_GraphBuild">GraphBuild</a></li><li><code>/logger</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Loggers">Loggers</a></li><li><code>/maxcpucount</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_MaxCpuCount">MaxCpuCount</a></li><li><code>/noconsolelogger</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NoConsoleLogger">NoConsoleLogger</a></li><li><code>/nodeReuse</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NodeReuse">NodeReuse</a></li><li><code>/nologo</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NoLogo">NoLogo</a></li><li><code>/property</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Properties">Properties</a></li><li><code>/property:Configuration</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Configuration">Configuration</a></li><li><code>/restore</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Restore">Restore</a></li><li><code>/target</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Targets">Targets</a></li><li><code>/verbosity</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Verbosity">Verbosity</a></li></ul>
+  <div class="markdown level0 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;targetPath&gt;</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_TargetPath">TargetPath</a></li><li><code>--disable-build-servers</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_DisableBuildServers">DisableBuildServers</a></li><li><code>-bl</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_BinaryLog">BinaryLog</a></li><li><code>/detailedsummary</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_DetailedSummary">DetailedSummary</a></li><li><code>/graphBuild</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_GraphBuild">GraphBuild</a></li><li><code>/logger</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Loggers">Loggers</a></li><li><code>/maxcpucount</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_MaxCpuCount">MaxCpuCount</a></li><li><code>/noconsolelogger</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NoConsoleLogger">NoConsoleLogger</a></li><li><code>/nodeReuse</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NodeReuse">NodeReuse</a></li><li><code>/nologo</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NoLogo">NoLogo</a></li><li><code>/property</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Properties">Properties</a></li><li><code>/property:Configuration</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Configuration">Configuration</a></li><li><code>/restore</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Restore">Restore</a></li><li><code>/target</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Targets">Targets</a></li><li><code>/verbosity</code> via <a class="xref" href="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.html#Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Verbosity">Verbosity</a></li></ul>
 </div>
 
 
@@ -772,7 +775,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_BinaryLog" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.BinaryLog">
   BinaryLog
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L560"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generate MSBuild <a href="https://github.com/dotnet/msbuild/blob/main/documentation/wiki/Binary-Log.md">binary log</a>.</p>
@@ -804,7 +807,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Configuration" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.Configuration">
   Configuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L556"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the build configuration. The default value is <code>Debug</code>. This option is only required when cleaning if you specified it during build time.</p>
@@ -836,7 +839,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_DetailedSummary" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.DetailedSummary">
   DetailedSummary
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L536"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Show detailed information at the end of the build log about the configurations that were built and how they were scheduled to nodes.</p>
@@ -864,11 +867,43 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
 
 
+  <a id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_DisableBuildServers_" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.DisableBuildServers*"></a>
+
+  <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_DisableBuildServers" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.DisableBuildServers">
+  DisableBuildServers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force the command to ignore any persistent build servers. This option provides a consistent way to disable all use of build caching, which forces a build from scratch. A build that doesn't rely on caches is useful when the caches might be corrupted or incorrect for some reason. Available since .NET 7 SDK.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? DisableBuildServers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_GraphBuild_" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.GraphBuild*"></a>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_GraphBuild" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.GraphBuild">
   GraphBuild
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Causes MSBuild to construct and build a project graph. Constructing a graph involves identifying project references to form dependencies. Building that graph involves attempting to build project references prior to the projects that reference them, differing from traditional MSBuild scheduling. Requires MSBuild 16 or later.</p>
@@ -900,7 +935,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Loggers" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.Loggers">
   Loggers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L552"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the loggers to use to log events from MSBuild.</p>
@@ -932,7 +967,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_MaxCpuCount" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.MaxCpuCount">
   MaxCpuCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L540"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the maximum number of concurrent processes to use when building. If you don't include this switch, the default value is 1. If you include this switch without specifying a value, MSBuild will use up to the number of processors in the computer. For more information, see <a href="https://msdn.microsoft.com/en-us/library/bb651793.aspx">Building Multiple Projects in Parallel</a>.</p><p>The following example instructs MSBuild to build using three MSBuild processes, which allows three projects to build at the same time:</p><p><code>msbuild myproject.proj /maxcpucount:3</code></p>
@@ -964,7 +999,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NoConsoleLogger" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.NoConsoleLogger">
   NoConsoleLogger
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L554"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disable the default console logger, and don't log events to the console.</p>
@@ -996,7 +1031,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NoLogo" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.NoLogo">
   NoLogo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L544"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display the startup banner or the copyright message.</p>
@@ -1028,7 +1063,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_NodeReuse" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.NodeReuse">
   NodeReuse
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L542"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enable or disable the re-use of MSBuild nodes. You can specify the following values: 
@@ -1061,7 +1096,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Properties" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.Properties">
   Properties
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L562"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>/property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1093,7 +1128,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Restore" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.Restore">
   Restore
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L546"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Runs the <code>Restore</code> target prior to building the actual targets.</p>
@@ -1125,7 +1160,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_TargetPath" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.TargetPath">
   TargetPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L534"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The solution or project file on which MSBuild is executed.</p>
@@ -1157,7 +1192,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Targets" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.Targets">
   Targets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L548"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Build the specified targets in the project. Specify each target separately, or use a semicolon or comma to separate multiple targets, as the following example shows:<br><code>/target:Resources;Compile</code></p><p>If you specify any targets by using this switch, they are run instead of any targets in the DefaultTargets attribute in the project file. For more information, see <a href="https://msdn.microsoft.com/en-us/library/ee216359.aspx">Target Build Order</a> and <a href="https://msdn.microsoft.com/en-us/library/ms171463.aspx">How to: Specify Which Target to Build First</a>.</p><p>A target is a group of tasks. For more information, see <a href="https://msdn.microsoft.com/en-us/library/ms171462.aspx">Targets</a>.</p>
@@ -1189,7 +1224,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetMSBuildSettings_Verbosity" data-uid="Nuke.Common.Tools.DotNet.DotNetMSBuildSettings.Verbosity">
   Verbosity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L550"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the amount of information to display in the build log. Each logger displays events based on the verbosity level that you set for that logger.</p><p>You can specify the following verbosity levels: <code>q[uiet]</code>, <code>m[inimal]</code>, <code>n[ormal]</code>, <code>d[etailed]</code>, and <code>diag[nostic]</code>.</p><p>The following setting is an example: <code>/verbosity:quiet</code></p>
@@ -1221,7 +1256,7 @@ public class DotNetMSBuildSettings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L520" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L528" class="edit-link">Edit this page</a>
         </div>
 
 

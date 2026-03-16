@@ -1890,20 +1890,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.CI.ShutdownDotNetAfterServerBuildAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.CI.ShutdownDotNetAfterServerBuildAttribute.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.CI.ShutdownDotNetAfterServerBuildAttribute",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.ShutdownDotNetAfterServerBuildAttribute.yml\" sourcestartlinenumber=\"1\">See <a href=\"https://github.com/dotnet/cli/issues/11424\">dotnet/cli#11424</a>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.CI.SpaceAutomation.Configuration.SpaceAutomationConfiguration.yml",
       "output": {
         ".html": {
