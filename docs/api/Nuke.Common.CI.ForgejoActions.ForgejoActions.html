@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_CI_ForgejoActions_ForgejoActions" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions" class="text-break">
-Class ForgejoActions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.cs/#L18"><i class="bi bi-code-slash"></i></a>
+Class ForgejoActions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -133,18 +133,6 @@ public class ForgejoActions : Host, IBuildServer, IEnvironment&lt;ForgejoActions
     <dd>
     <div>
       <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteLogo">Host.WriteLogo()</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteBlock_System_String_">Host.WriteBlock(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_ReportWarning_System_String_System_String_">Host.ReportWarning(string, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_ReportError_System_String_System_String_">Host.ReportError(string, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_FilterMessage_System_String_">Host.FilterMessage(string)</a>
     </div>
     <div>
       <a class="xref" href="Nuke.Common.Host.html#Nuke_Common_Host_WriteErrorsAndWarnings">Host.WriteErrorsAndWarnings()</a>
@@ -1137,11 +1125,343 @@ public string HeadRef { get; }</code></pre>
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_EndGroup_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.EndGroup*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_EndGroup_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.EndGroup(System.String)">
+  EndGroup(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndGroup(string group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_FilterMessage_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.FilterMessage*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_FilterMessage_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.FilterMessage(System.String)">
+  FilterMessage(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool FilterMessage(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_Group_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.Group*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_Group_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.Group(System.String)">
+  Group(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Group(string group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_ReportError_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.ReportError*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_ReportError_System_String_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.ReportError(System.String,System.String)">
+  ReportError(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ReportError(string text, string details = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>details</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_ReportWarning_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.ReportWarning*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_ReportWarning_System_String_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.ReportWarning(System.String,System.String)">
+  ReportWarning(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ReportWarning(string text, string details = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>details</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteBlock_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteBlock*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteBlock_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteBlock(System.String)">
+  WriteBlock(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IDisposable WriteBlock(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteCommand_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteCommand*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteCommand_System_String_System_String_Nuke_Common_Tooling_Configure_System_Collections_Generic_Dictionary_System_String_System_Object___" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteCommand(System.String,System.String,Nuke.Common.Tooling.Configure{System.Collections.Generic.Dictionary{System.String,System.Object}})">
+  WriteCommand(string, string, Configure&lt;Dictionary&lt;string, object&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteCommand(string command, string message = null, Configure&lt;Dictionary&lt;string, object&gt;&gt; dictionaryConfigurator = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>dictionaryConfigurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteDebug_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteDebug*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteDebug_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteDebug(System.String)">
+  WriteDebug(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteDebug(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteError_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteError*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteError_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteError(System.String)">
+  WriteError(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteError(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteWarning_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteWarning*"></a>
+
+  <h3 id="Nuke_Common_CI_ForgejoActions_ForgejoActions_WriteWarning_System_String_" data-uid="Nuke.Common.CI.ForgejoActions.ForgejoActions.WriteWarning(System.String)">
+  WriteWarning(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteWarning(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.cs/#L18" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/ForgejoActions/ForgejoActions.Theming.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 
