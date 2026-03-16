@@ -48,7 +48,6 @@ nav:
     - Installation: getting-started/installation.md
     - "Build Setup": getting-started/setup.md
     - "Build Execution": getting-started/execution.md
-    - Telemetry: getting-started/telemetry.md
   - Fundamentals:
     - Builds: fundamentals/builds.md
     - Targets: fundamentals/targets.md
