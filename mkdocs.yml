@@ -56,14 +56,15 @@ nav:
     - Logging: fundamentals/logging.md
     - Assertions: fundamentals/assertions.md
   - "Common Tasks":
-    - "Constructing Paths": common/paths.md
-    - "Repository Insights": common/repository.md
-    - "Data Serialization": common/serialization.md
-    - "Versioning Artifacts": common/versioning.md
-    - "Solution & Project Model": common/solution-project-model.md
-    - "Executing CLI Tools": common/cli-tools.md
     - "Archive Compression": common/compression.md
     - "Chats & Social Media": common/chats.md
+    - "Constructing Paths": common/paths.md
+    - "Data Serialization": common/serialization.md
+    - "Executing CLI Tools": common/cli-tools.md
+    - "Repository Insights": common/repository.md
+    - "Versioning Artifacts": common/versioning.md
+    - "Solution & Project Model": common/solution-project-model.md
+
   - "Build Sharing":
     - "Global Builds": sharing/global-builds.md
     - "Build Components": sharing/build-components.md
@@ -71,6 +72,7 @@ nav:
     - AppVeyor: cicd/appveyor.md
     - "Azure Pipelines": cicd/azure-pipelines.md
     - BitBucket: cicd/bitbucket.md
+    - "Forgejo Actions": cicd/forgejo-actions.md
     - "GitHub Actions": cicd/github-actions.md
     - GitLab: cicd/gitlab.md
     - Jenkins: cicd/jenkins.md
