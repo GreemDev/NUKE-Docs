@@ -12764,7 +12764,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.DotNet.DotNetRuntimeIdentifier",
-      "Summary": null
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.DotNet.DotNetRuntimeIdentifier.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.DotNet.DotNetTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
