@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType" class="text-break">
-Class WoodpeckerCIEventType  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class WoodpeckerCIEventType  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,6 +103,7 @@ Class WoodpeckerCIEventType  <a class="header-action link-secondary" title="View
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TypeConverter(typeof(Enumeration.TypeConverter&lt;WoodpeckerCIEventType&gt;))]
+[PublicAPI]
 public class WoodpeckerCIEventType : Enumeration</code></pre>
   </div>
 
@@ -216,7 +217,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Cron" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.Cron">
   Cron
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a cron job is executed.</p>
@@ -224,7 +225,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType Cron</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType Cron</code></pre>
   </div>
 
 
@@ -247,7 +248,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Deployment" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.Deployment">
   Deployment
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a deployment is created in the repository. (This event can be triggered from Woodpecker directly. GitHub also supports webhook triggers.)</p>
@@ -255,7 +256,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType Deployment</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType Deployment</code></pre>
   </div>
 
 
@@ -278,7 +279,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Manual" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.Manual">
   Manual
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a user manually triggers a pipeline.</p>
@@ -286,7 +287,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType Manual</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType Manual</code></pre>
   </div>
 
 
@@ -309,7 +310,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequest" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.PullRequest">
   PullRequest
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a pull request is opened or a new commit is pushed to it.</p>
@@ -317,7 +318,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType PullRequest</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType PullRequest</code></pre>
   </div>
 
 
@@ -340,7 +341,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequestClosed" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.PullRequestClosed">
   PullRequestClosed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a pull request is closed or merged.</p>
@@ -348,7 +349,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType PullRequestClosed</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType PullRequestClosed</code></pre>
   </div>
 
 
@@ -371,7 +372,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_PullRequestMetadata" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.PullRequestMetadata">
   PullRequestMetadata
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a pull request metadata has changed (e.g. title, body, label, milestone, ...).</p>
@@ -379,7 +380,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType PullRequestMetadata</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType PullRequestMetadata</code></pre>
   </div>
 
 
@@ -402,7 +403,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Push" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.Push">
   Push
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a commit is pushed to a branch.</p>
@@ -410,7 +411,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType Push</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType Push</code></pre>
   </div>
 
 
@@ -433,7 +434,7 @@ public class WoodpeckerCIEventType : Enumeration</code></pre>
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Release" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.Release">
   Release
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a release, pre-release or draft is created.
@@ -443,7 +444,7 @@ with <a href="https://woodpecker-ci.org/docs/usage/environment#built-in-environm
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType Release</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType Release</code></pre>
   </div>
 
 
@@ -466,7 +467,7 @@ with <a href="https://woodpecker-ci.org/docs/usage/environment#built-in-environm
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_Tag" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.Tag">
   Tag
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when a tag is pushed.</p>
@@ -474,7 +475,7 @@ with <a href="https://woodpecker-ci.org/docs/usage/environment#built-in-environm
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WoodpeckerCIEventType Tag</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly WoodpeckerCIEventType Tag</code></pre>
   </div>
 
 
@@ -502,7 +503,7 @@ with <a href="https://woodpecker-ci.org/docs/usage/environment#built-in-environm
 
   <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType_op_Implicit_Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIEventType__System_String" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType.op_Implicit(Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEventType)~System.String">
   implicit operator string(WoodpeckerCIEventType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -538,7 +539,7 @@ with <a href="https://woodpecker-ci.org/docs/usage/environment#built-in-environm
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIEventType.cs/#L60" class="edit-link">Edit this page</a>
         </div>
 
 

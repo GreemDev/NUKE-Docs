@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WoodpeckerCIAttribute | gruke </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WoodpeckerCIAttribute | gruke ">
+      
+      
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute.md&amp;value=---%0Auid%3A%20Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute">
+
+
+
+  <h1 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute" class="text-break">
+Class WoodpeckerCIAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.CI.html">CI</a>.<a class="xref" href="Nuke.Common.CI.WoodpeckerCI.html">WoodpeckerCI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[AttributeUsage(AttributeTargets.Class)]
+public class WoodpeckerCIAttribute : ConfigurationAttributeBase, IConfigurationGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+      <div><a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html">ConfigurationAttributeBase</a></div>
+      <div><span class="xref">WoodpeckerCIAttribute</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Nuke.Common.CI.IConfigurationGenerator.html">IConfigurationGenerator</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_Build">ConfigurationAttributeBase.Build</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_DisplayName">ConfigurationAttributeBase.DisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_HostName">ConfigurationAttributeBase.HostName</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_Id">ConfigurationAttributeBase.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_AutoGenerate">ConfigurationAttributeBase.AutoGenerate</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_BuildCmdPath">ConfigurationAttributeBase.BuildCmdPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_Generate_System_Collections_Generic_IReadOnlyCollection_Nuke_Common_Execution_ExecutableTarget__">ConfigurationAttributeBase.Generate(IReadOnlyCollection&lt;ExecutableTarget&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_CreateStream">ConfigurationAttributeBase.CreateStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.CI.ConfigurationAttributeBase.html#Nuke_Common_CI_ConfigurationAttributeBase_SerializeState">ConfigurationAttributeBase.SerializeState()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.equals">Attribute.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-assembly-system-type)">Attribute.GetCustomAttribute(Assembly, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-assembly-system-type-system-boolean)">Attribute.GetCustomAttribute(Assembly, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-memberinfo-system-type)">Attribute.GetCustomAttribute(MemberInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-memberinfo-system-type-system-boolean)">Attribute.GetCustomAttribute(MemberInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-module-system-type)">Attribute.GetCustomAttribute(Module, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-module-system-type-system-boolean)">Attribute.GetCustomAttribute(Module, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-parameterinfo-system-type)">Attribute.GetCustomAttribute(ParameterInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-parameterinfo-system-type-system-boolean)">Attribute.GetCustomAttribute(ParameterInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly)">Attribute.GetCustomAttributes(Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly-system-boolean)">Attribute.GetCustomAttributes(Assembly, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly-system-type)">Attribute.GetCustomAttributes(Assembly, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly-system-type-system-boolean)">Attribute.GetCustomAttributes(Assembly, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo)">Attribute.GetCustomAttributes(MemberInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-boolean)">Attribute.GetCustomAttributes(MemberInfo, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-type)">Attribute.GetCustomAttributes(MemberInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-type-system-boolean)">Attribute.GetCustomAttributes(MemberInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module)">Attribute.GetCustomAttributes(Module)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module-system-boolean)">Attribute.GetCustomAttributes(Module, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module-system-type)">Attribute.GetCustomAttributes(Module, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module-system-type-system-boolean)">Attribute.GetCustomAttributes(Module, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo)">Attribute.GetCustomAttributes(ParameterInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo-system-boolean)">Attribute.GetCustomAttributes(ParameterInfo, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo-system-type)">Attribute.GetCustomAttributes(ParameterInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo-system-type-system-boolean)">Attribute.GetCustomAttributes(ParameterInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.gethashcode">Attribute.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefaultattribute">Attribute.IsDefaultAttribute()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-assembly-system-type)">Attribute.IsDefined(Assembly, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-assembly-system-type-system-boolean)">Attribute.IsDefined(Assembly, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-memberinfo-system-type)">Attribute.IsDefined(MemberInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-memberinfo-system-type-system-boolean)">Attribute.IsDefined(MemberInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-module-system-type)">Attribute.IsDefined(Module, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-module-system-type-system-boolean)">Attribute.IsDefined(Module, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-parameterinfo-system-type)">Attribute.IsDefined(ParameterInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-parameterinfo-system-type-system-boolean)">Attribute.IsDefined(ParameterInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.match">Attribute.Match(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.typeid">Attribute.TypeId</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_ToPropertyDictionary__3___0_System_Func_System_Reflection_PropertyInfo___1__System_Func_System_Object___2__">EnumerableExtensions.ToPropertyDictionary&lt;T, TKey, TValue&gt;(T, Func&lt;PropertyInfo, TKey&gt;, Func&lt;object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.JsonExtensions.html#Nuke_Common_Utilities_JsonExtensions_ToJson__1___0_Newtonsoft_Json_JsonSerializerSettings_Newtonsoft_Json_Formatting_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerSettings, Formatting)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Apply__2___0_System_Func___0___1__">ObjectExtensions.Apply&lt;TInput, TOutput&gt;(TInput, Func&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Clone__1___0_">ObjectExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_WhenNotNull__2___0___1_System_Func___0___1___0__">ObjectExtensions.WhenNotNull&lt;T, TObject&gt;(T, TObject, Func&lt;T, TObject, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_When__1___0_System_Boolean_System_Func___0___0__">ObjectExtensions.When&lt;T&gt;(T, bool, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.XmlExtensions.html#Nuke_Common_Utilities_XmlExtensions_ToXml__1___0_System_Xml_Linq_SaveOptions_">XmlExtensions.ToXml&lt;T&gt;(T, SaveOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_ToJObject_System_Object_Newtonsoft_Json_JsonSerializer_">ObjectExtensions.ToJObject(object, JsonSerializer)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute__ctor_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.#ctor*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute__ctor_System_String_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.#ctor(System.String)">
+  WoodpeckerCIAttribute(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WoodpeckerCIAttribute(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_ConfigurationFile_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.ConfigurationFile*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_ConfigurationFile" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.ConfigurationFile">
+  ConfigurationFile
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AbsolutePath ConfigurationFile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.IO.AbsolutePath.html">AbsolutePath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_GeneratedFiles_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.GeneratedFiles*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_GeneratedFiles" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.GeneratedFiles">
+  GeneratedFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;AbsolutePath&gt; GeneratedFiles { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Nuke.Common.IO.AbsolutePath.html">AbsolutePath</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_HostType_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.HostType*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_HostType" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.HostType">
+  HostType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Type HostType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_IdPostfix_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.IdPostfix*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_IdPostfix" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.IdPostfix">
+  IdPostfix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IdPostfix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_InvokedTargets_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.InvokedTargets*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_InvokedTargets" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.InvokedTargets">
+  InvokedTargets
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] InvokedTargets { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_IrrelevantTargetNames_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.IrrelevantTargetNames*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_IrrelevantTargetNames" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.IrrelevantTargetNames">
+  IrrelevantTargetNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;string&gt; IrrelevantTargetNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_OnlyOnBranches_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.OnlyOnBranches*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_OnlyOnBranches" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.OnlyOnBranches">
+  OnlyOnBranches
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] OnlyOnBranches { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_RelevantTargetNames_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.RelevantTargetNames*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_RelevantTargetNames" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.RelevantTargetNames">
+  RelevantTargetNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;string&gt; RelevantTargetNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_Triggers_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.Triggers*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_Triggers" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.Triggers">
+  Triggers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WoodpeckerCIEvent[] Triggers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEvent.html">WoodpeckerCIEvent</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_CreateWriter_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.CreateWriter*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_CreateWriter_System_IO_StreamWriter_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.CreateWriter(System.IO.StreamWriter)">
+  CreateWriter(StreamWriter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CustomFileWriter CreateWriter(StreamWriter streamWriter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>streamWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.streamwriter">StreamWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Utilities.CustomFileWriter.html">CustomFileWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_GetConfiguration_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.GetConfiguration*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_GetConfiguration_System_Collections_Generic_IReadOnlyCollection_Nuke_Common_Execution_ExecutableTarget__" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.GetConfiguration(System.Collections.Generic.IReadOnlyCollection{Nuke.Common.Execution.ExecutableTarget})">
+  GetConfiguration(IReadOnlyCollection&lt;ExecutableTarget&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ConfigurationEntity GetConfiguration(IReadOnlyCollection&lt;ExecutableTarget&gt; relevantTargets)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relevantTargets</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Execution.ExecutableTarget.html">ExecutableTarget</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.CI.ConfigurationEntity.html">ConfigurationEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_GetSteps_" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.GetSteps*"></a>
+
+  <h3 id="Nuke_Common_CI_WoodpeckerCI_WoodpeckerCIAttribute_GetSteps" data-uid="Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.GetSteps">
+  GetSteps()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;WoodpeckerCIStep&gt; GetSteps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIStep.html">WoodpeckerCIStep</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/CI/WoodpeckerCI/WoodpeckerCIAttribute.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          The next-generation .NET build automation system.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

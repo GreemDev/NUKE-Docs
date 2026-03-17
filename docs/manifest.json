@@ -2534,6 +2534,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIRunStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIRunStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIRunStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.yml",
       "output": {
         ".html": {
@@ -2545,6 +2601,34 @@
       "IsMRef": true,
       "Title": "Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI",
       "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCI.yml\" sourcestartlinenumber=\"1\">Interface according to the <a href=\"https://woodpecker-ci.org/docs/usage/environment\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEvent",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.CI.WoodpeckerCI.WoodpeckerCIEvent.yml\" sourcestartlinenumber=\"1\">Enumeration according to the <a href=\"https://woodpecker-ci.org/docs/usage/workflow-syntax#event\">documentation</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -23306,6 +23390,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Utilities.DisposableExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Utilities.DotNetDockerImages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Utilities.DotNetDockerImages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Utilities.DotNetDockerImages",
       "Summary": null
     },
     {
