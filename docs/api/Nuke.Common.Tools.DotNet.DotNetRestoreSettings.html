@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DotNetRestoreSettings | gruke </title>
+      <title>Class DotNetRestoreSettings | gruke 10.3.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DotNetRestoreSettings | gruke ">
+      <meta name="title" content="Class DotNetRestoreSettings | gruke 10.3.0 ">
       
       <meta name="description" content="The dotnet restore command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.Starting with .NET Core 2.0, you don&#39;t have to run dotnet restore because it&#39;s run implicitly by all commands, such as dotnet build and dotnet run, that require a restore to occur. It&#39;s still a valid command in certain scenarios where doing an explicit restore makes sense, such as continuous integration builds in Visual Studio Team Services or in build systems that need to explicitly control the time at which the restore occurs.In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the NuGet.config configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own NuGet.config file in the project directory. You also specify additional feeds per invocation at a command prompt.For dependencies, you specify where the restored packages are placed during the restore operation using the --packages argument. If not specified, the default NuGet package cache is used, which is found in the .nuget/packages directory in the user&#39;s home directory on all operating systems (for example, /home/user1 on Linux or C:\Users\user1 on Windows).For project-specific tooling, dotnet restore first restores the package in which the tool is packed, and then proceeds to restore the tool&#39;s dependencies as specified in its project file.The behavior of the dotnet restore command is affected by some of the settings in the Nuget.Config file, if present. For example, setting the globalPackagesFolder in NuGet.Config places the restored NuGet packages in the specified folder. This is an alternative to specifying the --packages option on the dotnet restore command. For more information, see the NuGet.Config reference.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -44,8 +44,8 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
-            gruke
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke 10.3.0">
+            gruke 10.3.0
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>

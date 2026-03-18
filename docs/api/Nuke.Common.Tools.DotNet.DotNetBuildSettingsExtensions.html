@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DotNetBuildSettingsExtensions | gruke </title>
+      <title>Class DotNetBuildSettingsExtensions | gruke 10.3.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DotNetBuildSettingsExtensions | gruke ">
+      <meta name="title" content="Class DotNetBuildSettingsExtensions | gruke 10.3.0 ">
       
       <meta name="description" content="The dotnet build command builds the project and its dependencies into a set of binaries. The binaries include the project&#39;s code in Intermediate Language (IL) files with a .dll extension and symbol files used for debugging with a .pdb extension. A dependencies JSON file (*.deps.json) is produced that lists the dependencies of the application. A .runtimeconfig.json file is produced, which specifies the shared runtime and its version for the application.If the project has third-party dependencies, such as libraries from NuGet, they&#39;re resolved from the NuGet cache and aren&#39;t available with the project&#39;s built output. With that in mind, the product of dotnet buildd isn&#39;t ready to be transferred to another machine to run. This is in contrast to the behavior of the .NET Framework in which building an executable project (an application) produces output that&#39;s runnable on any machine where the .NET Framework is installed. To have a similar experience with .NET Core, you use the dotnet publish command. For more information, see .NET Core Application Deployment.Building requires the project.assets.json file, which lists the dependencies of your application. The file is created dotnet restore is executed. Without the assets file in place, the tooling cannot resolve reference assemblies, which will result in errors. With .NET Core 1.x SDK, you needed to explicitily run the dotnet restore before running dotnet build. Starting with .NET Core 2.0 SDK, dotnet restore runs implicitily when you run dotnet build. If you want to disable implicit restore when running the build command, you can pass the --no-restore option.dotnet build uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to Incremental Builds for more information.In addition to its options, the dotnet build command accepts MSBuild options, such as /p for setting properties or /l to define a logger. Learn more about these options in the MSBuild Command-Line Reference.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -44,8 +44,8 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
-            gruke
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke 10.3.0">
+            gruke 10.3.0
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>

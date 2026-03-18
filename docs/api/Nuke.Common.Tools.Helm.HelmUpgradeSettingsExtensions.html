@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class HelmUpgradeSettingsExtensions | gruke </title>
+      <title>Class HelmUpgradeSettingsExtensions | gruke 10.3.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class HelmUpgradeSettingsExtensions | gruke ">
+      <meta name="title" content="Class HelmUpgradeSettingsExtensions | gruke 10.3.0 ">
       
       <meta name="description" content="This command upgrades a release to a specified version of a chart and/or updates chart values. Required arguments are release and chart. The chart argument can be one of:  - a chart reference(&#39;stable/mariadb&#39;); use &#39;--version&#39; and &#39;--devel&#39; flags for versions other than latest,  - a path to a chart directory,  - a packaged chart,  - a fully qualified URL. To customize the chart values, use any of  - &#39;--values&#39;/&#39;-f&#39; to pass in a yaml file holding settings,  - &#39;--set&#39; to provide one or more key=val pairs directly,  - &#39;--set-string&#39; to provide key=val forcing val to be stored as a string,  - &#39;--set-file&#39; to provide key=path to read a single large value from a file at path. To edit or append to the existing customized values, add the  &#39;--reuse-values&#39; flag, otherwise any existing customized values are ignored. If no chart value arguments are provided on the command line, any existing customized values are carried forward. If you want to revert to just the values provided in the chart, use the &#39;--reset-values&#39; flag. You can specify any of the chart value flags multiple times. The priority will be given to the last (right-most) value specified. For example, if both myvalues.yaml and override.yaml contained a key called &#39;Test&#39;, the value set in override.yaml would take precedence: 	$ helm upgrade -f myvalues.yaml -f override.yaml redis ./redis Note that the key name provided to the &#39;--set&#39;, &#39;--set-string&#39; and &#39;--set-file&#39; flags can reference structure elements. Examples:   - mybool=TRUE   - livenessProbe.timeoutSeconds=10   - metrics.annotations[0]=hey,metrics.annotations[1]=ho which sets the top level key mybool to true, the nested timeoutSeconds to 10, and two array values, respectively. Note that the value side of the key=val provided to &#39;--set&#39; and &#39;--set-string&#39; flags will pass through shell evaluation followed by yaml type parsing to produce the final value. This may alter inputs with special characters in unexpected ways, for example 	$ helm upgrade --set pwd=3jk$o2,z=f\30.e redis ./redis results in &quot;pwd: 3jk&quot; and &quot;z: f30.e&quot;. Use single quotes to avoid shell evaluation and argument delimiters, and use backslash to escape yaml special characters: 	$ helm upgrade --set pwd=&#39;3jk$o2z=f\\30.e&#39; redis ./redis which results in the expected &quot;pwd: 3jk$o2z=f\30.e&quot;. If a single quote occurs in your value then follow your shell convention for escaping it; for example in bash: 	$ helm upgrade --set pwd=&#39;3jk$o2z=f\\30with&#39;\&#39;&#39;quote&#39; which results in &quot;pwd: 3jk$o2z=f\30with&#39;quote&quot;.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -44,8 +44,8 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
-            gruke
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke 10.3.0">
+            gruke 10.3.0
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
