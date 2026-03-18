@@ -8706,8 +8706,8 @@
   },
   "api/index.html": {
     "href": "api/index.html",
-    "title": "GRUKE API documentation | gruke 10.3.0",
-    "summary": "GRUKE API documentation"
+    "title": "GRUKE API Documentation | gruke 10.3.0",
+    "summary": "GRUKE API Documentation"
   },
   "changelog.html": {
     "href": "changelog.html",
@@ -8717,6 +8717,6 @@
   "index.html": {
     "href": "index.html",
     "title": "Home | gruke 10.3.0",
-    "summary": "Home The AKEless Build System for C#/.NET Table of Contents Elevator Pitch Example Build Status Elevator Pitch Solid and scalable CI/CD pipelines are an essential pillar for being competitive and creating a great product. But why are most of us a little afraid of touching YAML files and don't even dare to look at build scripts? Much of this is because C# developers are spoiled with a great language and smart IDEs, and they don't like missing their buddy for code-completion, ease of debugging, refactorings, and code formatting. NUKE brings your build automation to an even level with every other .NET project. How? It's a regular console application allowing all the OOP goodness! Besides, it solves many common problems in build automation, like parameter injection, path separator abstraction, access to solution and project models, and build step sharing across repositories. NUKE can also generate CI/CD configurations (YAML, etc.) that automatically parallelize build steps on multiple agents to optimize throughput! For more information check out our documentation or visit our community... Example Build Status NUKE builds and tests itself on several CI/CD services, which helps to ensure a working integration with those systems. At the same time, the individual configuration files serve as examples for the generation experience: Build Server Status Platform Configuration AppVeyor Win / Ubuntu appveyor.yml Azure Pipelines Win / Linux / macOS azure-pipelines.yml Forgejo Actions Ubuntu test.yml GitHub Actions Win / Ubuntu / macOS continuous.yml GitLab CI Ubuntu .gitlab-ci.yml Woodpecker CI Ubuntu woodpecker-test.yml"
+    "summary": "Home The AKEless Build System for C#/.NET Table of Contents Elevator Pitch Example Build Status Elevator Pitch Solid and scalable CI/CD pipelines are an essential pillar for being competitive and creating a great product. But why are most of us a little afraid of touching YAML files and don't even dare to look at build scripts? Much of this is because C# developers are spoiled with a great language and smart IDEs, and they don't like missing their buddy for code-completion, ease of debugging, refactorings, and code formatting. NUKE brings your build automation to an even level with every other .NET project. How? It's a regular console application allowing all the OOP goodness! Besides, it solves many common problems in build automation, like parameter injection, path separator abstraction, access to solution and project models, and build step sharing across repositories. NUKE can also generate CI/CD configurations (YAML, etc.) that automatically parallelize build steps on multiple agents to optimize throughput! For more information check out our documentation, or visit our community... Example Build Status NUKE builds and tests itself on several CI/CD services, which helps to ensure a working integration with those systems. At the same time, the individual configuration files serve as examples for the generation experience: Build Server Status Platform Configuration AppVeyor Win / Ubuntu appveyor.yml Azure Pipelines Win / Linux / macOS azure-pipelines.yml Forgejo Actions Ubuntu test.yml GitHub Actions Win / Ubuntu / macOS continuous.yml GitLab CI Ubuntu .gitlab-ci.yml Woodpecker CI Ubuntu woodpecker-test.yml"
   }
 }
