@@ -1806,20 +1806,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.CI.NoConvertAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.CI.NoConvertAttribute.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.CI.NoConvertAttribute",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.CI.Partition.TypeConverter.yml",
       "output": {
         ".html": {
