@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | gruke </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | gruke ">
+      
+      
+      <link rel="icon" href="images/icon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/blob/develop/docs/changelog.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="http://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>
+and this project adheres to <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="vnext"><a href="https://github.com/gruke-build/src/compare/10.2.0...HEAD">vNext</a></h2>
+<ul>
+<li><a href="https://github.com/gruke-build/src/commit/c4943bcab7a645b571bf9452fd2a5a7a11457b9b">Removed Telemetry</a>
+<ul>
+<li>And <a href="https://github.com/gruke-build/docs/commit/256cfab2467cfff578aa5b22c5e554cd9e946c4e">removed the page on the docs</a> about it.</li>
+</ul>
+</li>
+<li><a href="https://forgejo.org/docs/next/user/actions/overview/">Forgejo Actions</a> &amp; <a href="https://woodpecker-ci.org/docs/intro">Woodpecker CI</a> environment support
+<ul>
+<li>Access environment variables defined in their documentation in your C# code in a type-safe manner with in-IDE documentation for each variable.</li>
+</ul>
+</li>
+<li><a href="https://forgejo.org/docs/next/user/actions/overview/">Forgejo Actions</a> workflow generation
+<ul>
+<li>Due to Forgejo Actions' <a href="https://forgejo.org/docs/latest/user/actions/github-actions/">overwhelming similarities to GitHub Actions</a>, I was able to maintain practically 1:1 feature parity with the GitHub Actions generator.</li>
+<li>The only missing feature (as far as I can tell, and only that I could have possibly encountered) is the <a href="https://forgejo.org/docs/latest/user/actions/github-actions/#known-list-of-differences">lack of a <code>permissions</code> YAML block</a>.</li>
+<li>Explicit support was added to support the limits of the <a href="https://codeberg.org/actions/meta">Codeberg public FJA runners</a>, as well as a class containing constants for them: <a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.CI.ForgejoActions.CodebergRunners.html"><code>CodebergRunners</code></a></li>
+</ul>
+</li>
+<li><a href="https://woodpecker-ci.org/docs/intro">Woodpecker CI</a> workflow generation
+<ul>
+<li>Very minimal implementation currently.</li>
+<li>Woodpecker has no first-party job artifacts functionality, expecting you to provide your own S3 (or compatible) bucket.</li>
+<li>This is mostly only useful as a linter/tester.</li>
+<li>I intend on adding helpers on the WoodpeckerCI class to let you easily make releases on common forges (GitHub, Forgejo, GitLab)
+<ul>
+<li>The downside is that authentication will not be automatic; you <em>will</em> need to pre-configure a PAT and the environment variable containing it for your Woodpecker project.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/nuke-build/nuke/pull/1321">nuke-build#1321</a>: fix: Allow UTF-8 console input
+<ul>
+<li>Thanks, <a href="https://github.com/rus-art">@rus-art</a>!</li>
+</ul>
+</li>
+</ul>
+<h2 id="1020--2026-03-07"><a href="https://github.com/gruke-build/src/compare/10.1.0...10.2.0">10.2.0</a> / 2026-03-07</h2>
+<ul>
+<li>Removed properties in the <code>GitVersion</code> record that have been removed in newer versions.
+<ul>
+<li>Instead of <code>NuGetVersionV2</code>, use <code>FullSemVer</code>.</li>
+</ul>
+</li>
+<li>Implemented a basic <code>.gitlab-ci.yml</code> generator. Currently only generates a single job, for all specified targets.
+<ul>
+<li>You can also specify to automatically upload all (known (via <code>.Produces</code>)) artifacts from the executed targets.</li>
+<li>On top of this, you can specify artifacts to exclude; as well as only running the job on specific branch(es) push event.</li>
+</ul>
+</li>
+<li>Global Tool now generates build projects using .NET 10 and with the <code>GreemDev.Nuke</code> package.</li>
+<li>Fixed duplicate key error in <code>GitRepository.GetRemoteNameAndBranch</code> (fixes <a href="https://github.com/nuke-build/nuke/issues/1537">#1537</a>)
+<ul>
+<li>Instead, only the most recent value is retained.</li>
+</ul>
+</li>
+<li>Refactored the documentation in-repository to work on <code>mkdocs</code>, hosted by <a href="https://readthedocs.org">readthedocs</a>:
+<ul>
+<li><a href="https://github.com/gruke-build/docs">https://github.com/gruke-build/docs</a></li>
+<li>View the deployment on <a href="https://nuke.greemdev.net">nuke.greemdev.net</a>.</li>
+</ul>
+</li>
+<li>Additionally, a <a href="https://github.com/dotnet/docfx">docfx</a> configuration has been made and has been deployed on ReadTheDocs alongside the above documentation for <em>C# API reference</em> documentation specifically.
+<ul>
+<li>Results of the <a href="https://github.com/dotnet/docfx">docfx</a> build output are pushed to the <a href="https://github.com/gruke-build/docs/tree/docfx"><code>docfx</code></a> branch on the <a href="https://github.com/gruke-build/docs"><code>gruke-build/docs</code></a> repository, via a <a href="https://github.com/gruke-build/src/blob/develop/.github/workflows/docfx.yml">non-generated GitHub Action workflow</a>.</li>
+<li>View the deployment on <a href="https://nuke.greemdev.net/docfx">nuke.greemdev.net/docfx</a>.</li>
+</ul>
+</li>
+<li><a href="https://github.com/nuke-build/nuke/pull/1523">nuke-build#1523</a>: fix: log <code>npm</code> warn messages as a warning
+<ul>
+<li>Thanks, <a href="https://github.com/moritz-baecker-integra">@moritz-baecker-integra</a>!</li>
+</ul>
+</li>
+<li><a href="https://github.com/nuke-build/nuke/pull/1572">nuke-build#1572</a>: Added support for XML Solutions into <code>gruke :setup</code>
+<ul>
+<li>Thanks, <a href="https://github.com/lahma">@lahma</a>!</li>
+</ul>
+</li>
+<li><a href="https://github.com/nuke-build/nuke/pull/1583">nuke-build#1583</a>: Added support for resolving VS2026 MSBuild installations
+<ul>
+<li>Thanks, <a href="https://github.com/Kielek">@Kielek</a>!</li>
+</ul>
+</li>
+<li><a href="https://github.com/nuke-build/nuke/pull/1557">nuke-build#1557</a>: Added support for Windows installations being not on <code>C:\</code>
+<ul>
+<li>Thanks, <a href="https://github.com/Uriel6575">@Uriel6575</a>!</li>
+</ul>
+</li>
+<li><a href="https://github.com/nuke-build/nuke/pull/1549">nuke-build#1549</a>: Removed deprecated &amp; retired Azure Pipelines OS images
+<ul>
+<li>Thanks, <a href="https://github.com/aneilmac">@aneilmac</a>!</li>
+<li>Similarly, I did the same for AppVeyor &amp; GitHub runner images. (<a href="https://github.com/nuke-build/nuke/issues/1519">nuke-build#1519</a>)</li>
+</ul>
+</li>
+<li>Fix <code>StronglyTypedSolutionGenerator</code> causing compilation errors when a Solution Folder is prefixed with digits. (<a href="https://github.com/nuke-build/nuke/pull/1581">nuke-build#1581</a>)
+<ul>
+<li>Thanks, <a href="https://github.com/ITaluone">@ITaluone</a>!</li>
+</ul>
+</li>
+</ul>
+<h2 id="1010--2025-12-02"><a href="https://github.com/gruke-build/src/compare/10.0.0...10.1.0">10.1.0</a> / 2025-12-02</h2>
+<ul>
+<li>Fixed solution folders in <code>StronglyTypedSolutionGenerator</code></li>
+<li>Fixed MSBuild target packaging for .NET 10</li>
+<li>Fixed GitHub Actions versions</li>
+</ul>
+<h2 id="1000--2025-11-20"><a href="https://github.com/gruke-build/src/compare/9.0.4...10.0.0">10.0.0</a> / 2025-11-20</h2>
+<ul>
+<li>Added support for .NET 10</li>
+<li>Added support for slnx solution files</li>
+<li>Updated dependencies</li>
+<li>Removed automatic PowerShell/Pwsh argument positioning</li>
+</ul>
+<h2 id="904--2025-01-15"><a href="https://github.com/gruke-build/src/compare/9.0.3...9.0.4">9.0.4</a> / 2025-01-15</h2>
+<ul>
+<li>Security: Fixed output filter from <code>ArgumentStringHandler</code></li>
+<li>Removed obsolete members</li>
+<li>Fixed <code>PreProcess</code> of tasks requires exact options type</li>
+<li>Fixed missing <code>position</code> and <code>secret</code> properties</li>
+<li>Fixed preparation of shadow directory in <code>ReSharperTasks</code></li>
+<li>Fixed base class in <code>ReSharperTasks</code></li>
+<li>Fixed missing arguments in <code>DotNetTasks</code></li>
+<li>Fixed missing commands in <code>DotNetTasks</code> and <code>NuGetTasks</code></li>
+<li>Fixed package executable in <code>OctoVersionTasks</code></li>
+</ul>
+<h2 id="903--2024-12-05"><a href="https://github.com/gruke-build/src/compare/9.0.2...9.0.3">9.0.3</a> / 2024-12-05</h2>
+<ul>
+<li>Fixed nullable options for <code>ToolTasks.Run</code></li>
+<li>Fixed static tool path resolution</li>
+<li>Fixed tool requirements initialization</li>
+<li>Fixed documentation link in tool wrapper remarks</li>
+<li>Fixed documentation on task methods and settings classes</li>
+<li>Fixed missing <code>NuGetKeyVaultSignTool</code></li>
+<li>Fixed package executable in <code>OctopusTasks</code></li>
+</ul>
+<h2 id="902--2024-12-03"><a href="https://github.com/gruke-build/src/compare/9.0.1...9.0.2">9.0.2</a> / 2024-12-03</h2>
+<ul>
+<li>Fixed MSBuild tasks to use <code>net8.0</code> target framework</li>
+<li>Fixed error handling in <code>:update</code> command</li>
+<li>Fixed resolving tool path from options</li>
+<li>Fixed nullable options for <code>ToolTasks.Run</code></li>
+<li>Fixed nullable underlying dictionary for delegate properties</li>
+<li>Fixed skipping null and whitespace arguments</li>
+<li>Fixed tool requirements</li>
+<li>Fixed NPM tool path resolution</li>
+<li>Fixed logging errors as standard in <code>GitTasks</code> and <code>DockerTasks</code></li>
+<li>Fixed argument format in <code>DotNetTasks</code></li>
+<li>Fixed nullable <code>Plugins</code> dictionary in <code>ReSharperTasks</code></li>
+</ul>
+<h2 id="901--2024-11-21"><a href="https://github.com/gruke-build/src/compare/9.0.0...9.0.1">9.0.1</a> / 2024-11-21</h2>
+<ul>
+<li>Fixed <code>Options</code> serialization to JSON</li>
+<li>Fixed <code>Options</code> for default members in interfaces</li>
+<li>Fixed missing <code>ProcessExitHandler</code> setters</li>
+</ul>
+<h2 id="900--2024-11-21"><a href="https://github.com/gruke-build/src/compare/8.1.4...9.0.0">9.0.0</a> / 2024-11-21</h2>
+<ul>
+<li>Removed usages of <code>BinaryFormatter</code></li>
+<li>Changed minimum framework from <code>net6.0</code> to <code>net8.0</code></li>
+</ul>
+<h2 id="814--2024-11-06"><a href="https://github.com/gruke-build/src/compare/8.1.3...8.1.4">8.1.4</a> / 2024-11-06</h2>
+<ul>
+<li>Fixed <code>build.schema.json</code> generation to use <code>allOf</code> for user and base type properties</li>
+</ul>
+<h2 id="813--2024-11-05"><a href="https://github.com/gruke-build/src/compare/8.1.2...8.1.3">8.1.3</a> / 2024-11-05</h2>
+<ul>
+<li>Fixed naming from <code>NukeBuild.IsSucessful</code> to <code>IsSucceeding</code></li>
+<li>Fixed <code>NukeBuild.IsSucceeding</code> to negate <code>IsFailing</code></li>
+<li>Fixed NJsonSchema reference version</li>
+<li>Fixed <code>:secrets</code> command to find secret parameters</li>
+<li>Fixed argument format in <code>DotNetTasks</code></li>
+<li>Fixed definite argument in <code>EntityFrameworkTasks</code></li>
+<li>Fixed deprecated argument in <code>MinVerTasks</code></li>
+</ul>
+<h2 id="812--2024-10-13"><a href="https://github.com/gruke-build/src/compare/8.1.1...8.1.2">8.1.2</a> / 2024-10-13</h2>
+<ul>
+<li>Fixed exclusion of skipped target from lookup for skippable dependencies</li>
+<li>Fixed resolution of empty environment variables to false</li>
+<li>Fixed parallel execution to prefer logger from settings</li>
+</ul>
+<h2 id="811--2024-10-05"><a href="https://github.com/gruke-build/src/compare/8.1.0...8.1.1">8.1.1</a> / 2024-10-05</h2>
+<ul>
+<li>Fixed nested solution folders in <code>StronglyTypedSolutionGenerator</code></li>
+<li>Fixed whitespace arguments in <code>ArgumentStringHandler</code></li>
+<li>Fixed output logging in parallel execution</li>
+<li>Fixed exclusion of invoked targets from skipping</li>
+<li>Fixed definite argument in <code>EntityFrameworkTasks</code></li>
+</ul>
+<h2 id="810--2024-09-10"><a href="https://github.com/gruke-build/src/compare/8.0.0...8.1.0">8.1.0</a> / 2024-09-10</h2>
+<ul>
+<li>Added schema generation with references for <code>build.schema.json</code></li>
+<li>Added deserialization of full objects from <code>parameters.json</code></li>
+<li>Added <code>AbsolutePath</code> extension methods for <code>AddUnixSymlink</code>, <code>Copy*</code>, <code>Move*</code>, <code>Rename*</code></li>
+<li>Added support for preprocessor directives in solution parsing</li>
+<li>Added <code>Pattern</code> in favor of property in <code>LatestGitHubReleaseAttribute</code></li>
+<li>Added <code>ConcurrencyGroup</code>, <code>ConcurrencyCancelInProgress</code>, <code>EnvironmentName</code>, <code>EnvironmentUrl</code> in <code>GitHubActionsAttribute</code></li>
+<li>Added <code>DotnetPackagingTasks</code></li>
+<li>Fixed invoked targets to not be excluded from skipping</li>
+<li>Fixed stripping of hyphens in skipped target names</li>
+<li>Fixed empty environment variables to be resolved as empty arrays</li>
+<li>Fixed <code>EnableUnsafeBinaryFormatterSerialization</code> to be set through <code>AppContext</code></li>
+<li>Fixed unquoting of multiple quoted arguments in <code>ArgumentStringHandler</code></li>
+<li>Fixed using logger from settings in parallel execution</li>
+<li>Fixed handling of duplicated NuGet package files</li>
+<li>Fixed inclusion of original NuGet packages in requirements</li>
+<li>Fixed GitHubActions to use latest action versions</li>
+<li>Fixed <code>DotCoverTasks</code> and <code>EntityFrameworkTasks</code> tool path resolution</li>
+<li>Fixed missing members in <code>GitHubActionsImage</code></li>
+<li>Fixed missing properties in <code>GitLab</code></li>
+<li>Fixed missing parameters in <code>AzurePipelines.SetVariables</code></li>
+<li>Fixed missing arguments in <code>DotNetTasks</code></li>
+<li>Fixed tool path in <code>CodecovTasks</code></li>
+</ul>
+<h2 id="800--2024-01-18"><a href="https://github.com/gruke-build/src/compare/7.0.6...8.0.0">8.0.0</a> / 2024-01-18</h2>
+<ul>
+<li>Changed string parameters to violate requirement when empty or whitespace</li>
+<li>Added on-demand value injection using <code>OnDemandAttribute</code> and <code>OnDemandValueInjectionAttribute</code></li>
+<li>Added <code>AbsolutePath</code> division operator for <code>..</code> range expression</li>
+<li>Added <code>DOTNET_NOLOGO</code> to bootstrapping files</li>
+<li>Fixed <code>BinaryFormatterSerialization</code> warning by suppression</li>
+<li>Fixed .NET SDK discovery in bootstrapping files</li>
+<li>Fixed quotation for bootstrapping script invocation</li>
+<li>Fixed filtering on <code>FileAttributes</code></li>
+<li>Fixed quoting in <code>AppVeyor</code> generation</li>
+<li>Fixed members in <code>AzurePipelinesImage</code></li>
+<li>Fixed members in <code>GitHubActionsImage</code></li>
+<li>Fixed lower-case naming in <code>DotNetVerbosity</code> members</li>
+<li>Fixed missing <code>DotNetTasks</code> commands</li>
+<li>Fixed missing <code>EntityFrameworkTasks</code> command</li>
+<li>Fixed logging in <code>NpmTasks</code></li>
+<li>Fixed argument type in <code>OctopusTasks</code></li>
+<li>Fixed missing argument in <code>SonarScannerTasks</code></li>
+<li>Fixed value formatting in <code>SonarScannerTasks</code></li>
+<li>Fixed members in <code>NUnitLabelType</code></li>
+<li>Fixed deprecated argument in <code>NUnitTasks</code></li>
+<li>Fixed members in <code>ReportGeneratorReportTypes</code></li>
+</ul>
+<h2 id="706--2023-09-24"><a href="https://github.com/gruke-build/src/compare/7.0.5...7.0.6">7.0.6</a> / 2023-09-24</h2>
+<ul>
+<li>Fixed logging of Docker target execution to fall back to debug messages</li>
+</ul>
+<h2 id="705--2023-09-05"><a href="https://github.com/gruke-build/src/compare/7.0.4...7.0.5">7.0.5</a> / 2023-09-05</h2>
+<ul>
+<li>Fixed filtering environment variables with newlines in Docker target execution</li>
+<li>Fixed logging in Docker target execution</li>
+<li>Fixed update of version summary in <code>ChangelogTasks</code></li>
+<li>Fixed missing <code>DockerTasks</code> command</li>
+</ul>
+<h2 id="704--2023-08-31"><a href="https://github.com/gruke-build/src/compare/7.0.3...7.0.4">7.0.4</a> / 2023-08-31</h2>
+<ul>
+<li>Fixed check on nullable parameter type</li>
+<li>Fixed telemetry check on home repository</li>
+<li>Fixed missing environment variables for AppVeyor</li>
+<li>Fixed <code>ICreateGitHubRelease</code> to work with existing releases</li>
+<li>Fixed <code>ICreateGitHubRelease</code> to set <code>GitHubToken</code> unconditionally</li>
+<li>Fixed <code>SetBuildTarget</code> and <code>SetTestPlatform</code> overloads in <code>UnityTasks</code></li>
+<li>Fixed <code>UnityRunTestsSettings</code> base type</li>
+</ul>
+<h2 id="703--2023-08-21"><a href="https://github.com/gruke-build/src/compare/7.0.2...7.0.3">7.0.3</a> / 2023-08-21</h2>
+<ul>
+<li>Fixed enumeration value sets to exclude non-public fields</li>
+<li>Fixed check for <code>NUKE_ENTERPRISE_TOKEN</code> in <code>build.sh</code> bootstrapping script</li>
+<li>Fixed default warnings with suppression</li>
+<li>Fixed telemetry to treat types as <em>common</em> when their assembly points to home repository</li>
+<li>Fixed filtering of secrets in CLT <code>Output</code> collection</li>
+<li>Fixed handling of <code>AbsolutePath</code> collections in <code>ArgumentStringHandler</code></li>
+<li>Fixed handling of <code>IAbsolutePathHolder</code> in <code>ArgumentStringHandler</code></li>
+<li>Fixed handling of <code>relativePath</code> for <code>SolutionAttribute</code> in <code>StronglyTypedSolutionGenerator</code></li>
+<li>Fixed error reporting in <code>StronglyTypedSolutionGenerator</code></li>
+<li>Fixed TeamCity <code>pom.xml</code> template to use HTTPS</li>
+<li>Fixed duplicated payload serialization in <code>TeamsTasks</code></li>
+<li>Fixed missing arguments in <code>OctopusTasks</code></li>
+<li>Fixed missing command in <code>UnityTasks</code></li>
+<li>Fixed missing members in <code>UnitBuildTarget</code></li>
+<li>Fixed argument formatting in <code>MSpecTasks</code></li>
+<li>Fixed assertion in <code>UnityTasks</code></li>
+</ul>
+<h2 id="702--2023-05-19"><a href="https://github.com/gruke-build/src/compare/7.0.1...7.0.2">7.0.2</a> / 2023-05-19</h2>
+<ul>
+<li>Fixed string-based command-line tool tasks to not require interpolated strings</li>
+<li>Fixed secret filtering</li>
+</ul>
+<h2 id="701--2023-05-15"><a href="https://github.com/gruke-build/src/compare/7.0.0...7.0.1">7.0.1</a> / 2023-05-15</h2>
+<ul>
+<li>Fixed system console colors to fall back to current colors</li>
+<li>Fixed trimming of <code>OnlyWhen</code> conditions</li>
+<li>Fixed lightweight tool API to expose exit handler</li>
+<li>Fixed <code>Tool</code> delegate with <code>ArgumentStringHandler</code></li>
+<li>Fixed AzureKeyVault attributes to print shorter warning and fall back to parameters</li>
+<li>Fixed resolution of absolute paths from <code>parameters.json</code></li>
+<li>Fixed <code>Solution.GetProject</code> and <code>GetSolutionFolder</code> to only consider root children</li>
+<li>Fixed <code>ChangelogTasks</code> for empty lines</li>
+<li>Fixed serialization for <code>HelmTasks</code>, <code>KubernetesTasks</code>, <code>NSwagTasks</code>, and <code>ReSharperTasks</code></li>
+<li>Fixed <code>DockerTasks.DockerStackDeploy</code></li>
+<li>Fixed <code>CoverallsNetSettings.Job</code></li>
+</ul>
+<h2 id="700--2023-05-06"><a href="https://github.com/gruke-build/src/compare/6.3.0...7.0.0">7.0.0</a> / 2023-05-06</h2>
+<ul>
+<li>Refactored out multiple projects</li>
+<li>Renamed <code>ProcessCustomLogger</code> to <code>ProcessLogger</code></li>
+<li>Renamed <code>LocalExecutableAttribute</code> to <code>LocalPathAttribute</code></li>
+<li>Renamed <code>NpmExecutableAttribute</code> to <code>NpmPackageAttribute</code></li>
+<li>Renamed <code>PackageExecutableAttribute</code> to <code>NuGetPackageAttribute</code></li>
+<li>Renamed <code>PathExecutableAttribute</code> to <code>PathVariableAttribute</code></li>
+<li>Changed bootstrapping scripts to use <code>STS</code> instead of <code>Current</code> channel</li>
+<li>Changed <code>Target</code> conditions to use regular delegates captured using <code>CallerArgumentExpressionAttribute</code></li>
+<li>Changed <code>AbsolutePath</code> to implicit cast to <code>string</code></li>
+<li>Changed <code>HandleSIngleFileExecutionAttribute</code> to be opt-in</li>
+<li>Changed string-based command-line tool tasks to use <code>ArgumentStringHandler</code></li>
+<li>Changed <code>LatestMavenVersionAttribute</code> to exclude previously hardcoded <code>m2</code> suffix</li>
+<li>Changed <code>OctoVersionTasks</code> to use replacement package</li>
+<li>Removed legacy project setup</li>
+<li>Removed YAML shell completion</li>
+<li>Removed <code>ExternalFilesTask</code></li>
+<li>Removed <code>CheckBuildProjectConfigurationsAttribute</code></li>
+<li>Removed obsolete members in <code>OctoVersionAttribute</code></li>
+<li>Removed <code>Nuke.MSBuildLocator</code> package</li>
+<li>Updated package dependencies</li>
+<li>Updated AzureKeyVault integration</li>
+<li>Added assertion against <code>Target</code> self-dependence</li>
+<li>Added support for tool requirements and automatic installation</li>
+<li>Added <code>ProcessExitHandler</code> for CLT tasks</li>
+<li>Added auto-resolution of appropriate framework in <code>NuGetToolPathResolver</code></li>
+<li>Added <code>windowsPath</code> and <code>unixPath</code> to <code>LocalPathAttribute</code></li>
+<li>Added <code>LatestMavenVersionAttribute.IncludePrerelease</code></li>
+<li>Added <code>DelegateDisposable.SetAndRestore</code></li>
+<li>Added <code>Solution</code> implicit cast to <code>AbsolutePath</code></li>
+<li>Added <code>AbsolutePath</code> extension methods for <code>TextTasks</code>, <code>FileSystemTasks</code>, <code>CompressionTasks</code>, <code>SerializationTasks</code></li>
+<li>Added <code>AbsolutePath</code> plus operator</li>
+<li>Added <code>EnvironmentInfo.Paths</code></li>
+<li>Added <code>IFormattable</code> to <code>AbsolutePath</code></li>
+<li>Added properties for permissions in GitHubActions generation</li>
+<li>Added support for job timeout and concurrency configuration in GitHubActions generation</li>
+<li>Added <code>PublishCondition</code> and <code>LFS</code> property in GitHubActions generation</li>
+<li>Added <code>Directory.Packages.props</code> to default cache key files in GitHubActions generation</li>
+<li>Added names for actions in GitHubActions generation</li>
+<li>Added display names for tasks in AzurePipelines generation</li>
+<li>Added resolution of GitHub token in <code>GitHubTasks</code> through <code>GITHUB_TOKEN</code> environment variable</li>
+<li>Added <code>StaticWebAppsTasks</code></li>
+<li>Added <code>PwshTasks</code></li>
+<li>Fixed linking of <code>Directory.Build</code> files in build project view</li>
+<li>Fixed skipping of trigger dependencies when original target is skipped</li>
+<li>Fixed <code>continue</code> parameter to retry previously skipped targets</li>
+<li>Fixed missing <code>Log.CloseAndFlush()</code> for logging</li>
+<li>Fixed newlines in bootstrapping scripts</li>
+<li>Fixed log-level check for <code>ProcessException</code></li>
+<li>Fixed case-sensitivity in <code>nuget.config</code> discovery</li>
+<li>Fixed <code>ProcessException</code> to retain exit code</li>
+<li>Fixed <code>StronglyTypedSolutionGenerator</code> to add auto-generated XML header</li>
+<li>Fixed NPM integration</li>
+<li>Fixed <code>Repository.IsGitHubRepository</code> to consider nullable <code>Endpoint</code></li>
+<li>Fixed casing for <code>PublishBuildArtifacts</code> in AzurePipelines generation</li>
+<li>Fixed missing environment variables for SpaceAutomation</li>
+<li>Fixed missing environment variables for GitHubActions</li>
+<li>Fixed escaping of GitHubActions workflow values</li>
+<li>Fixed missing arguments in <code>KubernetesTasks</code></li>
+</ul>
+<h2 id="630--2022-12-12"><a href="https://github.com/gruke-build/src/compare/6.2.1...6.3.0">6.3.0</a> / 2022-12-12</h2>
+<ul>
+<li>Added new version of <code>Octokit</code></li>
+<li>Added <code>OptionalAttribute</code> to suppress auto-injection warnings</li>
+<li>Added ability to override <code>ProcessCustomLogger</code> in <code>ToolSettings</code></li>
+<li>Added ability to exclude auto-linked files in build project</li>
+<li>Added <code>DiscordTasks</code></li>
+<li>Added <code>MastodonTasks</code></li>
+<li>Added <code>JavaScriptProject</code> project type</li>
+<li>Added <code>MakeNSISTasks</code></li>
+<li>Fixed wording for static and dynamic conditions in build summary</li>
+<li>Fixed waiting for confirmation when input is redirected</li>
+<li>Fixed recursion into symlink directories</li>
+<li>Fixed <code>ProcessException</code> to output standard output</li>
+<li>Fixed <code>MinimalOutput</code> in <code>UnityTasks</code></li>
+<li>Fixed missing <code>AzurePipelinesBuildReason</code></li>
+<li>Fixed missing arguments in <code>DotNetTasks</code></li>
+<li>Fixed argument formatting in <code>HelmTasks</code></li>
+<li>Fixed missing command in <code>DotNetTasks</code></li>
+</ul>
+<h2 id="621--2022-08-19"><a href="https://github.com/gruke-build/src/compare/6.2.0...6.2.1">6.2.1</a> / 2022-08-19</h2>
+<ul>
+<li>Fixed logging configuration</li>
+</ul>
+<h2 id="620--2022-08-19"><a href="https://github.com/gruke-build/src/compare/6.1.2...6.2.0">6.2.0</a> / 2022-08-19</h2>
+<ul>
+<li>Added support for intercepted targets</li>
+<li>Added target interception for Docker</li>
+<li>Added support for context components</li>
+<li>Added <code>DisableDefaultOutputAttribute</code></li>
+<li>Added <code>InstallNpmToolsAttribute</code> and <code>NpmExecutableAttribute</code></li>
+<li>Added <code>EnvironmentInfo.IsArm64</code></li>
+<li>Added <code>SetProcessExecutionTimeout</code> overload for <code>TimeSpan</code></li>
+<li>Added <code>DotNetRuntimeIdentifiers</code></li>
+<li>Fixed telemetry</li>
+<li>Fixed <code>GetPathExecutable</code> to manually search <code>PATH</code> environment variable if locator executable is not available</li>
+<li>Fixed resolution of surrogate arguments in Visual Studio</li>
+<li>Fixed performance of <code>NuGetPackageResolver</code></li>
+<li>Fixed <code>GitTasks.GitIsDetached</code></li>
+<li>Fixed missing members in <code>GitHubActionsImage</code></li>
+<li>Fixed missing members in <code>AzurePipelinesRepositoryType</code></li>
+<li>Fixed detection for Bamboo</li>
+<li>Fixed missing arguments in <code>KubernetesTasks</code></li>
+<li>Fixed missing arguments in <code>DockerTasks</code></li>
+</ul>
+<h2 id="612--2022-07-02"><a href="https://github.com/gruke-build/src/compare/6.1.1...6.1.2">6.1.2</a> / 2022-07-02</h2>
+<ul>
+<li>Removed <code>Newtonsoft.Json.Schema</code> dependency</li>
+<li>Fixed <code>Nuke.GlobalTool</code> to target <code>net6.0</code></li>
+<li>Fixed telemetry to calculate properties only on demand</li>
+<li>Fixed missing <code>Framework</code> in <code>MinVerTasks</code> and <code>MinVerAttribute</code></li>
+<li>Fixed missing arguments in <code>DotNetTasks</code></li>
+</ul>
+<h2 id="611--2022-06-21"><a href="https://github.com/gruke-build/src/compare/6.1.0...6.1.1">6.1.1</a> / 2022-06-21</h2>
+<ul>
+<li>Fixed output encoding in <code>Nuke.GlobalTool</code> to be UTF-8</li>
+<li>Fixed telemetry to handle Git repositories without remote</li>
+<li>Fixed <code>GitRepository.HttpsUrl</code> and <code>SshUrl</code> when <code>Endpoint</code> is null</li>
+<li>Fixed <code>ShutdownDotNetServerBuildAttribute</code> to timeout after 15 seconds</li>
+</ul>
+<h2 id="610--2022-06-14"><a href="https://github.com/gruke-build/src/compare/6.0.3...6.1.0">6.1.0</a> / 2022-06-14</h2>
+<ul>
+<li>Removed extended setup wizard</li>
+<li>Changed <code>Nuke.GlobalTool</code> to use <code>Spectre.Console</code></li>
+<li>Deprecated <code>CheckBuildProjectConfigurationsAttribute</code></li>
+<li>Added single-file packaging and execution</li>
+<li>Added output customization via <code>NukeBuild.WriteLogo</code>, <code>WriteTarget</code>, and <code>WriteSummary</code></li>
+<li>Added second-chance registration for MSBuild from .NET CLI</li>
+<li>Added submodule support in GitHub Actions, Space Automation, and AppVeyor</li>
+<li>Added <code>NukeBuild.BuildAssemblyFile</code> property</li>
+<li>Added generic <code>EnvironmentInfo.SetVariable</code></li>
+<li>Added support for Bitbucket</li>
+<li>Added GitHub Actions support for <code>fetch-depth</code></li>
+<li>Fixed <code>default_target</code> replacement in help text</li>
+<li>Fixed parameter padding and line breaks in help text</li>
+<li>Fixed <code>Assert</code> methods to accept <code>IReadOnlyCollection</code></li>
+<li>Fixed fatal failure of <code>MSBuildLocator</code></li>
+<li>Fixed missing MSBuild registration when using <code>ProjectExtensions</code></li>
+<li>Fixed <code>NuGetPackageResolver</code> performance by reading metadata from <code>.nuspec</code> files</li>
+<li>Fixed <code>GitRepository</code> initialization when remote is not set</li>
+<li>Fixed exception for duplicated keys in TeamCity property files</li>
+<li>Fixed missing arguments for <code>DotNetTasks</code></li>
+</ul>
+<h2 id="603--2022-05-02"><a href="https://github.com/gruke-build/src/compare/6.0.2...6.0.3">6.0.3</a> / 2022-05-02</h2>
+<ul>
+<li>Fixed exception handling in various places</li>
+<li>Fixed shell-completion file to be written after parameter resolution</li>
+<li>Fixed <code>SpecialFolders.UserProfile</code> on Docker</li>
+<li>Fixed <code>SolutionSerializer</code> to work on sanitized content</li>
+<li>Fixed <code>GitRepository</code> branch extensions to consider plurals</li>
+<li>Fixed handling of spaces in GitHub Actions and Azure Pipeline generation</li>
+<li>Fixed resolution of MSBuild for Visual Studio Build Tools edition</li>
+</ul>
+<h2 id="602--2022-04-13"><a href="https://github.com/gruke-build/src/compare/6.0.1...6.0.2">6.0.2</a> / 2022-04-13</h2>
+<ul>
+<li>Fixed <code>Update</code> command to use <code>net6.0</code></li>
+<li>Fixed handling of common errors</li>
+<li>Fixed assertion messages to only include argument expression when message is <code>null</code></li>
+<li>Fixed log file pattern to use <code>-</code> instead of <code>:</code> for time</li>
+<li>Fixed padding of target names in logging</li>
+<li>Fixed logging to use <code>ExecutingTarget</code> instead of <code>Target</code> to reduce clashing</li>
+<li>Fixed concurrent writing of shell-completion files</li>
+<li>Fixed telemetry to check for interactive console</li>
+<li>Fixed passing build instance for value injection in components</li>
+<li>Fixed <code>ValueInjectionAttributeBase.GetMemberValue</code> to consider members from components</li>
+<li>Fixed resolution of members from parameter files</li>
+<li>Fixed reporting of exceptions in summary when not thrown from targets</li>
+<li>Fixed naming for .NET SDK in bootstrapping scripts</li>
+<li>Fixed GitHub Actions to use <code>GITHUB_TOKEN</code> instead of <code>GITHUB_CONTEXT</code></li>
+<li>Fixed GitHub Actions assertion messages</li>
+<li>Fixed missing output types for <code>ReportGeneratorTasks</code></li>
+<li>Fixed missing arguments for <code>HelmTasks</code></li>
+<li>Fixed missing arguments for <code>SonarScannerTasks</code></li>
+<li>Fixed missing command for <code>KubernetesTasks</code></li>
+<li>Fixed path resolution in <code>PowerShellTasks</code> to use PowerShell Core on non-Windows systems</li>
+<li>Fixed missing runtime types in <code>NSwagTasks</code></li>
+</ul>
+<h2 id="601--2022-01-10"><a href="https://github.com/gruke-build/src/compare/6.0.0...6.0.1">6.0.1</a> / 2022-01-10</h2>
+<ul>
+<li>Fixed invisible output for <code>SystemConsoleHostTheme</code></li>
+<li>Fixed <code>GetRelativePath</code> for same parts in different places</li>
+</ul>
+<h2 id="600--2022-01-07"><a href="https://github.com/gruke-build/src/compare/5.3.0...6.0.0">6.0.0</a> / 2022-01-07</h2>
+<ul>
+<li>Removed <code>ToolSettings.ProcessLogFile</code> and <code>ProcessLogTimestamp</code></li>
+<li>Removed <code>GitHub</code> prefix for <code>GitHubActions</code> environment variables</li>
+<li>Deprecated <code>Logger</code> in favor of <code>Serilog.Log</code></li>
+<li>Deprecated <code>ControlFlow</code> asserts in favor of <code>Assert</code> class</li>
+<li>Changed <code>Nuke.GlobalTool</code> to enable <code>RollForward</code> with <code>LatestMajor</code></li>
+<li>Changed default serialization settings for JSON and YAML in <code>SerializationTasks</code></li>
+<li>Changed GitHub Actions generation to use default <code>GitHubActions.Token</code> through <code>EnableGitHubContext</code></li>
+<li>Changed Azure Pipelines generation to use default <code>AzurePipelines.AccessToken</code> through <code>EnableAccessToken</code></li>
+<li>Added shell-completion support for global tool builds</li>
+<li>Added <code>NukeBuild.ExecutionPlan</code> to public API</li>
+<li>Added <code>Partition.Part</code> and <code>Total</code> to public API</li>
+<li>Added <code>MSBuildToolPathResolver</code> support for Visual Studio 2022</li>
+<li>Added <code>XmlTasks</code> variants for <code>string</code> objects</li>
+<li>Added <code>AbsolutePath.Name</code> and <code>NameWithoutExtension</code> properties</li>
+<li>Added <code>AbsolutePath.Exists</code>, <code>FileExists</code>, and <code>DirectoryExists</code> extension methods</li>
+<li>Added <code>Project.HasPackageReference</code> and <code>GetPackageReferenceVersion</code></li>
+<li>Added <code>UpdateFile</code> variants in <code>SerializationTasks</code></li>
+<li>Added <code>StdToText</code> and <code>StdToJson</code> extension methods for <code>IEnumerable&lt;Output&gt;</code></li>
+<li>Added newest worker images for Azure Pipelines, GitHub Actions, and AppVeyor generation</li>
+<li>Added Azure Pipelines generation for pull-request triggers, fetch depth, and clean checkout</li>
+<li>Added Space Automation support for secrets</li>
+<li>Added TeamCity support for GUID tokens</li>
+<li>Added <code>AzurePipelinesCachePaths</code> for common cache paths</li>
+<li>Added <code>AzurePipelines.PhaseName</code> property</li>
+<li>Added <code>GitHub.CreateComment</code> for issue and pull-request comments</li>
+<li>Added <code>TeamCity.AuthUserId</code> and <code>AuthPassword</code> properties</li>
+<li>Added <code>AppVeyorSecretAttribute</code> for generation of secret value entries</li>
+<li>Added <code>HttpClient</code>, <code>HttpRequest</code>, and <code>HttpResponse</code> extensions</li>
+<li>Added <code>XNode</code> extensions</li>
+<li>Added <code>LatestMavenVersionAttribute</code></li>
+<li>Added <code>MauiCheckTasks</code></li>
+<li>Added <code>MinVerTasks</code> and <code>MinVerAttribute</code></li>
+<li>Added <code>PowerShellTasks</code></li>
+<li>Added <code>BootsTasks</code></li>
+<li>Added <code>NetlifyTasks</code></li>
+<li>Fixed check for executables compiled with <code>PublishSingleFile</code></li>
+<li>Fixed <code>MSBuild</code> localization using <code>MSBuildLocator</code></li>
+<li>Fixed missing assertion for successful status code in <code>HttpTasks</code></li>
+<li>Fixed Azure Pipelines caching</li>
+<li>Fixed <code>IBuildServer.Branch</code> for <code>AzurePipelines</code></li>
+<li>Fixed <code>OctoVersionTasks</code> and <code>OctoVersionAttribute</code> for latest version</li>
+<li>Fixed <code>AzureSignToolTasks</code> to invoke <code>sign</code> command</li>
+<li>Fixed missing <code>Files</code> property in <code>AzureSignTool</code></li>
+<li>Fixed missing <code>Blame*</code> properties in <code>DotNetTasks</code></li>
+<li>Fixed property types in <code>ILRepackTasks</code></li>
+<li>Fixed <code>UnityTasks</code> to auto-detect version</li>
+<li>Fixed quoting for <code>UnityTasks.LogFile</code></li>
+</ul>
+<h2 id="530--2021-08-04"><a href="https://github.com/gruke-build/src/compare/5.2.1...5.3.0">5.3.0</a> / 2021-08-04</h2>
+<ul>
+<li>Added LFS and Submodule settings in AzurePipelines configuration</li>
+<li>Added <code>OctoVersionTasks</code> and <code>OctoVersionAttribute</code></li>
+<li>Added <code>AzureSignToolTasks</code></li>
+<li>Added <code>ChocolateyTasks</code></li>
+<li>Fixed invocations for PowerShell bootstrapping script</li>
+<li>Fixed retrieval of <code>version_dotnet_sdk</code> in telemetry</li>
+<li>Fixed solution serialization to show information about duplicated entries</li>
+<li>Fixed path construction to be lazy for in-memory solutions that get saved</li>
+<li>Fixed <code>GitHubTasks.GetGitHubBrowseUrl</code> to trim trailing slash</li>
+<li>Fixed <code>GitVersionAttribute.Framework</code> default value to <code>net5.0</code></li>
+<li>Fixed URLs in <code>ChangeLogTasks</code></li>
+<li>Fixed <code>DotNetTestSettings.Loggers</code> property to accept multiple values</li>
+<li>Fixed default value emission for <code>DotCoverTasks</code></li>
+<li>Fixed missing properties for <code>GitVersionTasks</code></li>
+<li>Fixed missing secret attributes in <code>SonarScannerTasks</code></li>
+<li>Fixed <code>NerdbankGitVersioningFormat</code> enumeration to use lower-case</li>
+</ul>
+<h2 id="521--2021-06-18"><a href="https://github.com/gruke-build/src/compare/5.2.0...5.2.1">5.2.1</a> / 2021-06-18</h2>
+<ul>
+<li>Fixed telemetry</li>
+<li>Fixed humanized string concatenation</li>
+</ul>
+<h2 id="520--2021-06-18"><a href="https://github.com/gruke-build/src/compare/5.1.4...5.2.0">5.2.0</a> / 2021-06-18</h2>
+<ul>
+<li>Added telemetry data collection</li>
+<li>Added unified <code>NukeBuild.Partition</code> property</li>
+<li>Added <code>Rider</code>, <code>VisualStudio</code>, <code>VSCode</code> as <code>Host</code> implementations</li>
+<li>Added <code>GitRepository.IsOnMainBranch</code> and <code>IsOnMainOrMasterBranch</code></li>
+<li>Added <code>AbsolutePath</code> equality operators</li>
+<li>Fixed SpaceAutomation to generate default <code>refSpec</code></li>
+<li>Changed <code>Microsoft.CodeAnalysis.CSharp</code> package version to <code>3.9.0</code></li>
+<li>Removed <code>Refit</code> reference and <code>ITeamCityRestClient</code> interface</li>
+<li>Removed <code>Colorful.Console</code> reference and embedded figlet fonts</li>
+</ul>
+<h2 id="514--2021-06-01"><a href="https://github.com/gruke-build/src/compare/5.1.3...5.1.4">5.1.4</a> / 2021-06-01</h2>
+<ul>
+<li>Fixed <code>StronglyTypedSolutionGenerator</code> to resolve root directory only on demand</li>
+<li>Fixed <code>JetBrains.Annotations</code> to be packed with source generators</li>
+<li>Fixed missing SpaceAutomation configuration link</li>
+</ul>
+<h2 id="513--2021-05-31"><a href="https://github.com/gruke-build/src/compare/5.1.2...5.1.3">5.1.3</a> / 2021-05-31</h2>
+<ul>
+<li>Fixed filtering explicitly overridden targets in build components</li>
+</ul>
+<h2 id="512--2021-05-18"><a href="https://github.com/gruke-build/src/compare/5.1.1...5.1.2">5.1.2</a> / 2021-05-18</h2>
+<ul>
+<li>Fixed target duration to be measured immediately after execution</li>
+<li>Fixed build script invocation from global tool</li>
+<li>Fixed <code>AddPackage</code> command to allow explicit version parameter</li>
+<li>Fixed navigation methods to not be included in command list</li>
+<li>Fixed <code>StronglyTypedSolutionGenerator</code> to resolve root directory only on demand</li>
+<li>Fixed <code>EnvironmentInfo.Framework</code> to use entry assembly</li>
+<li>Fixed parsing of <code>GitRepository</code> remote</li>
+<li>Fixed missing pull-request properties in TeamCity</li>
+<li>Fixed <code>RunNumber</code> and <code>RunId</code> in <code>GitHubActions</code> to be of type <code>long</code></li>
+<li>Fixed <code>GitVersionAttribute</code> to automatically populate <code>Git_Branch</code> on TeamCity</li>
+</ul>
+<h2 id="511--2021-04-23"><a href="https://github.com/gruke-build/src/compare/5.1.0...5.1.1">5.1.1</a> / 2021-04-23</h2>
+<ul>
+<li>Fixed parameter loading with missing default parameters file</li>
+<li>Fixed visibility of <code>Directory.Build</code> files</li>
+<li>Fixed <code>ArgumentsFromCommitMessageAttribute</code> to require manual application</li>
+<li>Fixed summary reporting for exceptions to only include first line of message</li>
+<li>Fixed update notification</li>
+<li>Fixed PowerShell invocation from <code>build.cmd</code></li>
+<li>Fixed <code>Update</code> and <code>Setup</code> command to not stage parameters file</li>
+<li>Fixed <code>Update</code> command for absent bootstrapping scripts</li>
+<li>Fixed skipping unhandled syntax fragments in Cake conversion</li>
+<li>Fixed missing <code>Instance</code> properties for <code>IBuildServer</code> implementations</li>
+<li>Fixed GitHubActions default cache path</li>
+<li>Fixed missing property for GitHubActions workflow inputs</li>
+<li>Fixed quoting in GitHubActions for included/excluded paths</li>
+<li>Fixed <code>XmlPoke</code> to allow specifying encoding</li>
+<li>Fixed <code>ExternalFilesTask</code> for single file browse-URL</li>
+<li>Fixed <code>ICompile</code>, <code>IPack</code>, <code>ITest</code> components to check against <code>SucceededTargets</code></li>
+<li>Fixed setting <code>RepositoryUrl</code> in <code>IPack</code> component</li>
+</ul>
+<h2 id="510--2021-04-07"><a href="https://github.com/gruke-build/src/compare/5.0.2...5.1.0">5.1.0</a> / 2021-04-07</h2>
+<ul>
+<li>Removed <code>:Fix</code> command from global tool (superseded by <code>:AddPackage</code>)</li>
+<li>Changed <code>.nuke</code> configuration file to <code>.nuke</code> directory</li>
+<li>Changed shell-completion to rely on <code>build.schema.json</code> file</li>
+<li>Changed default <code>DependencyBehavior</code> to <code>Skip</code></li>
+<li>Changed <code>HostType</code> to <code>Host</code> base class</li>
+<li>Changed <code>ExecutionStatus</code> members <code>Executed</code> to <code>Succeeded</code>, and <code>Executing</code> to <code>Running</code></li>
+<li>Changed <code>IBuildExtension</code> instances to be cached</li>
+<li>Changed <code>IOnBeforeLogo</code> and <code>IOnAfterLogo</code> extensions to <code>IOnBuildCreated</code> and <code>IOnBuildInitialized</code></li>
+<li>Changed <code>IsSuccessful</code> to check for succeeded, skipped and collective targets</li>
+<li>Changed <code>ParameterAttribute</code> to allow external value providers with <code>ValueProviderType</code> and <code>ValueProviderMember</code></li>
+<li>Changed GitHubActions secret names to split on camel-humps</li>
+<li>Added support for parameter files (profiles)</li>
+<li>Added source generator for strong-typed solutions</li>
+<li>Added shorthand dependencies for build components</li>
+<li>Added <code>ReportSummary</code> for summary extension to <code>NukeBuild</code> and <code>INukeBuild</code></li>
+<li>Added exception reporting in summary</li>
+<li>Added <code>ParameterPrefixAttribute</code> for build components</li>
+<li>Added build extensions for <code>OnTargetSkipped</code>, <code>OnTargetRunning</code>, <code>OnTargetSucceeded</code>, and <code>OnTargetFailed</code></li>
+<li>Added styling for unlisted targets in execution plan HTML</li>
+<li>Added <code>:Secrets</code> command to global tool and <code>SecretAttribute</code> for encryption in parameters files</li>
+<li>Added <code>:AddPackage</code> command to global tool</li>
+<li>Added <code>:GetConfiguration</code> command to global tool</li>
+<li>Added <code>:Update</code> command to global tool</li>
+<li>Added <code>:CakeConvert</code> and <code>:CakeClean</code> commands to global tool</li>
+<li>Added generation of <code>Directory.Build.props</code> and <code>Directory.Build.targets</code> files</li>
+<li>Added parameter resolution for root directory in global tool</li>
+<li>Added shell-navigation aliases <code>nuke/</code> and <code>nuke-</code></li>
+<li>Added <code>ScheduledTargets</code>, <code>RunningTargets</code>, <code>AbortedTargets</code>, <code>FailedTargets</code>, <code>SucceededTargets</code> collections to <code>NukeBuild</code> and <code>INukeBuild</code></li>
+<li>Added <code>ArgumentsFromCommitMessageAttribute</code> and <code>:Trigger</code> command to global tool</li>
+<li>Added <code>ExitCode</code> to <code>INukeBuild</code></li>
+<li>Added <code>IsFinished</code> and <code>IsFailing</code> to <code>NukeBuild</code> and <code>INukeBuild</code></li>
+<li>Added caching for <code>ValueInjectionUtility.TryGetValue</code></li>
+<li>Added equality operators and implicit conversion to string for Enumeration</li>
+<li>Added <code>GetProject</code>, <code>GetSolutionFolder</code>, <code>Projects</code>, and <code>SolutionFolders</code> to <code>SolutionFolder</code></li>
+<li>Added <code>GetRuntimeIdentifers</code> to <code>ProjectExtensions</code></li>
+<li>Added string-escape extension for MSBuild in <code>DotNetTasks</code> and <code>MSBuildTasks</code></li>
+<li>Added <code>EnsureExistingDirectory</code> and <code>EnsureExistingParentDirectory</code> overloads for <code>AbsolutePath</code></li>
+<li>Added <code>XmlPeekElements</code> to <code>XmlTasks</code></li>
+<li>Added <code>GitRepository</code> properties <code>RemoteName</code> and <code>RemoteBranch</code></li>
+<li>Added support for <code>NerdbankGitVersioning</code></li>
+<li>Added <code>NoCache</code> property to <code>GitVersionAttribute</code> with default value <code>true</code></li>
+<li>Added <code>SendOrUpdateSlackMessage</code> to <code>SlackTasks</code></li>
+<li>Added support for JetBrains SpaceAutomation</li>
+<li>Added support for GitHub Actions dispatch workflows</li>
+<li>Added support for GitLab CI</li>
+<li>Added support for multiple AppVeyor configurations</li>
+<li>Added support for AppVeyor secrets</li>
+<li>Added support for platform-independent TeamCity configurations</li>
+<li>Added TeamCity parameter to replace run-button caption</li>
+<li>Added <code>AddTeamCityLogger</code> for <code>DotNetTest</code> task</li>
+<li>Added <code>IsPersonalBuild</code> property to <code>TeamCity</code></li>
+<li>Added caching for <code>AzurePipelinesAttribute</code> and <code>GitHubActionsAttribute</code></li>
+<li>Added <code>SetVariable</code> to <code>AzurePipelines</code></li>
+<li>Added <code>CodeMetricsTasks</code></li>
+<li>Added <code>PulumiTasks</code></li>
+<li>Added <code>CodecovTasks</code></li>
+<li>Added <code>CorFlagsTasks</code></li>
+<li>Added <code>FixieTasks</code></li>
+<li>Added <code>ILRepackTasks</code></li>
+<li>Fixed skip reason for targets skipped from <code>--skip</code> parameter</li>
+<li>Fixed execution plan legend</li>
+<li>Fixed execution plan highlighting for multiple default targets</li>
+<li>Fixed <code>ConsoleUtility</code> to allow full deletion of secret</li>
+<li>Fixed exception reporting for <code>ExecutableTargetFactory</code></li>
+<li>Fixed handling of value types in <code>ValueInjectionUtility.TryGetValue</code></li>
+<li>Fixed calculation of value sets for collection parameters</li>
+<li>Fixed compilation of legacy template</li>
+<li>Fixed <code>IsDescendantPath</code> to split path parts</li>
+<li>Fixed <code>MoveDirectory</code> with additional <code>deleteRemainingFiles</code> parameter</li>
+<li>Fixed <code>SwitchWorkingDirectory</code> to respect <code>allowCreate</code> parameter</li>
+<li>Fixed <code>ResponseArchive</code> in <code>ISignPackages</code> build component</li>
+<li>Fixed MSBuild path resolution to fallback to using <code>dotnet --list-sdks</code></li>
+<li>Fixed client usage in <code>GitHubTasks</code></li>
+<li>Fixed token ordering in <code>TemplateUtility</code></li>
+<li>Fixed default value for collections in TeamCity configurations</li>
+<li>Fixed TeamCity composite configurations to propagate failures</li>
+<li>Fixed <code>TeamCity</code> and <code>AzurePipelines</code> to update build numbers in environment variables</li>
+<li>Fixed <code>TriggerBatch</code> in AzurePipelines generation</li>
+<li>Fixed condition in AppVeyor generation</li>
+<li>Fixed <code>FileFilters</code> property in <code>ReportGeneratorTasks</code></li>
+<li>Fixed logger for <code>DocFXTasks</code></li>
+<li>Fixed <code>Severity</code> property in <code>ReSharperTasks</code></li>
+<li>Fixed missing <code>MSBuild</code> and <code>ToolRestore</code> task in <code>DotNetTasks</code></li>
+<li>Fixed missing <code>Buildx</code> task in <code>DockerTasks</code></li>
+<li>Fixed missing <code>CoverDotNet</code> task in <code>DotCoverTasks</code></li>
+<li>Fixed missing <code>GenericCoveragePaths</code> property in <code>SonarScannerTasks</code></li>
+<li>Fixed missing properties in <code>ReSharperTasks</code></li>
+<li>Fixed missing properties in <code>TeamCity</code>, <code>GitHubActions</code>, and <code>AzurePipelines</code></li>
+<li>Fixed missing <code>SignToolDigestAlgorithm</code> enumeration in <code>SignToolTasks</code></li>
+</ul>
+<h2 id="502--2020-12-07"><a href="https://github.com/gruke-build/src/compare/5.0.1...5.0.2">5.0.2</a> / 2020-12-07</h2>
+<ul>
+<li>Fixed <code>ChangelogTasks</code> to use HTTPS links in history</li>
+<li>Fixed <code>DotNetRun</code> and <code>DotNetTest</code> run settings</li>
+<li>Fixed conditions for informational text</li>
+</ul>
+<h2 id="501--2020-12-06"><a href="https://github.com/gruke-build/src/compare/5.0.0...5.0.1">5.0.1</a> / 2020-12-06</h2>
+<ul>
+<li>Fixed configuration generation to wait for user input after file changes</li>
+<li>Fixed build summary for durations smaller than 1 second</li>
+<li>Fixed build summary and <code>IBuildExtension</code> instances to be skipped if no targets were started</li>
+<li>Fixed build summary to hide irrelevant durations</li>
+<li>Fixed setting of <code>EmbeddedPackagesDirectory</code> for global tools</li>
+<li>Fixed <code>PackPackageToolsTask</code> to use lower-case package ids</li>
+<li>Fixed <code>ParameterAttribute.ValueProvider</code> to allow members of type <code>IEnumerable&lt;string&gt;</code></li>
+<li>Fixed <code>Logger</code> to remove <code>ControlFlow</code> from stacktrace</li>
+<li>Fixed assertion messages for warnings</li>
+<li>Fixed path and quoting in <code>build.cmd</code></li>
+<li>Fixed <code>GitVersion.Tool</code> version in project templates</li>
+<li>Fixed <code>LatestMyGetVersionAttribute</code> to handle new RSS feed format</li>
+<li>Fixed missing arguments <code>PublishReadyToRun</code>, <code>PublishSingleFile</code>, <code>PublishTrimmed</code>, <code>PublishProfile</code>, <code>NoLogo</code> for <code>DotNetPublish</code></li>
+<li>Fixed parameter name <code>Verbosity</code> in <code>DotNetPack</code></li>
+<li>Fixed enumeration value <code>lcov</code> in <code>CoverletTasks</code></li>
+<li>Fixed <code>ReSharperTasks</code> to use correct tool path</li>
+<li>Fixed <code>ChangelogTasks</code> to respect additional markdown-linting rules</li>
+<li>Fixed TeamCity generator to consider artifact products from all relevant targets</li>
+<li>Fixed condition for skipping lines in TeamCity parameter files</li>
+</ul>
+<h2 id="500--2020-11-12"><a href="https://github.com/gruke-build/src/compare/0.25.0...5.0.0">5.0.0</a> / 2020-11-12</h2>
+<ul>
+<li>Fixed version number</li>
+</ul>
+<h2 id="0250--2020-10-26"><a href="https://github.com/gruke-build/src/compare/0.24.11...0.25.0">0.25.0</a> / 2020-10-26</h2>
+<ul>
+<li>Removed <code>Configuration</code> from <code>Nuke.Common</code> and moved it to template</li>
+<li>Changed <code>InjectionAttribute</code> to catch exceptions and report as warnings</li>
+<li>Changed <code>ToolPathResolver</code> to ignore casing</li>
+<li>Changed <code>ToolSettings</code> to prefix common properties with <code>Process</code></li>
+<li>Changed property names in <code>Nuke.Common.targets</code></li>
+<li>Changed <code>GitRepository</code> to trim <code>refs/heads/</code> and <code>origin/</code> from branch names</li>
+<li>Changed <code>ShutdownDotNetBuildServerOnFinish</code> to not log by default</li>
+<li>Changed <code>ShutdownDotNetBuildServerOnFinish</code> to only shutdown on server build</li>
+<li>Added support for interface default implementations</li>
+<li>Added <code>NukeBuild.ExitCode</code> for custom exit codes</li>
+<li>Added <code>ProcessTasks.StartShell</code> to invoke shell commands</li>
+<li>Added <code>ToolSettings.Apply</code> for fluent configurator invocation</li>
+<li>Added <code>ToolSettings.LogFile</code> and <code>LogTimestamp</code></li>
+<li>Added <code>nuke :fix</code> command to <code>Nuke.GlobalTool</code> for adding missing package downloads</li>
+<li>Added <code>nuke :GetRootDirectory</code> and <code>nuke :GetParentRootDirectory</code> in <code>Nuke.GlobalTool</code></li>
+<li>Added <code>LatestNuGetVersionAttribute</code>, <code>LatestGitHubReleaseAttribute</code>, <code>LatestMyGetVersionAttribute</code></li>
+<li>Added <code>GitRepository.Protocol</code>, <code>Commit</code>, and <code>Tags</code> properties</li>
+<li>Added logger delegate to <code>ControlFlow.ExecuteWithRetry</code></li>
+<li>Added <code>BuildExtensionAttributeBase</code> with <code>Priority</code> property</li>
+<li>Added <code>UnsetVisualStudioEnvironmentVariables</code> by default</li>
+<li>Added <code>TeamCity.BuildVcsNumber</code> property</li>
+<li>Added AzurePipelines variable groups, secret and access token import</li>
+<li>Added <code>AppVeyor.Url</code> and <code>PushArtifact</code> members</li>
+<li>Added warning when <code>GitVersion</code> is used with SSH endpoint and <code>NoFetch</code> is disabled</li>
+<li>Added consolidated <code>ReSharperTasks</code> for <code>CleanupCode</code>, <code>InspectCode</code>, and <code>DupFinder</code></li>
+<li>Added <code>TeamsTasks</code></li>
+<li>Added <code>SignPathTasks</code></li>
+<li>Added <code>SignClientTasks</code></li>
+<li>Added <code>BenchmarkDotNetTasks</code></li>
+<li>Added <code>CleanupCodeTasks</code></li>
+<li>Added <code>DotNetTasks.DotNetNuGetAddSource</code> task</li>
+<li>Added <code>OctopusTasks.OctopusBuildInformation</code> task</li>
+<li>Added missing properties in <code>SonarScannerTasks</code></li>
+<li>Added verbosity mapping attributes for <code>NUnit</code>, <code>OpenCover</code>, and <code>ReportGenerator</code></li>
+<li>Fixed version check in bootstrapping scripts to rely on dotnet CLI exit code</li>
+<li>Fixed deactivation of multi-level lookup in bootstrapping scripts</li>
+<li>Fixed deactivation of shared compilation in bootstrapping scripts</li>
+<li>Fixed <code>ToolPathResolver</code> to consider all package executable names</li>
+<li>Fixed <code>ToolPathResolver</code> to choose executable based on operating system</li>
+<li>Fixed output/input encoding to use <code>UTF-8</code></li>
+<li>Fixed <code>NukeBuild.BuildProjectFile</code> property</li>
+<li>Fixed AppVeyor generation for Unix images</li>
+<li>Fixed <code>AzurePipelinensAttribute</code> to allow multiple use</li>
+<li>Fixed AzurePipelines to replace dots in stage name with underscore</li>
+<li>Fixed <code>AppVeyor.UpdateBuildVersion</code> to set environment variable</li>
+<li>Fixed <code>DupFinderTasks.DiscardCost</code> property</li>
+<li>Fixed <code>DotCoverTasks</code> to use double-dashes instead of slashes</li>
+<li>Fixed <code>NpmTasks.CustomLogger</code> to detect warnings in error output</li>
+</ul>
+<h2 id="02411--2020-05-18"><a href="https://github.com/gruke-build/src/compare/0.24.10...0.24.11">0.24.11</a> / 2020-05-18</h2>
+<ul>
+<li>Fixed transitive artifacts in configuration generation</li>
+<li>Fixed <code>StackOverflowException</code> in configuration generation</li>
+<li>Fixed <code>IsPackable</code> property default</li>
+<li>Fixed missing colon in GitHubActions triggers</li>
+<li>Fixed assertion message for finding Git directory</li>
+<li>Fixed assertion message for <code>teamcity.dotCover.home</code></li>
+</ul>
+<h2 id="02410--2020-04-24"><a href="https://github.com/gruke-build/src/compare/0.24.9...0.24.10">0.24.10</a> / 2020-04-24</h2>
+<ul>
+<li>Fixed MSBuild targets to switch on <code>MSBuildRuntimeType</code> again</li>
+<li>Fixed default includes for <code>NukeSpecificationFiles</code> and <code>NukeExternalFiles</code></li>
+<li>Fixed indentation for GitHubActions scheduled triggers</li>
+<li>Fixed assertion message for GitHubActions trigger definitions</li>
+<li>Fixed default <code>RootNamespace</code></li>
+</ul>
+<h2 id="0249--2020-04-16"><a href="https://github.com/gruke-build/src/compare/0.24.8...0.24.9">0.24.9</a> / 2020-04-16</h2>
+<ul>
+<li>Fixed MSBuild targets directories</li>
+</ul>
+<h2 id="0248--2020-04-12"><a href="https://github.com/gruke-build/src/compare/0.24.7...0.24.8">0.24.8</a> / 2020-04-12</h2>
+<ul>
+<li>Fixed publishing of global tool for <code>netcoreapp3.1</code></li>
+<li>Fixed .NET Core SDK install script URL</li>
+<li>Fixed trap error output in PowerShell bootstrapping</li>
+<li>Fixed AzurePipelines push triggers</li>
+<li>Fixed AzurePipelines configuration to allow overriding configuration directory</li>
+<li>Fixed previous constructor usages for <code>AzurePipelinesAttribute</code></li>
+<li>Fixed PowerShell downloads to use TLS 1.2 security protocol</li>
+<li>Fixed unrecognized <code>Visible</code> attribute for <code>PackageDownload</code> item group</li>
+</ul>
+<h2 id="0247--2020-03-26"><a href="https://github.com/gruke-build/src/compare/0.24.6...0.24.7">0.24.7</a> / 2020-03-26</h2>
+<ul>
+<li>Fixed MSBuild targets for .NET Core</li>
+<li>Fixed <code>GitRepository.GetGitHubMilestone</code> to retrieve milestone independent of state</li>
+</ul>
+<h2 id="0246--2020-03-25"><a href="https://github.com/gruke-build/src/compare/0.24.5...0.24.6">0.24.6</a> / 2020-03-25</h2>
+<ul>
+<li>Fixed NuGet package resolution performance</li>
+<li>Fixed MSBuild integration</li>
+<li>Fixed TeamCity trace output to be dark gray</li>
+<li>Fixed missing using statement for <code>Nuke.Common.IO</code></li>
+</ul>
+<h2 id="0245--2020-03-24"><a href="https://github.com/gruke-build/src/compare/0.24.4...0.24.5">0.24.5</a> / 2020-03-24</h2>
+<ul>
+<li>Fixed TeamCity configuration to use Bash script on Unix</li>
+</ul>
+<h2 id="0244--2020-03-05"><a href="https://github.com/gruke-build/src/compare/0.24.2...0.24.4">0.24.4</a> / 2020-03-05</h2>
+<ul>
+<li>Fixed Refit version</li>
+<li>Fixed conversion of <code>GitHubActionsTrigger</code></li>
+<li>Fixed project default includes to check existence of files</li>
+<li>Fixed projects to target <code>netcoreapp2.1</code></li>
+<li>Fixed configuration generation to allow multiple configurations per host type</li>
+<li>Fixed <code>AzurePipelinesAttribute</code> to allow setting a configuration suffix</li>
+<li>Fixed CI server detection to ignore empty environment variables</li>
+<li>Fixed <code>TeamCityOutputSink</code> to not report errors as build problems</li>
+<li>Fixed custom logger for <code>NpmTasks</code></li>
+<li>Fixed custom logger for <code>DockerTasks</code></li>
+<li>Fixed missing NuGet install task</li>
+<li>Fixed missing <code>Framework</code> property in <code>OctopusTasks</code></li>
+<li>Fixed missing <code>ReportType</code> in <code>DotCoverTasks</code></li>
+<li>Fixed missing properties in <code>DotNetTasks</code></li>
+<li>Fixed Glob version</li>
+<li>Fixed <code>GitVersionAttribute</code> to avoid duplicated version numbers</li>
+<li>Fixed <code>System.ValueTuple</code> version</li>
+</ul>
+<h2 id="0242--2020-02-15"><a href="https://github.com/gruke-build/src/compare/0.24.1...0.24.2">0.24.2</a> / 2020-02-15</h2>
+<ul>
+<li>Fixed extension methods for settings with base type</li>
+<li>Fixed <code>SonarScannerTasks</code> to have <code>Framework</code> property</li>
+<li>Fixed generation of <code>shell-completion.yml</code> to exclude unlisted targets for invocation</li>
+</ul>
+<h2 id="0241--2020-02-07"><a href="https://github.com/gruke-build/src/compare/0.24.0...0.24.1">0.24.1</a> / 2020-02-07</h2>
+<ul>
+<li>Fixed <code>NuGetPackageResolver</code> to include dependencies during tool path resolution</li>
+<li>Fixed parsing of TeamCity environment variables</li>
+<li>Fixed execution flags for <code>build.sh</code> and <code>build.cmd</code> scripts during setup</li>
+<li>Fixed assertion message in <code>UnityTasks</code></li>
+<li>Fixed <code>build.cmd</code> to have newline at end-of-file</li>
+<li>Fixed logo spacing</li>
+</ul>
+<h2 id="0240--2020-02-02"><a href="https://github.com/gruke-build/src/compare/0.23.7...0.24.0">0.24.0</a> / 2020-02-02</h2>
+<ul>
+<li>Removed <code>NuGetPackage</code> tasks and AutoMapper package reference</li>
+<li>Removed TeamCity definitions for <code>VcsRoot</code> and trigger timezones</li>
+<li>Changed <code>AbsolutePath</code>, <code>RelativePath</code>, <code>WinRelativePath</code> and <code>UnixRelativePath</code> to outer scope</li>
+<li>Changed default package for <code>DotCoverTasks</code> to <code>JetBrains.dotCover.DotNetCliTool</code></li>
+<li>Changed default includes to be provided via <code>Nuke.Common.targets</code></li>
+<li>Changed <code>ConfigurationGenerationAttributeBase</code> to <code>ConfigurationAttributeBase</code></li>
+<li>Changed manually invoked targets to be TeamCity deployment configurations</li>
+<li>Changed <code>AzurePipelines</code> interface to use enumerations for test result type and code coverage tool type</li>
+<li>Changed package version for <code>Glob</code>, <code>Microsoft.IdentityModel.Clients.ActiveDirectory</code>, <code>Newtonsoft.Json</code>, <code>NuGet.Packaging</code>, <code>Refit</code>, <code>YamlDotNet</code></li>
+<li>Added cross-platform <code>build.cmd</code> bootstrapping script</li>
+<li>Added build emotions</li>
+<li>Added update of build number for TeamCity, AppVeyor, and Azure Pipelines from <code>GitVersionAttribute</code></li>
+<li>Added <code>AzureKeyVault</code> – previously available as addon</li>
+<li>Added <code>DocFXTasks</code>, <code>DockerTasks</code>, <code>HelmTasks</code>, <code>KubernetesTasks</code>, and <code>NSwagTasks</code> – previously available as addons</li>
+<li>Added TeamCity logger extension method for <code>DotNetBuildSettings</code></li>
+<li>Added support for checkboxes in TeamCity configuration</li>
+<li>Added <code>GitHubTasks</code></li>
+<li>Added <code>ProjectModelTasks.CreateSolution</code></li>
+<li>Added <code>Solution.GetProject</code> and <code>GetSolutionFolder</code> overloads via <code>Guid</code></li>
+<li>Added <code>TeamCity.NightlyBuildAlways</code> property</li>
+<li>Added detailed null-check for <code>teamcity.build.branch</code> configuration property</li>
+<li>Added Coverlet extension methods for <code>DotNetTest</code> task</li>
+<li>Added <code>AzurePipelines.PublishCodeCoverage</code></li>
+<li>Added setters for <code>Project</code> properties</li>
+<li>Added <code>Solution.AddSolution</code> and <code>ProjectModelTask.CreateSolution</code> overload for creating global solutions</li>
+<li>Added path extension methods for <code>Get(Win|Unix)RelativePathTo</code>, <code>Contains</code>, and <code>To(Win|Unix)RelativePath</code></li>
+<li>Added <code>NoFetch</code>, <code>Framework</code>, and <code>UpdateBuildNumber</code> properties to <code>GitVersionAttribute</code></li>
+<li>Fixed directory creation in bootstrapping scripts</li>
+<li>Fixed artifact paths for TeamCity and Azure Pipelines</li>
+<li>Fixed path separators for AppVeyor and GitHubActions configurations</li>
+<li>Fixed <code>NSwag</code> to quote tool path</li>
+<li>Fixed <code>SolutionSerializer</code> to handle inconsistent whitespaces</li>
+<li>Fixed <code>NpmCi</code> task to include definite argument</li>
+<li>Fixed <code>VSTestSettings.TestCaseFilters</code> to be list of strings</li>
+<li>Fixed <code>EnvironmentInfo.FrameworkName</code></li>
+<li>Fixed <code>cleanCheckoutDirectory</code> to be set for all TeamCity build types</li>
+<li>Fixed <code>AddTeamCityLogger</code> extension method</li>
+<li>Fixed <code>buildType</code> reference in TeamCity build-finished triggers</li>
+<li>Fixed <code>ReportGenerator</code> task to resolve <code>ReportGenerator.dll</code></li>
+<li>Fixed sharing of artifacts between agents</li>
+<li>Fixed <code>GitVersionSettings.UpdateAssemblyInfoFileNames</code> to be an array</li>
+</ul>
+<h2 id="0237--2020-01-28"><a href="https://github.com/gruke-build/src/compare/0.23.6...0.23.7">0.23.7</a> / 2020-01-28</h2>
+<ul>
+<li>Fixed summary alignment for hosts that trim whitespaces</li>
+</ul>
+<h2 id="0236--2020-01-12"><a href="https://github.com/gruke-build/src/compare/0.23.5...0.23.6">0.23.6</a> / 2020-01-12</h2>
+<ul>
+<li>Fixed <code>InspectCodeTasks</code> to use new plugin endpoint for downloading</li>
+<li>Fixed <code>AppVeyorOutputSink</code> to issue a warning when exceeding the default limit of 500 messages</li>
+</ul>
+<h2 id="0235--2020-01-10"><a href="https://github.com/gruke-build/src/compare/0.23.4...0.23.5">0.23.5</a> / 2020-01-10</h2>
+<ul>
+<li>Fixed CI integrations to use correct warning/error reporting infrastructure</li>
+<li>Fixed TeamCity configuration to use <code>UTF-8</code> encoding</li>
+<li>Fixed process encoding by setting <code>StandardOutputEncoding</code> and <code>StandardErrorEncoding</code> to <code>UTF-8</code></li>
+<li>Fixed solution deserialization for missing configuration section</li>
+<li>Fixed logo spacing</li>
+</ul>
+<h2 id="0234--2019-11-16"><a href="https://github.com/gruke-build/src/compare/0.23.3...0.23.4">0.23.4</a> / 2019-11-16</h2>
+<ul>
+<li>Fixed assignment for <code>NuGetAssetsConfigFile</code> when <code>BuildProjectDirectory</code> is null</li>
+<li>Fixed <code>ToolPathResolver</code> to not require framework when only one file matches</li>
+</ul>
+<h2 id="0233--2019-11-02"><a href="https://github.com/gruke-build/src/compare/0.23.2...0.23.3">0.23.3</a> / 2019-11-02</h2>
+<ul>
+<li>Fixed separator in Azure Pipelines service messages</li>
+</ul>
+<h2 id="0232--2019-11-02"><a href="https://github.com/gruke-build/src/compare/0.23.1...0.23.2">0.23.2</a> / 2019-11-02</h2>
+<ul>
+<li>Fixed ensuring of existing directory for generation of configuration files</li>
+<li>Fixed packaging of <code>MSBuildTaskRunner</code> in <code>Nuke.Common</code></li>
+</ul>
+<h2 id="0231--2019-11-02"><a href="https://github.com/gruke-build/src/compare/0.23.0...0.23.1">0.23.1</a> / 2019-11-02</h2>
+<ul>
+<li>Fixed checking hashes for non-existing configuration files</li>
+<li>Fixed null-reference exception for commands without message</li>
+</ul>
+<h2 id="0230--2019-10-31"><a href="https://github.com/gruke-build/src/compare/0.22.2...0.23.0">0.23.0</a> / 2019-10-31</h2>
+<ul>
+<li>Changed target frameworks to <code>netcoreapp3.0</code> and <code>net472</code></li>
+<li>Changed <code>AzureDevOps</code> to <code>AzurePipelines</code></li>
+<li>Changed <code>CheckBuildProjectConfigurationsAttribute</code> to skip dot-prefixed directories</li>
+<li>Removed <code>ProjectFromAttribute</code></li>
+<li>Removed <code>MSBuildTasks.MSBuildParseProject</code></li>
+<li>Removed <code>GitVersion.GetNormalizedAssemblyVersion</code> and <code>GetNormalizedFileVersion</code></li>
+<li>Added NuGet package resolution from <code>project.assets.json</code> file</li>
+<li>Added CI interface resolution via <code>CIAttribute</code></li>
+<li>Added <code>Bamboo</code> interface</li>
+<li>Added <code>TeamCityImportDotCoverPathAttribute</code> to address version mismatch</li>
+<li>Added <code>GitHubActionsAttribute</code> for configuration generation</li>
+<li>Added <code>AzurePipelinesAttribute</code> for configuration generation</li>
+<li>Added <code>AppVeyorAttribute</code> for configuration generation</li>
+<li>Added execution of <code>dotnet build-server shutdown</code> when build has finished</li>
+<li>Added <code>NpmCi</code> task</li>
+<li>Fixed <code>TeamCity</code> parameter dictionaries to use original keys</li>
+<li>Fixed NuGet package resolution for project files without <code>PackageReference</code> items</li>
+<li>Fixed code inspections in PowerShell script</li>
+<li>Fixed resolution for legacy package directories</li>
+<li>Fixed generation of <code>Partition</code> parameter and script paths</li>
+<li>Fixed <code>ToolPathResolver</code> to support global tool packages</li>
+<li>Fixed <code>ReportGeneratorTasks</code> and <code>GitVersionTasks</code> by providing <code>Framework</code> property</li>
+</ul>
+<h2 id="0222--2019-09-29"><a href="https://github.com/gruke-build/src/compare/0.22.1...0.22.2">0.22.2</a> / 2019-09-29</h2>
+<ul>
+<li>Fixed SourceLink integration</li>
+</ul>
+<h2 id="0221--2019-09-21"><a href="https://github.com/gruke-build/src/compare/0.22.0...0.22.1">0.22.1</a> / 2019-09-21</h2>
+<ul>
+<li>Fixed assertion message for missing packages</li>
+</ul>
+<h2 id="0220--2019-09-17"><a href="https://github.com/gruke-build/src/compare/0.21.2...0.22.0">0.22.0</a> / 2019-09-17</h2>
+<ul>
+<li>Changed <code>UnlistedAttribute</code> to <code>List</code> property on <code>ParameterAttribute</code></li>
+<li>Changed summary to show aborted and not-run targets as warning</li>
+<li>Changed <code>TeamServices</code> to <code>AzureDevOps</code></li>
+<li>Changed namespace <code>Nuke.Common.BuildServers</code> to <code>Nuke.Common.CI.*</code></li>
+<li>Added support for multiple default targets</li>
+<li>Added support for <code>PackageDownload</code> item group</li>
+<li>Added support for hyphens in target names</li>
+<li>Added support for absolute paths in <code>LocalExecutableAttribute</code></li>
+<li>Added support for <code>GitHubActions</code></li>
+<li>Added TeamCity configuration generation via <code>TeamCityAttribute</code></li>
+<li>Added XML serialization for .NET Core</li>
+<li>Added reporting of TeamCity statistical values</li>
+<li>Added additional methods for <code>CloudFoundryTasks</code></li>
+<li>Added <code>ProjectType</code> for Docker and SQL projects</li>
+<li>Added implicit cast operator for generated enumerations</li>
+<li>Added <code>InnoSetupTasks</code></li>
+<li>Added <code>TwitterTasks</code></li>
+<li>Added <code>IOnBuildFinished</code> build extension</li>
+<li>Added missing arguments for <code>CoverletTasks</code></li>
+<li>Fixed <code>--boot</code> in setup for .NET Framework/Mono support</li>
+<li>Fixed XML documentation for generated CLI tasks</li>
+<li>Fixed <code>MSBuildToolPathResolver</code> to consider preview editions</li>
+<li>Fixed <code>NuGetPackageResolver</code> to allow multiple versions of the same package</li>
+<li>Fixed <code>TeamCity.SetParameter</code> and <code>TeamCity.ImportData</code></li>
+<li>Fixed <code>SolutionSerializer</code> to fall back to <code>ProjectConfiguration</code> section</li>
+<li>Fixed <code>MSBuildLocator</code> package to have <code>vswhere.exe</code> embedded</li>
+</ul>
+<h2 id="0212--2019-07-28"><a href="https://github.com/gruke-build/src/compare/0.21.1...0.21.2">0.21.2</a> / 2019-07-28</h2>
+<ul>
+<li>Fixed validation to exclude requirements of skipped targets</li>
+<li>Fixed solution serialization to include malicious project GUID in error message</li>
+</ul>
+<h2 id="0211--2019-07-19"><a href="https://github.com/gruke-build/src/compare/0.21.0...0.21.1">0.21.1</a> / 2019-07-19</h2>
+<ul>
+<li>Fixed logging of warnings</li>
+</ul>
+<h2 id="0210--2019-07-15"><a href="https://github.com/gruke-build/src/compare/0.20.1...0.21.0">0.21.0</a> / 2019-07-15</h2>
+<ul>
+<li>Changed <code>ProjectModelTasks.ParseProject</code> to revert <code>MSBUILD_EXE_PATH</code> environment variable</li>
+<li>Added <code>CloudFoundryTasks</code></li>
+<li>Added missing arguments for <code>SonarScannerTasks</code></li>
+<li>Added missing arguments for <code>OctopusTasks</code></li>
+<li>Added <code>Jenkins.BranchName</code> and <code>Jenkins.ChangeId</code></li>
+</ul>
+<h2 id="0201--2019-06-02"><a href="https://github.com/gruke-build/src/compare/0.20.0...0.20.1">0.20.1</a> / 2019-06-02</h2>
+<ul>
+<li>Fixed MSBuild evaluation issues by updating NuGet.Packaging to v4.9.2</li>
+</ul>
+<h2 id="0200--2019-05-29"><a href="https://github.com/gruke-build/src/compare/0.19.2...0.20.0">0.20.0</a> / 2019-05-29</h2>
+<ul>
+<li>Changed <code>Solution.GetProject</code> to allow resolution from full path</li>
+<li>Changed HTML execution plan to be shown left-to-right</li>
+<li>Added <code>When</code> overload for combinatorial settings</li>
+<li>Added <code>Project.GetOutputType</code> method for convenience</li>
+<li>Added <code>GlobbingOptionsAttribute</code> for configuration of case-sensitivity</li>
+<li>Fixed casing of <code>NuGet.exe</code></li>
+<li>Fixed <code>TeamServices</code> to resolve <code>BuildNumber</code> as <code>string</code></li>
+</ul>
+<h2 id="0192--2019-05-10"><a href="https://github.com/gruke-build/src/compare/0.19.1...0.19.2">0.19.2</a> / 2019-05-10</h2>
+<ul>
+<li>Fixed <code>ProjectModelTasks</code> to use existing <code>MSBUILD_EXE_PATH</code> value</li>
+<li>Fixed <code>ParameterService</code> to consider nullable enum types in value set calculation</li>
+<li>Fixed compile errors in build template</li>
+</ul>
+<h2 id="0191--2019-05-03"><a href="https://github.com/gruke-build/src/compare/0.19.0...0.19.1">0.19.1</a> / 2019-05-03</h2>
+<ul>
+<li>Fixed <code>RequirementService</code> to check for <code>InjectionAttributeBase</code></li>
+</ul>
+<h2 id="0190--2019-05-03"><a href="https://github.com/gruke-build/src/compare/0.18.0...0.19.0">0.19.0</a> / 2019-05-03</h2>
+<ul>
+<li>Changed MSBuild targets to be invoked with <code>Exec</code> task</li>
+<li>Changed <code>ProcessTasks</code> to avoid Mono when using WSL</li>
+<li>Added output for non-default working directories</li>
+<li>Added <code>GitVersion.VersionSourceSha</code></li>
+<li>Added <code>ReportTypes.TeamCitySummary</code></li>
+<li>Fixed parameter resolution to handle hyphens</li>
+<li>Fixed MSBuild resolution for Visual Studio 2019</li>
+<li>Fixed issues when build has no default target defined</li>
+</ul>
+<h2 id="0180--2019-03-24"><a href="https://github.com/gruke-build/src/compare/0.17.7...0.18.0">0.18.0</a> / 2019-03-24</h2>
+<ul>
+<li>Changed <code>ParameterService</code> to strip dashes when resolving value</li>
+<li>Changed formatting of skip reason</li>
+<li>Added <code>CompressionTasks</code></li>
+<li>Added <code>EntityFrameworkTasks</code></li>
+<li>Fixed <code>UnityTasks.UnityPath</code> for Windows</li>
+<li>Fixed <code>SystemColorOutputSink</code> to print warning and error details</li>
+<li>Fixed <code>SonarScannerTasks</code> to also resolve from netstandard package</li>
+</ul>
+<h2 id="0177--2019-03-12"><a href="https://github.com/gruke-build/src/compare/0.17.6...0.17.7">0.17.7</a> / 2019-03-12</h2>
+<ul>
+<li>Fixed <code>SystemColorOutputSink</code> to set <code>ForegroundColor</code></li>
+</ul>
+<h2 id="0176--2019-03-04"><a href="https://github.com/gruke-build/src/compare/0.17.5...0.17.6">0.17.6</a> / 2019-03-04</h2>
+<ul>
+<li>Fixed <code>RequirementService</code> to check for <code>ParameterAttribute</code> when injecting values interactively</li>
+</ul>
+<h2 id="0175--2019-03-03"><a href="https://github.com/gruke-build/src/compare/0.17.4...0.17.5">0.17.5</a> / 2019-03-03</h2>
+<ul>
+<li>Fixed <code>GlobDirectories</code> and <code>GlobFiles</code> to not collect items lazily</li>
+</ul>
+<h2 id="0174--2019-03-02"><a href="https://github.com/gruke-build/src/compare/0.17.3...0.17.4">0.17.4</a> / 2019-03-02</h2>
+<ul>
+<li>Fixed bootstrapping script to not set <code>NUGET_XMLDOC_MODE</code></li>
+</ul>
+<h2 id="0173--2019-02-27"><a href="https://github.com/gruke-build/src/compare/0.17.2...0.17.3">0.17.3</a> / 2019-02-27</h2>
+<ul>
+<li>Fixed documentation file generation</li>
+<li>Fixed <code>CheckBuildProjectConfigurationsAttribute.Timeout</code> to be settable</li>
+</ul>
+<h2 id="0172--2019-02-24"><a href="https://github.com/gruke-build/src/compare/0.17.1...0.17.2">0.17.2</a> / 2019-02-24</h2>
+<ul>
+<li>Fixed parsing of changelog</li>
+</ul>
+<h2 id="0171--2019-02-23"><a href="https://github.com/gruke-build/src/compare/0.17.0...0.17.1">0.17.1</a> / 2019-02-23</h2>
+<ul>
+<li>Fixed attributes in build tasks</li>
+</ul>
+<h2 id="0170--2019-02-23"><a href="https://github.com/gruke-build/src/compare/0.16.0...0.17.0">0.17.0</a> / 2019-02-23</h2>
+<ul>
+<li>Removed collection-based tasks in <code>FileSystemTasks</code></li>
+<li>Changed <code>ContinueOnFailure</code> to <code>ProceedAfterFailure</code></li>
+<li>Changed summary output to not include collective targets</li>
+<li>Added <code>logInvocation</code> parameter and <code>ToolSettings.LogInvocation</code> property</li>
+<li>Added interactive parameter resolution</li>
+<li>Added <code>RequiredAttribute</code> for globally required parameters</li>
+<li>Added skip reason to summary</li>
+<li>Added <code>FileGlobbingAttribute</code> and <code>DirectoryGlobbingAttribute</code></li>
+<li>Added <code>GetProperty&lt;T&gt;</code>, <code>GetItems&lt;T&gt;</code>, and <code>GetItemMetadata&lt;T&gt;</code> as <code>ProjectExtensions</code></li>
+<li>Added <code>Unlisted</code> for target declarations</li>
+<li>Added <code>ToolResolver</code> for custom delegate resolution</li>
+<li>Added <code>DotNetToolInstall</code>, <code>DotNetToolUninstall</code>, and <code>DotNetToolUpdate</code></li>
+<li>Added <code>UnsetVisualStudioEnvironmentVariablesAttribute</code></li>
+<li>Added universal log methods with severity as parameter</li>
+<li>Fixed parameter resolution for value types</li>
+<li>Fixed <code>AbsolutePath</code> to be serializable</li>
+<li>Fixed output for parallel task execution</li>
+<li>Fixed exit code for failing targets using <code>ProceedAfterFailure</code></li>
+<li>Fixed exception message for circular dependencies</li>
+</ul>
+<h2 id="0160--2019-01-30"><a href="https://github.com/gruke-build/src/compare/0.15.0...0.16.0">0.16.0</a> / 2019-01-30</h2>
+<ul>
+<li>Changed setting of default working directory for process invocations</li>
+<li>Changed <code>Logger.Log</code> to <code>Logger.Normal</code></li>
+<li>Added <code>NukeBuild.Execute</code> overload without default target</li>
+<li>Added <code>ContinueOnFailure</code> and <code>AssuredAfterFailure</code> as target definition methods</li>
+<li>Added <code>AbsolutePath</code> extensions for <code>GlobDirectories/Files</code></li>
+<li>Added <code>AggregateException</code> handling to show number as prefix when flattening</li>
+<li>Added <code>AnsiColorOutputSink</code> for Bitrise, TeamCity, Travis, TeamServices</li>
+<li>Added <code>ProjectModelTasks.ParseProject</code> based on <code>Microsoft.Build</code> packages</li>
+<li>Added <code>LocalExecutableAttribute</code></li>
+<li>Added <code>degreeOfParallelism</code> and <code>completeOnFailure</code> for combinatorial invocations</li>
+<li>Added <code>[Tool]Tasks.[Tool]Logger</code> as settable field for custom logging</li>
+<li>Added <code>VerbosityMappingAttribute</code></li>
+<li>Added format-property map for CLI tasks</li>
+<li>Fixed <code>EnsureCleanDirectory</code> to only clean instead of delete and recreate</li>
+<li>Fixed <code>TeamCityOutputSink</code> to not report errors as build problems</li>
+<li>Fixed <code>SolutionAttribute</code> to resolve first by constructor argument</li>
+<li>Fixed <code>Xunit2ParallelOption</code> to use lower-case text</li>
+</ul>
+<h2 id="0150--2019-01-16"><a href="https://github.com/gruke-build/src/compare/0.14.1...0.15.0">0.15.0</a> / 2019-01-16</h2>
+<ul>
+<li>Changed <code>OnlyWhen</code> to <code>OnlyWhenStatic</code> and <code>OnlyWhenDynamic</code></li>
+<li>Changed <code>graph</code> parameter to <code>plan</code></li>
+<li>Added <code>DependentFor</code>, <code>Triggers</code> and <code>TriggeredBy</code> for target declarations</li>
+<li>Added <code>ToolSettings.CombineWith</code> for combinatorial invocations</li>
+<li>Added several <code>FileSystemTasks</code> methods</li>
+<li>Added <code>TemplateUtility.FillTemplateDirectory</code> and <code>FillTemplateFile</code></li>
+<li>Added highlighting of execution plans in HTML representation</li>
+<li>Added process cancellation handler to always show summary</li>
+<li>Added <code>NuGetTasks</code> to add, remove, update, enable, disable and list sources</li>
+<li>Added <code>TravisOutputSink</code></li>
+<li>Added path resolution for <code>VSTestTasks</code></li>
+<li>Added caching of <code>MSBuild</code> path in <code>GetMSBuidProject</code></li>
+<li>Fixed <code>GitRepository.IsOnDevelopBranch</code> to recognize <code>develop</code> and <code>development</code></li>
+<li>Fixed shell-completion for PowerShell</li>
+</ul>
+<h2 id="0141--2018-12-31"><a href="https://github.com/gruke-build/src/compare/0.14.0...0.14.1">0.14.1</a> / 2018-12-31</h2>
+<ul>
+<li>Fixed package reference versions</li>
+<li>Fixed <code>SolutionSerializer</code> to handle empty lines</li>
+</ul>
+<h2 id="0140--2018-12-31"><a href="https://github.com/gruke-build/src/compare/0.13.0...0.14.0">0.14.0</a> / 2018-12-31</h2>
+<ul>
+<li>Removed named target dependencies</li>
+<li>Removed choice of target framework in setup</li>
+<li>Changed setup to write solution file reference to configuration file again</li>
+<li>Added extended solution parsing with integration for <code>Microsoft.Build</code></li>
+<li>Added <code>Configuration</code> type</li>
+<li>Added <code>continue</code> parameter</li>
+<li>Added checking for active build project configurations in solution files</li>
+<li>Added highlighting for default target in HTML graph</li>
+<li>Added <code>SonarScannerTasks</code></li>
+<li>Added <code>EnvironmentInfo.SwitchWorkingDirectory</code></li>
+<li>Added <code>SymbolPackageFormat</code> property for <code>DotNetTasks</code>, <code>MSBuildTasks</code>, and <code>NuGetTasks</code></li>
+<li>Fixed bootstrapping scripts not to leave DotNet processes behind</li>
+<li>Fixed bootstrapping scripts to correctly quote arguments</li>
+<li>Fixed overload of tool path for .NET Core executables</li>
+<li>Fixed default value not to be hidden by cursor</li>
+<li>Fixed <code>ToolSettingsExtensions.When</code> to have generic constraint on <code>ToolSettings</code></li>
+<li>Fixed <code>InspectCodeTasks</code> to use deterministic hashing</li>
+<li>Fixed <code>ChangelogTasks</code> to correctly parse empty sections at end of file</li>
+<li>Fixed <code>InjectionAttributeBase</code> to express implicit assignment only</li>
+<li>Fixed <code>ExternalFilesTask</code> to be executed before <code>Restore</code> target</li>
+</ul>
+<h2 id="0130--2018-12-10"><a href="https://github.com/gruke-build/src/compare/0.12.4...0.13.0">0.13.0</a> / 2018-12-10</h2>
+<ul>
+<li>Changed verification of PATH environment variable to be executed only with <code>Trace</code> log level</li>
+<li>Added <code>ToolSettings.When</code> for conditional fluent modifications</li>
+<li>Added <code>.editorconfig</code> file in setup to avoid formatting issues</li>
+<li>Added <code>DotMemoryUnitTasks</code></li>
+<li>Added missing properties in <code>DotNetCleanSettings</code>, <code>DotNetRestoreSettings</code> and <code>MSBuildSettings.Restore</code></li>
+</ul>
+<h2 id="0124--2018-12-02"><a href="https://github.com/gruke-build/src/compare/0.12.3...0.12.4">0.12.4</a> / 2018-12-02</h2>
+<ul>
+<li>Fixed <code>SolutionAttribute</code> to handle empty configuration file</li>
+</ul>
+<h2 id="0123--2018-11-29"><a href="https://github.com/gruke-build/src/compare/0.12.2...0.12.3">0.12.3</a> / 2018-11-29</h2>
+<ul>
+<li>Fixed <code>EnvironmentInfo.Variables</code> not to be cached</li>
+<li>Fixed <code>Glob</code> package reference in legacy template</li>
+<li>Fixed error message for unresolvable root directory</li>
+<li>Fixed global tool setup to hide choice of bootstrapping by default</li>
+<li>Fixed <code>NuGetPackageResolver</code> assertion for dependency resolution</li>
+</ul>
+<h2 id="0122--2018-11-27"><a href="https://github.com/gruke-build/src/compare/0.12.1...0.12.2">0.12.2</a> / 2018-11-27</h2>
+<ul>
+<li>Fixed globbing related issues</li>
+<li>Fixed shell-completion to not split common names</li>
+<li>Fixed bootstrapping scripts to guard extraction of SDK version</li>
+<li>Fixed help text to be printed before value injection</li>
+</ul>
+<h2 id="0121--2018-11-24"><a href="https://github.com/gruke-build/src/compare/0.12.0...0.12.1">0.12.1</a> / 2018-11-24</h2>
+<ul>
+<li>Fixed bootstrapping scripts to exit without closing PowerShell</li>
+<li>Fixed expansion for Unix environment variables</li>
+<li>Fixed separator for target parameters</li>
+<li>Fixed <code>ToolPathResolver</code> to resolve decidedly</li>
+<li>Fixed <code>GitVersionTasks</code> to resolve based on <code>GitVersion.CommandLine.DotNetCore</code> package</li>
+<li>Fixed <code>InjectionAttributeBase</code> to pass build instance</li>
+<li>Fixed <code>ReflectionService</code> to be public to allow usage in addons</li>
+<li>Fixed <code>DotNetTasks</code> to expose <code>restore</code> related parameters for <code>test</code>, <code>build</code>, <code>publish</code>, <code>pack</code>, <code>run</code></li>
+</ul>
+<h2 id="0120--2018-11-15"><a href="https://github.com/gruke-build/src/compare/0.11.1...0.12.0">0.12.0</a> / 2018-11-15</h2>
+<ul>
+<li>Changed <code>NukeBuild</code> properties to be static</li>
+<li>Changed <code>NukeBuild.RootDirectory</code> to allow resolution from parameter</li>
+<li>Added package resolution for Paket</li>
+<li>Added shell-completion for global tool</li>
+<li>Added parameter resolution for <code>Enumeration</code> subclasses</li>
+<li>Added <code>PathExecutableAttribute</code> and <code>PackageExecutableAttribute</code> for <code>Tool</code> delegate resolution</li>
+<li>Added <code>PackPackageToolsTask</code> for global tool packaging</li>
+<li>Added <code>MSpecTasks</code></li>
+<li>Fixed bootstrapping scripts to install by channel instead of latest version</li>
+<li>Fixed Glob package version to 0.3.2</li>
+<li>Fixed <code>Arguments</code> passing of <code>secret</code> parameter</li>
+</ul>
+<h2 id="0111--2018-10-17"><a href="https://github.com/gruke-build/src/compare/0.11.0...0.11.1">0.11.1</a> / 2018-10-17</h2>
+<ul>
+<li>Security: Updated YamlDotNet version</li>
+</ul>
+<h2 id="0110--2018-10-11"><a href="https://github.com/gruke-build/src/compare/0.10.5...0.11.0">0.11.0</a> / 2018-10-11</h2>
+<ul>
+<li>Removed deprecated APIs</li>
+<li>Added event methods <code>OnBuildCreated</code>, <code>OnBuildInitialized</code>, <code>OnBuildFinished</code>, <code>OnTargetStart</code>, <code>OnTargetAbsent</code>, <code>OnTargetSkipped</code>, <code>OnTargetExecuted</code> and <code>OnTargetFailed</code></li>
+</ul>
+<h2 id="0105--2018-10-10"><a href="https://github.com/gruke-build/src/compare/0.10.4...0.10.5">0.10.5</a> / 2018-10-10</h2>
+<ul>
+<li>Fixed <code>--source</code> parameter for <code>DotNetRestore</code> to be collection</li>
+</ul>
+<h2 id="0104--2018-10-10"><a href="https://github.com/gruke-build/src/compare/0.10.3...0.10.4">0.10.4</a> / 2018-10-10</h2>
+<ul>
+<li>Fixed <code>GitRepository</code> when origin URL uses SSH without username</li>
+</ul>
+<h2 id="0103--2018-10-05"><a href="https://github.com/gruke-build/src/compare/0.10.2...0.10.3">0.10.3</a> / 2018-10-05</h2>
+<ul>
+<li>Fixed <code>WinRelativePath</code> and <code>UnixRelativePath</code> to use correct separator</li>
+</ul>
+<h2 id="0102--2018-10-04"><a href="https://github.com/gruke-build/src/compare/0.10.1...0.10.2">0.10.2</a> / 2018-10-04</h2>
+<ul>
+<li>Fixed <code>RequirementService</code> to also support shorthand for properties</li>
+</ul>
+<h2 id="0101--2018-10-02"><a href="https://github.com/gruke-build/src/compare/0.10.0...0.10.1">0.10.1</a> / 2018-10-02</h2>
+<ul>
+<li>Fixed wizard to pass definitions for project file template</li>
+<li>Fixed wizard to create source and tests directory if selected</li>
+<li>Fixed wizard to be disabled for legacy format</li>
+</ul>
+<h2 id="0100--2018-10-02"><a href="https://github.com/gruke-build/src/compare/0.9.1...0.10.0">0.10.0</a> / 2018-10-02</h2>
+<ul>
+<li>Removed <code>PathConstruction.GetRootRelativePath</code></li>
+<li>Removed <code>License</code> from specification files</li>
+<li>Deprecated <code>NukeBuild.Configuration</code> which should belong to user-code</li>
+<li>Deprecated plus operator in <code>PathConstruction.AbsolutePath</code> and <code>RelativePath</code></li>
+<li>Changed <code>SolutionAttribute</code> to resolve solution file via parameter</li>
+<li>Changed CLI wrapper tasks to attempt to resolve tool paths from <code>[TOOL]_EXE</code> environment variable</li>
+<li>Added <code>AbsolutePath.Parent</code> and equality members</li>
+<li>Added <code>TypeConverter</code> for <code>AbsolutePath</code> which allows passing paths as parameter</li>
+<li>Fixed detection of value types in specification files</li>
+<li>Fixed path variable check to split by specific separator</li>
+</ul>
+<h2 id="091--2018-09-26"><a href="https://github.com/gruke-build/src/compare/0.9.0...0.9.1">0.9.1</a> / 2018-09-26</h2>
+<ul>
+<li>Fixed wrong assertions in global tool</li>
+</ul>
+<h2 id="090--2018-09-22"><a href="https://github.com/gruke-build/src/compare/0.8.0...0.9.0">0.9.0</a> / 2018-09-22</h2>
+<ul>
+<li>Deprecated properties in <code>NukeBuild</code> which should belong to user-code</li>
+<li>Deprecated default settings which should belong to user-code</li>
+<li>Deprecated <code>DocFxTasks</code> which is moved to own package</li>
+<li>Added <code>SpecFlowTasks</code></li>
+<li>Added <code>NukeBuild.OutputSink</code> property for custom logger implementation</li>
+<li>Fixed <code>MSBuildLocator</code> and <code>MSBuildToolPathResolver</code> to also consider <code>/usr/local/bin/msbuild</code></li>
+</ul>
+<h2 id="080--2018-09-07"><a href="https://github.com/gruke-build/src/compare/0.7.0...0.8.0">0.8.0</a> / 2018-09-07</h2>
+<ul>
+<li>Changed <code>ProcessTasks</code> to automatically invoke .NET Core DLLs with <code>dotnet.exe</code></li>
+<li>Added <code>CoverletTask</code></li>
+<li>Fixed exception in <code>ChangelogTasks.ReadChangelog</code> when <code>vNext</code> section was empty</li>
+<li>Fixed console output to use ASCII instead of Unicode</li>
+<li>Fixed <code>MSBuildLocator</code> to use fallbacks when no VS instance with .NET Core is installed</li>
+</ul>
+<h2 id="070--2018-08-29"><a href="https://github.com/gruke-build/src/compare/0.6.2...0.7.0">0.7.0</a> / 2018-08-29</h2>
+<ul>
+<li>Changed assertion of <code>DataClass</code> properties print out value on failure</li>
+<li>Added <code>SquirrelTasks</code></li>
+<li>Added <code>UnityTasks</code></li>
+<li>Added tasks to update the changelog and get the latest version to <code>ChangeLogTasks</code></li>
+<li>Fixed global tool to order solutions descending</li>
+<li>Fixed global tool setup to use correct definitions and error about broken solution</li>
+<li>Fixed validation of requirements of skipped targets</li>
+<li>Fixed double evaluation of conditions with <code>DependencyBehavior.Skip</code></li>
+</ul>
+<h2 id="062--2018-08-18"><a href="https://github.com/gruke-build/src/compare/0.6.1...0.6.2">0.6.2</a> / 2018-08-18</h2>
+<ul>
+<li>Fixed <code>MSBuildLocator</code> to not use <code>System.ValueTuple</code></li>
+<li>Fixed typo in <code>OctopusCreateReleaseSettings</code></li>
+<li>Fixed adaptation of solution file in global tool</li>
+<li>Fixed output of global tool on Windows</li>
+</ul>
+<h2 id="061--2018-08-09"><a href="https://github.com/gruke-build/src/compare/0.6.0...0.6.1">0.6.1</a> / 2018-08-09</h2>
+<ul>
+<li>Fixed global tool to have 'same as global tool' as fallback version</li>
+<li>Fixed PowerShell invocation to use <code>-ExecutionPolicy ByPass</code> and <code>-NoProfile</code></li>
+</ul>
+<h2 id="060--2018-08-05"><a href="https://github.com/gruke-build/src/compare/0.5.3...0.6.0">0.6.0</a> / 2018-08-05</h2>
+<ul>
+<li>Removed setup scripts in favor of <code>:setup</code> command in global tool</li>
+<li>Removed <code>ProcessSettings</code> in favor of integrating related properties into <code>ToolSettings</code></li>
+<li>Removed deprecated APIs</li>
+<li>Changed tasks with return type to return value tuple</li>
+<li>Changed tasks to redirect output by default</li>
+<li>Added <code>ITargetDefinition.WhenSkipped</code> to specify dependency behavior for skipped targets</li>
+<li>Added <code>SlackTasks</code> and <code>VSWhereTasks</code></li>
+<li>Added namespace support in <code>XmlTasks</code></li>
+<li>Added <code>FileSystemTasks</code> for deleting, moving, copying and hash calculation</li>
+<li>Added support for loading external files</li>
+<li>Fixed various build server properties</li>
+<li>Fixed output color for <code>Logger.Info</code> to be <code>Console.ForegroundColor</code></li>
+<li>Fixed naming of <code>VSTestTasks</code></li>
+<li>Fixed build script to use VSWhere for locating MSBuild</li>
+<li>Fixed <code>NuGetPackageResolver</code> to determine <code>globalPackagesFolder</code> from config files</li>
+<li>Fixed <code>Xunit2Settings</code> to specify framework of console executable</li>
+<li>Fixed <code>DotNetRunSettings</code> to not quote <code>ApplicationArguments</code></li>
+</ul>
+<h2 id="053--2018-06-12"><a href="https://github.com/gruke-build/src/compare/0.5.2...0.5.3">0.5.3</a> / 2018-06-12</h2>
+<ul>
+<li>Fixed global tool to search build scripts also in current directory</li>
+<li>Fixed generic tasks to not redirect output by default</li>
+</ul>
+<h2 id="052--2018-06-11"><a href="https://github.com/gruke-build/src/compare/0.5.0...0.5.2">0.5.2</a> / 2018-06-11</h2>
+<ul>
+<li>Changed build summary to log skipped and absent targets unconditionally</li>
+<li>Added <code>HttpTasks</code> and <code>FtpTasks</code> for <code>netstandard</code> target framework</li>
+<li>Fixed global tool to simply exit if script execution returns non-zero exit codes</li>
+<li>Fixed global tool to search build scripts only within 2-level non-system sub-directories</li>
+<li>Fixed build summary to treat <code>NotRun</code> as a failure</li>
+</ul>
+<h2 id="050--2018-06-05"><a href="https://github.com/gruke-build/src/compare/0.4.0...0.5.0">0.5.0</a> / 2018-06-05</h2>
+<ul>
+<li>Changed build scripts to download .NET Core SDK only if local installation is missing or doesn't match expected version</li>
+<li>Added global tool for setup and build invocation</li>
+<li>Added version logging for PowerShell, Bash, NuGet and DotNet</li>
+<li>Added error output for CLT tasks when redirect output is enabled</li>
+<li>Added <code>[Tool]Tasks.[Tool](string arguments)</code> for all CLTs</li>
+<li>Added support for double-dashed arguments</li>
+<li>Fixed resolution of <code>Skip</code> parameter when using separators</li>
+<li>Fixed font resource resolution for deprecated namespace</li>
+<li>Fixed saving location of build scripts</li>
+</ul>
+<h2 id="040--2018-05-02"><a href="https://github.com/gruke-build/src/compare/0.3.1...0.4.0">0.4.0</a> / 2018-05-02</h2>
+<ul>
+<li>Deprecated <code>Nuke.Core</code> namespace. All types have been moved to <code>Nuke.Common</code></li>
+<li>Changed parameter binding to allow lisp-cased arguments (dashes for camel-humps)</li>
+<li>Changed build execution to automatically unwrap <code>AggregateException</code> and <code>TargetInvocationException</code></li>
+<li>Changed build server instances to access variables in non-ensured way</li>
+<li>Changed <code>GitRepository.FromLocalDirectory</code> to not return null but fail instead</li>
+<li>Changed reference from <code>NuGet.Client</code> to <code>NuGet.Packaging</code></li>
+<li>Changed summary output to use <code>Trace</code>, <code>Error</code>, <code>Success</code> methods of <code>Logger</code></li>
+<li>Added integration infrastructure for ReSharper plugin</li>
+<li>Added typo-checking for arguments that should be bound via <code>ParameterAttribute</code></li>
+<li>Added automatic retrieval of <code>GitRepositoryAttribute.BranchName</code> from build server instances</li>
+<li>Added <code>Logger.Success</code> method</li>
+<li>Fixed <code>GitRepository.ParseUrl</code> to strip username and password</li>
+<li>Fixed nullable properties in <code>TeamServices</code> and <code>Bitrise</code></li>
+<li>Fixed host simulation</li>
+<li>Fixed environment variable parsing when case-insensitive duplicates are found</li>
+</ul>
+<h2 id="031--2018-03-26"><a href="https://github.com/gruke-build/src/compare/0.2.10...0.3.1">0.3.1</a> / 2018-03-26</h2>
+<ul>
+<li>Deprecated <code>Action</code> usages in <code>DotCoverTasks</code> and <code>OpenCoverTasks</code> in favor of <code>SetTargetSettings</code></li>
+<li>Added <code>ProjectModelTasks</code> with matching <code>SolutionAttribute</code> for auto-injection</li>
+<li>Added <code>[Tool]Tasks.[Tool]Path</code> property for better accessibility</li>
+<li>Added <code>DotCoverTasks</code> aliases for <code>cover</code>, <code>delete</code>, <code>merge</code>, <code>report</code> and <code>zip</code></li>
+<li>Added <code>ArrayExtensions</code> for deconstruction</li>
+<li>Changed <code>NukeBuild.Configuration</code> to be overridable but still injectable</li>
+<li>Fixed <code>ProcessManager</code> to resolve <code>toolPath</code> from environment</li>
+<li>Fixed <code>ProcessManager</code> to filter executable based on operating system and file extensions</li>
+<li>Fixed <code>DeleteDirectory</code> for non-existent sub-directories at time of deletion</li>
+<li>Fixed line-endings in setup scripts</li>
+</ul>
+<h2 id="0210--2018-03-05"><a href="https://github.com/gruke-build/src/compare/0.2.0...0.2.10">0.2.10</a> / 2018-03-05</h2>
+<ul>
+<li>Fixed handling of <code>Graph</code> switch</li>
+<li>Fixed logging in Nuke.CodeGenerator</li>
+<li>Fixed temporary directory path in setup and bootstrapping scripts</li>
+<li>Fixed <code>NuGetSettings</code> to resolve tool path from <code>NuGet.CommandLine</code> package</li>
+<li>Fixed <code>Invoke-WebRequest</code> when InternetExplorer's first-launch configuration was not completed</li>
+<li>Fixed resolution of relative paths to be minimal</li>
+<li>Fixed <code>PathConstruction.GetRelativePath</code> to work with Unix paths</li>
+<li>Fixed argument formatting for boolean values</li>
+<li>Fixed enumeration of modified collection</li>
+</ul>
+<h2 id="020--2018-02-26"><a href="https://github.com/gruke-build/src/tree/0.2.0">0.2.0</a> / 2018-02-26</h2>
+<ul>
+<li>Deprecated <code>Target</code> parameter in favor of passing targets as first argument to the bootstrapping scripts</li>
+<li>Deprecated <code>NoDeps</code> parameter in favor of new <code>Skip</code> parameter that takes a separated list</li>
+<li>Deprecated <code>DefaultSettings</code> which are now exposed in each task class individually</li>
+<li>Changed default values for <code>AssemblyVersion</code> to <code>{major}.{minor}.0</code> and <code>FileVersion</code> to <code>{major}.{minor}.{patch}</code></li>
+<li>Added possibility to use <code>ParameterAttribute</code> in other injection attributes</li>
+<li>Added <code>GitVersionAttribute.Bump</code> parameter for bumping major/minor versions</li>
+<li>Added <code>GitVersionAttribute.DisableOnUnix</code> property since GitVersion is not working consistently</li>
+<li>Added <code>ChangelogTasks.FinalizeChangelog</code> for finalizing unpublished changes to a certain version</li>
+<li>Added <code>ChangelogTasks.ExtractChangelogSectionNotes</code> for extracting release data for a specified tag</li>
+<li>Added <code>NukeBuild.InvokedTargets</code> which exposes targets passed from command-line</li>
+<li>Added <code>NukeBuild.ExecutingTargets</code> which exposes targets that will be executed</li>
+<li>Added <code>NukeBuild.SkippedTargets</code> which exposes targets that will be skipped</li>
+<li>Added <code>GitRepository.IsGitHubRepository</code> extension method</li>
+<li>Added <code>GitRepositoryAttribute.Branch</code> and <code>GitRepositoryAttribute.Remote</code> properties for pass-through</li>
+<li>Added <code>build.cmd</code> in setup for easier invocation on Windows</li>
+<li>Added CLT tasks for Git</li>
+<li>Fixed background color in console output</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/docs/changelog.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          The next-generation .NET build automation system.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
