@@ -574,20 +574,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.CI.AppVeyor.Configuration.AppVeyorCustomWriterExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.CI.AppVeyor.Configuration.AppVeyorCustomWriterExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.CI.AppVeyor.Configuration.AppVeyorCustomWriterExtensions",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.CI.AppVeyor.Configuration.yml",
       "output": {
         ".html": {
@@ -822,20 +808,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.CI.AzurePipelines.Configuration.AzurePipelinesConfiguration",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.CI.AzurePipelines.Configuration.AzurePipelinesCustomWriterExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.CI.AzurePipelines.Configuration.AzurePipelinesCustomWriterExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.CI.AzurePipelines.Configuration.AzurePipelinesCustomWriterExtensions",
       "Summary": null
     },
     {
@@ -2544,6 +2516,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCIConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCICustomWriterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCICustomWriterExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.CI.WoodpeckerCI.Configuration.WoodpeckerCICustomWriterExtensions",
       "Summary": null
     },
     {
