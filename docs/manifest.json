@@ -24290,6 +24290,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Utilities.Text.Json.JTokenExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Utilities.Text.Json.JTokenExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Utilities.Text.Json.JTokenExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Utilities.Text.Json.yml",
       "output": {
         ".html": {
