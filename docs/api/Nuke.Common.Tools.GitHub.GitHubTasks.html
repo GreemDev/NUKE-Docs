@@ -89,12 +89,12 @@
 
 
   <h1 id="Nuke_Common_Tools_GitHub_GitHubTasks" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks" class="text-break">
-Class GitHubTasks  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L25"><i class="bi bi-code-slash"></i></a>
+Class GitHubTasks  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.Tools.html">Tools</a>.<a class="xref" href="Nuke.Common.Tools.GitHub.html">GitHub</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Components.GitHub.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -156,7 +156,7 @@ public static class GitHubTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GitHubClient" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GitHubClient">
   GitHubClient
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -191,7 +191,7 @@ public static class GitHubTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_CloseGitHubMilestone_Nuke_Common_Git_GitRepository_System_String_System_Boolean_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.CloseGitHubMilestone(Nuke.Common.Git.GitRepository,System.String,System.Boolean)">
   CloseGitHubMilestone(GitRepository, string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -231,7 +231,7 @@ public static class GitHubTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_CreateGitHubMilestone_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.CreateGitHubMilestone(Nuke.Common.Git.GitRepository,System.String)">
   CreateGitHubMilestone(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -269,7 +269,7 @@ public static class GitHubTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetDefaultBranch_Nuke_Common_Git_GitRepository_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetDefaultBranch(Nuke.Common.Git.GitRepository)">
   GetDefaultBranch(GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -301,252 +301,11 @@ public static class GitHubTasks</code></pre>
 
 
 
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubBrowseUrl_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubBrowseUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubBrowseUrl_Nuke_Common_Git_GitRepository_System_String_System_String_Nuke_Common_Tools_GitHub_GitHubItemType_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubBrowseUrl(Nuke.Common.Git.GitRepository,System.String,System.String,Nuke.Common.Tools.GitHub.GitHubItemType)">
-  GetGitHubBrowseUrl(GitRepository, string, string, GitHubItemType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L191"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Url in the form of <code>https://github.com/{identifier}/tree/{branch}/directory</code> or
-<code>https://github.com/{identifier}/blob/{branch}/file</code> depending on the item type.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubBrowseUrl(this GitRepository repository, string path = null, string branch = null, GitHubItemType itemType = GitHubItemType.Automatic)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>branch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>itemType</code> <a class="xref" href="Nuke.Common.Tools.GitHub.GitHubItemType.html">GitHubItemType</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCommitUrl_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCommitUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCommitUrl_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCommitUrl(Nuke.Common.Git.GitRepository,System.String)">
-  GetGitHubCommitUrl(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L171"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCommitUrl(this GitRepository repository, string commitSha)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>commitSha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCompareCommitsUrl_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCompareCommitsUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCompareCommitsUrl_Nuke_Common_Git_GitRepository_System_String_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCompareCommitsUrl(Nuke.Common.Git.GitRepository,System.String,System.String)">
-  GetGitHubCompareCommitsUrl(GitRepository, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L153"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCompareCommitsUrl(this GitRepository repository, string startCommitSha, string endCommitSha)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>startCommitSha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>endCommitSha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCompareTagToHeadUrl_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCompareTagToHeadUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCompareTagToHeadUrl_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCompareTagToHeadUrl(Nuke.Common.Git.GitRepository,System.String)">
-  GetGitHubCompareTagToHeadUrl(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L159"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCompareTagToHeadUrl(this GitRepository repository, string tag)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCompareTagsUrl_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCompareTagsUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubCompareTagsUrl_Nuke_Common_Git_GitRepository_System_String_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubCompareTagsUrl(Nuke.Common.Git.GitRepository,System.String,System.String)">
-  GetGitHubCompareTagsUrl(GitRepository, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L165"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCompareTagsUrl(this GitRepository repository, string startTag, string endTag)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>startTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>endTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubDownloadUrl_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubDownloadUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubDownloadUrl_Nuke_Common_Git_GitRepository_System_String_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubDownloadUrl(Nuke.Common.Git.GitRepository,System.String,System.String)">
-  GetGitHubDownloadUrl(GitRepository, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L178"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Url in the form of <code>https://raw.githubusercontent.com/{identifier}/{branch}/{file}</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubDownloadUrl(this GitRepository repository, string file, string branch = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>branch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubDownloadUrls_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubDownloadUrls*"></a>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubDownloadUrls_Nuke_Common_Git_GitRepository_System_String_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubDownloadUrls(Nuke.Common.Git.GitRepository,System.String,System.String)">
   GetGitHubDownloadUrls(GitRepository, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -586,7 +345,7 @@ public static class GitHubTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubMilestone_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubMilestone(Nuke.Common.Git.GitRepository,System.String)">
   GetGitHubMilestone(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -625,7 +384,7 @@ public static Task&lt;Milestone&gt; GetGitHubMilestone(this GitRepository reposi
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubMilestoneIssues_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubMilestoneIssues(Nuke.Common.Git.GitRepository,System.String)">
   GetGitHubMilestoneIssues(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -659,83 +418,11 @@ public static Task&lt;Milestone&gt; GetGitHubMilestone(this GitRepository reposi
 
 
 
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubName_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubName*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubName_Nuke_Common_Git_GitRepository_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubName(Nuke.Common.Git.GitRepository)">
-  GetGitHubName(GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L147"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubName(this GitRepository repository)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubOwner_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubOwner*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetGitHubOwner_Nuke_Common_Git_GitRepository_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetGitHubOwner(Nuke.Common.Git.GitRepository)">
-  GetGitHubOwner(GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L141"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubOwner(this GitRepository repository)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Nuke_Common_Tools_GitHub_GitHubTasks_GetLatestRelease_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetLatestRelease*"></a>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_GetLatestRelease_Nuke_Common_Git_GitRepository_System_Boolean_System_Boolean_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.GetLatestRelease(Nuke.Common.Git.GitRepository,System.Boolean,System.Boolean)">
   GetLatestRelease(GitRepository, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -771,47 +458,11 @@ public static Task&lt;Milestone&gt; GetGitHubMilestone(this GitRepository reposi
 
 
 
-  <a id="Nuke_Common_Tools_GitHub_GitHubTasks_IsGitHubRepository_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.IsGitHubRepository*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_IsGitHubRepository_Nuke_Common_Git_GitRepository_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.IsGitHubRepository(Nuke.Common.Git.GitRepository)">
-  IsGitHubRepository(GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L136"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsGitHubRepository(this GitRepository repository)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Nuke_Common_Tools_GitHub_GitHubTasks_TryCreateGitHubMilestone_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.TryCreateGitHubMilestone*"></a>
 
   <h3 id="Nuke_Common_Tools_GitHub_GitHubTasks_TryCreateGitHubMilestone_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitHubTasks.TryCreateGitHubMilestone(Nuke.Common.Git.GitRepository,System.String)">
   TryCreateGitHubMilestone(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -849,7 +500,7 @@ public static Task&lt;Milestone&gt; GetGitHubMilestone(this GitRepository reposi
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitHub/GitHubTasks.cs/#L25" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitHub/GitHubTasks.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

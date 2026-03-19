@@ -13734,6 +13734,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.GitRepositoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitHub.GitRepositoryExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitHub.GitRepositoryExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.yml",
       "output": {
         ".html": {
