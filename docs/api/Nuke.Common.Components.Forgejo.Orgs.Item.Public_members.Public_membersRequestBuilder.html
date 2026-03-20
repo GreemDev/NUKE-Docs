@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Public_membersRequestBuilder | gruke 10.3.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Public_membersRequestBuilder | gruke 10.3.0 ">
+      
+      <meta name="description" content="Builds and executes requests for operations under \orgs{org}\public_members">
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder.md&amp;value=---%0Auid%3A%20Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder">
+
+
+
+  <h1 id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder" class="text-break">
+Class Public_membersRequestBuilder  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.Components.html">Components</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.html">Forgejo</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.html">Orgs</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.html">Item</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.html">Public_members</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Components.Forgejo.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Builds and executes requests for operations under \orgs{org}\public_members</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Public_membersRequestBuilder : BaseRequestBuilder</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BaseRequestBuilder</span></div>
+      <div><span class="xref">Public_membersRequestBuilder</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">BaseRequestBuilder.PathParameters</span>
+    </div>
+    <div>
+      <span class="xref">BaseRequestBuilder.RequestAdapter</span>
+    </div>
+    <div>
+      <span class="xref">BaseRequestBuilder.UrlTemplate</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_ToPropertyDictionary__3___0_System_Func_System_Reflection_PropertyInfo___1__System_Func_System_Object___2__">EnumerableExtensions.ToPropertyDictionary&lt;T, TKey, TValue&gt;(T, Func&lt;PropertyInfo, TKey&gt;, Func&lt;object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.JsonExtensions.html#Nuke_Common_Utilities_JsonExtensions_ToJson__1___0_Newtonsoft_Json_JsonSerializerSettings_Newtonsoft_Json_Formatting_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerSettings, Formatting)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Apply__2___0_System_Func___0___1__">ObjectExtensions.Apply&lt;TInput, TOutput&gt;(TInput, Func&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Clone__1___0_">ObjectExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_WhenNotNull__2___0___1_System_Func___0___1___0__">ObjectExtensions.WhenNotNull&lt;T, TObject&gt;(T, TObject, Func&lt;T, TObject, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_When__1___0_System_Boolean_System_Func___0___0__">ObjectExtensions.When&lt;T&gt;(T, bool, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.XmlExtensions.html#Nuke_Common_Utilities_XmlExtensions_ToXml__1___0_System_Xml_Linq_SaveOptions_">XmlExtensions.ToXml&lt;T&gt;(T, SaveOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_ToJObject_System_Object_Newtonsoft_Json_JsonSerializer_">ObjectExtensions.ToJObject(object, JsonSerializer)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder__ctor_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.#ctor*"></a>
+
+  <h3 id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder__ctor_System_Collections_Generic_Dictionary_System_String_System_Object__Microsoft_Kiota_Abstractions_IRequestAdapter_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object},Microsoft.Kiota.Abstractions.IRequestAdapter)">
+  Public_membersRequestBuilder(Dictionary&lt;string, object&gt;, IRequestAdapter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.html">Public_membersRequestBuilder</a> and sets the default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Public_membersRequestBuilder(Dictionary&lt;string, object&gt; pathParameters, IRequestAdapter requestAdapter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pathParameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>Path parameters for the request</p>
+</dd>
+    <dt><code>requestAdapter</code> <span class="xref">IRequestAdapter</span></dt>
+    <dd><p>The request adapter to use to execute the requests.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder__ctor_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.#ctor*"></a>
+
+  <h3 id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder__ctor_System_String_Microsoft_Kiota_Abstractions_IRequestAdapter_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.#ctor(System.String,Microsoft.Kiota.Abstractions.IRequestAdapter)">
+  Public_membersRequestBuilder(string, IRequestAdapter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.html">Public_membersRequestBuilder</a> and sets the default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Public_membersRequestBuilder(string rawUrl, IRequestAdapter requestAdapter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rawUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw URL to use for the request builder.</p>
+</dd>
+    <dt><code>requestAdapter</code> <span class="xref">IRequestAdapter</span></dt>
+    <dd><p>The request adapter to use to execute the requests.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_Item_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.Item*"></a>
+
+  <h3 id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_Item_System_String_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an item from the Nuke.Common.Components.Forgejo.orgs.item.public_members.item collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WithUsernameItemRequestBuilder this[string position] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>username of the user</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Item.WithUsernameItemRequestBuilder.html">WithUsernameItemRequestBuilder</a></dt>
+    <dd><p>A <a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Item.WithUsernameItemRequestBuilder.html">WithUsernameItemRequestBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_GetAsync_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.GetAsync*"></a>
+
+  <h3 id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_GetAsync_System_Action_Microsoft_Kiota_Abstractions_RequestConfiguration_Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_Public_membersRequestBuilderGetQueryParameters___System_Threading_CancellationToken_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.GetAsync(System.Action{Microsoft.Kiota.Abstractions.RequestConfiguration{Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.Public_membersRequestBuilderGetQueryParameters}},System.Threading.CancellationToken)">
+  GetAsync(Action&lt;RequestConfiguration&lt;Public_membersRequestBuilderGetQueryParameters&gt;&gt;?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>List an organization's public members</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;User&gt;?&gt; GetAsync(Action&lt;RequestConfiguration&lt;Public_membersRequestBuilder.Public_membersRequestBuilderGetQueryParameters&gt;&gt;? requestConfiguration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestConfiguration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">RequestConfiguration</span>&lt;<a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.html">Public_membersRequestBuilder</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.Public_membersRequestBuilderGetQueryParameters.html">Public_membersRequestBuilderGetQueryParameters</a>&gt;&gt;</dt>
+    <dd><p>Configuration for the request such as headers, query parameters, and middleware options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Cancellation token to use when cancelling requests</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Nuke.Common.Components.Forgejo.Models.User.html">User</a>&gt;&gt;</dt>
+    <dd><p>A List&lt;global::Nuke.Common.Components.Forgejo.Models.User&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Components.Forgejo.Models.APINotFound.html">APINotFound</a></dt>
+    <dd><p>When receiving a 404 status code</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_ToGetRequestInformation_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.ToGetRequestInformation*"></a>
+
+  <h3 id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_ToGetRequestInformation_System_Action_Microsoft_Kiota_Abstractions_RequestConfiguration_Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_Public_membersRequestBuilderGetQueryParameters___" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.ToGetRequestInformation(System.Action{Microsoft.Kiota.Abstractions.RequestConfiguration{Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.Public_membersRequestBuilderGetQueryParameters}})">
+  ToGetRequestInformation(Action&lt;RequestConfiguration&lt;Public_membersRequestBuilderGetQueryParameters&gt;&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>List an organization's public members</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestInformation ToGetRequestInformation(Action&lt;RequestConfiguration&lt;Public_membersRequestBuilder.Public_membersRequestBuilderGetQueryParameters&gt;&gt;? requestConfiguration = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestConfiguration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">RequestConfiguration</span>&lt;<a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.html">Public_membersRequestBuilder</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.Public_membersRequestBuilderGetQueryParameters.html">Public_membersRequestBuilderGetQueryParameters</a>&gt;&gt;</dt>
+    <dd><p>Configuration for the request such as headers, query parameters, and middleware options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RequestInformation</span></dt>
+    <dd><p>A <span class="xref">Microsoft.Kiota.Abstractions.RequestInformation</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_WithUrl_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.WithUrl*"></a>
+
+  <h3 id="Nuke_Common_Components_Forgejo_Orgs_Item_Public_members_Public_membersRequestBuilder_WithUrl_System_String_" data-uid="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.WithUrl(System.String)">
+  WithUrl(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Public_membersRequestBuilder WithUrl(string rawUrl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rawUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The raw URL to use for the request builder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.html">Public_membersRequestBuilder</a></dt>
+    <dd><p>A <a class="xref" href="Nuke.Common.Components.Forgejo.Orgs.Item.Public_members.Public_membersRequestBuilder.html">Public_membersRequestBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Orgs/Item/Public_members/Public_membersRequestBuilder.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.113 @ <a href="https://github.com/gruke-build/src/commit/d8454ad6c92a6f1eb5dd56b3b1e4cd0de1f2bb87">d8454ad</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
