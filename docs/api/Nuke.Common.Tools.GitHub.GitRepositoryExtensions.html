@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions" class="text-break">
-Class GitRepositoryExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L20"><i class="bi bi-code-slash"></i></a>
+Class GitRepositoryExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.GitHub.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -148,256 +148,11 @@ Class GitRepositoryExtensions  <a class="header-action link-secondary" title="Vi
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubBrowseUrl_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubBrowseUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubBrowseUrl_Nuke_Common_Git_GitRepository_System_String_System_String_Nuke_Common_Tools_GitHub_GitHubItemType_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubBrowseUrl(Nuke.Common.Git.GitRepository,System.String,System.String,Nuke.Common.Tools.GitHub.GitHubItemType)">
-  GetGitHubBrowseUrl(GitRepository, string, string, GitHubItemType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L83"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Url in the form of <code>https://github.com/{identifier}/tree/{branch}/directory</code> or
-<code>https://github.com/{identifier}/blob/{branch}/file</code> depending on the item type.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubBrowseUrl(this GitRepository repository, string path = null, string branch = null, GitHubItemType itemType = GitHubItemType.Automatic)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>branch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>itemType</code> <a class="xref" href="Nuke.Common.Tools.GitHub.GitHubItemType.html">GitHubItemType</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCommitUrl_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCommitUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCommitUrl_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCommitUrl(Nuke.Common.Git.GitRepository,System.String)">
-  GetGitHubCommitUrl(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L63"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCommitUrl(this GitRepository repository, string commitSha)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>commitSha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCompareCommitsUrl_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCompareCommitsUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCompareCommitsUrl_Nuke_Common_Git_GitRepository_System_String_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCompareCommitsUrl(Nuke.Common.Git.GitRepository,System.String,System.String)">
-  GetGitHubCompareCommitsUrl(GitRepository, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCompareCommitsUrl(this GitRepository repository, string startCommitSha, string endCommitSha)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>startCommitSha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>endCommitSha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCompareTagToHeadUrl_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCompareTagToHeadUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCompareTagToHeadUrl_Nuke_Common_Git_GitRepository_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCompareTagToHeadUrl(Nuke.Common.Git.GitRepository,System.String)">
-  GetGitHubCompareTagToHeadUrl(GitRepository, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L51"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCompareTagToHeadUrl(this GitRepository repository, string tag)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCompareTagsUrl_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCompareTagsUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubCompareTagsUrl_Nuke_Common_Git_GitRepository_System_String_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubCompareTagsUrl(Nuke.Common.Git.GitRepository,System.String,System.String)">
-  GetGitHubCompareTagsUrl(GitRepository, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L57"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubCompareTagsUrl(this GitRepository repository, string startTag, string endTag)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>startTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>endTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubDownloadUrl_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubDownloadUrl*"></a>
-
-  <h3 id="Nuke_Common_Tools_GitHub_GitRepositoryExtensions_GetGitHubDownloadUrl_Nuke_Common_Git_GitRepository_System_String_System_String_" data-uid="Nuke.Common.Tools.GitHub.GitRepositoryExtensions.GetGitHubDownloadUrl(Nuke.Common.Git.GitRepository,System.String,System.String)">
-  GetGitHubDownloadUrl(GitRepository, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L70"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Url in the form of <code>https://raw.githubusercontent.com/{identifier}/{branch}/{file}</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetGitHubDownloadUrl(this GitRepository repository, string file, string branch = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>repository</code> <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
-    <dd></dd>
-    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>branch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.cs/#L20" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Utilities/GitRepositoryExtensions.GitHub.cs/#L112" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -413,7 +168,7 @@ Class GitRepositoryExtensions  <a class="header-action link-secondary" title="Vi
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.114 @ <a href="https://github.com/gruke-build/src/commit/468722e50d7a0f316028918b90376ff25747dc46">468722e</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.116 @ <a href="https://github.com/gruke-build/src/commit/b537a9ce7480641e8f36f2cfeaae6c28e52f0df9">b537a9c</a></span>
         </div>
       </div>
     </footer>

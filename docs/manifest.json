@@ -28602,6 +28602,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.GitHubRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitHub.GitHubRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitHub.GitHubRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.GitHubTasks.yml",
       "output": {
         ".html": {
