@@ -421,7 +421,7 @@ public interface ICreateGitHubRelease : IHazGitRepository, IHazChangelog, INukeB
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(null)]
+    <pre><code class="lang-csharp hljs">[Parameter(&quot;Owner of the GitHub repository. Only required if the current repo is not cloned from GitHub, or you want to use a different repository for releases.&quot;)]
 string GitHubOwner { get; }</code></pre>
   </div>
 
@@ -453,7 +453,7 @@ string GitHubOwner { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(null)]
+    <pre><code class="lang-csharp hljs">[Parameter(&quot;Name of the GitHub repository. Only required if the current repo is not cloned from GitHub, or you want to use a different repository for releases.&quot;)]
 string GitHubRepoName { get; }</code></pre>
   </div>
 
@@ -485,7 +485,7 @@ string GitHubRepoName { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(null)]
+    <pre><code class="lang-csharp hljs">[Parameter(&quot;GitHub API token with appropriate API access&quot;)]
 string GitHubToken { get; }</code></pre>
   </div>
 
@@ -588,7 +588,7 @@ string GitHubToken { get; }</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.118 @ <a href="https://github.com/gruke-build/src/commit/a4381c52ff8446cfcbe6ba71dfea339e243b3cdb">a4381c5</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.119 @ <a href="https://github.com/gruke-build/src/commit/7025121f6e5217687685f5b5d406d1fb813ffdaf">7025121</a></span>
         </div>
       </div>
     </footer>
