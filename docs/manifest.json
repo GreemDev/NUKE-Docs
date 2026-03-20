@@ -28588,6 +28588,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.ForgejoHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitHub.ForgejoHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitHub.ForgejoHost",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.ForgejoRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitHub.ForgejoRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitHub.ForgejoRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.GitHubItemType.yml",
       "output": {
         ".html": {
