@@ -103,7 +103,7 @@ Class GitRepository
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
 [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
-public class GitRepository</code></pre>
+public record GitRepository : IEquatable&lt;GitRepository&gt;</code></pre>
   </div>
 
 
@@ -117,6 +117,12 @@ public class GitRepository</code></pre>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -304,7 +310,7 @@ public class GitRepository</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_GitRemoteRegex" data-uid="Nuke.Common.Git.GitRepository.GitRemoteRegex">
   GitRemoteRegex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -339,7 +345,7 @@ public class GitRepository</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_Branch" data-uid="Nuke.Common.Git.GitRepository.Branch">
   Branch
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Current branch; <code>null</code> if head is detached.</p>
@@ -372,7 +378,7 @@ public string Branch { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_Commit" data-uid="Nuke.Common.Git.GitRepository.Commit">
   Commit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L269"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Current commit; <code>null</code> if parsed from URL.</p>
@@ -437,7 +443,7 @@ public string Commit { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_Head" data-uid="Nuke.Common.Git.GitRepository.Head">
   Head
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Current head; <code>null</code> if parsed from URL.</p>
@@ -470,7 +476,7 @@ public string Head { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_HttpsUrl" data-uid="Nuke.Common.Git.GitRepository.HttpsUrl">
   HttpsUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Url in the form of <code>https://endpoint/identifier.git</code></p>
@@ -535,7 +541,7 @@ public string HttpsUrl { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_LocalDirectory" data-uid="Nuke.Common.Git.GitRepository.LocalDirectory">
   LocalDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Local path from which the repository was parsed.</p>
@@ -600,7 +606,7 @@ public AbsolutePath LocalDirectory { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_RemoteBranch" data-uid="Nuke.Common.Git.GitRepository.RemoteBranch">
   RemoteBranch
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Name of the remote branch.</p>
@@ -633,7 +639,7 @@ public string RemoteBranch { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_RemoteName" data-uid="Nuke.Common.Git.GitRepository.RemoteName">
   RemoteName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Name of the remote.</p>
@@ -666,7 +672,7 @@ public string RemoteName { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_SshUrl" data-uid="Nuke.Common.Git.GitRepository.SshUrl">
   SshUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L292"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Url in the form of <code>git@endpoint:identifier.git</code></p>
@@ -699,7 +705,7 @@ public string SshUrl { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_Tags" data-uid="Nuke.Common.Git.GitRepository.Tags">
   Tags
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>List of tags; <code>null</code> if parsed from URL.</p>
@@ -806,11 +812,52 @@ public string SshUrl { get; }</code></pre>
 
 
 
+  <a id="Nuke_Common_Git_GitRepository_ModifyCopy_" data-uid="Nuke.Common.Git.GitRepository.ModifyCopy*"></a>
+
+  <h3 id="Nuke_Common_Git_GitRepository_ModifyCopy_System_String_System_String_" data-uid="Nuke.Common.Git.GitRepository.ModifyCopy(System.String,System.String)">
+  ModifyCopy(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a copy of the current <a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a> with the specified parameters set as the respective properties on the copy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GitRepository ModifyCopy(string identifier = null, string endpoint = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="Nuke.Common.Git.GitRepository.html#Nuke_Common_Git_GitRepository_Identifier">Identifier</a></p>
+</dd>
+    <dt><code>endpoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="Nuke.Common.Git.GitRepository.html#Nuke_Common_Git_GitRepository_Endpoint">Endpoint</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Git.GitRepository.html">GitRepository</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_Git_GitRepository_SetBranch_" data-uid="Nuke.Common.Git.GitRepository.SetBranch*"></a>
 
   <h3 id="Nuke_Common_Git_GitRepository_SetBranch_System_String_" data-uid="Nuke.Common.Git.GitRepository.SetBranch(System.String)">
   SetBranch(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -846,7 +893,7 @@ public string SshUrl { get; }</code></pre>
 
   <h3 id="Nuke_Common_Git_GitRepository_ToString" data-uid="Nuke.Common.Git.GitRepository.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitRepository.cs/#L310"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
@@ -894,7 +941,7 @@ public string SshUrl { get; }</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.117 @ <a href="https://github.com/gruke-build/src/commit/4596b4b42af8238c81cf6a67c9c1fc5dae9c8189">4596b4b</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.118 @ <a href="https://github.com/gruke-build/src/commit/a4381c52ff8446cfcbe6ba71dfea339e243b3cdb">a4381c5</a></span>
         </div>
       </div>
     </footer>
