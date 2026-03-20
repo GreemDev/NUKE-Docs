@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class KiotaGenerateSettings | gruke 10.3.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class KiotaGenerateSettings | gruke 10.3.0 ">
+      
+      <meta name="description" content="Generate a client for any API from its description.For more details, visit the official website.">
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Kiota_KiotaGenerateSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Kiota.KiotaGenerateSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings">
+
+
+
+  <h1 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings" class="text-break">
+Class KiotaGenerateSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.Tools.html">Tools</a>.<a class="xref" href="Nuke.Common.Tools.Kiota.html">Kiota</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Generate a client for any API from its description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[ExcludeFromCodeCoverage]
+public class KiotaGenerateSettings : ToolOptions, IOptions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Nuke.Common.Tooling.Options.html">Options</a></div>
+      <div><a class="xref" href="Nuke.Common.Tooling.ToolOptions.html">ToolOptions</a></div>
+      <div><span class="xref">KiotaGenerateSettings</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Nuke.Common.Tooling.IOptions.html">IOptions</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessToolPath">ToolOptions.ProcessToolPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessWorkingDirectory">ToolOptions.ProcessWorkingDirectory</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessEnvironmentVariables">ToolOptions.ProcessEnvironmentVariables</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessExecutionTimeout">ToolOptions.ProcessExecutionTimeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessOutputLogging">ToolOptions.ProcessOutputLogging</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessInvocationLogging">ToolOptions.ProcessInvocationLogging</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessExitHandling">ToolOptions.ProcessExitHandling</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessRedactedSecrets">ToolOptions.ProcessRedactedSecrets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessAdditionalArguments">ToolOptions.ProcessAdditionalArguments</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.Options.html#Nuke_Common_Tooling_Options_InternalOptions">Options.InternalOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.Options.html#Nuke_Common_Tooling_Options_Set__1_System_Linq_Expressions_Expression_System_Func___0___System_Object_">Options.Set&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.Options.html#Nuke_Common_Tooling_Options_Get__1_System_Linq_Expressions_Expression_System_Func_System_Object___">Options.Get&lt;T&gt;(Expression&lt;Func&lt;object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddDeserializerClasses__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.AddDeserializerClasses&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddDeserializerClasses__1___0_System_String___">KiotaGenerateSettingsExtensions.AddDeserializerClasses&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddExcludePaths__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.AddExcludePaths&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddExcludePaths__1___0_System_String___">KiotaGenerateSettingsExtensions.AddExcludePaths&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddIncludePaths__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.AddIncludePaths&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddIncludePaths__1___0_System_String___">KiotaGenerateSettingsExtensions.AddIncludePaths&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddSerializerClasses__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.AddSerializerClasses&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddSerializerClasses__1___0_System_String___">KiotaGenerateSettingsExtensions.AddSerializerClasses&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddStructuredMimeTypes__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.AddStructuredMimeTypes&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_AddStructuredMimeTypes__1___0_System_String___">KiotaGenerateSettingsExtensions.AddStructuredMimeTypes&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ClearDeserializerClasses__1___0_">KiotaGenerateSettingsExtensions.ClearDeserializerClasses&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ClearExcludePaths__1___0_">KiotaGenerateSettingsExtensions.ClearExcludePaths&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ClearIncludePaths__1___0_">KiotaGenerateSettingsExtensions.ClearIncludePaths&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ClearSerializerClasses__1___0_">KiotaGenerateSettingsExtensions.ClearSerializerClasses&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ClearStructuredMimeTypes__1___0_">KiotaGenerateSettingsExtensions.ClearStructuredMimeTypes&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_DisableAdditionalData__1___0_">KiotaGenerateSettingsExtensions.DisableAdditionalData&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_DisableBackingStore__1___0_">KiotaGenerateSettingsExtensions.DisableBackingStore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_DisableCleanOutput__1___0_">KiotaGenerateSettingsExtensions.DisableCleanOutput&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_DisableClearCache__1___0_">KiotaGenerateSettingsExtensions.DisableClearCache&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_DisableExcludeBackwardsCompatible__1___0_">KiotaGenerateSettingsExtensions.DisableExcludeBackwardsCompatible&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_DisableSslValidation__1___0_">KiotaGenerateSettingsExtensions.DisableSslValidation&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_EnableAdditionalData__1___0_">KiotaGenerateSettingsExtensions.EnableAdditionalData&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_EnableBackingStore__1___0_">KiotaGenerateSettingsExtensions.EnableBackingStore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_EnableCleanOutput__1___0_">KiotaGenerateSettingsExtensions.EnableCleanOutput&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_EnableClearCache__1___0_">KiotaGenerateSettingsExtensions.EnableClearCache&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_EnableExcludeBackwardsCompatible__1___0_">KiotaGenerateSettingsExtensions.EnableExcludeBackwardsCompatible&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveDeserializerClasses__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.RemoveDeserializerClasses&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveDeserializerClasses__1___0_System_String___">KiotaGenerateSettingsExtensions.RemoveDeserializerClasses&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveExcludePaths__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.RemoveExcludePaths&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveExcludePaths__1___0_System_String___">KiotaGenerateSettingsExtensions.RemoveExcludePaths&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveIncludePaths__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.RemoveIncludePaths&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveIncludePaths__1___0_System_String___">KiotaGenerateSettingsExtensions.RemoveIncludePaths&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveSerializerClasses__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.RemoveSerializerClasses&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveSerializerClasses__1___0_System_String___">KiotaGenerateSettingsExtensions.RemoveSerializerClasses&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveStructuredMimeTypes__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.RemoveStructuredMimeTypes&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_RemoveStructuredMimeTypes__1___0_System_String___">KiotaGenerateSettingsExtensions.RemoveStructuredMimeTypes&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetAdditionalData__1___0_">KiotaGenerateSettingsExtensions.ResetAdditionalData&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetBackingStore__1___0_">KiotaGenerateSettingsExtensions.ResetBackingStore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetClassName__1___0_">KiotaGenerateSettingsExtensions.ResetClassName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetCleanOutput__1___0_">KiotaGenerateSettingsExtensions.ResetCleanOutput&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetClearCache__1___0_">KiotaGenerateSettingsExtensions.ResetClearCache&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetExcludeBackwardsCompatible__1___0_">KiotaGenerateSettingsExtensions.ResetExcludeBackwardsCompatible&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetLogLevel__1___0_">KiotaGenerateSettingsExtensions.ResetLogLevel&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetNamespaceName__1___0_">KiotaGenerateSettingsExtensions.ResetNamespaceName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetOpenApiDescription__1___0_">KiotaGenerateSettingsExtensions.ResetOpenApiDescription&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetOutputPath__1___0_">KiotaGenerateSettingsExtensions.ResetOutputPath&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetTargetLanguage__1___0_">KiotaGenerateSettingsExtensions.ResetTargetLanguage&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetTypeAccessModifier__1___0_">KiotaGenerateSettingsExtensions.ResetTypeAccessModifier&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ResetVersion__1___0_">KiotaGenerateSettingsExtensions.ResetVersion&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetAdditionalData__1___0_System_Nullable_System_Boolean__">KiotaGenerateSettingsExtensions.SetAdditionalData&lt;T&gt;(T, bool?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetBackingStore__1___0_System_Nullable_System_Boolean__">KiotaGenerateSettingsExtensions.SetBackingStore&lt;T&gt;(T, bool?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetClassName__1___0_System_String_">KiotaGenerateSettingsExtensions.SetClassName&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetCleanOutput__1___0_System_Nullable_System_Boolean__">KiotaGenerateSettingsExtensions.SetCleanOutput&lt;T&gt;(T, bool?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetClearCache__1___0_System_Nullable_System_Boolean__">KiotaGenerateSettingsExtensions.SetClearCache&lt;T&gt;(T, bool?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetDeserializerClasses__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.SetDeserializerClasses&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetDeserializerClasses__1___0_System_String___">KiotaGenerateSettingsExtensions.SetDeserializerClasses&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetExcludeBackwardsCompatible__1___0_System_Nullable_System_Boolean__">KiotaGenerateSettingsExtensions.SetExcludeBackwardsCompatible&lt;T&gt;(T, bool?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetExcludePaths__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.SetExcludePaths&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetExcludePaths__1___0_System_String___">KiotaGenerateSettingsExtensions.SetExcludePaths&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetIncludePaths__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.SetIncludePaths&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetIncludePaths__1___0_System_String___">KiotaGenerateSettingsExtensions.SetIncludePaths&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetLogLevel__1___0_Nuke_Common_Tools_Kiota_KiotaLogLevel_">KiotaGenerateSettingsExtensions.SetLogLevel&lt;T&gt;(T, KiotaLogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetNamespaceName__1___0_System_String_">KiotaGenerateSettingsExtensions.SetNamespaceName&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetOpenApiDescription__1___0_System_String_">KiotaGenerateSettingsExtensions.SetOpenApiDescription&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetOutputPath__1___0_System_String_">KiotaGenerateSettingsExtensions.SetOutputPath&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetSerializerClasses__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.SetSerializerClasses&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetSerializerClasses__1___0_System_String___">KiotaGenerateSettingsExtensions.SetSerializerClasses&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetStructuredMimeTypes__1___0_System_Collections_Generic_IEnumerable_System_String__">KiotaGenerateSettingsExtensions.SetStructuredMimeTypes&lt;T&gt;(T, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetStructuredMimeTypes__1___0_System_String___">KiotaGenerateSettingsExtensions.SetStructuredMimeTypes&lt;T&gt;(T, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetTargetLanguage__1___0_Nuke_Common_Tools_Kiota_KiotaLanguage_">KiotaGenerateSettingsExtensions.SetTargetLanguage&lt;T&gt;(T, KiotaLanguage)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetTypeAccessModifier__1___0_Nuke_Common_Tools_Kiota_KiotaAccessModifier_">KiotaGenerateSettingsExtensions.SetTypeAccessModifier&lt;T&gt;(T, KiotaAccessModifier)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_SetVersion__1___0_System_String_">KiotaGenerateSettingsExtensions.SetVersion&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ToggleAdditionalData__1___0_">KiotaGenerateSettingsExtensions.ToggleAdditionalData&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ToggleBackingStore__1___0_">KiotaGenerateSettingsExtensions.ToggleBackingStore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ToggleCleanOutput__1___0_">KiotaGenerateSettingsExtensions.ToggleCleanOutput&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ToggleClearCache__1___0_">KiotaGenerateSettingsExtensions.ToggleClearCache&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettingsExtensions_ToggleExcludeBackwardsCompatible__1___0_">KiotaGenerateSettingsExtensions.ToggleExcludeBackwardsCompatible&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_ToPropertyDictionary__3___0_System_Func_System_Reflection_PropertyInfo___1__System_Func_System_Object___2__">EnumerableExtensions.ToPropertyDictionary&lt;T, TKey, TValue&gt;(T, Func&lt;PropertyInfo, TKey&gt;, Func&lt;object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.JsonExtensions.html#Nuke_Common_Utilities_JsonExtensions_ToJson__1___0_Newtonsoft_Json_JsonSerializerSettings_Newtonsoft_Json_Formatting_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerSettings, Formatting)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Apply__2___0_System_Func___0___1__">ObjectExtensions.Apply&lt;TInput, TOutput&gt;(TInput, Func&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Clone__1___0_">ObjectExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_WhenNotNull__2___0___1_System_Func___0___1___0__">ObjectExtensions.WhenNotNull&lt;T, TObject&gt;(T, TObject, Func&lt;T, TObject, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_When__1___0_System_Boolean_System_Func___0___0__">ObjectExtensions.When&lt;T&gt;(T, bool, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.XmlExtensions.html#Nuke_Common_Utilities_XmlExtensions_ToXml__1___0_System_Xml_Linq_SaveOptions_">XmlExtensions.ToXml&lt;T&gt;(T, SaveOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_ToJObject_System_Object_Newtonsoft_Json_JsonSerializer_">ObjectExtensions.ToJObject(object, JsonSerializer)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--additional-data</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_AdditionalData">AdditionalData</a></li><li><code>--backing-store</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_BackingStore">BackingStore</a></li><li><code>--class-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClassName">ClassName</a></li><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClearCache">ClearCache</a></li><li><code>--deserializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DeserializerClasses">DeserializerClasses</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--exclude-backward-compatible</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludeBackwardsCompatible">ExcludeBackwardsCompatible</a></li><li><code>--exclude-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludePaths">ExcludePaths</a></li><li><code>--include-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_IncludePaths">IncludePaths</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_LogLevel">LogLevel</a></li><li><code>--namespace-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_NamespaceName">NamespaceName</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OutputPath">OutputPath</a></li><li><code>--serializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_SerializerClasses">SerializerClasses</a></li><li><code>--structured-mime-types</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_StructuredMimeTypes">StructuredMimeTypes</a></li><li><code>--type-access-modifier</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TypeAccessModifier">TypeAccessModifier</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_Version">Version</a></li></ul>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_AdditionalData_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.AdditionalData*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_AdditionalData" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.AdditionalData">
+  AdditionalData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Include the 'AdditionalData' property for generated models. Defaults to <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? AdditionalData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_BackingStore_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.BackingStore*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_BackingStore" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.BackingStore">
+  BackingStore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? BackingStore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClassName_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ClassName*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClassName" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ClassName">
+  ClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The class name to use for the core client class. Defaults to <code>ApiClient</code>. The provided name MUST be a valid class name for the target language.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_CleanOutput_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.CleanOutput*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_CleanOutput" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.CleanOutput">
+  CleanOutput
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delete the output directory before generating the client. Defaults to false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? CleanOutput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClearCache_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ClearCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClearCache" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ClearCache">
+  ClearCache
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the currently cached file for the command. Defaults to false.<br><br>Cached files are stored under '%TEMP%/kiota/cache' and valid for one (1) hour after the initial download. Kiota caches API descriptions during generation and static index files during search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? ClearCache { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DeserializerClasses_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.DeserializerClasses*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DeserializerClasses" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.DeserializerClasses">
+  DeserializerClasses
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The fully qualified class names for deserializers.<br><br>These values are used in the client class to initialize the deserialization providers.<br><br>Since version 1.11 this parameter also supports a none key to generate a client with no deserialization providers in order to enable better portability. Defaults visible on Microsoft documentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; DeserializerClasses { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DisableSslValidation_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.DisableSslValidation*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DisableSslValidation" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.DisableSslValidation">
+  DisableSslValidation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Select a specific version of the API description. No default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? DisableSslValidation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludeBackwardsCompatible_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ExcludeBackwardsCompatible*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludeBackwardsCompatible" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ExcludeBackwardsCompatible">
+  ExcludeBackwardsCompatible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether to exclude the code generated only for backward compatibility reasons or not. Defaults to false.<br><br>To maintain compatibility with applications that depends on generated clients, Kiota emits extra code marked as obsolete. New clients don't need this extra backward compatible code. The code marked as obsolete will be removed in the next major version of Kiota. Use this option to omit emitting the backward compatible code when generating a new client, or when the application using the existing client being refreshed doesn't depend on backward compatible code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? ExcludeBackwardsCompatible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludePaths_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ExcludePaths*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludePaths" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.ExcludePaths">
+  ExcludePaths
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A glob pattern to exclude paths from generation. Accepts multiple values. If this parameter is absent, everything is included.<br><br>You can also filter specific HTTP methods by appending <code>#METHOD</code> to the pattern, replacing <code>METHOD</code> with the HTTP method to filter. For example, <code><strong>/users/</strong>#GET</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; ExcludePaths { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_IncludePaths_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.IncludePaths*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_IncludePaths" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.IncludePaths">
+  IncludePaths
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A glob pattern to include paths from generation. Accepts multiple values. If this parameter is absent, everything is included.<br><br>You can also filter specific HTTP methods by appending <code>#METHOD</code> to the pattern, replacing <code>METHOD</code> with the HTTP method to filter. For example, <code><strong>/users/</strong>#GET</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; IncludePaths { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_LogLevel_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.LogLevel*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_LogLevel" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.LogLevel">
+  LogLevel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The log level to use when logging events to the main output. Defaults to <code>warning</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KiotaLogLevel LogLevel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogLevel.html">KiotaLogLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_NamespaceName_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.NamespaceName*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_NamespaceName" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.NamespaceName">
+  NamespaceName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The namespace to use for the core client class specified with the <code>--class-name</code> option. Defaults to <code>ApiSdk</code>. The provided name MUST be a valid module or namespace name for the target language.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NamespaceName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OpenApiDescription_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.OpenApiDescription*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OpenApiDescription" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.OpenApiDescription">
+  OpenApiDescription
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The location of the OpenAPI description in JSON or YAML format to use to generate the SDK. Accepts a URL or a local path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OpenApiDescription { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OutputPath_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.OutputPath*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OutputPath" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.OutputPath">
+  OutputPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The output directory or file path for the generated code files. Defaults to <code>./output</code> for generate and <code>./output/result.json</code> for download.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OutputPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_SerializerClasses_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.SerializerClasses*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_SerializerClasses" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.SerializerClasses">
+  SerializerClasses
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The fully qualified class names for serializers.<br><br>These values are used in the client class to initialize the serialization providers.<br><br>Since version 1.11 this parameter also supports a none key to generate a client with no serialization providers in order to enable better portability. Defaults visible on Microsoft documentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; SerializerClasses { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_StructuredMimeTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.StructuredMimeTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_StructuredMimeTypes" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.StructuredMimeTypes">
+  StructuredMimeTypes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The MIME types to use for structured data model generation with their preference weight. Any type without a preference has its preference defaulted to 1. Accepts multiple values. The notation style and the preference weight logic follow the convention <a href="https://www.rfc-editor.org/rfc/rfc9110.html#name-accept">defined in RFC9110</a>. Default values: <code>application/json;q=1</code>, <code>application/x-www-form-urlencoded;q=0.2</code>, <code>multipart/form-data;q=0.1</code>, <code>text/plain;q=0.9</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; StructuredMimeTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TargetLanguage_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.TargetLanguage*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TargetLanguage" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.TargetLanguage">
+  TargetLanguage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The target language for the generated code files or for the information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KiotaLanguage TargetLanguage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLanguage.html">KiotaLanguage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TypeAccessModifier_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.TypeAccessModifier*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TypeAccessModifier" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.TypeAccessModifier">
+  TypeAccessModifier
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Controls the accessibility level for generated client types.<br><br>This can be useful to reduce the scope of visibility in library scenarios where you do not want to expose the generated types to consuming projects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KiotaAccessModifier TypeAccessModifier { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Tools.Kiota.KiotaAccessModifier.html">KiotaAccessModifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_Version_" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.Version*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaGenerateSettings_Version" data-uid="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Select a specific version of the API description. No default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L165" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.110 @ <a href="https://github.com/gruke-build/src/commit/08d4af6a40bc99b5575490dc3e3eeae404c2c804">08d4af6</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

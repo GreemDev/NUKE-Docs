@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class KiotaInfoSettingsExtensions | gruke 10.3.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class KiotaInfoSettingsExtensions | gruke 10.3.0 ">
+      
+      <meta name="description" content="Show languages and runtime dependencies information.For more details, visit the official website.">
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions">
+
+
+
+  <h1 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions" class="text-break">
+Class KiotaInfoSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L884"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.Tools.html">Tools</a>.<a class="xref" href="Nuke.Common.Tools.Kiota.html">Kiota</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Show languages and runtime dependencies information.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[ExcludeFromCodeCoverage]
+public static class KiotaInfoSettingsExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">KiotaInfoSettingsExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_ClearCache">ClearCache</a></li><li><code>--dependency-type</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_DependencyTypes">DependencyTypes</a></li><li><code>--json</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Json">Json</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_LogLevel">LogLevel</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--search-key</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_SearchKey">SearchKey</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Version">Version</a></li></ul>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_AddDependencyTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.AddDependencyTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_AddDependencyTypes__1___0_Nuke_Common_Tools_Kiota_KiotaDependencyType___" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.AddDependencyTypes``1(``0,Nuke.Common.Tools.Kiota.KiotaDependencyType[])">
+  AddDependencyTypes&lt;T&gt;(T, params KiotaDependencyType[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L913"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of dependencies to display when used in combination with the language option. Does not impact the json output. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T AddDependencyTypes&lt;T&gt;(this T o, params KiotaDependencyType[] v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDependencyType.html">KiotaDependencyType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_AddDependencyTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.AddDependencyTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_AddDependencyTypes__1___0_System_Collections_Generic_IEnumerable_Nuke_Common_Tools_Kiota_KiotaDependencyType__" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.AddDependencyTypes``1(``0,System.Collections.Generic.IEnumerable{Nuke.Common.Tools.Kiota.KiotaDependencyType})">
+  AddDependencyTypes&lt;T&gt;(T, IEnumerable&lt;KiotaDependencyType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L916"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of dependencies to display when used in combination with the language option. Does not impact the json output. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T AddDependencyTypes&lt;T&gt;(this T o, IEnumerable&lt;KiotaDependencyType&gt; v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDependencyType.html">KiotaDependencyType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ClearDependencyTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ClearDependencyTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ClearDependencyTypes__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ClearDependencyTypes``1(``0)">
+  ClearDependencyTypes&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L925"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of dependencies to display when used in combination with the language option. Does not impact the json output. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ClearDependencyTypes&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_DisableClearCache_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.DisableClearCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_DisableClearCache__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.DisableClearCache``1(``0)">
+  DisableClearCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L979"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the currently cached file for the command. Defaults to false.<br><br>Cached files are stored under '%TEMP%/kiota/cache' and valid for one (1) hour after the initial download. Kiota caches API descriptions during generation and static index files during search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T DisableClearCache&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_DisableJson_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.DisableJson*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_DisableJson__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.DisableJson``1(``0)">
+  DisableJson&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L899"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the output in a machine parsable format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T DisableJson&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_EnableClearCache_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.EnableClearCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_EnableClearCache__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.EnableClearCache``1(``0)">
+  EnableClearCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L976"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the currently cached file for the command. Defaults to false.<br><br>Cached files are stored under '%TEMP%/kiota/cache' and valid for one (1) hour after the initial download. Kiota caches API descriptions during generation and static index files during search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T EnableClearCache&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_EnableJson_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.EnableJson*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_EnableJson__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.EnableJson``1(``0)">
+  EnableJson&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L896"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the output in a machine parsable format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T EnableJson&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_RemoveDependencyTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.RemoveDependencyTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_RemoveDependencyTypes__1___0_Nuke_Common_Tools_Kiota_KiotaDependencyType___" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.RemoveDependencyTypes``1(``0,Nuke.Common.Tools.Kiota.KiotaDependencyType[])">
+  RemoveDependencyTypes&lt;T&gt;(T, params KiotaDependencyType[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L919"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of dependencies to display when used in combination with the language option. Does not impact the json output. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RemoveDependencyTypes&lt;T&gt;(this T o, params KiotaDependencyType[] v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDependencyType.html">KiotaDependencyType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_RemoveDependencyTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.RemoveDependencyTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_RemoveDependencyTypes__1___0_System_Collections_Generic_IEnumerable_Nuke_Common_Tools_Kiota_KiotaDependencyType__" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.RemoveDependencyTypes``1(``0,System.Collections.Generic.IEnumerable{Nuke.Common.Tools.Kiota.KiotaDependencyType})">
+  RemoveDependencyTypes&lt;T&gt;(T, IEnumerable&lt;KiotaDependencyType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L922"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of dependencies to display when used in combination with the language option. Does not impact the json output. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RemoveDependencyTypes&lt;T&gt;(this T o, IEnumerable&lt;KiotaDependencyType&gt; v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDependencyType.html">KiotaDependencyType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetClearCache_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetClearCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetClearCache__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetClearCache``1(``0)">
+  ResetClearCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L973"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the currently cached file for the command. Defaults to false.<br><br>Cached files are stored under '%TEMP%/kiota/cache' and valid for one (1) hour after the initial download. Kiota caches API descriptions during generation and static index files during search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetClearCache&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetJson_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetJson*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetJson__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetJson``1(``0)">
+  ResetJson&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L893"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the output in a machine parsable format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetJson&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetLogLevel_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetLogLevel*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetLogLevel__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetLogLevel``1(``0)">
+  ResetLogLevel&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The log level to use when logging events to the main output. Defaults to <code>warning</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetLogLevel&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetOpenApiDescription_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetOpenApiDescription*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetOpenApiDescription__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetOpenApiDescription``1(``0)">
+  ResetOpenApiDescription&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L933"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The location of the OpenAPI description in JSON or YAML format to use to generate the SDK. Accepts a URL or a local path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetOpenApiDescription&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetSearchKey_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetSearchKey*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetSearchKey__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetSearchKey``1(``0)">
+  ResetSearchKey&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L965"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The search key to use to fetch the Open API description. This parameter can be used in combination with the version option. Shouldn't be used in combination with the <code>--openapi</code> option. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetSearchKey&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetTargetLanguage_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetTargetLanguage*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetTargetLanguage__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetTargetLanguage``1(``0)">
+  ResetTargetLanguage&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L941"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The target language for the generated code files or for the information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetTargetLanguage&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetVersion_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetVersion*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ResetVersion__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ResetVersion``1(``0)">
+  ResetVersion&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L957"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Select a specific version of the API description. No default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetVersion&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetClearCache_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetClearCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetClearCache__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetClearCache``1(``0,System.Nullable{System.Boolean})">
+  SetClearCache&lt;T&gt;(T, bool?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L970"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the currently cached file for the command. Defaults to false.<br><br>Cached files are stored under '%TEMP%/kiota/cache' and valid for one (1) hour after the initial download. Kiota caches API descriptions during generation and static index files during search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetClearCache&lt;T&gt;(this T o, bool? v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetDependencyTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetDependencyTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetDependencyTypes__1___0_Nuke_Common_Tools_Kiota_KiotaDependencyType___" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetDependencyTypes``1(``0,Nuke.Common.Tools.Kiota.KiotaDependencyType[])">
+  SetDependencyTypes&lt;T&gt;(T, params KiotaDependencyType[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L907"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of dependencies to display when used in combination with the language option. Does not impact the json output. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetDependencyTypes&lt;T&gt;(this T o, params KiotaDependencyType[] v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDependencyType.html">KiotaDependencyType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetDependencyTypes_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetDependencyTypes*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetDependencyTypes__1___0_System_Collections_Generic_IEnumerable_Nuke_Common_Tools_Kiota_KiotaDependencyType__" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetDependencyTypes``1(``0,System.Collections.Generic.IEnumerable{Nuke.Common.Tools.Kiota.KiotaDependencyType})">
+  SetDependencyTypes&lt;T&gt;(T, IEnumerable&lt;KiotaDependencyType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L910"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of dependencies to display when used in combination with the language option. Does not impact the json output. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetDependencyTypes&lt;T&gt;(this T o, IEnumerable&lt;KiotaDependencyType&gt; v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDependencyType.html">KiotaDependencyType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetJson_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetJson*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetJson__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetJson``1(``0,System.Nullable{System.Boolean})">
+  SetJson&lt;T&gt;(T, bool?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L890"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the output in a machine parsable format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetJson&lt;T&gt;(this T o, bool? v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetLogLevel_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetLogLevel*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetLogLevel__1___0_Nuke_Common_Tools_Kiota_KiotaLogLevel_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetLogLevel``1(``0,Nuke.Common.Tools.Kiota.KiotaLogLevel)">
+  SetLogLevel&lt;T&gt;(T, KiotaLogLevel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The log level to use when logging events to the main output. Defaults to <code>warning</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetLogLevel&lt;T&gt;(this T o, KiotaLogLevel v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogLevel.html">KiotaLogLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetOpenApiDescription_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetOpenApiDescription*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetOpenApiDescription__1___0_System_String_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetOpenApiDescription``1(``0,System.String)">
+  SetOpenApiDescription&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L930"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The location of the OpenAPI description in JSON or YAML format to use to generate the SDK. Accepts a URL or a local path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetOpenApiDescription&lt;T&gt;(this T o, string v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetSearchKey_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetSearchKey*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetSearchKey__1___0_System_String_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetSearchKey``1(``0,System.String)">
+  SetSearchKey&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L962"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The search key to use to fetch the Open API description. This parameter can be used in combination with the version option. Shouldn't be used in combination with the <code>--openapi</code> option. Default empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetSearchKey&lt;T&gt;(this T o, string v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetTargetLanguage_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetTargetLanguage*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetTargetLanguage__1___0_Nuke_Common_Tools_Kiota_KiotaLanguage_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetTargetLanguage``1(``0,Nuke.Common.Tools.Kiota.KiotaLanguage)">
+  SetTargetLanguage&lt;T&gt;(T, KiotaLanguage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L938"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The target language for the generated code files or for the information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetTargetLanguage&lt;T&gt;(this T o, KiotaLanguage v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLanguage.html">KiotaLanguage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetVersion_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetVersion*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_SetVersion__1___0_System_String_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.SetVersion``1(``0,System.String)">
+  SetVersion&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L954"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Select a specific version of the API description. No default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetVersion&lt;T&gt;(this T o, string v) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ToggleClearCache_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ToggleClearCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ToggleClearCache__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ToggleClearCache``1(``0)">
+  ToggleClearCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L982"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the currently cached file for the command. Defaults to false.<br><br>Cached files are stored under '%TEMP%/kiota/cache' and valid for one (1) hour after the initial download. Kiota caches API descriptions during generation and static index files during search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ToggleClearCache&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ToggleJson_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ToggleJson*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaInfoSettingsExtensions_ToggleJson__1___0_" data-uid="Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.ToggleJson``1(``0)">
+  ToggleJson&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L902"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the output in a machine parsable format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ToggleJson&lt;T&gt;(this T o) where T : KiotaInfoSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L884" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.110 @ <a href="https://github.com/gruke-build/src/commit/08d4af6a40bc99b5575490dc3e3eeae404c2c804">08d4af6</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

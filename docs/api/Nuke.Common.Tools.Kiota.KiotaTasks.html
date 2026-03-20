@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class KiotaTasks | gruke 10.3.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class KiotaTasks | gruke 10.3.0 ">
+      
+      <meta name="description" content="Kiota is a command line tool for generating an API client to call any OpenAPI-described API you&#39;re interested in. The goal is to eliminate the need to take a dependency on a different API client library for every API that you need to call. Kiota API clients provide a strongly typed experience with all the features you expect from a high quality API SDK, but without having to learn a new library for every HTTP API.For more details, visit the official website.">
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Kiota_KiotaTasks.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Kiota.KiotaTasks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Common.Tools.Kiota.KiotaTasks">
+
+
+
+  <h1 id="Nuke_Common_Tools_Kiota_KiotaTasks" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks" class="text-break">
+Class KiotaTasks  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.Tools.html">Tools</a>.<a class="xref" href="Nuke.Common.Tools.Kiota.html">Kiota</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Kiota is a command line tool for generating an API client to call any OpenAPI-described API you're interested in. The goal is to eliminate the need to take a dependency on a different API client library for every API that you need to call. Kiota API clients provide a strongly typed experience with all the features you expect from a high quality API SDK, but without having to learn a new library for every HTTP API.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[ExcludeFromCodeCoverage]
+public class KiotaTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequireToolWithVersion</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Nuke.Common.Tooling.ToolTasks.html">ToolTasks</a></div>
+      <div><span class="xref">KiotaTasks</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Nuke.Common.Tooling.IRequireNuGetPackage.html">IRequireNuGetPackage</a></div>
+      <div><a class="xref" href="Nuke.Common.Tooling.IRequireTool.html">IRequireTool</a></div>
+      <div><a class="xref" href="Nuke.Common.Tooling.IRequireToolWithVersion.html">IRequireToolWithVersion</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_GetLogger_Nuke_Common_Tooling_ToolOptions_">ToolTasks.GetLogger(ToolOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_GetToolPath_Nuke_Common_Tooling_ToolOptions_">ToolTasks.GetToolPath(ToolOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_Run__1___0_">ToolTasks.Run&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_Run__2___0_">ToolTasks.Run&lt;TOptions, TResult&gt;(TOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_GetExitHandler_Nuke_Common_Tooling_ToolOptions_">ToolTasks.GetExitHandler(ToolOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_PreProcess__1___0_">ToolTasks.PreProcess&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_PostProcess_Nuke_Common_Tooling_ToolOptions_">ToolTasks.PostProcess(ToolOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_GetResult__1_Nuke_Common_Tooling_ToolOptions_System_Collections_Generic_IReadOnlyCollection_Nuke_Common_Tooling_Output__">ToolTasks.GetResult&lt;T&gt;(ToolOptions, IReadOnlyCollection&lt;Output&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_Run_Nuke_Common_Tooling_ArgumentStringHandler_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Action_Nuke_Common_Tooling_OutputType_System_String__System_Func_Nuke_Common_Tooling_IProcess_System_Object__">ToolTasks.Run(ArgumentStringHandler, string, IReadOnlyDictionary&lt;string, string&gt;, int?, bool?, bool?, Action&lt;OutputType, string&gt;, Func&lt;IProcess, object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_StartProcess_System_String_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Action_Nuke_Common_Tooling_OutputType_System_String__System_Func_System_String_System_String__">ToolTasks.StartProcess(string, string, IReadOnlyDictionary&lt;string, string&gt;, int?, bool?, bool?, Action&lt;OutputType, string&gt;, Func&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_Resolve__1">ToolTasks.Resolve&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_GetToolPathInternal_Nuke_Common_Tooling_ToolOptions_">ToolTasks.GetToolPathInternal(ToolOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.Tooling.ToolTasks.html#Nuke_Common_Tooling_ToolTasks_SetToolPath_System_String_">ToolTasks.SetToolPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_ToPropertyDictionary__3___0_System_Func_System_Reflection_PropertyInfo___1__System_Func_System_Object___2__">EnumerableExtensions.ToPropertyDictionary&lt;T, TKey, TValue&gt;(T, Func&lt;PropertyInfo, TKey&gt;, Func&lt;object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.JsonExtensions.html#Nuke_Common_Utilities_JsonExtensions_ToJson__1___0_Newtonsoft_Json_JsonSerializerSettings_Newtonsoft_Json_Formatting_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerSettings, Formatting)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Apply__2___0_System_Func___0___1__">ObjectExtensions.Apply&lt;TInput, TOutput&gt;(TInput, Func&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Clone__1___0_">ObjectExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_WhenNotNull__2___0___1_System_Func___0___1___0__">ObjectExtensions.WhenNotNull&lt;T, TObject&gt;(T, TObject, Func&lt;T, TObject, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_When__1___0_System_Boolean_System_Func___0___0__">ObjectExtensions.When&lt;T&gt;(T, bool, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.XmlExtensions.html#Nuke_Common_Utilities_XmlExtensions_ToXml__1___0_System_Xml_Linq_SaveOptions_">XmlExtensions.ToXml&lt;T&gt;(T, SaveOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_ToJObject_System_Object_Newtonsoft_Json_JsonSerializer_">ObjectExtensions.ToJObject(object, JsonSerializer)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_PackageExecutable" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.PackageExecutable">
+  PackageExecutable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PackageExecutable = &quot;kiota.dll&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_PackageId" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.PackageId">
+  PackageId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PackageId = &quot;Microsoft.OpenApi.Kiota&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaPath_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaPath*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaPath" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaPath">
+  KiotaPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string KiotaPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_Kiota_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.Kiota*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_Kiota_Nuke_Common_Tooling_ArgumentStringHandler_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Action_Nuke_Common_Tooling_OutputType_System_String__System_Func_Nuke_Common_Tooling_IProcess_System_Object__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.Kiota(Nuke.Common.Tooling.ArgumentStringHandler,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Action{Nuke.Common.Tooling.OutputType,System.String},System.Func{Nuke.Common.Tooling.IProcess,System.Object})">
+  Kiota(ArgumentStringHandler, string, IReadOnlyDictionary&lt;string, string&gt;, int?, bool?, bool?, Action&lt;OutputType, string&gt;, Func&lt;IProcess, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Kiota is a command line tool for generating an API client to call any OpenAPI-described API you're interested in. The goal is to eliminate the need to take a dependency on a different API client library for every API that you need to call. Kiota API clients provide a strongly typed experience with all the features you expect from a high quality API SDK, but without having to learn a new library for every HTTP API.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; Kiota(ArgumentStringHandler arguments, string workingDirectory = null, IReadOnlyDictionary&lt;string, string&gt; environmentVariables = null, int? timeout = null, bool? logOutput = null, bool? logInvocation = null, Action&lt;OutputType, string&gt; logger = null, Func&lt;IProcess, object&gt; exitHandler = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arguments</code> <a class="xref" href="Nuke.Common.Tooling.ArgumentStringHandler.html">ArgumentStringHandler</a></dt>
+    <dd></dd>
+    <dt><code>workingDirectory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>environmentVariables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>timeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>logOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+    <dt><code>logInvocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Nuke.Common.Tooling.OutputType.html">OutputType</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>exitHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Nuke.Common.Tooling.IProcess.html">IProcess</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaDownload*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaDownloadSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaDownload(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaDownloadSettings},System.Int32,System.Boolean)">
+  KiotaDownload(CombinatorialConfigure&lt;KiotaDownloadSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Download an API description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaDownloadSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaDownload(CombinatorialConfigure&lt;KiotaDownloadSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html">KiotaDownloadSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html">KiotaDownloadSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotadownloadsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotadownloadsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaDownloadSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;searchTerm&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_SearchTerm">SearchTerm</a></li><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_ClearCache">ClearCache</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_LogLevel">LogLevel</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_OutputPath">OutputPath</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaDownload*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaDownloadSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaDownload(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaDownloadSettings})">
+  KiotaDownload(Configure&lt;KiotaDownloadSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Download an API description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaDownload(Configure&lt;KiotaDownloadSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html">KiotaDownloadSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaDownloadSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;searchTerm&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_SearchTerm">SearchTerm</a></li><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_ClearCache">ClearCache</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_LogLevel">LogLevel</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_OutputPath">OutputPath</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaDownload*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_Nuke_Common_Tools_Kiota_KiotaDownloadSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaDownload(Nuke.Common.Tools.Kiota.KiotaDownloadSettings)">
+  KiotaDownload(KiotaDownloadSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Download an API description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaDownload(KiotaDownloadSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html">KiotaDownloadSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaDownload_Nuke_Common_Tools_Kiota_KiotaDownloadSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;searchTerm&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_SearchTerm">SearchTerm</a></li><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_ClearCache">ClearCache</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_LogLevel">LogLevel</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_OutputPath">OutputPath</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html#Nuke_Common_Tools_Kiota_KiotaDownloadSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaGenerate*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaGenerateSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaGenerate(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaGenerateSettings},System.Int32,System.Boolean)">
+  KiotaGenerate(CombinatorialConfigure&lt;KiotaGenerateSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate a client for any API from its description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaGenerateSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaGenerate(CombinatorialConfigure&lt;KiotaGenerateSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html">KiotaGenerateSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html">KiotaGenerateSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotageneratesettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotageneratesettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaGenerateSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--additional-data</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_AdditionalData">AdditionalData</a></li><li><code>--backing-store</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_BackingStore">BackingStore</a></li><li><code>--class-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClassName">ClassName</a></li><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClearCache">ClearCache</a></li><li><code>--deserializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DeserializerClasses">DeserializerClasses</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--exclude-backward-compatible</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludeBackwardsCompatible">ExcludeBackwardsCompatible</a></li><li><code>--exclude-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludePaths">ExcludePaths</a></li><li><code>--include-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_IncludePaths">IncludePaths</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_LogLevel">LogLevel</a></li><li><code>--namespace-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_NamespaceName">NamespaceName</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OutputPath">OutputPath</a></li><li><code>--serializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_SerializerClasses">SerializerClasses</a></li><li><code>--structured-mime-types</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_StructuredMimeTypes">StructuredMimeTypes</a></li><li><code>--type-access-modifier</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TypeAccessModifier">TypeAccessModifier</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaGenerate*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaGenerateSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaGenerate(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaGenerateSettings})">
+  KiotaGenerate(Configure&lt;KiotaGenerateSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate a client for any API from its description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaGenerate(Configure&lt;KiotaGenerateSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html">KiotaGenerateSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaGenerateSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--additional-data</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_AdditionalData">AdditionalData</a></li><li><code>--backing-store</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_BackingStore">BackingStore</a></li><li><code>--class-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClassName">ClassName</a></li><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClearCache">ClearCache</a></li><li><code>--deserializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DeserializerClasses">DeserializerClasses</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--exclude-backward-compatible</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludeBackwardsCompatible">ExcludeBackwardsCompatible</a></li><li><code>--exclude-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludePaths">ExcludePaths</a></li><li><code>--include-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_IncludePaths">IncludePaths</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_LogLevel">LogLevel</a></li><li><code>--namespace-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_NamespaceName">NamespaceName</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OutputPath">OutputPath</a></li><li><code>--serializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_SerializerClasses">SerializerClasses</a></li><li><code>--structured-mime-types</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_StructuredMimeTypes">StructuredMimeTypes</a></li><li><code>--type-access-modifier</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TypeAccessModifier">TypeAccessModifier</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaGenerate*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_Nuke_Common_Tools_Kiota_KiotaGenerateSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaGenerate(Nuke.Common.Tools.Kiota.KiotaGenerateSettings)">
+  KiotaGenerate(KiotaGenerateSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate a client for any API from its description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaGenerate(KiotaGenerateSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html">KiotaGenerateSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaGenerate_Nuke_Common_Tools_Kiota_KiotaGenerateSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--additional-data</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_AdditionalData">AdditionalData</a></li><li><code>--backing-store</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_BackingStore">BackingStore</a></li><li><code>--class-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClassName">ClassName</a></li><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ClearCache">ClearCache</a></li><li><code>--deserializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DeserializerClasses">DeserializerClasses</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--exclude-backward-compatible</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludeBackwardsCompatible">ExcludeBackwardsCompatible</a></li><li><code>--exclude-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_ExcludePaths">ExcludePaths</a></li><li><code>--include-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_IncludePaths">IncludePaths</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_LogLevel">LogLevel</a></li><li><code>--namespace-name</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_NamespaceName">NamespaceName</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_OutputPath">OutputPath</a></li><li><code>--serializer</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_SerializerClasses">SerializerClasses</a></li><li><code>--structured-mime-types</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_StructuredMimeTypes">StructuredMimeTypes</a></li><li><code>--type-access-modifier</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_TypeAccessModifier">TypeAccessModifier</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html#Nuke_Common_Tools_Kiota_KiotaGenerateSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaInfo*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaInfoSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaInfo(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaInfoSettings},System.Int32,System.Boolean)">
+  KiotaInfo(CombinatorialConfigure&lt;KiotaInfoSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Show languages and runtime dependencies information.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaInfoSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaInfo(CombinatorialConfigure&lt;KiotaInfoSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html">KiotaInfoSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html">KiotaInfoSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotainfosettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotainfosettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaInfoSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_ClearCache">ClearCache</a></li><li><code>--dependency-type</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_DependencyTypes">DependencyTypes</a></li><li><code>--json</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Json">Json</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_LogLevel">LogLevel</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--search-key</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_SearchKey">SearchKey</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaInfo*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaInfoSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaInfo(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaInfoSettings})">
+  KiotaInfo(Configure&lt;KiotaInfoSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Show languages and runtime dependencies information.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaInfo(Configure&lt;KiotaInfoSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html">KiotaInfoSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaInfoSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_ClearCache">ClearCache</a></li><li><code>--dependency-type</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_DependencyTypes">DependencyTypes</a></li><li><code>--json</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Json">Json</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_LogLevel">LogLevel</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--search-key</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_SearchKey">SearchKey</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaInfo*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_Nuke_Common_Tools_Kiota_KiotaInfoSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaInfo(Nuke.Common.Tools.Kiota.KiotaInfoSettings)">
+  KiotaInfo(KiotaInfoSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Show languages and runtime dependencies information.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaInfo(KiotaInfoSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html">KiotaInfoSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaInfo_Nuke_Common_Tools_Kiota_KiotaInfoSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_ClearCache">ClearCache</a></li><li><code>--dependency-type</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_DependencyTypes">DependencyTypes</a></li><li><code>--json</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Json">Json</a></li><li><code>--language</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_TargetLanguage">TargetLanguage</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_LogLevel">LogLevel</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--search-key</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_SearchKey">SearchKey</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaInfoSettings.html#Nuke_Common_Tools_Kiota_KiotaInfoSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogin*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaLoginSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogin(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaLoginSettings},System.Int32,System.Boolean)">
+  KiotaLogin(CombinatorialConfigure&lt;KiotaLoginSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Signs in to private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaLoginSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaLogin(CombinatorialConfigure&lt;KiotaLoginSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html">KiotaLoginSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html">KiotaLoginSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotaloginsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotaloginsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaLoginSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;loginMethod&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_LoginMethod">LoginMethod</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_LogLevel">LogLevel</a></li><li><code>--pat</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_AccessToken">AccessToken</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogin*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaLoginSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogin(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaLoginSettings})">
+  KiotaLogin(Configure&lt;KiotaLoginSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Signs in to private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaLogin(Configure&lt;KiotaLoginSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html">KiotaLoginSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaLoginSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;loginMethod&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_LoginMethod">LoginMethod</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_LogLevel">LogLevel</a></li><li><code>--pat</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_AccessToken">AccessToken</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogin*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_Nuke_Common_Tools_Kiota_KiotaLoginSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogin(Nuke.Common.Tools.Kiota.KiotaLoginSettings)">
+  KiotaLogin(KiotaLoginSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Signs in to private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaLogin(KiotaLoginSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html">KiotaLoginSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogin_Nuke_Common_Tools_Kiota_KiotaLoginSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;loginMethod&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_LoginMethod">LoginMethod</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_LogLevel">LogLevel</a></li><li><code>--pat</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLoginSettings.html#Nuke_Common_Tools_Kiota_KiotaLoginSettings_AccessToken">AccessToken</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogout*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaLogoutSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogout(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaLogoutSettings},System.Int32,System.Boolean)">
+  KiotaLogout(CombinatorialConfigure&lt;KiotaLogoutSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Signs out from private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaLogoutSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaLogout(CombinatorialConfigure&lt;KiotaLogoutSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html">KiotaLogoutSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html">KiotaLogoutSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotalogoutsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotalogoutsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaLogoutSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html#Nuke_Common_Tools_Kiota_KiotaLogoutSettings_LogLevel">LogLevel</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogout*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaLogoutSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogout(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaLogoutSettings})">
+  KiotaLogout(Configure&lt;KiotaLogoutSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Signs out from private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaLogout(Configure&lt;KiotaLogoutSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html">KiotaLogoutSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaLogoutSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html#Nuke_Common_Tools_Kiota_KiotaLogoutSettings_LogLevel">LogLevel</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogout*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_Nuke_Common_Tools_Kiota_KiotaLogoutSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaLogout(Nuke.Common.Tools.Kiota.KiotaLogoutSettings)">
+  KiotaLogout(KiotaLogoutSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Signs out from private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaLogout(KiotaLogoutSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html">KiotaLogoutSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaLogout_Nuke_Common_Tools_Kiota_KiotaLogoutSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html#Nuke_Common_Tools_Kiota_KiotaLogoutSettings_LogLevel">LogLevel</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaSearch*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaSearchSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaSearch(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaSearchSettings},System.Int32,System.Boolean)">
+  KiotaSearch(CombinatorialConfigure&lt;KiotaSearchSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Search for APIs and their description from various registries.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaSearchSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaSearch(CombinatorialConfigure&lt;KiotaSearchSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html">KiotaSearchSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html">KiotaSearchSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotasearchsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotasearchsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaSearchSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;searchTerm&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_SearchTerm">SearchTerm</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_ClearCache">ClearCache</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_LogLevel">LogLevel</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaSearch*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaSearchSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaSearch(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaSearchSettings})">
+  KiotaSearch(Configure&lt;KiotaSearchSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Search for APIs and their description from various registries.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaSearch(Configure&lt;KiotaSearchSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html">KiotaSearchSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaSearchSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;searchTerm&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_SearchTerm">SearchTerm</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_ClearCache">ClearCache</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_LogLevel">LogLevel</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaSearch*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_Nuke_Common_Tools_Kiota_KiotaSearchSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaSearch(Nuke.Common.Tools.Kiota.KiotaSearchSettings)">
+  KiotaSearch(KiotaSearchSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Search for APIs and their description from various registries.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaSearch(KiotaSearchSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html">KiotaSearchSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaSearch_Nuke_Common_Tools_Kiota_KiotaSearchSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;searchTerm&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_SearchTerm">SearchTerm</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_ClearCache">ClearCache</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_LogLevel">LogLevel</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaSearchSettings.html#Nuke_Common_Tools_Kiota_KiotaSearchSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaShow*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaShowSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaShow(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaShowSettings},System.Int32,System.Boolean)">
+  KiotaShow(CombinatorialConfigure&lt;KiotaShowSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Show the API paths tree for an API description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaShowSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaShow(CombinatorialConfigure&lt;KiotaShowSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html">KiotaShowSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html">KiotaShowSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotashowsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotashowsettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaShowSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_ClearCache">ClearCache</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--exclude-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_ExcludePaths">ExcludePaths</a></li><li><code>--include-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_IncludePaths">IncludePaths</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_LogLevel">LogLevel</a></li><li><code>--max-depth</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_MaxDepth">MaxDepth</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_OutputPath">OutputPath</a></li><li><code>--search-key</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_SearchKey">SearchKey</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaShow*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaShowSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaShow(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaShowSettings})">
+  KiotaShow(Configure&lt;KiotaShowSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Show the API paths tree for an API description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaShow(Configure&lt;KiotaShowSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html">KiotaShowSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaShowSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_ClearCache">ClearCache</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--exclude-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_ExcludePaths">ExcludePaths</a></li><li><code>--include-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_IncludePaths">IncludePaths</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_LogLevel">LogLevel</a></li><li><code>--max-depth</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_MaxDepth">MaxDepth</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_OutputPath">OutputPath</a></li><li><code>--search-key</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_SearchKey">SearchKey</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaShow*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_Nuke_Common_Tools_Kiota_KiotaShowSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaShow(Nuke.Common.Tools.Kiota.KiotaShowSettings)">
+  KiotaShow(KiotaShowSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Show the API paths tree for an API description.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaShow(KiotaShowSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html">KiotaShowSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaShow_Nuke_Common_Tools_Kiota_KiotaShowSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_ClearCache">ClearCache</a></li><li><code>--disable-ssl-validation</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_DisableSslValidation">DisableSslValidation</a></li><li><code>--exclude-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_ExcludePaths">ExcludePaths</a></li><li><code>--include-path</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_IncludePaths">IncludePaths</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_LogLevel">LogLevel</a></li><li><code>--max-depth</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_MaxDepth">MaxDepth</a></li><li><code>--openapi</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_OpenApiDescription">OpenApiDescription</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_OutputPath">OutputPath</a></li><li><code>--search-key</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_SearchKey">SearchKey</a></li><li><code>--version</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaShowSettings.html#Nuke_Common_Tools_Kiota_KiotaShowSettings_Version">Version</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaUpdate*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaUpdateSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaUpdate(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Kiota.KiotaUpdateSettings},System.Int32,System.Boolean)">
+  KiotaUpdate(CombinatorialConfigure&lt;KiotaUpdateSettings&gt;, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update existing clients from previous generations. This command searches for lock files in the output directory and all its subdirectories and triggers generations to refresh the existing clients using settings from the lock files.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(KiotaUpdateSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; KiotaUpdate(CombinatorialConfigure&lt;KiotaUpdateSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.CombinatorialConfigure-1.html">CombinatorialConfigure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html">KiotaUpdateSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>degreeOfParallelism</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>completeOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html">KiotaUpdateSettings</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotaupdatesettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.settings">Settings</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-nuke.common.tools.kiota.kiotaupdatesettings,system.collections.generic.ireadonlycollection-nuke.common.tooling.output--.output">Output</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Kiota_KiotaUpdateSettings__System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_ClearCache">ClearCache</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_LogLevel">LogLevel</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_OutputPath">OutputPath</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaUpdate*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaUpdateSettings__" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaUpdate(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Kiota.KiotaUpdateSettings})">
+  KiotaUpdate(Configure&lt;KiotaUpdateSettings&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update existing clients from previous generations. This command searches for lock files in the output directory and all its subdirectories and triggers generations to refresh the existing clients using settings from the lock files.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaUpdate(Configure&lt;KiotaUpdateSettings&gt; configurator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurator</code> <a class="xref" href="Nuke.Common.Tooling.Configure-1.html">Configure</a>&lt;<a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html">KiotaUpdateSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Kiota_KiotaUpdateSettings___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_ClearCache">ClearCache</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_LogLevel">LogLevel</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_OutputPath">OutputPath</a></li></ul>
+</div>
+
+
+
+
+  <a id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaUpdate*"></a>
+
+  <h3 id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_Nuke_Common_Tools_Kiota_KiotaUpdateSettings_" data-uid="Nuke.Common.Tools.Kiota.KiotaTasks.KiotaUpdate(Nuke.Common.Tools.Kiota.KiotaUpdateSettings)">
+  KiotaUpdate(KiotaUpdateSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update existing clients from previous generations. This command searches for lock files in the output directory and all its subdirectories and triggers generations to refresh the existing clients using settings from the lock files.</p><p>For more details, visit the <a href="https://learn.microsoft.com/en-gb/openapi/kiota/">official website</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; KiotaUpdate(KiotaUpdateSettings options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html">KiotaUpdateSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Nuke.Common.Tooling.Output.html">Output</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Nuke_Common_Tools_Kiota_KiotaTasks_KiotaUpdate_Nuke_Common_Tools_Kiota_KiotaUpdateSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>--clean-output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_CleanOutput">CleanOutput</a></li><li><code>--clear-cache</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_ClearCache">ClearCache</a></li><li><code>--log-level</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_LogLevel">LogLevel</a></li><li><code>--output</code> via <a class="xref" href="Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html#Nuke_Common_Tools_Kiota_KiotaUpdateSettings_OutputPath">OutputPath</a></li></ul>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kiota/Kiota.Generated.cs/#L25" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.110 @ <a href="https://github.com/gruke-build/src/commit/08d4af6a40bc99b5575490dc3e3eeae404c2c804">08d4af6</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

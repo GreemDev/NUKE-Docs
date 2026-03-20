@@ -15512,6 +15512,328 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaAccessModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaAccessModifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaAccessModifier",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Kiota.KiotaAccessModifier.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Kiota.KiotaTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaDependencyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaDependencyType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaDependencyType",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Kiota.KiotaDependencyType.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Kiota.KiotaTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaDownloadSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaDownloadSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaDownloadSettings",
+      "Summary": "<p>Download an API description.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaDownloadSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaDownloadSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaDownloadSettingsExtensions",
+      "Summary": "<p>Download an API description.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaGenerateSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaGenerateSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaGenerateSettings",
+      "Summary": "<p>Generate a client for any API from its description.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaGenerateSettingsExtensions",
+      "Summary": "<p>Generate a client for any API from its description.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaInfoSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaInfoSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaInfoSettings",
+      "Summary": "<p>Show languages and runtime dependencies information.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaInfoSettingsExtensions",
+      "Summary": "<p>Show languages and runtime dependencies information.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaLanguage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaLanguage",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Kiota.KiotaLanguage.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Kiota.KiotaTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaLogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaLogLevel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaLogLevel",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Kiota.KiotaLogLevel.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Kiota.KiotaTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaLoginMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaLoginMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaLoginMethod",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Kiota.KiotaLoginMethod.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Kiota.KiotaTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaLoginSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaLoginSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaLoginSettings",
+      "Summary": "<p>Signs in to private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaLoginSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaLoginSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaLoginSettingsExtensions",
+      "Summary": "<p>Signs in to private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaLogoutSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaLogoutSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaLogoutSettings",
+      "Summary": "<p>Signs out from private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaLogoutSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaLogoutSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaLogoutSettingsExtensions",
+      "Summary": "<p>Signs out from private API descriptions repositories. Currently only GitHub is supported.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaSearchSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaSearchSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaSearchSettings",
+      "Summary": "<p>Search for APIs and their description from various registries.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaSearchSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaSearchSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaSearchSettingsExtensions",
+      "Summary": "<p>Search for APIs and their description from various registries.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaShowSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaShowSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaShowSettings",
+      "Summary": "<p>Show the API paths tree for an API description.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaShowSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaShowSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaShowSettingsExtensions",
+      "Summary": "<p>Show the API paths tree for an API description.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaTasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaTasks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaTasks",
+      "Summary": "<p>Kiota is a command line tool for generating an API client to call any OpenAPI-described API you're interested in. The goal is to eliminate the need to take a dependency on a different API client library for every API that you need to call. Kiota API clients provide a strongly typed experience with all the features you expect from a high quality API SDK, but without having to learn a new library for every HTTP API.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaUpdateSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaUpdateSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaUpdateSettings",
+      "Summary": "<p>Update existing clients from previous generations. This command searches for lock files in the output directory and all its subdirectories and triggers generations to refresh the existing clients using settings from the lock files.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.KiotaUpdateSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.KiotaUpdateSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota.KiotaUpdateSettingsExtensions",
+      "Summary": "<p>Update existing clients from previous generations. This command searches for lock files in the output directory and all its subdirectories and triggers generations to refresh the existing clients using settings from the lock files.</p><p>For more details, visit the <a href=\"https://learn.microsoft.com/en-gb/openapi/kiota/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Kiota.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Kiota.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Kiota",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.Kubernetes.KubernetesAlphaSettings.yml",
       "output": {
         ".html": {
