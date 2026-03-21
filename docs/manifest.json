@@ -28728,6 +28728,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitLab.GitLabHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitLab.GitLabHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitLab.GitLabHost",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitLab.GitLabItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitLab.GitLabItemType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitLab.GitLabItemType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitLab.GitLabRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitLab.GitLabRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitLab.GitLabRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitLab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitLab.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitLab",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.GitLink.GitLink2Settings.yml",
       "output": {
         ".html": {
