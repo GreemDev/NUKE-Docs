@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ICreateForgejoRelease | gruke 10.3.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ICreateForgejoRelease | gruke 10.3.0 ">
+      
+      
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Components_ICreateForgejoRelease.md&amp;value=---%0Auid%3A%20Nuke.Components.ICreateForgejoRelease%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Components.ICreateForgejoRelease">
+
+
+
+  <h1 id="Nuke_Components_ICreateForgejoRelease" data-uid="Nuke.Components.ICreateForgejoRelease" class="text-break">
+Interface ICreateForgejoRelease  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Components.html">Components</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Components.Forgejo.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[ParameterPrefix(&quot;ForgejoRelease&quot;)]
+public interface ICreateForgejoRelease : IHazGitRepository, IHazChangelog, INukeBuild</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Nuke.Components.IHazGitRepository.html#Nuke_Components_IHazGitRepository_GitRepository">IHazGitRepository.GitRepository</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Components.IHazChangelog.html#Nuke_Components_IHazChangelog_ChangelogFile">IHazChangelog.ChangelogFile</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Components.IHazChangelog.html#Nuke_Components_IHazChangelog_NuGetReleaseNotes">IHazChangelog.NuGetReleaseNotes</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_ReportSummary_Nuke_Common_Tooling_Configure_System_Collections_Generic_Dictionary_System_String_System_String___">INukeBuild.ReportSummary(Configure&lt;Dictionary&lt;string, string&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_DisableDotNetBuildServers">INukeBuild.DisableDotNetBuildServers</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_ExecutionPlan">INukeBuild.ExecutionPlan</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_InvokedTargets">INukeBuild.InvokedTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_SkippedTargets">INukeBuild.SkippedTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_ScheduledTargets">INukeBuild.ScheduledTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_RunningTargets">INukeBuild.RunningTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_AbortedTargets">INukeBuild.AbortedTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_FailedTargets">INukeBuild.FailedTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_SucceededTargets">INukeBuild.SucceededTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_FinishedTargets">INukeBuild.FinishedTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_IsSucceeding">INukeBuild.IsSucceeding</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_IsFailing">INukeBuild.IsFailing</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_IsFinished">INukeBuild.IsFinished</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_ExitCode">INukeBuild.ExitCode</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_RootDirectory">INukeBuild.RootDirectory</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_TemporaryDirectory">INukeBuild.TemporaryDirectory</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_BuildAssemblyFile">INukeBuild.BuildAssemblyFile</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_BuildAssemblyDirectory">INukeBuild.BuildAssemblyDirectory</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_BuildProjectDirectory">INukeBuild.BuildProjectDirectory</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_BuildProjectFile">INukeBuild.BuildProjectFile</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_Verbosity">INukeBuild.Verbosity</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_Host">INukeBuild.Host</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_Plan">INukeBuild.Plan</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_Help">INukeBuild.Help</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_NoLogo">INukeBuild.NoLogo</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_IsLocalBuild">INukeBuild.IsLocalBuild</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_IsServerBuild">INukeBuild.IsServerBuild</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_Continue">INukeBuild.Continue</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_Partition">INukeBuild.Partition</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_TryGetValue__1_System_Linq_Expressions_Expression_System_Func___0___">INukeBuild.TryGetValue&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Nuke.Common.INukeBuild.html#Nuke_Common_INukeBuild_TryGetValue__1_System_Linq_Expressions_Expression_System_Func_System_Object___">INukeBuild.TryGetValue&lt;T&gt;(Expression&lt;Func&lt;object&gt;&gt;)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_ToPropertyDictionary__3___0_System_Func_System_Reflection_PropertyInfo___1__System_Func_System_Object___2__">EnumerableExtensions.ToPropertyDictionary&lt;T, TKey, TValue&gt;(T, Func&lt;PropertyInfo, TKey&gt;, Func&lt;object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.JsonExtensions.html#Nuke_Common_Utilities_JsonExtensions_ToJson__1___0_Newtonsoft_Json_JsonSerializerSettings_Newtonsoft_Json_Formatting_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerSettings, Formatting)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Apply__2___0_System_Func___0___1__">ObjectExtensions.Apply&lt;TInput, TOutput&gt;(TInput, Func&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Clone__1___0_">ObjectExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_WhenNotNull__2___0___1_System_Func___0___1___0__">ObjectExtensions.WhenNotNull&lt;T, TObject&gt;(T, TObject, Func&lt;T, TObject, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_When__1___0_System_Boolean_System_Func___0___0__">ObjectExtensions.When&lt;T&gt;(T, bool, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.XmlExtensions.html#Nuke_Common_Utilities_XmlExtensions_ToXml__1___0_System_Xml_Linq_SaveOptions_">XmlExtensions.ToXml&lt;T&gt;(T, SaveOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_ToJObject_System_Object_Newtonsoft_Json_JsonSerializer_">ObjectExtensions.ToJObject(object, JsonSerializer)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_ForgejoRelease" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoRelease">
+  ForgejoRelease
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ForgejoRelease = &quot;ForgejoRelease&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_AssetFiles_" data-uid="Nuke.Components.ICreateForgejoRelease.AssetFiles*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_AssetFiles" data-uid="Nuke.Components.ICreateForgejoRelease.AssetFiles">
+  AssetFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;AbsolutePath&gt; AssetFiles { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Nuke.Common.IO.AbsolutePath.html">AbsolutePath</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_CreateForgejoRelease_" data-uid="Nuke.Components.ICreateForgejoRelease.CreateForgejoRelease*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_CreateForgejoRelease" data-uid="Nuke.Components.ICreateForgejoRelease.CreateForgejoRelease">
+  CreateForgejoRelease
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Target CreateForgejoRelease { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Target.html">Target</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_Draft_" data-uid="Nuke.Components.ICreateForgejoRelease.Draft*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_Draft" data-uid="Nuke.Components.ICreateForgejoRelease.Draft">
+  Draft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Draft { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_ForgejoHostName_" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoHostName*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_ForgejoHostName" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoHostName">
+  ForgejoHostName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(&quot;Host of the Forgejo server. Only required if the current repo is not cloned from Forgejo, or you want to use a different server for releases.&quot;)]
+string ForgejoHostName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_ForgejoOwner_" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoOwner*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_ForgejoOwner" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoOwner">
+  ForgejoOwner
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(&quot;Owner of the Forgejo repository. Only required if the current repo is not cloned from Forgejo, or you want to use a different repository for releases.&quot;)]
+string ForgejoOwner { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_ForgejoRepoName_" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoRepoName*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_ForgejoRepoName" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoRepoName">
+  ForgejoRepoName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(&quot;Name of the Forgejo repository. Only required if the current repo is not cloned from Forgejo, or you want to use a different repository for releases.&quot;)]
+string ForgejoRepoName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_ForgejoToken_" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoToken*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_ForgejoToken" data-uid="Nuke.Components.ICreateForgejoRelease.ForgejoToken">
+  ForgejoToken
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(&quot;Forgejo API token with appropriate API access&quot;)]
+string ForgejoToken { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_Name_" data-uid="Nuke.Components.ICreateForgejoRelease.Name*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_Name" data-uid="Nuke.Components.ICreateForgejoRelease.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_ICreateForgejoRelease_Prerelease_" data-uid="Nuke.Components.ICreateForgejoRelease.Prerelease*"></a>
+
+  <h3 id="Nuke_Components_ICreateForgejoRelease_Prerelease" data-uid="Nuke.Components.ICreateForgejoRelease.Prerelease">
+  Prerelease
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Prerelease { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/ICreateForgejoRelease.cs/#L23" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.122 @ <a href="https://github.com/gruke-build/src/commit/6770f42e06d05ca7dec4ce5ff9596c0acce64e38">6770f42</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

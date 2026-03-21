@@ -11060,6 +11060,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.Comments.Item.Assets.AssetsPostRequestBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.Comments.Item.Assets.AssetsPostRequestBody.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.Comments.Item.Assets.AssetsPostRequestBody",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.Comments.Item.Assets.AssetsRequestBuilder.AssetsRequestBuilderPostQueryParameters.yml",
       "output": {
         ".html": {
@@ -11267,6 +11281,20 @@
       "IsMRef": true,
       "Title": "Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.IssuesRequestBuilder",
       "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.IssuesRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\repos{owner-id}{repo-id}\\issues</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.Item.Assets.AssetsPostRequestBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.Item.Assets.AssetsPostRequestBody.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Components.Forgejo.Repos.Item.Item.Issues.Item.Assets.AssetsPostRequestBody",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -28560,6 +28588,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Forgejo.ForgejoHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Forgejo.ForgejoHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Forgejo.ForgejoHost",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Forgejo.ForgejoRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Forgejo.ForgejoRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Forgejo.ForgejoRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Forgejo.ForgejoTasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Forgejo.ForgejoTasks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Forgejo.ForgejoTasks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Forgejo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Forgejo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Forgejo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.Git.GitTasks.yml",
       "output": {
         ".html": {
@@ -28584,34 +28668,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Git",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.ForgejoHost.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Tools.GitHub.ForgejoHost.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Tools.GitHub.ForgejoHost",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.ForgejoRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Tools.GitHub.ForgejoRepository.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Tools.GitHub.ForgejoRepository",
       "Summary": null
     },
     {
@@ -28654,20 +28710,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.GitHub.GitHubTasks",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Tools.GitHub.GitRepositoryExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Tools.GitHub.GitRepositoryExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Tools.GitHub.GitRepositoryExtensions",
       "Summary": null
     },
     {
@@ -39056,6 +39098,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Components.ICompile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.ICreateForgejoRelease.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.ICreateForgejoRelease.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.ICreateForgejoRelease",
       "Summary": null
     },
     {
