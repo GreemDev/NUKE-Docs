@@ -2590,6 +2590,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.DisableDefaultOutputAttribute-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.DisableDefaultOutputAttribute-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.DisableDefaultOutputAttribute<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.DisableDefaultOutputAttribute.yml",
       "output": {
         ".html": {

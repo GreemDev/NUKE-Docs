@@ -90,12 +90,22 @@
 </ul>
 </li>
 <li>Explicit support was added to support the limits of the <a href="https://codeberg.org/actions/meta">Codeberg public FJA runners</a>, as well as a class containing constants for them: <a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.CI.ForgejoActions.CodebergRunners.html"><code>CodebergRunners</code></a></li>
+<li>To provide GitHub Actions familiarity, Forgejo exposes <code>GITHUB_</code>-prefixed environment variables. However, Forgejo <em>also</em> exposes <code>FORGEJO_</code>-prefixed variables, while GitHub does not.
+<ul>
+<li>As a result, <a href="https://github.com/gruke-build/src/commit/a5c99dc2c1cbfe225be28c2f178140f4d9c21d93">Forgejo Actions is no longer treated as being a GitHub Actions environment</a>.</li>
+<li>If you relied on this functionality you will need to replace your usages of <code>GitHubActions</code> with <code>ForgejoActions</code> where relevant.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p><a href="https://woodpecker-ci.org/docs/intro">Woodpecker CI</a> workflow generation &amp; CI environment support</p>
 <ul>
-<li>Woodpecker has no first-party job artifacts functionality, expecting you to provide your own S3 (or compatible) bucket.</li>
-<li>This is mostly only useful as a linter/tester.</li>
+<li>Woodpecker has no first-party job artifacts functionality, expecting you to use a plugin to provide that.
+<ul>
+<li>The only plugins I could find require some form of external storage solution, meaning you (the user of Woodpecker) is responsible for managing your own artifacts bin.</li>
+</ul>
+</li>
+<li>As a result, this is mostly only useful as a linter/tester on its own.</li>
 <li>You have access to Forge-specific APIs in the new <code>GreemDev.Nuke.Components.{GitHub, Forgejo, GitLab}</code> NuGet packages.
 <ul>
 <li>You can use these to create releases. The Woodpecker CI generator has support for importing secrets.
@@ -119,9 +129,24 @@
 </li>
 </ul>
 </li>
+<li><p><code>SetBranch</code> on <code>GitRepository</code> has been removed; use <code>GitRepository.ModifyCopy(branch: ...)</code> instead.</p>
+</li>
+<li><p>Removed <code>ShutdownDotNetAfterServerBuild</code> attribute, it existed due to the .NET CLI's lack of ability for forcibly disabling the use of build servers.</p>
+<ul>
+<li>.NET has since added this, as such the attribute has <a href="https://github.com/gruke-build/src/commit/8b29341a37e0668ddeb918baf6610c338150b77e">been removed and its behavior has been nativized</a>.</li>
+<li>You can re-enable build servers (not possible before) by setting your <a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.NukeBuild.html#Nuke_Common_NukeBuild_DisableDotNetBuildServers"><code>NukeBuild</code>'s <code>DisableDotNetBuildServers</code> property</a> to <code>true</code>.</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/gruke-build/src/commit/90e8a484d750d35a6767ff68a2c54cfb56e42e1c">Dusted off the old Notifications system that existed in the project</a> and hooked it up to a notifications JSON file I control.</p>
+<ul>
+<li>Probably will use this to notify about breaking changes.</li>
+<li>Notifications display after a build.</li>
+<li>Support has also been added to <code>DisableDefaultOutputAttribute</code> to fully block displaying notifications at all. This will also skip requesting them.</li>
+</ul>
+</li>
 <li><p><a href="https://github.com/gruke-build/src/commit/c4943bcab7a645b571bf9452fd2a5a7a11457b9b">Removed Telemetry</a></p>
 <ul>
-<li>And <a href="https://github.com/gruke-build/docs/commit/256cfab2467cfff578aa5b22c5e554cd9e946c4e">removed the page on the docs</a>about it.</li>
+<li>And <a href="https://github.com/gruke-build/docs/commit/256cfab2467cfff578aa5b22c5e554cd9e946c4e">removed the page on the docs</a> about it.</li>
 </ul>
 </li>
 <li><p><a href="https://github.com/nuke-build/nuke/pull/1321">nuke-build#1321</a>: fix: Allow UTF-8 console input</p>
@@ -1548,7 +1573,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.141 @ <a href="https://github.com/gruke-build/src/commit/5fddc32046b1aeaf727483f4247e6cc2d167d462">5fddc32</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.145 @ <a href="https://github.com/gruke-build/src/commit/f49369656807216c0b1f3ff51275885e3937ccd8">f493696</a></span>
         </div>
       </div>
     </footer>
