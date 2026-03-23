@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_ChangeLog_ChangelogTasks" data-uid="Nuke.Common.ChangeLog.ChangelogTasks" class="text-break">
-Class ChangelogTasks  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L20"><i class="bi bi-code-slash"></i></a>
+Class ChangelogTasks  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ public static class ChangelogTasks</code></pre>
 
   <h3 id="Nuke_Common_ChangeLog_ChangelogTasks_ExtractChangelogSectionNotes_Nuke_Common_IO_AbsolutePath_System_String_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.ExtractChangelogSectionNotes(Nuke.Common.IO.AbsolutePath,System.String)">
   ExtractChangelogSectionNotes(AbsolutePath, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Extracts the notes of the specified changelog section.</p>
@@ -200,7 +200,7 @@ public static IEnumerable&lt;string&gt; ExtractChangelogSectionNotes(AbsolutePat
 
   <h3 id="Nuke_Common_ChangeLog_ChangelogTasks_FinalizeChangelog_Nuke_Common_ChangeLog_ChangeLog_NuGet_Versioning_NuGetVersion_Nuke_Common_Git_GitRepository_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.FinalizeChangelog(Nuke.Common.ChangeLog.ChangeLog,NuGet.Versioning.NuGetVersion,Nuke.Common.Git.GitRepository)">
   FinalizeChangelog(ChangeLog, NuGetVersion, GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Finalizes the changelog by moving all entries from <code>[vNext]</code> to the version specified by release.</p>
@@ -246,7 +246,7 @@ public static IEnumerable&lt;string&gt; ExtractChangelogSectionNotes(AbsolutePat
 
   <h3 id="Nuke_Common_ChangeLog_ChangelogTasks_FinalizeChangelog_Nuke_Common_IO_AbsolutePath_System_String_Nuke_Common_Git_GitRepository_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.FinalizeChangelog(Nuke.Common.IO.AbsolutePath,System.String,Nuke.Common.Git.GitRepository)">
   FinalizeChangelog(AbsolutePath, string, GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Finalizes the changelog by moving all entries from <code>[vNext]</code> to the version specified by release.</p>
@@ -292,14 +292,14 @@ public static IEnumerable&lt;string&gt; ExtractChangelogSectionNotes(AbsolutePat
 
   <h3 id="Nuke_Common_ChangeLog_ChangelogTasks_GetNuGetReleaseNotes_System_String_Nuke_Common_Git_GitRepository_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.GetNuGetReleaseNotes(System.String,Nuke.Common.Git.GitRepository)">
   GetNuGetReleaseNotes(string, GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetNuGetReleaseNotes(string changelogFile, GitRepository repository = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetNuGetReleaseNotes(string changelogFile, GitRepository repository)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -326,11 +326,49 @@ public static IEnumerable&lt;string&gt; ExtractChangelogSectionNotes(AbsolutePat
 
 
 
+  <a id="Nuke_Common_ChangeLog_ChangelogTasks_GetNuGetReleaseNotes_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.GetNuGetReleaseNotes*"></a>
+
+  <h3 id="Nuke_Common_ChangeLog_ChangelogTasks_GetNuGetReleaseNotes_System_String_System_String_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.GetNuGetReleaseNotes(System.String,System.String)">
+  GetNuGetReleaseNotes(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetNuGetReleaseNotes(string changelogFile, string changelogUrl = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>changelogFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>changelogUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_ChangeLog_ChangelogTasks_ReadChangelog_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.ReadChangelog*"></a>
 
   <h3 id="Nuke_Common_ChangeLog_ChangelogTasks_ReadChangelog_System_String_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.ReadChangelog(System.String)">
   ReadChangelog(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads the specified changelog.</p>
@@ -370,7 +408,7 @@ public static ChangeLog ReadChangelog(string changelogFile)</code></pre>
 
   <h3 id="Nuke_Common_ChangeLog_ChangelogTasks_ReadReleaseNotes_Nuke_Common_IO_AbsolutePath_" data-uid="Nuke.Common.ChangeLog.ChangelogTasks.ReadReleaseNotes(Nuke.Common.IO.AbsolutePath)">
   ReadReleaseNotes(AbsolutePath)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads the release notes from the given changelog file and returns the result.</p>
@@ -410,7 +448,7 @@ public static IReadOnlyList&lt;ReleaseNotes&gt; ReadReleaseNotes(AbsolutePath ch
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L20" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/ChangeLog/ChangeLogTasks.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -426,7 +464,7 @@ public static IReadOnlyList&lt;ReleaseNotes&gt; ReadReleaseNotes(AbsolutePath ch
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.140 @ <a href="https://github.com/gruke-build/src/commit/bc906d6887eb198c113c749d6dc378c2c652e3d6">bc906d6</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.141 @ <a href="https://github.com/gruke-build/src/commit/5fddc32046b1aeaf727483f4247e6cc2d167d462">5fddc32</a></span>
         </div>
       </div>
     </footer>
