@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PullRequest | gruke 10.3.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PullRequest | gruke 10.3.0 ">
+      
+      <meta name="description" content="PullRequest represents a pull request">
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Components_Forgejo_Models_PullRequest.md&amp;value=---%0Auid%3A%20Nuke.Components.Forgejo.Models.PullRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Components.Forgejo.Models.PullRequest">
+
+
+
+  <h1 id="Nuke_Components_Forgejo_Models_PullRequest" data-uid="Nuke.Components.Forgejo.Models.PullRequest" class="text-break">
+Class PullRequest  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Components.html">Components</a>.<a class="xref" href="Nuke.Components.Forgejo.html">Forgejo</a>.<a class="xref" href="Nuke.Components.Forgejo.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Components.Forgejo.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>PullRequest represents a pull request</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PullRequest : IAdditionalDataHolder, IParsable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PullRequest</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IAdditionalDataHolder</span></div>
+      <div><span class="xref">IParsable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_DescendantsAndSelf__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.DescendantsAndSelf&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0___0__System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Descendants__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___System_Func___0_System_Boolean__">EnumerableExtensions.Descendants&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_ToPropertyDictionary__3___0_System_Func_System_Reflection_PropertyInfo___1__System_Func_System_Object___2__">EnumerableExtensions.ToPropertyDictionary&lt;T, TKey, TValue&gt;(T, Func&lt;PropertyInfo, TKey&gt;, Func&lt;object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.JsonExtensions.html#Nuke_Common_Utilities_JsonExtensions_ToJson__1___0_Newtonsoft_Json_JsonSerializerSettings_Newtonsoft_Json_Formatting_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerSettings, Formatting)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Apply__2___0_System_Func___0___1__">ObjectExtensions.Apply&lt;TInput, TOutput&gt;(TInput, Func&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_Clone__1___0_">ObjectExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_WhenNotNull__2___0___1_System_Func___0___1___0__">ObjectExtensions.WhenNotNull&lt;T, TObject&gt;(T, TObject, Func&lt;T, TObject, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_When__1___0_System_Boolean_System_Func___0___0__">ObjectExtensions.When&lt;T&gt;(T, bool, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.XmlExtensions.html#Nuke_Common_Utilities_XmlExtensions_ToXml__1___0_System_Xml_Linq_SaveOptions_">XmlExtensions.ToXml&lt;T&gt;(T, SaveOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ObjectExtensions.html#Nuke_Common_Utilities_ObjectExtensions_ToJObject_System_Object_Newtonsoft_Json_JsonSerializer_">ObjectExtensions.ToJObject(object, JsonSerializer)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest__ctor_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.#ctor*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest__ctor" data-uid="Nuke.Components.Forgejo.Models.PullRequest.#ctor">
+  PullRequest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Nuke.Components.Forgejo.Models.PullRequest.html">PullRequest</a> and sets the default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PullRequest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_AdditionalData_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.AdditionalData*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_AdditionalData" data-uid="Nuke.Components.Forgejo.Models.PullRequest.AdditionalData">
+  AdditionalData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, object&gt; AdditionalData { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Additions_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Additions*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Additions" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Additions">
+  Additions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The additions property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Additions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_AllowMaintainerEdit_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.AllowMaintainerEdit*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_AllowMaintainerEdit" data-uid="Nuke.Components.Forgejo.Models.PullRequest.AllowMaintainerEdit">
+  AllowMaintainerEdit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The allow_maintainer_edit property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? AllowMaintainerEdit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Assignee_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Assignee*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Assignee" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Assignee">
+  Assignee
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>User represents a user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public User? Assignee { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Components.Forgejo.Models.User.html">User</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Assignees_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Assignees*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Assignees" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Assignees">
+  Assignees
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The assignees property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;User&gt;? Assignees { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Nuke.Components.Forgejo.Models.User.html">User</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Base_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Base*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Base" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Base">
+  Base
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>PRBranchInfo information about a branch</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PRBranchInfo? Base { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Components.Forgejo.Models.PRBranchInfo.html">PRBranchInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Body_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Body*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Body" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Body">
+  Body
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The body property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Body { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_ChangedFiles_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.ChangedFiles*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_ChangedFiles" data-uid="Nuke.Components.Forgejo.Models.PullRequest.ChangedFiles">
+  ChangedFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The changed_files property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? ChangedFiles { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_ClosedAt_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.ClosedAt*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_ClosedAt" data-uid="Nuke.Components.Forgejo.Models.PullRequest.ClosedAt">
+  ClosedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The closed_at property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? ClosedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Comments_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Comments*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Comments" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Comments">
+  Comments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The comments property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Comments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_CreatedAt_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.CreatedAt*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_CreatedAt" data-uid="Nuke.Components.Forgejo.Models.PullRequest.CreatedAt">
+  CreatedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The created_at property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? CreatedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Deletions_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Deletions*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Deletions" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Deletions">
+  Deletions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The deletions property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Deletions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_DiffUrl_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.DiffUrl*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_DiffUrl" data-uid="Nuke.Components.Forgejo.Models.PullRequest.DiffUrl">
+  DiffUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The diff_url property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DiffUrl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Draft_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Draft*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Draft" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Draft">
+  Draft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The draft property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Draft { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_DueDate_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.DueDate*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_DueDate" data-uid="Nuke.Components.Forgejo.Models.PullRequest.DueDate">
+  DueDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The due_date property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? DueDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Flow_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Flow*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Flow" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Flow">
+  Flow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The flow property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Flow { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Head_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Head*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Head" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Head">
+  Head
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>PRBranchInfo information about a branch</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PRBranchInfo? Head { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Components.Forgejo.Models.PRBranchInfo.html">PRBranchInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_HtmlUrl_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.HtmlUrl*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_HtmlUrl" data-uid="Nuke.Components.Forgejo.Models.PullRequest.HtmlUrl">
+  HtmlUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The html_url property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? HtmlUrl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Id_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Id*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Id" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The id property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_IsLocked_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.IsLocked*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_IsLocked" data-uid="Nuke.Components.Forgejo.Models.PullRequest.IsLocked">
+  IsLocked
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The is_locked property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsLocked { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Labels_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Labels*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Labels" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Labels">
+  Labels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The labels property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Label&gt;? Labels { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Nuke.Components.Forgejo.Models.Label.html">Label</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_MergeBase_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergeBase*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_MergeBase" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergeBase">
+  MergeBase
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The merge_base property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? MergeBase { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_MergeCommitSha_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergeCommitSha*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_MergeCommitSha" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergeCommitSha">
+  MergeCommitSha
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The merge_commit_sha property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? MergeCommitSha { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Mergeable_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Mergeable*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Mergeable" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Mergeable">
+  Mergeable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The mergeable property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Mergeable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Merged_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Merged*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Merged" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Merged">
+  Merged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The merged property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Merged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_MergedAt_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergedAt*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_MergedAt" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergedAt">
+  MergedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The merged_at property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? MergedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_MergedBy_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergedBy*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_MergedBy" data-uid="Nuke.Components.Forgejo.Models.PullRequest.MergedBy">
+  MergedBy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>User represents a user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public User? MergedBy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Components.Forgejo.Models.User.html">User</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Milestone_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Milestone*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Milestone" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Milestone">
+  Milestone
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Milestone milestone is a collection of issues on one repository</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Milestone? Milestone { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Components.Forgejo.Models.Milestone.html">Milestone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Number_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Number*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Number" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Number">
+  Number
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Number { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_PatchUrl_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.PatchUrl*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_PatchUrl" data-uid="Nuke.Components.Forgejo.Models.PullRequest.PatchUrl">
+  PatchUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The patch_url property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PatchUrl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_PinOrder_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.PinOrder*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_PinOrder" data-uid="Nuke.Components.Forgejo.Models.PullRequest.PinOrder">
+  PinOrder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The pin_order property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? PinOrder { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_RequestedReviewers_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.RequestedReviewers*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_RequestedReviewers" data-uid="Nuke.Components.Forgejo.Models.PullRequest.RequestedReviewers">
+  RequestedReviewers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The requested_reviewers property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;User&gt;? RequestedReviewers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Nuke.Components.Forgejo.Models.User.html">User</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_RequestedReviewersTeams_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.RequestedReviewersTeams*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_RequestedReviewersTeams" data-uid="Nuke.Components.Forgejo.Models.PullRequest.RequestedReviewersTeams">
+  RequestedReviewersTeams
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The requested_reviewers_teams property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Team&gt;? RequestedReviewersTeams { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Nuke.Components.Forgejo.Models.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_ReviewComments_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.ReviewComments*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_ReviewComments" data-uid="Nuke.Components.Forgejo.Models.PullRequest.ReviewComments">
+  ReviewComments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>number of review comments made on the diff of a PR review (not including comments on commits or issues in a PR)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? ReviewComments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_State_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.State*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_State" data-uid="Nuke.Components.Forgejo.Models.PullRequest.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>StateType issue state type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? State { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Title_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Title*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Title" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Title">
+  Title
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The title property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Title { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_UpdatedAt_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.UpdatedAt*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_UpdatedAt" data-uid="Nuke.Components.Forgejo.Models.PullRequest.UpdatedAt">
+  UpdatedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The updated_at property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? UpdatedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Url_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Url*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Url" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Url">
+  Url
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The url property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Url { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_User_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.User*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_User" data-uid="Nuke.Components.Forgejo.Models.PullRequest.User">
+  User
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>User represents a user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public User? User { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Components.Forgejo.Models.User.html">User</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_CreateFromDiscriminatorValue_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.CreateFromDiscriminatorValue*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_CreateFromDiscriminatorValue_Microsoft_Kiota_Abstractions_Serialization_IParseNode_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.CreateFromDiscriminatorValue(Microsoft.Kiota.Abstractions.Serialization.IParseNode)">
+  CreateFromDiscriminatorValue(IParseNode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new instance of the appropriate class based on discriminator value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PullRequest CreateFromDiscriminatorValue(IParseNode parseNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parseNode</code> <span class="xref">IParseNode</span></dt>
+    <dd><p>The parse node to use to read the discriminator value and create the object</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Components.Forgejo.Models.PullRequest.html">PullRequest</a></dt>
+    <dd><p>A <a class="xref" href="Nuke.Components.Forgejo.Models.PullRequest.html">PullRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_GetFieldDeserializers_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.GetFieldDeserializers*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_GetFieldDeserializers" data-uid="Nuke.Components.Forgejo.Models.PullRequest.GetFieldDeserializers">
+  GetFieldDeserializers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The deserialization information for the current model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDictionary&lt;string, Action&lt;IParseNode&gt;&gt; GetFieldDeserializers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">IParseNode</span>&gt;&gt;</dt>
+    <dd><p>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_Forgejo_Models_PullRequest_Serialize_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Serialize*"></a>
+
+  <h3 id="Nuke_Components_Forgejo_Models_PullRequest_Serialize_Microsoft_Kiota_Abstractions_Serialization_ISerializationWriter_" data-uid="Nuke.Components.Forgejo.Models.PullRequest.Serialize(Microsoft.Kiota.Abstractions.Serialization.ISerializationWriter)">
+  Serialize(ISerializationWriter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes information the current object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Serialize(ISerializationWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">ISerializationWriter</span></dt>
+    <dd><p>Serialization writer to use to serialize this model</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Models/PullRequest.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.135 @ <a href="https://github.com/gruke-build/src/commit/d8de0ecfca4b0331f4265fc5e19e2739b3300b62">d8de0ec</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
