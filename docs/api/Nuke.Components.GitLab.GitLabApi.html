@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Components_GitLab_GitLabApi" data-uid="Nuke.Components.GitLab.GitLabApi" class="text-break">
-Class GitLabApi  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L27"><i class="bi bi-code-slash"></i></a>
+Class GitLabApi  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ public static class GitLabApi</code></pre>
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_CreateHttpClient_System_String_System_String_System_Nullable_System_TimeSpan__" data-uid="Nuke.Components.GitLab.GitLabApi.CreateHttpClient(System.String,System.String,System.Nullable{System.TimeSpan})">
   CreateHttpClient(string, string, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -197,7 +197,7 @@ public static class GitLabApi</code></pre>
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_FindMatchingPackageAsync_Nuke_Common_Utilities_Net_IHttpClientProxy_System_String_System_String_System_String_" data-uid="Nuke.Components.GitLab.GitLabApi.FindMatchingPackageAsync(Nuke.Common.Utilities.Net.IHttpClientProxy,System.String,System.String,System.String)">
   FindMatchingPackageAsync(IHttpClientProxy, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L498"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -235,11 +235,89 @@ public static class GitLabApi</code></pre>
 
 
 
+  <a id="Nuke_Components_GitLab_GitLabApi_GetLatestReleaseAsync_" data-uid="Nuke.Components.GitLab.GitLabApi.GetLatestReleaseAsync*"></a>
+
+  <h3 id="Nuke_Components_GitLab_GitLabApi_GetLatestReleaseAsync_Nuke_Common_Utilities_Net_IHttpClientProxy_System_Int64_" data-uid="Nuke.Components.GitLab.GitLabApi.GetLatestReleaseAsync(Nuke.Common.Utilities.Net.IHttpClientProxy,System.Int64)">
+  GetLatestReleaseAsync(IHttpClientProxy, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;GitLabReleaseJsonResponse?&gt; GetLatestReleaseAsync(IHttpClientProxy http, long projectId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>http</code> <a class="xref" href="Nuke.Common.Utilities.Net.IHttpClientProxy.html">IHttpClientProxy</a></dt>
+    <dd></dd>
+    <dt><code>projectId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nuke.Components.GitLab.GitLabReleaseJsonResponse.html">GitLabReleaseJsonResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Components_GitLab_GitLabApi_GetReleaseAsync_" data-uid="Nuke.Components.GitLab.GitLabApi.GetReleaseAsync*"></a>
+
+  <h3 id="Nuke_Components_GitLab_GitLabApi_GetReleaseAsync_Nuke_Common_Utilities_Net_IHttpClientProxy_System_Int64_System_String_" data-uid="Nuke.Components.GitLab.GitLabApi.GetReleaseAsync(Nuke.Common.Utilities.Net.IHttpClientProxy,System.Int64,System.String)">
+  GetReleaseAsync(IHttpClientProxy, long, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;GitLabReleaseJsonResponse?&gt; GetReleaseAsync(IHttpClientProxy http, long projectId, string tagName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>http</code> <a class="xref" href="Nuke.Common.Utilities.Net.IHttpClientProxy.html">IHttpClientProxy</a></dt>
+    <dd></dd>
+    <dt><code>projectId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>tagName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nuke.Components.GitLab.GitLabReleaseJsonResponse.html">GitLabReleaseJsonResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Nuke_Components_GitLab_GitLabApi_UpdateReleaseAsync_" data-uid="Nuke.Components.GitLab.GitLabApi.UpdateReleaseAsync*"></a>
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_UpdateReleaseAsync_System_String_System_String_System_String_System_String_System_String_NGitLab_Models_ReleaseLink___Nuke_Common_Git_GitRepository_" data-uid="Nuke.Components.GitLab.GitLabApi.UpdateReleaseAsync(System.String,System.String,System.String,System.String,System.String,NGitLab.Models.ReleaseLink[],Nuke.Common.Git.GitRepository)">
   UpdateReleaseAsync(string, string, string, string, string, ReleaseLink[], GitRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -287,7 +365,7 @@ public static class GitLabApi</code></pre>
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_UploadGenericPackageAsync_Nuke_Common_CI_GitLab_GitLab_Nuke_Common_Utilities_Net_IHttpClientProxy_Nuke_Common_IO_AbsolutePath_System_String_System_String_System_UInt32_" data-uid="Nuke.Components.GitLab.GitLabApi.UploadGenericPackageAsync(Nuke.Common.CI.GitLab.GitLab,Nuke.Common.Utilities.Net.IHttpClientProxy,Nuke.Common.IO.AbsolutePath,System.String,System.String,System.UInt32)">
   UploadGenericPackageAsync(GitLab, IHttpClientProxy, AbsolutePath, string, string, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Uploads a generic package to the current project's Package Registry.
@@ -348,7 +426,7 @@ public static Task&lt;string&gt; UploadGenericPackageAsync(this GitLab gl, IHttp
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_UploadGenericPackageToSpecificProjectAsync_Nuke_Common_Utilities_Net_IHttpClientProxy_Nuke_Common_IO_AbsolutePath_System_String_System_String_System_String_" data-uid="Nuke.Components.GitLab.GitLabApi.UploadGenericPackageToSpecificProjectAsync(Nuke.Common.Utilities.Net.IHttpClientProxy,Nuke.Common.IO.AbsolutePath,System.String,System.String,System.String)">
   UploadGenericPackageToSpecificProjectAsync(IHttpClientProxy, AbsolutePath, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Uploads a generic package to a specific project's Package Registry.</p>
@@ -400,7 +478,7 @@ public static Task&lt;string&gt; UploadGenericPackageToSpecificProjectAsync(IHtt
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_UploadGenericPackageToSpecificProjectWithRetryAsync_Nuke_Common_Utilities_Net_IHttpClientProxy_Nuke_Common_IO_AbsolutePath_System_String_System_String_System_String_System_UInt32_" data-uid="Nuke.Components.GitLab.GitLabApi.UploadGenericPackageToSpecificProjectWithRetryAsync(Nuke.Common.Utilities.Net.IHttpClientProxy,Nuke.Common.IO.AbsolutePath,System.String,System.String,System.String,System.UInt32)">
   UploadGenericPackageToSpecificProjectWithRetryAsync(IHttpClientProxy, AbsolutePath, string, string, string, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Uploads a generic package to a specific project's Package Registry.</p>
@@ -455,7 +533,7 @@ public static Task&lt;string&gt; UploadGenericPackageToSpecificProjectWithRetryA
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_UploadGenericPackagesAsync_Nuke_Common_CI_GitLab_GitLab_Nuke_Common_Utilities_Net_IHttpClientProxy_System_Collections_Generic_IEnumerable_Nuke_Common_IO_AbsolutePath__System_String_System_String_System_UInt32_" data-uid="Nuke.Components.GitLab.GitLabApi.UploadGenericPackagesAsync(Nuke.Common.CI.GitLab.GitLab,Nuke.Common.Utilities.Net.IHttpClientProxy,System.Collections.Generic.IEnumerable{Nuke.Common.IO.AbsolutePath},System.String,System.String,System.UInt32)">
   UploadGenericPackagesAsync(GitLab, IHttpClientProxy, IEnumerable&lt;AbsolutePath&gt;, string, string, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Uploads generic packages to the current project's Package Registry.
@@ -516,7 +594,7 @@ public static Task&lt;IReadOnlyList&lt;string&gt;&gt; UploadGenericPackagesAsync
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_UploadGenericPackagesToSpecificProjectAsync_Nuke_Common_Utilities_Net_IHttpClientProxy_System_Collections_Generic_IEnumerable_Nuke_Common_IO_AbsolutePath__System_String_System_String_System_String_" data-uid="Nuke.Components.GitLab.GitLabApi.UploadGenericPackagesToSpecificProjectAsync(Nuke.Common.Utilities.Net.IHttpClientProxy,System.Collections.Generic.IEnumerable{Nuke.Common.IO.AbsolutePath},System.String,System.String,System.String)">
   UploadGenericPackagesToSpecificProjectAsync(IHttpClientProxy, IEnumerable&lt;AbsolutePath&gt;, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Uploads a generic package to a specific project's Package Registry.</p>
@@ -568,7 +646,7 @@ public static Task&lt;IReadOnlyList&lt;string&gt;&gt; UploadGenericPackagesToSpe
 
   <h3 id="Nuke_Components_GitLab_GitLabApi_UploadGenericPackagesToSpecificProjectWithRetryAsync_Nuke_Common_Utilities_Net_IHttpClientProxy_System_Collections_Generic_IEnumerable_Nuke_Common_IO_AbsolutePath__System_String_System_String_System_String_System_UInt32_" data-uid="Nuke.Components.GitLab.GitLabApi.UploadGenericPackagesToSpecificProjectWithRetryAsync(Nuke.Common.Utilities.Net.IHttpClientProxy,System.Collections.Generic.IEnumerable{Nuke.Common.IO.AbsolutePath},System.String,System.String,System.String,System.UInt32)">
   UploadGenericPackagesToSpecificProjectWithRetryAsync(IHttpClientProxy, IEnumerable&lt;AbsolutePath&gt;, string, string, string, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Uploads generic packages to a specific project's Package Registry.</p>
@@ -623,7 +701,7 @@ public static Task&lt;IReadOnlyList&lt;string&gt;&gt; UploadGenericPackagesToSpe
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L27" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L29" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -639,7 +717,7 @@ public static Task&lt;IReadOnlyList&lt;string&gt;&gt; UploadGenericPackagesToSpe
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.135 @ <a href="https://github.com/gruke-build/src/commit/d8de0ecfca4b0331f4265fc5e19e2739b3300b62">d8de0ec</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.138 @ <a href="https://github.com/gruke-build/src/commit/41919ce92976fdcbbc1894712424ebbde1b8f200">41919ce</a></span>
         </div>
       </div>
     </footer>
