@@ -2716,426 +2716,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.ActivitypubRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.ActivitypubRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.ActivitypubRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.ActivitypubRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.ActorRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.Actor.ActorRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.Actor.ActorRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.ActorRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\actor</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.Inbox.InboxRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.Actor.Inbox.InboxRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.Actor.Inbox.InboxRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.Inbox.InboxRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\actor\\inbox</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.Inbox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.Actor.Inbox.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.Actor.Inbox",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.Outbox.OutboxRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.Actor.Outbox.OutboxRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.Actor.Outbox.OutboxRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.Outbox.OutboxRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\actor\\outbox</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.Outbox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.Actor.Outbox.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.Actor.Outbox",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.Actor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.Actor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.Actor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Inbox.InboxRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Inbox.InboxRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Inbox.InboxRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Inbox.InboxRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\repository-id{repository-id}\\inbox</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Inbox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Inbox.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Inbox",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Outbox.OutboxRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Outbox.OutboxRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Outbox.OutboxRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Outbox.OutboxRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\repository-id{repository-id}\\outbox</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Outbox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Outbox.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.Outbox",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.RepositoryItemRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.RepositoryItemRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.RepositoryItemRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.RepositoryItemRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\repository-id{repository-id}</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.Item",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.RepositoryIdRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.RepositoryIdRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.RepositoryIdRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.RepositoryIdRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\repository-id</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.RepositoryId.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.RepositoryId",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.ActivitiesRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.ActivitiesRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.ActivitiesRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.ActivitiesRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\user-id{user-id}\\activities</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.Activity.ActivityRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.Activity.ActivityRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.Activity.ActivityRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.Activity.ActivityRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\user-id{user-id}\\activities{activity-id}\\activity</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.Activity.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.Activity.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.Activity",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.ActivityItemRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.ActivityItemRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.ActivityItemRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.ActivityItemRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\user-id{user-id}\\activities{activity-id}</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.Item",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Activities",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Inbox.InboxRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Inbox.InboxRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Inbox.InboxRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Inbox.InboxRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\user-id{user-id}\\inbox</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Inbox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Inbox.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Inbox",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Outbox.OutboxRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Outbox.OutboxRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Outbox.OutboxRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Outbox.OutboxRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\user-id{user-id}\\outbox</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Outbox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Outbox.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.Outbox",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.UserItemRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.UserItemRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.UserItemRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.UserItemRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\user-id{user-id}</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.Item.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.Item",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.UserIdRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.UserIdRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId.UserIdRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.UserIdRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\activitypub\\user-id</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.UserId.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.UserId.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub.UserId",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Activitypub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Activitypub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Activitypub",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.ForgejoApiClient.yml",
       "output": {
         ".html": {
@@ -3665,20 +3245,6 @@
       "IsMRef": true,
       "Title": "Nuke.Common.Components.Forgejo.Models.Activity",
       "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.ActivityPub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.ActivityPub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.ActivityPub",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.ActivityPub.yml\" sourcestartlinenumber=\"1\">ActivityPub type</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -5068,34 +4634,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.ForgeLike.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.ForgeLike.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.ForgeLike",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.ForgeLike.yml\" sourcestartlinenumber=\"1\">ForgeLike activity data type</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.ForgeOutbox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.ForgeOutbox.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.ForgeOutbox",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.ForgeOutbox.yml\" sourcestartlinenumber=\"1\">ActivityStream OrderedCollection of activities</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.GPGKey.yml",
       "output": {
         ".html": {
@@ -5670,90 +5208,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.NodeInfo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.NodeInfo",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfo.yml\" sourcestartlinenumber=\"1\">NodeInfo contains standardized way of exposing metadata about a server running one of the distributed social networks</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoServices.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.NodeInfoServices.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.NodeInfoServices",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoServices.yml\" sourcestartlinenumber=\"1\">NodeInfoServices contains the third party sites this server can connect to via their application API</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoSoftware.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.NodeInfoSoftware.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.NodeInfoSoftware",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoSoftware.yml\" sourcestartlinenumber=\"1\">NodeInfoSoftware contains Metadata about server software in use</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoUsage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.NodeInfoUsage.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.NodeInfoUsage",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoUsage.yml\" sourcestartlinenumber=\"1\">NodeInfoUsage contains usage statistics for this server</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoUsageUsers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.NodeInfoUsageUsers.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.NodeInfoUsageUsers",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfoUsageUsers.yml\" sourcestartlinenumber=\"1\">NodeInfoUsageUsers contains statistics about the users of this server</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.NodeInfo_metadata.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.NodeInfo_metadata.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.NodeInfo_metadata",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.Note.yml",
       "output": {
         ".html": {
@@ -5779,20 +5233,6 @@
       "IsMRef": true,
       "Title": "Nuke.Common.Components.Forgejo.Models.NoteOptions",
       "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Models.NotificationCount.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Models.NotificationCount.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Models.NotificationCount",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Models.NotificationCount.yml\" sourcestartlinenumber=\"1\">NotificationCount number of unread notifications</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6898,202 +6338,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Components.Forgejo.Models",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Nodeinfo.NodeinfoRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Nodeinfo.NodeinfoRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Nodeinfo.NodeinfoRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Nodeinfo.NodeinfoRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\nodeinfo</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Nodeinfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Nodeinfo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Nodeinfo",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.GetSubjectTypeQueryParameterType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.GetSubjectTypeQueryParameterType.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.GetSubjectTypeQueryParameterType",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.New.NewRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.New.NewRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.New.NewRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Notifications.New.NewRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\notifications\\new</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.New.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.New.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.New",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderGetQueryParameters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderGetQueryParameters.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderGetQueryParameters",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderGetQueryParameters.yml\" sourcestartlinenumber=\"1\">List users's notification threads</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderPutQueryParameters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderPutQueryParameters.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderPutQueryParameters",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.NotificationsRequestBuilderPutQueryParameters.yml\" sourcestartlinenumber=\"1\">Mark notification threads as read, pinned or unread</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Notifications.NotificationsRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\notifications</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters.yml\" sourcestartlinenumber=\"1\">Mark notification thread as read by ID</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\notifications\\threads{id}</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.Threads.Item.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.Threads.Item",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.ThreadsRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.Threads.ThreadsRequestBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.Threads.ThreadsRequestBuilder",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.ThreadsRequestBuilder.yml\" sourcestartlinenumber=\"1\">Builds and executes requests for operations under \\notifications\\threads</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.Threads.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.Threads.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications.Threads",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Notifications.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Notifications.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Notifications",
       "Summary": null
     },
     {
@@ -13310,20 +12554,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Components.Forgejo.Repos.Item.Item.Raw",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Components.Forgejo.Repos.Item.Item.Releases.Item.Assets.AssetsPostRequestBody.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Components.Forgejo.Repos.Item.Item.Releases.Item.Assets.AssetsPostRequestBody.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Components.Forgejo.Repos.Item.Item.Releases.Item.Assets.AssetsPostRequestBody",
       "Summary": null
     },
     {
@@ -28770,6 +28000,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.GitLab.GitLabTasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.GitLab.GitLabTasks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.GitLab.GitLabTasks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.GitLab.yml",
       "output": {
         ".html": {
@@ -38846,7 +38090,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Utilities.Net.HttpClientProxy",
-      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Utilities.Net.HttpClientProxy.yml\" sourcestartlinenumber=\"1\">A simple wrapper around <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> which calls the specified callback with (non-private)\ninformation about all requests issued via this class.\n<br>\nThis class is non-owning of the passed <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref>. The caller is responsible for disposal, if needed.</p>\n"
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Utilities.Net.HttpClientProxy.yml\" sourcestartlinenumber=\"1\">A simple wrapper around <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> which calls the specified callback with (non-private)\ninformation about all requests issued via this class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -39144,6 +38388,202 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GetPackageFilesItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GetPackageFilesItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GetPackageFilesItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GetProjectPackagesItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GetProjectPackagesItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GetProjectPackagesItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GitLabApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GitLabApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GitLabApi",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GitLabReleaseJsonResponse.AssetLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GitLabReleaseJsonResponse.AssetLink.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GitLabReleaseJsonResponse.AssetLink",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GitLabReleaseJsonResponse.GitLabReleaseAssetsJsonResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GitLabReleaseJsonResponse.GitLabReleaseAssetsJsonResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GitLabReleaseJsonResponse.GitLabReleaseAssetsJsonResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GitLabReleaseJsonResponse.GitLabUserJsonResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GitLabReleaseJsonResponse.GitLabUserJsonResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GitLabReleaseJsonResponse.GitLabUserJsonResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GitLabReleaseJsonResponse.WebLinks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GitLabReleaseJsonResponse.WebLinks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GitLabReleaseJsonResponse.WebLinks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GitLabReleaseJsonResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GitLabReleaseJsonResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GitLabReleaseJsonResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.GitLabSerializerContexts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.GitLabSerializerContexts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.GitLabSerializerContexts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.PaginatedEndpoint-1.BuilderApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.PaginatedEndpoint-1.BuilderApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.PaginatedEndpoint<T>.BuilderApi",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.PaginatedEndpoint-1.HttpContentParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.PaginatedEndpoint-1.HttpContentParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.PaginatedEndpoint<T>.HttpContentParser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.PaginatedEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.PaginatedEndpoint-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.PaginatedEndpoint<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.QueryParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.QueryParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab.QueryParameters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.GitLab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.GitLab.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.GitLab",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Components.ICompile.yml",
       "output": {
         ".html": {
@@ -39182,6 +38622,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Components.ICreateGitHubRelease",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.ICreateGitLabRelease.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.ICreateGitLabRelease.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.ICreateGitLabRelease",
       "Summary": null
     },
     {

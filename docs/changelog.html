@@ -73,41 +73,56 @@
         <article data-uid="">
 <h1 id="changelog">Changelog</h1>
 
-<p>All notable changes to this project will be documented in this file.</p>
-<p>The format is based on <a href="http://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>
-and this project adheres to <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <h2 id="vnext"><a href="https://github.com/gruke-build/src/compare/10.2.0...HEAD">vNext</a></h2>
 <ul>
-<li><a href="https://github.com/gruke-build/src/commit/c4943bcab7a645b571bf9452fd2a5a7a11457b9b">Removed Telemetry</a>
+<li><p><a href="https://forgejo.org/docs/next/user/actions/overview/">Forgejo Actions</a> workflow generation &amp; CI environment
+support</p>
 <ul>
-<li>And <a href="https://github.com/gruke-build/docs/commit/256cfab2467cfff578aa5b22c5e554cd9e946c4e">removed the page on the docs</a> about it.</li>
+<li><a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.CI.ForgejoActions.ForgejoActions.html">Access environment variables defined in their documentation in your C# code in a type-safe manner with documentation for each variable</a>.</li>
+<li>Due to Forgejo Actions' <a href="https://forgejo.org/docs/latest/user/actions/github-actions/">overwhelming similarities to GitHub Actions</a>, I was able to maintain practically 1:1 feature parity with the GitHub Actions generator.
+<ul>
+<li>The only missing feature (as far as I can tell, and only that I could have possibly encountered) is
+the <a href="https://forgejo.org/docs/latest/user/actions/github-actions/#known-list-of-differences">lack of a <code>permissions</code> YAML block</a>.</li>
 </ul>
 </li>
-<li><a href="https://forgejo.org/docs/next/user/actions/overview/">Forgejo Actions</a> &amp; <a href="https://woodpecker-ci.org/docs/intro">Woodpecker CI</a> environment support
-<ul>
-<li>Access environment variables defined in their documentation in your C# code in a type-safe manner with in-IDE documentation for each variable.</li>
-</ul>
-</li>
-<li><a href="https://forgejo.org/docs/next/user/actions/overview/">Forgejo Actions</a> workflow generation
-<ul>
-<li>Due to Forgejo Actions' <a href="https://forgejo.org/docs/latest/user/actions/github-actions/">overwhelming similarities to GitHub Actions</a>, I was able to maintain practically 1:1 feature parity with the GitHub Actions generator.</li>
-<li>The only missing feature (as far as I can tell, and only that I could have possibly encountered) is the <a href="https://forgejo.org/docs/latest/user/actions/github-actions/#known-list-of-differences">lack of a <code>permissions</code> YAML block</a>.</li>
 <li>Explicit support was added to support the limits of the <a href="https://codeberg.org/actions/meta">Codeberg public FJA runners</a>, as well as a class containing constants for them: <a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.CI.ForgejoActions.CodebergRunners.html"><code>CodebergRunners</code></a></li>
 </ul>
 </li>
-<li><a href="https://woodpecker-ci.org/docs/intro">Woodpecker CI</a> workflow generation
+<li><p><a href="https://woodpecker-ci.org/docs/intro">Woodpecker CI</a> workflow generation &amp; CI environment support</p>
 <ul>
-<li>Very minimal implementation currently.</li>
-<li>Woodpecker has no first-party job artifacts functionality, expecting you to provide your own S3 (or compatible) bucket.</li>
+<li>Woodpecker has no first-party job artifacts functionality, expecting you to provide your own S3 (or compatible) bucket.
+<ul>
 <li>This is mostly only useful as a linter/tester.</li>
-<li>I intend on adding helpers on the WoodpeckerCI class to let you easily make releases on common forges (GitHub, Forgejo, GitLab)
+<li>You have access to Forge-specific APIs in the new <code>GreemDev.Nuke.Components.{GitHub, Forgejo, GitLab}</code> NuGet packages.
 <ul>
-<li>The downside is that authentication will not be automatic; you <em>will</em> need to pre-configure a PAT and the environment variable containing it for your Woodpecker project.</li>
+<li>You can use these to create releases. The Woodpecker CI generator has support for importing secrets.
+<ul>
+<li><code>ICreateGitHubRelease</code> has moved to <code>GreemDev.Nuke.Components.GitHub</code></li>
+<li><code>ICreateForgejoRelease</code> has been added to <code>GreemDev.Nuke.Components.Forgejo</code>, and works identically to GitHub</li>
+<li><code>ICreateGitLabRelease</code> has been added to <code>GreemDev.Nuke.Components.GitLab</code>, and is more complex, expecting a <code>Name</code>, <code>Version</code>, and <code>PackageName</code>.
+<ul>
+<li>GitLab works differently to GitHub &amp; Forgejo; it does not have a dedicated &quot;release assets&quot; feature.
+<ul>
+<li>The solution we use is to upload to the <a href="https://docs.gitlab.com/user/packages/generic_packages/">Generic Package repository</a>, then create a release that links to all the files in the GPR package version.</li>
+<li>Requires your GitLab project to have <a href="https://docs.gitlab.com/user/project/releases/">Releases</a> and <a href="https://docs.gitlab.com/user/packages/package_registry/">Package Registry</a> enabled.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="https://github.com/nuke-build/nuke/pull/1321">nuke-build#1321</a>: fix: Allow UTF-8 console input
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/gruke-build/src/commit/c4943bcab7a645b571bf9452fd2a5a7a11457b9b">Removed Telemetry</a></p>
+<ul>
+<li>And <a href="https://github.com/gruke-build/docs/commit/256cfab2467cfff578aa5b22c5e554cd9e946c4e">removed the page on the docs</a>about it.</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/nuke-build/nuke/pull/1321">nuke-build#1321</a>: fix: Allow UTF-8 console input</p>
 <ul>
 <li>Thanks, <a href="https://github.com/rus-art">@rus-art</a>!</li>
 </ul>
@@ -1531,7 +1546,7 @@ and this project adheres to <a href="http://semver.org/spec/v2.0.0.html">Semanti
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.125 @ <a href="https://github.com/gruke-build/src/commit/f5347d09c5ead4ec63af5d6152b30ad2da3881e3">f5347d0</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.132 @ <a href="https://github.com/gruke-build/src/commit/6a364a804996c5449d801bec34cea57ca1c2564a">6a364a8</a></span>
         </div>
       </div>
     </footer>

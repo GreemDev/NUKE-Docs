@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class HttpClientProxy | gruke 10.3.0 ">
       
-      <meta name="description" content="A simple wrapper around  which calls the specified callback with (non-private) information about all requests issued via this class.  This class is non-owning of the passed . The caller is responsible for disposal, if needed.">
+      <meta name="description" content="A simple wrapper around  which calls the specified callback with (non-private) information about all requests issued via this class.">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -98,15 +98,13 @@ Class HttpClientProxy  <a class="header-action link-secondary" title="View sourc
   </div>
 
   <div class="markdown summary"><p>A simple wrapper around <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> which calls the specified callback with (non-private)
-information about all requests issued via this class.
-<br>
-This class is non-owning of the passed <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a>. The caller is responsible for disposal, if needed.</p>
+information about all requests issued via this class.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
-public class HttpClientProxy : IHttpClientProxy</code></pre>
+public class HttpClientProxy : IHttpClientProxy, IDisposable</code></pre>
   </div>
 
 
@@ -124,6 +122,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Nuke.Common.Utilities.Net.IHttpClientProxy.html">IHttpClientProxy</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     </dd>
   </dl>
 
@@ -219,7 +218,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy__ctor_System_Net_Http_HttpClient_Nuke_Common_Utilities_Net_HttpClientProxy_LogCallback_" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.#ctor(System.Net.Http.HttpClient,Nuke.Common.Utilities.Net.HttpClientProxy.LogCallback)">
   HttpClientProxy(HttpClient, LogCallback?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -256,7 +255,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_BaseAddress" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.BaseAddress">
   BaseAddress
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -287,7 +286,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_DefaultRequestHeaders" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.DefaultRequestHeaders">
   DefaultRequestHeaders
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -318,7 +317,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_DefaultRequestVersion" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.DefaultRequestVersion">
   DefaultRequestVersion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -349,7 +348,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_DefaultVersionPolicy" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.DefaultVersionPolicy">
   DefaultVersionPolicy
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -380,7 +379,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_MaxResponseContentBufferSize" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.MaxResponseContentBufferSize">
   MaxResponseContentBufferSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -411,7 +410,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_Timeout" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.Timeout">
   Timeout
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -446,7 +445,7 @@ public class HttpClientProxy : IHttpClientProxy</code></pre>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_CreateBasicWrapper_System_Net_Http_HttpClient_" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.CreateBasicWrapper(System.Net.Http.HttpClient)">
   CreateBasicWrapper(HttpClient)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Nuke.Common.Utilities.Net.HttpClientProxy.html">HttpClientProxy</a> around the provided <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a>, directing all log output to a no-operation callback.
@@ -565,7 +564,7 @@ Use this to call into <a class="xref" href="Nuke.Common.Utilities.Net.HttpClient
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_CreateStdOut_System_Net_Http_HttpClient_" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.CreateStdOut(System.Net.Http.HttpClient)">
   CreateStdOut(HttpClient)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -597,11 +596,38 @@ Use this to call into <a class="xref" href="Nuke.Common.Utilities.Net.HttpClient
 
 
 
+  <a id="Nuke_Common_Utilities_Net_HttpClientProxy_Dispose_" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.Dispose*"></a>
+
+  <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_Dispose" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Nuke_Common_Utilities_Net_HttpClientProxy_SendAsync_" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.SendAsync*"></a>
 
   <h3 id="Nuke_Common_Utilities_Net_HttpClientProxy_SendAsync_System_Net_Http_HttpRequestMessage_System_Nullable_System_Net_Http_HttpCompletionOption__System_Nullable_System_Threading_CancellationToken__" data-uid="Nuke.Common.Utilities.Net.HttpClientProxy.SendAsync(System.Net.Http.HttpRequestMessage,System.Nullable{System.Net.Http.HttpCompletionOption},System.Nullable{System.Threading.CancellationToken})">
   SendAsync(HttpRequestMessage, HttpCompletionOption?, CancellationToken?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities.Net/HttpClientProxy.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -658,7 +684,7 @@ public Task&lt;HttpResponseMessage?&gt; SendAsync(HttpRequestMessage request, Ht
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.125 @ <a href="https://github.com/gruke-build/src/commit/f5347d09c5ead4ec63af5d6152b30ad2da3881e3">f5347d0</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.132 @ <a href="https://github.com/gruke-build/src/commit/6a364a804996c5449d801bec34cea57ca1c2564a">6a364a8</a></span>
         </div>
       </div>
     </footer>

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters | gruke 10.3.0 </title>
+      <title>Delegate PaginatedEndpoint&lt;T&gt;.HttpContentParser | gruke 10.3.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters | gruke 10.3.0 ">
+      <meta name="title" content="Delegate PaginatedEndpoint&lt;T&gt;.HttpContentParser | gruke 10.3.0 ">
       
-      <meta name="description" content="Mark notification thread as read by ID">
+      
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Components_Forgejo_Notifications_Threads_Item_ThreadsItemRequestBuilder_ThreadsItemRequestBuilderPatchQueryParameters.md&amp;value=---%0Auid%3A%20Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Components_GitLab_PaginatedEndpoint_1_HttpContentParser.md&amp;value=---%0Auid%3A%20Nuke.Components.GitLab.PaginatedEndpoint%601.HttpContentParser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,65 +84,42 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters">
+        <article data-uid="Nuke.Components.GitLab.PaginatedEndpoint`1.HttpContentParser">
 
 
 
-  <h1 id="Nuke_Common_Components_Forgejo_Notifications_Threads_Item_ThreadsItemRequestBuilder_ThreadsItemRequestBuilderPatchQueryParameters" data-uid="Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters" class="text-break">
-Class ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Notifications/Threads/Item/ThreadsItemRequestBuilder.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Nuke_Components_GitLab_PaginatedEndpoint_1_HttpContentParser" data-uid="Nuke.Components.GitLab.PaginatedEndpoint`1.HttpContentParser" class="text-break">
+Delegate PaginatedEndpoint&lt;T&gt;.HttpContentParser  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/PaginatedEndpoint/Base.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.Components.html">Components</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.html">Forgejo</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Notifications.html">Notifications</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Notifications.Threads.html">Threads</a>.<a class="xref" href="Nuke.Common.Components.Forgejo.Notifications.Threads.Item.html">Item</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nuke.Components.Forgejo.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Components.html">Components</a>.<a class="xref" href="Nuke.Components.GitLab.html">GitLab</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Components.GitLab.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Mark notification thread as read by ID</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate Task&lt;IEnumerable&lt;T&gt;&gt; PaginatedEndpoint&lt;T&gt;.HttpContentParser(HttpContent content)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd></dd>
+  </dl>
 
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters</span></div>
-    </dd>
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
   </dl>
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-  </dd></dl>
+
+
 
   <dl class="typelist extensionMethods">
     <dt>Extension Methods</dt>
@@ -190,6 +167,12 @@ Class ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters  <
       <a class="xref" href="Nuke.Utilities.Text.Yaml.YamlExtensions.html#Nuke_Utilities_Text_Yaml_YamlExtensions_ToYaml__1___0_YamlDotNet_Serialization_SerializerBuilder_">YamlExtensions.ToYaml&lt;T&gt;(T, SerializerBuilder)</a>
   </div>
   <div>
+      <a class="xref" href="Nuke.Common.Utilities.ReflectionUtility.html#Nuke_Common_Utilities_ReflectionUtility_DynamicInvokeUnwrap_System_Delegate_System_Object___">ReflectionUtility.DynamicInvokeUnwrap(Delegate, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Nuke.Common.Utilities.ReflectionUtility.html#Nuke_Common_Utilities_ReflectionUtility_DynamicInvokeUnwrap__1_System_Delegate_System_Object___">ReflectionUtility.DynamicInvokeUnwrap&lt;T&gt;(Delegate, params object[])</a>
+  </div>
+  <div>
       <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_AsEnumerable__1_System_Object_">EnumerableExtensions.AsEnumerable&lt;T&gt;(object)</a>
   </div>
   <div>
@@ -201,48 +184,11 @@ Class ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters  <
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="Nuke_Common_Components_Forgejo_Notifications_Threads_Item_ThreadsItemRequestBuilder_ThreadsItemRequestBuilderPatchQueryParameters_ToStatus_" data-uid="Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters.ToStatus*"></a>
-
-  <h3 id="Nuke_Common_Components_Forgejo_Notifications_Threads_Item_ThreadsItemRequestBuilder_ThreadsItemRequestBuilderPatchQueryParameters_ToStatus" data-uid="Nuke.Common.Components.Forgejo.Notifications.Threads.Item.ThreadsItemRequestBuilder.ThreadsItemRequestBuilderPatchQueryParameters.ToStatus">
-  ToStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Notifications/Threads/Item/ThreadsItemRequestBuilder.cs/#L141"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Status to mark notifications as</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[QueryParameter(&quot;to%2Dstatus&quot;)]
-public string? ToStatus { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Notifications/Threads/Item/ThreadsItemRequestBuilder.cs/#L135" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/PaginatedEndpoint/Base.cs/#L54" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -258,7 +204,7 @@ public string? ToStatus { get; set; }</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.125 @ <a href="https://github.com/gruke-build/src/commit/f5347d09c5ead4ec63af5d6152b30ad2da3881e3">f5347d0</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.132 @ <a href="https://github.com/gruke-build/src/commit/6a364a804996c5449d801bec34cea57ca1c2564a">6a364a8</a></span>
         </div>
       </div>
     </footer>
