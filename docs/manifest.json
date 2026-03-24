@@ -14084,34 +14084,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Tools.Gitter.GitterTasks.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Tools.Gitter.GitterTasks.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Tools.Gitter.GitterTasks",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Tools.Gitter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Tools.Gitter.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Tools.Gitter",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.Helm.HelmCompletionSettings.yml",
       "output": {
         ".html": {

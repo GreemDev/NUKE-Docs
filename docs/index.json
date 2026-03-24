@@ -5014,16 +5014,6 @@
     "title": "Namespace Nuke.Common.Tools.GitVersion | gruke 10.3.0",
     "summary": "Namespace Nuke.Common.Tools.GitVersion Classes GitVersion GitVersionAttribute Injects an instance of GitVersion based on the local repository. GitVersionOutput Used within GitVersionTasks. GitVersionSettings GitVersion is a tool to help you achieve Semantic Versioning on your project. For more details, visit the official website. GitVersionSettingsExtensions GitVersion is a tool to help you achieve Semantic Versioning on your project. For more details, visit the official website. GitVersionTasks GitVersion is a tool to help you achieve Semantic Versioning on your project. For more details, visit the official website. GitVersionVerbosity Used within GitVersionTasks."
   },
-  "api/Nuke.Common.Tools.Gitter.GitterTasks.html": {
-    "href": "api/Nuke.Common.Tools.Gitter.GitterTasks.html",
-    "title": "Class GitterTasks | gruke 10.3.0",
-    "summary": "Class GitterTasks Namespace Nuke.Common.Tools.Gitter Assembly Nuke.Common.dll public static class GitterTasks Inheritance object GitterTasks Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods SendGitterMessage(string, string, string) public static void SendGitterMessage(string message, string roomId, string token) Parameters message string roomId string token string SendGitterMessageAsync(string, string, string) public static Task SendGitterMessageAsync(string message, string roomId, string token) Parameters message string roomId string token string Returns Task"
-  },
-  "api/Nuke.Common.Tools.Gitter.html": {
-    "href": "api/Nuke.Common.Tools.Gitter.html",
-    "title": "Namespace Nuke.Common.Tools.Gitter | gruke 10.3.0",
-    "summary": "Namespace Nuke.Common.Tools.Gitter Classes GitterTasks"
-  },
   "api/Nuke.Common.Tools.Helm.HelmCompletionSettings.html": {
     "href": "api/Nuke.Common.Tools.Helm.HelmCompletionSettings.html",
     "title": "Class HelmCompletionSettings | gruke 10.3.0",
