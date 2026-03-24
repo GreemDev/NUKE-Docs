@@ -3122,34 +3122,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Gitter.GitterTasks.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Gitter.GitterTasks.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Gitter.GitterTasks",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Gitter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nuke.Common.Gitter.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Nuke.Common.Gitter",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Host.yml",
       "output": {
         ".html": {
@@ -14108,6 +14080,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.GitVersion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gitter.GitterTasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gitter.GitterTasks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gitter.GitterTasks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gitter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gitter",
       "Summary": null
     },
     {
