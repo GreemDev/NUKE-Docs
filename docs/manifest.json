@@ -38542,6 +38542,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.IHazDebuggableFetchingGitVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.IHazDebuggableFetchingGitVersion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.IHazDebuggableFetchingGitVersion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Components.IHazDebuggableGitVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Components.IHazDebuggableGitVersion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Components.IHazDebuggableGitVersion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Components.IHazFetchingGitVersion.yml",
       "output": {
         ".html": {
