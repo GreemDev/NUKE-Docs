@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.0/apiSpec/new?filename=Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings" class="text-break">
-Class UnityCreateManualActivationFileSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L70"><i class="bi bi-code-slash"></i></a>
+Class UnityCreateManualActivationFileSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -397,7 +397,7 @@ public class UnityCreateManualActivationFileSettings : UnityOptionsBase, IOption
 
   <h3 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings_BatchMode" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings.BatchMode">
   BatchMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run Unity in batch mode. This should always be used in conjunction with the other command line arguments, because it ensures no pop-up windows appear and eliminates the need for any human intervention. When an exception occurs during execution of the script code, the Asset server updates fail, or other operations that fail, Unity immediately exits with return code <b>1</b>.</p>
@@ -431,7 +431,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings_NoGraphics" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings.NoGraphics">
   NoGraphics
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When running in batch mode, do not initialize the graphics device at all. This makes it possible to run your automated workflows on machines that don't even have a GPU (automated workflows only work when you have a window in focus, otherwise you can't send simulated input commands). Please note that <code>-nographics</code> does not allow you to bake GI on OSX, since Enlighten requires GPU acceleration.</p>
@@ -463,7 +463,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings_Password" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings.Password">
   Password
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a password into the log-in form during activation of the Unity Editor.</p>
@@ -495,7 +495,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings_Quit" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings.Quit">
   Quit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Quit the Unity Editor after other commands have finished executing. Note that this can cause error messages to be hidden (however, they still appear in the Editor.log file).</p>
@@ -527,7 +527,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings_Serial" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings.Serial">
   Serial
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Activate Unity with the specified serial key. It is good practice to pass the <code>-batchmode</code> and <code>-quit</code> arguments as well, in order to quit Unity when done, if using this for automated activation of Unity. Please allow a few seconds before the license file is created, because Unity needs to communicate with the license server. Make sure that license file folder exists, and has appropriate permissions before running Unity with this argument. If activation fails, see the <a href="https://docs.unity3d.com/Manual/LogFiles.html">Editor.log</a> for info.</p>
@@ -559,7 +559,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings_SilentCrashes" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings.SilentCrashes">
   SilentCrashes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display a crash dialog.</p>
@@ -591,7 +591,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityCreateManualActivationFileSettings_Username" data-uid="Nuke.Common.Tools.Unity.UnityCreateManualActivationFileSettings.Username">
   Username
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a username into the log-in form during activation of the Unity Editor.</p>
@@ -623,7 +623,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L70" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L70" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -639,7 +639,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0 @ <a href="https://github.com/gruke-build/src/commit/a2813aeb23097c5a92cd97e78aaccec23628c421">a2813ae</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.152 @ <a href="https://github.com/gruke-build/src/commit/6f608933d81238979880eb3a40de071fb49584d8">6f60893</a></span>
         </div>
       </div>
     </footer>
