@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.0/apiSpec/new?filename=Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions" class="text-break">
-Class UnityReturnLicenseSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L779"><i class="bi bi-code-slash"></i></a>
+Class UnityReturnLicenseSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L779"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -162,7 +162,7 @@ public static class UnityReturnLicenseSettingsExtensions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_DisableBatchMode__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.DisableBatchMode``1(``0)">
   DisableBatchMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L818"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L818"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run Unity in batch mode. This should always be used in conjunction with the other command line arguments, because it ensures no pop-up windows appear and eliminates the need for any human intervention. When an exception occurs during execution of the script code, the Asset server updates fail, or other operations that fail, Unity immediately exits with return code <b>1</b>.</p>
@@ -207,7 +207,7 @@ public static T DisableBatchMode&lt;T&gt;(this T o) where T : UnityReturnLicense
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_DisableNoGraphics__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.DisableNoGraphics``1(``0)">
   DisableNoGraphics&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L852"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L852"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When running in batch mode, do not initialize the graphics device at all. This makes it possible to run your automated workflows on machines that don't even have a GPU (automated workflows only work when you have a window in focus, otherwise you can't send simulated input commands). Please note that <code>-nographics</code> does not allow you to bake GI on OSX, since Enlighten requires GPU acceleration.</p>
@@ -250,7 +250,7 @@ public static T DisableNoGraphics&lt;T&gt;(this T o) where T : UnityReturnLicens
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_DisableQuit__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.DisableQuit``1(``0)">
   DisableQuit&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L869"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L869"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Quit the Unity Editor after other commands have finished executing. Note that this can cause error messages to be hidden (however, they still appear in the Editor.log file).</p>
@@ -293,7 +293,7 @@ public static T DisableQuit&lt;T&gt;(this T o) where T : UnityReturnLicenseSetti
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_DisableSilentCrashes__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.DisableSilentCrashes``1(``0)">
   DisableSilentCrashes&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L835"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L835"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display a crash dialog.</p>
@@ -336,7 +336,7 @@ public static T DisableSilentCrashes&lt;T&gt;(this T o) where T : UnityReturnLic
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_EnableBatchMode__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.EnableBatchMode``1(``0)">
   EnableBatchMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L815"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L815"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run Unity in batch mode. This should always be used in conjunction with the other command line arguments, because it ensures no pop-up windows appear and eliminates the need for any human intervention. When an exception occurs during execution of the script code, the Asset server updates fail, or other operations that fail, Unity immediately exits with return code <b>1</b>.</p>
@@ -381,7 +381,7 @@ public static T EnableBatchMode&lt;T&gt;(this T o) where T : UnityReturnLicenseS
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_EnableNoGraphics__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.EnableNoGraphics``1(``0)">
   EnableNoGraphics&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L849"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L849"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When running in batch mode, do not initialize the graphics device at all. This makes it possible to run your automated workflows on machines that don't even have a GPU (automated workflows only work when you have a window in focus, otherwise you can't send simulated input commands). Please note that <code>-nographics</code> does not allow you to bake GI on OSX, since Enlighten requires GPU acceleration.</p>
@@ -424,7 +424,7 @@ public static T EnableNoGraphics&lt;T&gt;(this T o) where T : UnityReturnLicense
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_EnableQuit__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.EnableQuit``1(``0)">
   EnableQuit&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L866"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L866"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Quit the Unity Editor after other commands have finished executing. Note that this can cause error messages to be hidden (however, they still appear in the Editor.log file).</p>
@@ -467,7 +467,7 @@ public static T EnableQuit&lt;T&gt;(this T o) where T : UnityReturnLicenseSettin
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_EnableSilentCrashes__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.EnableSilentCrashes``1(``0)">
   EnableSilentCrashes&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L832"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L832"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display a crash dialog.</p>
@@ -510,7 +510,7 @@ public static T EnableSilentCrashes&lt;T&gt;(this T o) where T : UnityReturnLice
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ResetBatchMode__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ResetBatchMode``1(``0)">
   ResetBatchMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L812"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L812"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run Unity in batch mode. This should always be used in conjunction with the other command line arguments, because it ensures no pop-up windows appear and eliminates the need for any human intervention. When an exception occurs during execution of the script code, the Asset server updates fail, or other operations that fail, Unity immediately exits with return code <b>1</b>.</p>
@@ -555,7 +555,7 @@ public static T ResetBatchMode&lt;T&gt;(this T o) where T : UnityReturnLicenseSe
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ResetNoGraphics__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ResetNoGraphics``1(``0)">
   ResetNoGraphics&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L846"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L846"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When running in batch mode, do not initialize the graphics device at all. This makes it possible to run your automated workflows on machines that don't even have a GPU (automated workflows only work when you have a window in focus, otherwise you can't send simulated input commands). Please note that <code>-nographics</code> does not allow you to bake GI on OSX, since Enlighten requires GPU acceleration.</p>
@@ -598,7 +598,7 @@ public static T ResetNoGraphics&lt;T&gt;(this T o) where T : UnityReturnLicenseS
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ResetPassword__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ResetPassword``1(``0)">
   ResetPassword&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L796"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L796"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a password into the log-in form during activation of the Unity Editor.</p>
@@ -641,7 +641,7 @@ public static T ResetPassword&lt;T&gt;(this T o) where T : UnityReturnLicenseSet
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ResetQuit__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ResetQuit``1(``0)">
   ResetQuit&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L863"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L863"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Quit the Unity Editor after other commands have finished executing. Note that this can cause error messages to be hidden (however, they still appear in the Editor.log file).</p>
@@ -684,7 +684,7 @@ public static T ResetQuit&lt;T&gt;(this T o) where T : UnityReturnLicenseSetting
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ResetSerial__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ResetSerial``1(``0)">
   ResetSerial&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L804"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L804"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Activate Unity with the specified serial key. It is good practice to pass the <code>-batchmode</code> and <code>-quit</code> arguments as well, in order to quit Unity when done, if using this for automated activation of Unity. Please allow a few seconds before the license file is created, because Unity needs to communicate with the license server. Make sure that license file folder exists, and has appropriate permissions before running Unity with this argument. If activation fails, see the <a href="https://docs.unity3d.com/Manual/LogFiles.html">Editor.log</a> for info.</p>
@@ -727,7 +727,7 @@ public static T ResetSerial&lt;T&gt;(this T o) where T : UnityReturnLicenseSetti
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ResetSilentCrashes__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ResetSilentCrashes``1(``0)">
   ResetSilentCrashes&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L829"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display a crash dialog.</p>
@@ -770,7 +770,7 @@ public static T ResetSilentCrashes&lt;T&gt;(this T o) where T : UnityReturnLicen
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ResetUsername__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ResetUsername``1(``0)">
   ResetUsername&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L788"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L788"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a username into the log-in form during activation of the Unity Editor.</p>
@@ -813,7 +813,7 @@ public static T ResetUsername&lt;T&gt;(this T o) where T : UnityReturnLicenseSet
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_SetBatchMode__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.SetBatchMode``1(``0,System.Nullable{System.Boolean})">
   SetBatchMode&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L809"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L809"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run Unity in batch mode. This should always be used in conjunction with the other command line arguments, because it ensures no pop-up windows appear and eliminates the need for any human intervention. When an exception occurs during execution of the script code, the Asset server updates fail, or other operations that fail, Unity immediately exits with return code <b>1</b>.</p>
@@ -860,7 +860,7 @@ public static T SetBatchMode&lt;T&gt;(this T o, bool? v) where T : UnityReturnLi
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_SetNoGraphics__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.SetNoGraphics``1(``0,System.Nullable{System.Boolean})">
   SetNoGraphics&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L843"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L843"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When running in batch mode, do not initialize the graphics device at all. This makes it possible to run your automated workflows on machines that don't even have a GPU (automated workflows only work when you have a window in focus, otherwise you can't send simulated input commands). Please note that <code>-nographics</code> does not allow you to bake GI on OSX, since Enlighten requires GPU acceleration.</p>
@@ -905,7 +905,7 @@ public static T SetNoGraphics&lt;T&gt;(this T o, bool? v) where T : UnityReturnL
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_SetPassword__1___0_System_String_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.SetPassword``1(``0,System.String)">
   SetPassword&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L793"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L793"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a password into the log-in form during activation of the Unity Editor.</p>
@@ -950,7 +950,7 @@ public static T SetPassword&lt;T&gt;(this T o, string v) where T : UnityReturnLi
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_SetQuit__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.SetQuit``1(``0,System.Nullable{System.Boolean})">
   SetQuit&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L860"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L860"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Quit the Unity Editor after other commands have finished executing. Note that this can cause error messages to be hidden (however, they still appear in the Editor.log file).</p>
@@ -995,7 +995,7 @@ public static T SetQuit&lt;T&gt;(this T o, bool? v) where T : UnityReturnLicense
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_SetSerial__1___0_System_String_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.SetSerial``1(``0,System.String)">
   SetSerial&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L801"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L801"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Activate Unity with the specified serial key. It is good practice to pass the <code>-batchmode</code> and <code>-quit</code> arguments as well, in order to quit Unity when done, if using this for automated activation of Unity. Please allow a few seconds before the license file is created, because Unity needs to communicate with the license server. Make sure that license file folder exists, and has appropriate permissions before running Unity with this argument. If activation fails, see the <a href="https://docs.unity3d.com/Manual/LogFiles.html">Editor.log</a> for info.</p>
@@ -1040,7 +1040,7 @@ public static T SetSerial&lt;T&gt;(this T o, string v) where T : UnityReturnLice
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_SetSilentCrashes__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.SetSilentCrashes``1(``0,System.Nullable{System.Boolean})">
   SetSilentCrashes&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L826"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L826"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display a crash dialog.</p>
@@ -1085,7 +1085,7 @@ public static T SetSilentCrashes&lt;T&gt;(this T o, bool? v) where T : UnityRetu
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_SetUsername__1___0_System_String_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.SetUsername``1(``0,System.String)">
   SetUsername&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L785"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L785"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a username into the log-in form during activation of the Unity Editor.</p>
@@ -1130,7 +1130,7 @@ public static T SetUsername&lt;T&gt;(this T o, string v) where T : UnityReturnLi
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ToggleBatchMode__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ToggleBatchMode``1(``0)">
   ToggleBatchMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L821"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L821"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run Unity in batch mode. This should always be used in conjunction with the other command line arguments, because it ensures no pop-up windows appear and eliminates the need for any human intervention. When an exception occurs during execution of the script code, the Asset server updates fail, or other operations that fail, Unity immediately exits with return code <b>1</b>.</p>
@@ -1175,7 +1175,7 @@ public static T ToggleBatchMode&lt;T&gt;(this T o) where T : UnityReturnLicenseS
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ToggleNoGraphics__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ToggleNoGraphics``1(``0)">
   ToggleNoGraphics&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L855"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L855"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When running in batch mode, do not initialize the graphics device at all. This makes it possible to run your automated workflows on machines that don't even have a GPU (automated workflows only work when you have a window in focus, otherwise you can't send simulated input commands). Please note that <code>-nographics</code> does not allow you to bake GI on OSX, since Enlighten requires GPU acceleration.</p>
@@ -1218,7 +1218,7 @@ public static T ToggleNoGraphics&lt;T&gt;(this T o) where T : UnityReturnLicense
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ToggleQuit__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ToggleQuit``1(``0)">
   ToggleQuit&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L872"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L872"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Quit the Unity Editor after other commands have finished executing. Note that this can cause error messages to be hidden (however, they still appear in the Editor.log file).</p>
@@ -1261,7 +1261,7 @@ public static T ToggleQuit&lt;T&gt;(this T o) where T : UnityReturnLicenseSettin
 
   <h3 id="Nuke_Common_Tools_Unity_UnityReturnLicenseSettingsExtensions_ToggleSilentCrashes__1___0_" data-uid="Nuke.Common.Tools.Unity.UnityReturnLicenseSettingsExtensions.ToggleSilentCrashes``1(``0)">
   ToggleSilentCrashes&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L838"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display a crash dialog.</p>
@@ -1304,7 +1304,7 @@ public static T ToggleSilentCrashes&lt;T&gt;(this T o) where T : UnityReturnLice
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L779" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L779" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1320,7 +1320,7 @@ public static T ToggleSilentCrashes&lt;T&gt;(this T o) where T : UnityReturnLice
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0-alpha.155 @ <a href="https://github.com/gruke-build/src/commit/c64f6f1539ace172d6a5ccea928412caaad3ea5f">c64f6f1</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.0 @ <a href="https://github.com/gruke-build/src/commit/ce3651cf4f4bcd5dd12176eb77def28ed0870a81">ce3651c</a></span>
         </div>
       </div>
     </footer>
