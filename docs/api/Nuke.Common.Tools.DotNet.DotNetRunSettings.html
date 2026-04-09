@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DotNetRunSettings | gruke 10.3.1 </title>
+      <title>Class DotNetRunSettings | gruke 10.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DotNetRunSettings | gruke 10.3.1 ">
+      <meta name="title" content="Class DotNetRunSettings | gruke 10.4.0 ">
       
       <meta name="description" content="The dotnet run command provides a convenient option to run your application from the source code with one command. It&#39;s useful for fast iterative development from the command line. The command depends on the dotnet build command to build the code. Any requirements for the build, such as that the project must be restored first, apply to dotnet run as well.Output files are written into the default location, which is bin/&amp;lt;configuration&amp;gt;/&amp;lt;target&amp;gt;. For example if you have a netcoreapp1.0 application and you run dotnet run, the output is placed in bin/Debug/netcoreapp1.0. Files are overwritten as needed. Temporary files are placed in the obj directory.If the project specifies multiple frameworks, executing dotnet run results in an error unless the -f|--framework &amp;lt;FRAMEWORK&amp;gt; option is used to specify the framework.The dotnet run command is used in the context of projects, not built assemblies. If you&#39;re trying to run a framework-dependent application DLL instead, you must use dotnet without a command. For example, to run myapp.dll, use: dotnet myapp.dllFor more information on the dotnet driver, see the .NET Core Command Line Tools (CLI) topic.In order to run the application, the dotnet run command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it&#39;s not recommended to use dotnet run to run applications in production. Instead, create a deployment using the dotnet publish command and deploy the published output.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetRunSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetRunSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetRunSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetRunSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_DotNet_DotNetRunSettings" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings" class="text-break">
-Class DotNetRunSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L292"><i class="bi bi-code-slash"></i></a>
+Class DotNetRunSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L292"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -927,7 +927,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_ApplicationArguments" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.ApplicationArguments">
   ApplicationArguments
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Arguments passed to the application being run.</p>
@@ -959,7 +959,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Architecture" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Architecture">
   Architecture
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L298"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the target architecture. This is a shorthand syntax for setting the <a href="https://learn.microsoft.com/en-us/dotnet/core/rid-catalog">Runtime Identifier (RID)</a>, where the provided value is combined with the default RID. For example, on a win-x64 machine, specifying --arch x86 sets the RID to win-x86. If you use this option, don't use the -r|--runtime option. Available since .NET 6 Preview 7.</p>
@@ -991,7 +991,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_ArtifactsPath" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.ArtifactsPath">
   ArtifactsPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>All build output files from the executed command will go in subfolders under the specified path, separated by project. For more information see <a href="https://learn.microsoft.com/en-us/dotnet/core/sdk/artifacts-output">Artifacts Output Layout</a>. Available since .NET 8 SDK.</p>
@@ -1023,7 +1023,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Configuration" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Configuration">
   Configuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L300"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configuration to use for building the project. The default value is Debug.</p>
@@ -1055,7 +1055,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_DisableBuildServers" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.DisableBuildServers">
   DisableBuildServers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Force the command to ignore any persistent build servers. This option provides a consistent way to disable all use of build caching, which forces a build from scratch. A build that doesn't rely on caches is useful when the caches might be corrupted or incorrect for some reason. Available since .NET 7 SDK.</p>
@@ -1087,7 +1087,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_DisableParallel" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.DisableParallel">
   DisableParallel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -1119,7 +1119,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Force" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Force">
   Force
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -1151,7 +1151,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_ForceEvaluate" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.ForceEvaluate">
   ForceEvaluate
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -1183,7 +1183,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Framework" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Framework">
   Framework
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L304"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Builds and runs the app using the specified framework. The framework must be specified in the project file.</p>
@@ -1215,7 +1215,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_IgnoreFailedSources" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.IgnoreFailedSources">
   IgnoreFailedSources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L336"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -1247,7 +1247,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Interactive" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Interactive">
   Interactive
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.</p>
@@ -1279,7 +1279,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_LaunchProfile" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.LaunchProfile">
   LaunchProfile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the <em>launchSettings.json</em> file and are typically called <code>Development</code>, <code>Staging</code> and <code>Production</code>. For more information, see <a href="https://docs.microsoft.com/en-us/aspnetcore/fundamentals/environments">Working with multiple environments</a>.</p>
@@ -1311,7 +1311,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_LockFilePath" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.LockFilePath">
   LockFilePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Output location where project lock file is written. By default, this is 'PROJECT_ROOT\packages.lock.json'.</p>
@@ -1343,7 +1343,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_LockedMode" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.LockedMode">
   LockedMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -1375,7 +1375,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_NoBuild" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.NoBuild">
   NoBuild
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L310"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Doesn't build the project before running.</p>
@@ -1407,7 +1407,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_NoCache" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.NoCache">
   NoCache
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -1439,7 +1439,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_NoDependencies" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.NoDependencies">
   NoDependencies
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -1471,7 +1471,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_NoLaunchProfile" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.NoLaunchProfile">
   NoLaunchProfile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L312"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Doesn't attempt to use <em>launchSettings.json</em> to configure the application.</p>
@@ -1503,7 +1503,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_NoRestore" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.NoRestore">
   NoRestore
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Doesn't perform an implicit restore when running the command.</p>
@@ -1535,7 +1535,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_NoSelfContained" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.NoSelfContained">
   NoSelfContained
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Publish your application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run your application.</p>
@@ -1567,7 +1567,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_OperatingSystem" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.OperatingSystem">
   OperatingSystem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the target operating system (OS). This is a shorthand syntax for setting the <a href="https://learn.microsoft.com/en-us/dotnet/core/rid-catalog">Runtime Identifier (RID)</a>, where the provided value is combined with the default RID. For example, on a win-x64 machine, specifying --os linux sets the RID to linux-x64. If you use this option, don't use the -r|--runtime option. Available since .NET 6.</p>
@@ -1599,7 +1599,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_PackageDirectory" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.PackageDirectory">
   PackageDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the directory for restored packages.</p>
@@ -1631,7 +1631,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_ProjectFile" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.ProjectFile">
   ProjectFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the path and name of the project file. (See the NOTE.) It defaults to the current directory if not specified.</p>
@@ -1663,7 +1663,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Properties" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Properties">
   Properties
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1695,7 +1695,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Runtime" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Runtime">
   Runtime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L322"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">RID catalog</a>.</p>
@@ -1727,7 +1727,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_SelfContained" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.SelfContained">
   SelfContained
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is <code>false</code>. However, when targeting .NET 7 or lower, the default is <code>true</code> if a runtime identifier is specified.</p>
@@ -1759,7 +1759,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Sources" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Sources">
   Sources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -1791,7 +1791,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_UseLockFile" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.UseLockFile">
   UseLockFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -1823,7 +1823,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRunSettings_Verbosity" data-uid="Nuke.Common.Tools.DotNet.DotNetRunSettings.Verbosity">
   Verbosity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the verbosity level of the command. Allowed values are <code>q[uiet]</code>, <code>m[inimal]</code>, <code>n[ormal]</code>, <code>d[etailed]</code>, and <code>diag[nostic]</code>.</p>
@@ -1855,7 +1855,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L292" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L292" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1871,7 +1871,7 @@ public class DotNetRunSettings : ToolOptions, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/a96a8f2f0108e074afdb7b14d64e8b2ca2e48acc">a96a8f2</a></span>
         </div>
       </div>
     </footer>

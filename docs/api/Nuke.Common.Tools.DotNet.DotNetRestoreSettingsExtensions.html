@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DotNetRestoreSettingsExtensions | gruke 10.3.1 </title>
+      <title>Class DotNetRestoreSettingsExtensions | gruke 10.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DotNetRestoreSettingsExtensions | gruke 10.3.1 ">
+      <meta name="title" content="Class DotNetRestoreSettingsExtensions | gruke 10.4.0 ">
       
       <meta name="description" content="The dotnet restore command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.Starting with .NET Core 2.0, you don&#39;t have to run dotnet restore because it&#39;s run implicitly by all commands, such as dotnet build and dotnet run, that require a restore to occur. It&#39;s still a valid command in certain scenarios where doing an explicit restore makes sense, such as continuous integration builds in Visual Studio Team Services or in build systems that need to explicitly control the time at which the restore occurs.In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the NuGet.config configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own NuGet.config file in the project directory. You also specify additional feeds per invocation at a command prompt.For dependencies, you specify where the restored packages are placed during the restore operation using the --packages argument. If not specified, the default NuGet package cache is used, which is found in the .nuget/packages directory in the user&#39;s home directory on all operating systems (for example, /home/user1 on Linux or C:\Users\user1 on Windows).For project-specific tooling, dotnet restore first restores the package in which the tool is packed, and then proceeds to restore the tool&#39;s dependencies as specified in its project file.The behavior of the dotnet restore command is affected by some of the settings in the Nuget.Config file, if present. For example, setting the globalPackagesFolder in NuGet.Config places the restored NuGet packages in the specified folder. This is an alternative to specifying the --packages option on the dotnet restore command. For more information, see the NuGet.Config reference.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions" class="text-break">
-Class DotNetRestoreSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2385"><i class="bi bi-code-slash"></i></a>
+Class DotNetRestoreSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2385"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -162,7 +162,7 @@ public static class DotNetRestoreSettingsExtensions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddAuthors__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddAuthors``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   AddAuthors&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2764"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2764"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -207,7 +207,7 @@ public static T AddAuthors&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) where
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddAuthors__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddAuthors``1(``0,System.String[])">
   AddAuthors&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2761"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2761"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -252,7 +252,7 @@ public static T AddAuthors&lt;T&gt;(this T o, params string[] v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddNoWarns__1___0_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddNoWarns``1(``0,System.Collections.Generic.IEnumerable{System.Int32})">
   AddNoWarns&lt;T&gt;(T, IEnumerable&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2645"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2645"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -297,7 +297,7 @@ public static T AddNoWarns&lt;T&gt;(this T o, IEnumerable&lt;int&gt; v) where T 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddNoWarns__1___0_System_Int32___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddNoWarns``1(``0,System.Int32[])">
   AddNoWarns&lt;T&gt;(T, params int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2642"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2642"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -342,7 +342,7 @@ public static T AddNoWarns&lt;T&gt;(this T o, params int[] v) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddPackageTags__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddPackageTags``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   AddPackageTags&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2852"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2852"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -387,7 +387,7 @@ public static T AddPackageTags&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) w
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddPackageTags__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddPackageTags``1(``0,System.String[])">
   AddPackageTags&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2849"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2849"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -432,7 +432,7 @@ public static T AddPackageTags&lt;T&gt;(this T o, params string[] v) where T : D
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddProperty__1___0_System_String_System_Object_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddProperty``1(``0,System.String,System.Object)">
   AddProperty&lt;T&gt;(T, string, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2609"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2609"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -479,7 +479,7 @@ public static T AddProperty&lt;T&gt;(this T o, string k, object v) where T : Dot
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddSources__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddSources``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   AddSources&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2522"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2522"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -524,7 +524,7 @@ public static T AddSources&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) where
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddSources__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddSources``1(``0,System.String[])">
   AddSources&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2519"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2519"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -569,7 +569,7 @@ public static T AddSources&lt;T&gt;(this T o, params string[] v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddWarningsAsErrors__1___0_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddWarningsAsErrors``1(``0,System.Collections.Generic.IEnumerable{System.Int32})">
   AddWarningsAsErrors&lt;T&gt;(T, IEnumerable&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2668"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2668"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -614,7 +614,7 @@ public static T AddWarningsAsErrors&lt;T&gt;(this T o, IEnumerable&lt;int&gt; v)
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_AddWarningsAsErrors__1___0_System_Int32___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.AddWarningsAsErrors``1(``0,System.Int32[])">
   AddWarningsAsErrors&lt;T&gt;(T, params int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2665"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2665"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -659,7 +659,7 @@ public static T AddWarningsAsErrors&lt;T&gt;(this T o, params int[] v) where T :
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ClearProperties__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ClearProperties``1(``0)">
   ClearProperties&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2615"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2615"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -702,7 +702,7 @@ public static T ClearProperties&lt;T&gt;(this T o) where T : DotNetRestoreSettin
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ClearSources__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ClearSources``1(``0)">
   ClearSources&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2531"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2531"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -745,7 +745,7 @@ public static T ClearSources&lt;T&gt;(this T o) where T : DotNetRestoreSettings<
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableBuildServers__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableBuildServers``1(``0)">
   DisableBuildServers&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2407"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Force the command to ignore any persistent build servers. This option provides a consistent way to disable all use of build caching, which forces a build from scratch. A build that doesn't rely on caches is useful when the caches might be corrupted or incorrect for some reason. Available since .NET 7 SDK.</p>
@@ -788,7 +788,7 @@ public static T DisableBuildServers&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableContinuousIntegrationBuild__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableContinuousIntegrationBuild``1(``0)">
   DisableContinuousIntegrationBuild&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2974"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2974"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -831,7 +831,7 @@ public static T DisableContinuousIntegrationBuild&lt;T&gt;(this T o) where T : D
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableDeterministicSourcePaths__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableDeterministicSourcePaths``1(``0)">
   DisableDeterministicSourcePaths&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2991"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2991"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -874,7 +874,7 @@ public static T DisableDeterministicSourcePaths&lt;T&gt;(this T o) where T : Dot
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableDeterministic__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableDeterministic``1(``0)">
   DisableDeterministic&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3008"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3008"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -917,7 +917,7 @@ public static T DisableDeterministic&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableDisableParallel__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableDisableParallel``1(``0)">
   DisableDisableParallel&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2429"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -960,7 +960,7 @@ public static T DisableDisableParallel&lt;T&gt;(this T o) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableForceEvaluate__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableForceEvaluate``1(``0)">
   DisableForceEvaluate&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2587"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2587"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -1003,7 +1003,7 @@ public static T DisableForceEvaluate&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableForce__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableForce``1(``0)">
   DisableForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2446"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2446"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -1046,7 +1046,7 @@ public static T DisableForce&lt;T&gt;(this T o) where T : DotNetRestoreSettings<
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableIgnoreFailedSources__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableIgnoreFailedSources``1(``0)">
   DisableIgnoreFailedSources&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2463"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2463"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -1089,7 +1089,7 @@ public static T DisableIgnoreFailedSources&lt;T&gt;(this T o) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableLockedMode__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableLockedMode``1(``0)">
   DisableLockedMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2562"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2562"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -1132,7 +1132,7 @@ public static T DisableLockedMode&lt;T&gt;(this T o) where T : DotNetRestoreSett
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableNoCache__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableNoCache``1(``0)">
   DisableNoCache&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2480"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -1175,7 +1175,7 @@ public static T DisableNoCache&lt;T&gt;(this T o) where T : DotNetRestoreSetting
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableNoDependencies__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableNoDependencies``1(``0)">
   DisableNoDependencies&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2497"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2497"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -1218,7 +1218,7 @@ public static T DisableNoDependencies&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisablePackageRequireLicenseAcceptance__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisablePackageRequireLicenseAcceptance``1(``0)">
   DisablePackageRequireLicenseAcceptance&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2811"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2811"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1261,7 +1261,7 @@ public static T DisablePackageRequireLicenseAcceptance&lt;T&gt;(this T o) where 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisablePublishReadyToRun__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisablePublishReadyToRun``1(``0)">
   DisablePublishReadyToRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2907"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2907"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/ready-to-run">ReadyToRun images</a>. Available since .NET Core 3.0 SDK.</p>
@@ -1306,7 +1306,7 @@ public static T DisablePublishReadyToRun&lt;T&gt;(this T o) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisablePublishSingleFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisablePublishSingleFile``1(``0)">
   DisablePublishSingleFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2924"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2924"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.</p>
@@ -1353,7 +1353,7 @@ public static T DisablePublishSingleFile&lt;T&gt;(this T o) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisablePublishTrimmed__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisablePublishTrimmed``1(``0)">
   DisablePublishTrimmed&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2941"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2941"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/trim-self-contained">Trim self-contained deployments and executables</a>. Available since .NET Core 3.0 SDK as a preview feature.</p>
@@ -1398,7 +1398,7 @@ public static T DisablePublishTrimmed&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableRunCodeAnalysis__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableRunCodeAnalysis``1(``0)">
   DisableRunCodeAnalysis&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2628"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1441,7 +1441,7 @@ public static T DisableRunCodeAnalysis&lt;T&gt;(this T o) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableTreatWarningsAsErrors__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableTreatWarningsAsErrors``1(``0)">
   DisableTreatWarningsAsErrors&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2699"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2699"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1484,7 +1484,7 @@ public static T DisableTreatWarningsAsErrors&lt;T&gt;(this T o) where T : DotNet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_DisableUseLockFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.DisableUseLockFile``1(``0)">
   DisableUseLockFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2545"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2545"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -1527,7 +1527,7 @@ public static T DisableUseLockFile&lt;T&gt;(this T o) where T : DotNetRestoreSet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableContinuousIntegrationBuild__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableContinuousIntegrationBuild``1(``0)">
   EnableContinuousIntegrationBuild&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2971"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2971"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1570,7 +1570,7 @@ public static T EnableContinuousIntegrationBuild&lt;T&gt;(this T o) where T : Do
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableDeterministicSourcePaths__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableDeterministicSourcePaths``1(``0)">
   EnableDeterministicSourcePaths&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2988"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2988"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1613,7 +1613,7 @@ public static T EnableDeterministicSourcePaths&lt;T&gt;(this T o) where T : DotN
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableDeterministic__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableDeterministic``1(``0)">
   EnableDeterministic&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3005"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3005"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1656,7 +1656,7 @@ public static T EnableDeterministic&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableDisableParallel__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableDisableParallel``1(``0)">
   EnableDisableParallel&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2426"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2426"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -1699,7 +1699,7 @@ public static T EnableDisableParallel&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableForceEvaluate__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableForceEvaluate``1(``0)">
   EnableForceEvaluate&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2584"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2584"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -1742,7 +1742,7 @@ public static T EnableForceEvaluate&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableForce__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableForce``1(``0)">
   EnableForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2443"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2443"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -1785,7 +1785,7 @@ public static T EnableForce&lt;T&gt;(this T o) where T : DotNetRestoreSettings</
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableIgnoreFailedSources__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableIgnoreFailedSources``1(``0)">
   EnableIgnoreFailedSources&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2460"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2460"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -1828,7 +1828,7 @@ public static T EnableIgnoreFailedSources&lt;T&gt;(this T o) where T : DotNetRes
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableLockedMode__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableLockedMode``1(``0)">
   EnableLockedMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2559"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2559"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -1871,7 +1871,7 @@ public static T EnableLockedMode&lt;T&gt;(this T o) where T : DotNetRestoreSetti
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableNoCache__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableNoCache``1(``0)">
   EnableNoCache&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2477"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -1914,7 +1914,7 @@ public static T EnableNoCache&lt;T&gt;(this T o) where T : DotNetRestoreSettings
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableNoDependencies__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableNoDependencies``1(``0)">
   EnableNoDependencies&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2494"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -1957,7 +1957,7 @@ public static T EnableNoDependencies&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnablePackageRequireLicenseAcceptance__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnablePackageRequireLicenseAcceptance``1(``0)">
   EnablePackageRequireLicenseAcceptance&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2808"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2808"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2000,7 +2000,7 @@ public static T EnablePackageRequireLicenseAcceptance&lt;T&gt;(this T o) where T
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnablePublishReadyToRun__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnablePublishReadyToRun``1(``0)">
   EnablePublishReadyToRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2904"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2904"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/ready-to-run">ReadyToRun images</a>. Available since .NET Core 3.0 SDK.</p>
@@ -2045,7 +2045,7 @@ public static T EnablePublishReadyToRun&lt;T&gt;(this T o) where T : DotNetResto
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnablePublishSingleFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnablePublishSingleFile``1(``0)">
   EnablePublishSingleFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2921"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2921"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.</p>
@@ -2092,7 +2092,7 @@ public static T EnablePublishSingleFile&lt;T&gt;(this T o) where T : DotNetResto
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnablePublishTrimmed__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnablePublishTrimmed``1(``0)">
   EnablePublishTrimmed&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2938"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2938"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/trim-self-contained">Trim self-contained deployments and executables</a>. Available since .NET Core 3.0 SDK as a preview feature.</p>
@@ -2137,7 +2137,7 @@ public static T EnablePublishTrimmed&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableRunCodeAnalysis__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableRunCodeAnalysis``1(``0)">
   EnableRunCodeAnalysis&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2625"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2625"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2180,7 +2180,7 @@ public static T EnableRunCodeAnalysis&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableTreatWarningsAsErrors__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableTreatWarningsAsErrors``1(``0)">
   EnableTreatWarningsAsErrors&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2696"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2696"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2223,7 +2223,7 @@ public static T EnableTreatWarningsAsErrors&lt;T&gt;(this T o) where T : DotNetR
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_EnableUseLockFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.EnableUseLockFile``1(``0)">
   EnableUseLockFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2542"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2542"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -2266,7 +2266,7 @@ public static T EnableUseLockFile&lt;T&gt;(this T o) where T : DotNetRestoreSett
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveAuthors__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveAuthors``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   RemoveAuthors&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2770"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2770"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2311,7 +2311,7 @@ public static T RemoveAuthors&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) wh
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveAuthors__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveAuthors``1(``0,System.String[])">
   RemoveAuthors&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2767"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2767"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2356,7 +2356,7 @@ public static T RemoveAuthors&lt;T&gt;(this T o, params string[] v) where T : Do
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveNoWarns__1___0_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveNoWarns``1(``0,System.Collections.Generic.IEnumerable{System.Int32})">
   RemoveNoWarns&lt;T&gt;(T, IEnumerable&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2651"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2651"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2401,7 +2401,7 @@ public static T RemoveNoWarns&lt;T&gt;(this T o, IEnumerable&lt;int&gt; v) where
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveNoWarns__1___0_System_Int32___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveNoWarns``1(``0,System.Int32[])">
   RemoveNoWarns&lt;T&gt;(T, params int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2648"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2648"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2446,7 +2446,7 @@ public static T RemoveNoWarns&lt;T&gt;(this T o, params int[] v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemovePackageTags__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemovePackageTags``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   RemovePackageTags&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2858"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2858"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2491,7 +2491,7 @@ public static T RemovePackageTags&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemovePackageTags__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemovePackageTags``1(``0,System.String[])">
   RemovePackageTags&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2855"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2855"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2536,7 +2536,7 @@ public static T RemovePackageTags&lt;T&gt;(this T o, params string[] v) where T 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveProperty__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveProperty``1(``0,System.String)">
   RemoveProperty&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2612"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2612"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2581,7 +2581,7 @@ public static T RemoveProperty&lt;T&gt;(this T o, string k) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveSources__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveSources``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   RemoveSources&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2528"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2528"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -2626,7 +2626,7 @@ public static T RemoveSources&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) wh
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveSources__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveSources``1(``0,System.String[])">
   RemoveSources&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2525"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2525"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -2671,7 +2671,7 @@ public static T RemoveSources&lt;T&gt;(this T o, params string[] v) where T : Do
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveWarningsAsErrors__1___0_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveWarningsAsErrors``1(``0,System.Collections.Generic.IEnumerable{System.Int32})">
   RemoveWarningsAsErrors&lt;T&gt;(T, IEnumerable&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2674"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2674"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2716,7 +2716,7 @@ public static T RemoveWarningsAsErrors&lt;T&gt;(this T o, IEnumerable&lt;int&gt;
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_RemoveWarningsAsErrors__1___0_System_Int32___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.RemoveWarningsAsErrors``1(``0,System.Int32[])">
   RemoveWarningsAsErrors&lt;T&gt;(T, params int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2671"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2761,7 +2761,7 @@ public static T RemoveWarningsAsErrors&lt;T&gt;(this T o, params int[] v) where 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetAssemblyVersion__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetAssemblyVersion``1(``0)">
   ResetAssemblyVersion&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2710"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2710"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2804,7 +2804,7 @@ public static T ResetAssemblyVersion&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetAuthors__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetAuthors``1(``0)">
   ResetAuthors&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2773"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2773"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2847,7 +2847,7 @@ public static T ResetAuthors&lt;T&gt;(this T o) where T : DotNetRestoreSettings<
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetConfigFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetConfigFile``1(``0)">
   ResetConfigFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2402"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2402"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The NuGet configuration file (<em>NuGet.config</em>) to use for the restore operation.</p>
@@ -2890,7 +2890,7 @@ public static T ResetConfigFile&lt;T&gt;(this T o) where T : DotNetRestoreSettin
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetContinuousIntegrationBuild__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetContinuousIntegrationBuild``1(``0)">
   ResetContinuousIntegrationBuild&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2968"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2968"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2933,7 +2933,7 @@ public static T ResetContinuousIntegrationBuild&lt;T&gt;(this T o) where T : Dot
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetCopyright__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetCopyright``1(``0)">
   ResetCopyright&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2797"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2797"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -2976,7 +2976,7 @@ public static T ResetCopyright&lt;T&gt;(this T o) where T : DotNetRestoreSetting
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetDescription__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetDescription``1(``0)">
   ResetDescription&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2789"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2789"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3019,7 +3019,7 @@ public static T ResetDescription&lt;T&gt;(this T o) where T : DotNetRestoreSetti
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetDeterministicSourcePaths__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetDeterministicSourcePaths``1(``0)">
   ResetDeterministicSourcePaths&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2985"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2985"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3062,7 +3062,7 @@ public static T ResetDeterministicSourcePaths&lt;T&gt;(this T o) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetDeterministic__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetDeterministic``1(``0)">
   ResetDeterministic&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3002"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3002"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3105,7 +3105,7 @@ public static T ResetDeterministic&lt;T&gt;(this T o) where T : DotNetRestoreSet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetDisableParallel__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetDisableParallel``1(``0)">
   ResetDisableParallel&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2423"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2423"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -3148,7 +3148,7 @@ public static T ResetDisableParallel&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetFileVersion__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetFileVersion``1(``0)">
   ResetFileVersion&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2718"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2718"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3191,7 +3191,7 @@ public static T ResetFileVersion&lt;T&gt;(this T o) where T : DotNetRestoreSetti
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetForceEvaluate__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetForceEvaluate``1(``0)">
   ResetForceEvaluate&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2581"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2581"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -3234,7 +3234,7 @@ public static T ResetForceEvaluate&lt;T&gt;(this T o) where T : DotNetRestoreSet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetForce__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetForce``1(``0)">
   ResetForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2440"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2440"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -3277,7 +3277,7 @@ public static T ResetForce&lt;T&gt;(this T o) where T : DotNetRestoreSettings</c
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetIgnoreFailedSources__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetIgnoreFailedSources``1(``0)">
   ResetIgnoreFailedSources&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2457"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -3320,7 +3320,7 @@ public static T ResetIgnoreFailedSources&lt;T&gt;(this T o) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetInformationalVersion__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetInformationalVersion``1(``0)">
   ResetInformationalVersion&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2726"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2726"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3363,7 +3363,7 @@ public static T ResetInformationalVersion&lt;T&gt;(this T o) where T : DotNetRes
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetLockFilePath__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetLockFilePath``1(``0)">
   ResetLockFilePath&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2573"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2573"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Output location where project lock file is written. By default, this is 'PROJECT_ROOT\packages.lock.json'.</p>
@@ -3406,7 +3406,7 @@ public static T ResetLockFilePath&lt;T&gt;(this T o) where T : DotNetRestoreSett
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetLockedMode__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetLockedMode``1(``0)">
   ResetLockedMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2556"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2556"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -3449,7 +3449,7 @@ public static T ResetLockedMode&lt;T&gt;(this T o) where T : DotNetRestoreSettin
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetNoCache__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetNoCache``1(``0)">
   ResetNoCache&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2474"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -3492,7 +3492,7 @@ public static T ResetNoCache&lt;T&gt;(this T o) where T : DotNetRestoreSettings<
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetNoDependencies__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetNoDependencies``1(``0)">
   ResetNoDependencies&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2491"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -3535,7 +3535,7 @@ public static T ResetNoDependencies&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetNoWarn__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetNoWarn``1(``0)">
   ResetNoWarn&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2654"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2654"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3578,7 +3578,7 @@ public static T ResetNoWarn&lt;T&gt;(this T o) where T : DotNetRestoreSettings</
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageDirectory__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageDirectory``1(``0)">
   ResetPackageDirectory&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2508"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2508"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the directory for restored packages.</p>
@@ -3621,7 +3621,7 @@ public static T ResetPackageDirectory&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageIconUrl__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageIconUrl``1(``0)">
   ResetPackageIconUrl&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2838"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2838"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3664,7 +3664,7 @@ public static T ResetPackageIconUrl&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageId__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageId``1(``0)">
   ResetPackageId&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2734"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2734"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3707,7 +3707,7 @@ public static T ResetPackageId&lt;T&gt;(this T o) where T : DotNetRestoreSetting
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageLicenseUrl__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageLicenseUrl``1(``0)">
   ResetPackageLicenseUrl&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2822"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2822"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3750,7 +3750,7 @@ public static T ResetPackageLicenseUrl&lt;T&gt;(this T o) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageProjectUrl__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageProjectUrl``1(``0)">
   ResetPackageProjectUrl&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2830"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2830"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3793,7 +3793,7 @@ public static T ResetPackageProjectUrl&lt;T&gt;(this T o) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageReleaseNotes__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageReleaseNotes``1(``0)">
   ResetPackageReleaseNotes&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2869"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2869"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3836,7 +3836,7 @@ public static T ResetPackageReleaseNotes&lt;T&gt;(this T o) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageRequireLicenseAcceptance__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageRequireLicenseAcceptance``1(``0)">
   ResetPackageRequireLicenseAcceptance&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2805"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2805"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3879,7 +3879,7 @@ public static T ResetPackageRequireLicenseAcceptance&lt;T&gt;(this T o) where T 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPackageTags__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPackageTags``1(``0)">
   ResetPackageTags&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2861"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2861"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3922,7 +3922,7 @@ public static T ResetPackageTags&lt;T&gt;(this T o) where T : DotNetRestoreSetti
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPlatform__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPlatform``1(``0)">
   ResetPlatform&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2960"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2960"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -3965,7 +3965,7 @@ public static T ResetPlatform&lt;T&gt;(this T o) where T : DotNetRestoreSettings
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetProjectFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetProjectFile``1(``0)">
   ResetProjectFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2394"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2394"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Optional path to the project file to restore.</p>
@@ -4008,7 +4008,7 @@ public static T ResetProjectFile&lt;T&gt;(this T o) where T : DotNetRestoreSetti
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPublishProfile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPublishProfile``1(``0)">
   ResetPublishProfile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2952"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2952"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4051,7 +4051,7 @@ public static T ResetPublishProfile&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPublishReadyToRun__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPublishReadyToRun``1(``0)">
   ResetPublishReadyToRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2901"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2901"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/ready-to-run">ReadyToRun images</a>. Available since .NET Core 3.0 SDK.</p>
@@ -4096,7 +4096,7 @@ public static T ResetPublishReadyToRun&lt;T&gt;(this T o) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPublishSingleFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPublishSingleFile``1(``0)">
   ResetPublishSingleFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2918"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2918"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.</p>
@@ -4143,7 +4143,7 @@ public static T ResetPublishSingleFile&lt;T&gt;(this T o) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetPublishTrimmed__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetPublishTrimmed``1(``0)">
   ResetPublishTrimmed&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2935"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2935"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/trim-self-contained">Trim self-contained deployments and executables</a>. Available since .NET Core 3.0 SDK as a preview feature.</p>
@@ -4188,7 +4188,7 @@ public static T ResetPublishTrimmed&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetRepositoryType__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetRepositoryType``1(``0)">
   ResetRepositoryType&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2885"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2885"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4231,7 +4231,7 @@ public static T ResetRepositoryType&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetRepositoryUrl__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetRepositoryUrl``1(``0)">
   ResetRepositoryUrl&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2877"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2877"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4274,7 +4274,7 @@ public static T ResetRepositoryUrl&lt;T&gt;(this T o) where T : DotNetRestoreSet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetRunCodeAnalysis__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetRunCodeAnalysis``1(``0)">
   ResetRunCodeAnalysis&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2622"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2622"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4317,7 +4317,7 @@ public static T ResetRunCodeAnalysis&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetRuntime__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetRuntime``1(``0)">
   ResetRuntime&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2598"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2598"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the <code>&lt;RuntimeIdentifiers&gt;</code> tag in the <em>.csproj</em> file. For a list of Runtime Identifiers (RIDs), see the <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">RID catalog</a>. Provide multiple RIDs by specifying this option multiple times.</p>
@@ -4360,7 +4360,7 @@ public static T ResetRuntime&lt;T&gt;(this T o) where T : DotNetRestoreSettings<
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetSymbolPackageFormat__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetSymbolPackageFormat``1(``0)">
   ResetSymbolPackageFormat&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2893"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2893"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Format for packaging symbols.</p>
@@ -4403,7 +4403,7 @@ public static T ResetSymbolPackageFormat&lt;T&gt;(this T o) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetTitle__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetTitle``1(``0)">
   ResetTitle&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2781"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2781"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4446,7 +4446,7 @@ public static T ResetTitle&lt;T&gt;(this T o) where T : DotNetRestoreSettings</c
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetTreatWarningsAsErrors__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetTreatWarningsAsErrors``1(``0)">
   ResetTreatWarningsAsErrors&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2693"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2693"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4489,7 +4489,7 @@ public static T ResetTreatWarningsAsErrors&lt;T&gt;(this T o) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetUseLockFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetUseLockFile``1(``0)">
   ResetUseLockFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2539"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2539"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -4532,7 +4532,7 @@ public static T ResetUseLockFile&lt;T&gt;(this T o) where T : DotNetRestoreSetti
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetVerbosity__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetVerbosity``1(``0)">
   ResetVerbosity&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the verbosity level of the command. Allowed values are <code>q[uiet]</code>, <code>m[inimal]</code>, <code>n[ormal]</code>, <code>d[etailed]</code>, and <code>diag[nostic]</code>.</p>
@@ -4575,7 +4575,7 @@ public static T ResetVerbosity&lt;T&gt;(this T o) where T : DotNetRestoreSetting
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetVersionPrefix__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetVersionPrefix``1(``0)">
   ResetVersionPrefix&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2750"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2750"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4618,7 +4618,7 @@ public static T ResetVersionPrefix&lt;T&gt;(this T o) where T : DotNetRestoreSet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetVersion__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetVersion``1(``0)">
   ResetVersion&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2742"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2742"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4661,7 +4661,7 @@ public static T ResetVersion&lt;T&gt;(this T o) where T : DotNetRestoreSettings<
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetWarningLevel__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetWarningLevel``1(``0)">
   ResetWarningLevel&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2685"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2685"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4704,7 +4704,7 @@ public static T ResetWarningLevel&lt;T&gt;(this T o) where T : DotNetRestoreSett
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ResetWarningsAsErrors__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ResetWarningsAsErrors``1(``0)">
   ResetWarningsAsErrors&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2677"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2677"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4747,7 +4747,7 @@ public static T ResetWarningsAsErrors&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetAssemblyVersion__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetAssemblyVersion``1(``0,System.String)">
   SetAssemblyVersion&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2707"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2707"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4792,7 +4792,7 @@ public static T SetAssemblyVersion&lt;T&gt;(this T o, string v) where T : DotNet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetAuthors__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetAuthors``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   SetAuthors&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2758"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2758"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4837,7 +4837,7 @@ public static T SetAuthors&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) where
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetAuthors__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetAuthors``1(``0,System.String[])">
   SetAuthors&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2755"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2755"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4882,7 +4882,7 @@ public static T SetAuthors&lt;T&gt;(this T o, params string[] v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetConfigFile__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetConfigFile``1(``0,System.String)">
   SetConfigFile&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The NuGet configuration file (<em>NuGet.config</em>) to use for the restore operation.</p>
@@ -4927,7 +4927,7 @@ public static T SetConfigFile&lt;T&gt;(this T o, string v) where T : DotNetResto
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetContinuousIntegrationBuild__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetContinuousIntegrationBuild``1(``0,System.Nullable{System.Boolean})">
   SetContinuousIntegrationBuild&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2965"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2965"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -4972,7 +4972,7 @@ public static T SetContinuousIntegrationBuild&lt;T&gt;(this T o, bool? v) where 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetCopyright__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetCopyright``1(``0,System.String)">
   SetCopyright&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2794"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2794"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5017,7 +5017,7 @@ public static T SetCopyright&lt;T&gt;(this T o, string v) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetDescription__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetDescription``1(``0,System.String)">
   SetDescription&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2786"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2786"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5062,7 +5062,7 @@ public static T SetDescription&lt;T&gt;(this T o, string v) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetDeterministicSourcePaths__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetDeterministicSourcePaths``1(``0,System.Nullable{System.Boolean})">
   SetDeterministicSourcePaths&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2982"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2982"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5107,7 +5107,7 @@ public static T SetDeterministicSourcePaths&lt;T&gt;(this T o, bool? v) where T 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetDeterministic__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetDeterministic``1(``0,System.Nullable{System.Boolean})">
   SetDeterministic&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2999"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2999"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5152,7 +5152,7 @@ public static T SetDeterministic&lt;T&gt;(this T o, bool? v) where T : DotNetRes
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetDisableParallel__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetDisableParallel``1(``0,System.Nullable{System.Boolean})">
   SetDisableParallel&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2420"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -5197,7 +5197,7 @@ public static T SetDisableParallel&lt;T&gt;(this T o, bool? v) where T : DotNetR
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetFileVersion__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetFileVersion``1(``0,System.String)">
   SetFileVersion&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2715"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2715"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5242,7 +5242,7 @@ public static T SetFileVersion&lt;T&gt;(this T o, string v) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetForceEvaluate__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetForceEvaluate``1(``0,System.Nullable{System.Boolean})">
   SetForceEvaluate&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2578"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2578"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -5287,7 +5287,7 @@ public static T SetForceEvaluate&lt;T&gt;(this T o, bool? v) where T : DotNetRes
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetForce__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetForce``1(``0,System.Nullable{System.Boolean})">
   SetForce&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2437"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2437"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -5332,7 +5332,7 @@ public static T SetForce&lt;T&gt;(this T o, bool? v) where T : DotNetRestoreSett
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetIgnoreFailedSources__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetIgnoreFailedSources``1(``0,System.Nullable{System.Boolean})">
   SetIgnoreFailedSources&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2454"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2454"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -5377,7 +5377,7 @@ public static T SetIgnoreFailedSources&lt;T&gt;(this T o, bool? v) where T : Dot
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetInformationalVersion__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetInformationalVersion``1(``0,System.String)">
   SetInformationalVersion&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2723"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2723"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5422,7 +5422,7 @@ public static T SetInformationalVersion&lt;T&gt;(this T o, string v) where T : D
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetLockFilePath__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetLockFilePath``1(``0,System.String)">
   SetLockFilePath&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2570"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2570"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Output location where project lock file is written. By default, this is 'PROJECT_ROOT\packages.lock.json'.</p>
@@ -5467,7 +5467,7 @@ public static T SetLockFilePath&lt;T&gt;(this T o, string v) where T : DotNetRes
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetLockedMode__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetLockedMode``1(``0,System.Nullable{System.Boolean})">
   SetLockedMode&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2553"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -5512,7 +5512,7 @@ public static T SetLockedMode&lt;T&gt;(this T o, bool? v) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetNoCache__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetNoCache``1(``0,System.Nullable{System.Boolean})">
   SetNoCache&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2471"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2471"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -5557,7 +5557,7 @@ public static T SetNoCache&lt;T&gt;(this T o, bool? v) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetNoDependencies__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetNoDependencies``1(``0,System.Nullable{System.Boolean})">
   SetNoDependencies&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2488"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2488"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -5602,7 +5602,7 @@ public static T SetNoDependencies&lt;T&gt;(this T o, bool? v) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetNoWarns__1___0_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetNoWarns``1(``0,System.Collections.Generic.IEnumerable{System.Int32})">
   SetNoWarns&lt;T&gt;(T, IEnumerable&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2639"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5647,7 +5647,7 @@ public static T SetNoWarns&lt;T&gt;(this T o, IEnumerable&lt;int&gt; v) where T 
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetNoWarns__1___0_System_Int32___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetNoWarns``1(``0,System.Int32[])">
   SetNoWarns&lt;T&gt;(T, params int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2636"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5692,7 +5692,7 @@ public static T SetNoWarns&lt;T&gt;(this T o, params int[] v) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageDirectory__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageDirectory``1(``0,System.String)">
   SetPackageDirectory&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2505"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2505"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the directory for restored packages.</p>
@@ -5737,7 +5737,7 @@ public static T SetPackageDirectory&lt;T&gt;(this T o, string v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageIconUrl__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageIconUrl``1(``0,System.String)">
   SetPackageIconUrl&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2835"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2835"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5782,7 +5782,7 @@ public static T SetPackageIconUrl&lt;T&gt;(this T o, string v) where T : DotNetR
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageId__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageId``1(``0,System.String)">
   SetPackageId&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2731"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2731"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5827,7 +5827,7 @@ public static T SetPackageId&lt;T&gt;(this T o, string v) where T : DotNetRestor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageLicenseUrl__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageLicenseUrl``1(``0,System.String)">
   SetPackageLicenseUrl&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2819"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2819"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5872,7 +5872,7 @@ public static T SetPackageLicenseUrl&lt;T&gt;(this T o, string v) where T : DotN
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageProjectUrl__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageProjectUrl``1(``0,System.String)">
   SetPackageProjectUrl&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2827"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2827"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5917,7 +5917,7 @@ public static T SetPackageProjectUrl&lt;T&gt;(this T o, string v) where T : DotN
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageReleaseNotes__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageReleaseNotes``1(``0,System.String)">
   SetPackageReleaseNotes&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2866"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2866"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -5962,7 +5962,7 @@ public static T SetPackageReleaseNotes&lt;T&gt;(this T o, string v) where T : Do
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageRequireLicenseAcceptance__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageRequireLicenseAcceptance``1(``0,System.Nullable{System.Boolean})">
   SetPackageRequireLicenseAcceptance&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2802"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2802"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6007,7 +6007,7 @@ public static T SetPackageRequireLicenseAcceptance&lt;T&gt;(this T o, bool? v) w
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageTags__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageTags``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   SetPackageTags&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2846"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2846"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6052,7 +6052,7 @@ public static T SetPackageTags&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) w
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPackageTags__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPackageTags``1(``0,System.String[])">
   SetPackageTags&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2843"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2843"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6097,7 +6097,7 @@ public static T SetPackageTags&lt;T&gt;(this T o, params string[] v) where T : D
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPlatform__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPlatform``1(``0,System.String)">
   SetPlatform&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2957"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2957"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6142,7 +6142,7 @@ public static T SetPlatform&lt;T&gt;(this T o, string v) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetProjectFile__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetProjectFile``1(``0,System.String)">
   SetProjectFile&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Optional path to the project file to restore.</p>
@@ -6187,7 +6187,7 @@ public static T SetProjectFile&lt;T&gt;(this T o, string v) where T : DotNetRest
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetProperties__1___0_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetProperties``1(``0,System.Collections.Generic.IDictionary{System.String,System.Object})">
   SetProperties&lt;T&gt;(T, IDictionary&lt;string, object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2603"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2603"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6232,7 +6232,7 @@ public static T SetProperties&lt;T&gt;(this T o, IDictionary&lt;string, object&g
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetProperty__1___0_System_String_System_Object_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetProperty``1(``0,System.String,System.Object)">
   SetProperty&lt;T&gt;(T, string, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2606"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2606"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6279,7 +6279,7 @@ public static T SetProperty&lt;T&gt;(this T o, string k, object v) where T : Dot
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPublishProfile__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPublishProfile``1(``0,System.String)">
   SetPublishProfile&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2949"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2949"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6324,7 +6324,7 @@ public static T SetPublishProfile&lt;T&gt;(this T o, string v) where T : DotNetR
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPublishReadyToRun__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPublishReadyToRun``1(``0,System.Nullable{System.Boolean})">
   SetPublishReadyToRun&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2898"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2898"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/ready-to-run">ReadyToRun images</a>. Available since .NET Core 3.0 SDK.</p>
@@ -6371,7 +6371,7 @@ public static T SetPublishReadyToRun&lt;T&gt;(this T o, bool? v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPublishSingleFile__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPublishSingleFile``1(``0,System.Nullable{System.Boolean})">
   SetPublishSingleFile&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2915"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2915"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.</p>
@@ -6420,7 +6420,7 @@ public static T SetPublishSingleFile&lt;T&gt;(this T o, bool? v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetPublishTrimmed__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetPublishTrimmed``1(``0,System.Nullable{System.Boolean})">
   SetPublishTrimmed&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2932"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2932"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/trim-self-contained">Trim self-contained deployments and executables</a>. Available since .NET Core 3.0 SDK as a preview feature.</p>
@@ -6467,7 +6467,7 @@ public static T SetPublishTrimmed&lt;T&gt;(this T o, bool? v) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetRepositoryType__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetRepositoryType``1(``0,System.String)">
   SetRepositoryType&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2882"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2882"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6512,7 +6512,7 @@ public static T SetRepositoryType&lt;T&gt;(this T o, string v) where T : DotNetR
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetRepositoryUrl__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetRepositoryUrl``1(``0,System.String)">
   SetRepositoryUrl&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2874"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2874"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6557,7 +6557,7 @@ public static T SetRepositoryUrl&lt;T&gt;(this T o, string v) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetRunCodeAnalysis__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetRunCodeAnalysis``1(``0,System.Nullable{System.Boolean})">
   SetRunCodeAnalysis&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2619"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2619"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6602,7 +6602,7 @@ public static T SetRunCodeAnalysis&lt;T&gt;(this T o, bool? v) where T : DotNetR
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetRuntime__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetRuntime``1(``0,System.String)">
   SetRuntime&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2595"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2595"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the <code>&lt;RuntimeIdentifiers&gt;</code> tag in the <em>.csproj</em> file. For a list of Runtime Identifiers (RIDs), see the <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">RID catalog</a>. Provide multiple RIDs by specifying this option multiple times.</p>
@@ -6647,7 +6647,7 @@ public static T SetRuntime&lt;T&gt;(this T o, string v) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetSources__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetSources``1(``0,System.Collections.Generic.IEnumerable{System.String})">
   SetSources&lt;T&gt;(T, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2516"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2516"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -6692,7 +6692,7 @@ public static T SetSources&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) where
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetSources__1___0_System_String___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetSources``1(``0,System.String[])">
   SetSources&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2513"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2513"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -6737,7 +6737,7 @@ public static T SetSources&lt;T&gt;(this T o, params string[] v) where T : DotNe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetSymbolPackageFormat__1___0_Nuke_Common_Tools_DotNet_DotNetSymbolPackageFormat_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetSymbolPackageFormat``1(``0,Nuke.Common.Tools.DotNet.DotNetSymbolPackageFormat)">
   SetSymbolPackageFormat&lt;T&gt;(T, DotNetSymbolPackageFormat)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2890"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2890"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Format for packaging symbols.</p>
@@ -6782,7 +6782,7 @@ public static T SetSymbolPackageFormat&lt;T&gt;(this T o, DotNetSymbolPackageFor
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetTitle__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetTitle``1(``0,System.String)">
   SetTitle&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2778"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2778"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6827,7 +6827,7 @@ public static T SetTitle&lt;T&gt;(this T o, string v) where T : DotNetRestoreSet
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetTreatWarningsAsErrors__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetTreatWarningsAsErrors``1(``0,System.Nullable{System.Boolean})">
   SetTreatWarningsAsErrors&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2690"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2690"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -6872,7 +6872,7 @@ public static T SetTreatWarningsAsErrors&lt;T&gt;(this T o, bool? v) where T : D
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetUseLockFile__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetUseLockFile``1(``0,System.Nullable{System.Boolean})">
   SetUseLockFile&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2536"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2536"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -6917,7 +6917,7 @@ public static T SetUseLockFile&lt;T&gt;(this T o, bool? v) where T : DotNetResto
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetVerbosity__1___0_Nuke_Common_Tools_DotNet_DotNetVerbosity_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetVerbosity``1(``0,Nuke.Common.Tools.DotNet.DotNetVerbosity)">
   SetVerbosity&lt;T&gt;(T, DotNetVerbosity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2412"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2412"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the verbosity level of the command. Allowed values are <code>q[uiet]</code>, <code>m[inimal]</code>, <code>n[ormal]</code>, <code>d[etailed]</code>, and <code>diag[nostic]</code>.</p>
@@ -6962,7 +6962,7 @@ public static T SetVerbosity&lt;T&gt;(this T o, DotNetVerbosity v) where T : Dot
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetVersionPrefix__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetVersionPrefix``1(``0,System.String)">
   SetVersionPrefix&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2747"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2747"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7007,7 +7007,7 @@ public static T SetVersionPrefix&lt;T&gt;(this T o, string v) where T : DotNetRe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetVersion__1___0_System_String_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetVersion``1(``0,System.String)">
   SetVersion&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2739"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2739"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7052,7 +7052,7 @@ public static T SetVersion&lt;T&gt;(this T o, string v) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetWarningLevel__1___0_System_Nullable_System_Int32__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetWarningLevel``1(``0,System.Nullable{System.Int32})">
   SetWarningLevel&lt;T&gt;(T, int?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2682"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2682"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7097,7 +7097,7 @@ public static T SetWarningLevel&lt;T&gt;(this T o, int? v) where T : DotNetResto
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetWarningsAsErrors__1___0_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetWarningsAsErrors``1(``0,System.Collections.Generic.IEnumerable{System.Int32})">
   SetWarningsAsErrors&lt;T&gt;(T, IEnumerable&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2662"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2662"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7142,7 +7142,7 @@ public static T SetWarningsAsErrors&lt;T&gt;(this T o, IEnumerable&lt;int&gt; v)
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_SetWarningsAsErrors__1___0_System_Int32___" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.SetWarningsAsErrors``1(``0,System.Int32[])">
   SetWarningsAsErrors&lt;T&gt;(T, params int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2659"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2659"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7187,7 +7187,7 @@ public static T SetWarningsAsErrors&lt;T&gt;(this T o, params int[] v) where T :
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleContinuousIntegrationBuild__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleContinuousIntegrationBuild``1(``0)">
   ToggleContinuousIntegrationBuild&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2977"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2977"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7230,7 +7230,7 @@ public static T ToggleContinuousIntegrationBuild&lt;T&gt;(this T o) where T : Do
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleDeterministicSourcePaths__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleDeterministicSourcePaths``1(``0)">
   ToggleDeterministicSourcePaths&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2994"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2994"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7273,7 +7273,7 @@ public static T ToggleDeterministicSourcePaths&lt;T&gt;(this T o) where T : DotN
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleDeterministic__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleDeterministic``1(``0)">
   ToggleDeterministic&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3011"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L3011"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7316,7 +7316,7 @@ public static T ToggleDeterministic&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleDisableParallel__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleDisableParallel``1(``0)">
   ToggleDisableParallel&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2432"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -7359,7 +7359,7 @@ public static T ToggleDisableParallel&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleForceEvaluate__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleForceEvaluate``1(``0)">
   ToggleForceEvaluate&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2590"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2590"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -7402,7 +7402,7 @@ public static T ToggleForceEvaluate&lt;T&gt;(this T o) where T : DotNetRestoreSe
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleForce__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleForce``1(``0)">
   ToggleForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2449"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -7445,7 +7445,7 @@ public static T ToggleForce&lt;T&gt;(this T o) where T : DotNetRestoreSettings</
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleIgnoreFailedSources__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleIgnoreFailedSources``1(``0)">
   ToggleIgnoreFailedSources&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2466"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -7488,7 +7488,7 @@ public static T ToggleIgnoreFailedSources&lt;T&gt;(this T o) where T : DotNetRes
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleLockedMode__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleLockedMode``1(``0)">
   ToggleLockedMode&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2565"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -7531,7 +7531,7 @@ public static T ToggleLockedMode&lt;T&gt;(this T o) where T : DotNetRestoreSetti
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleNoCache__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleNoCache``1(``0)">
   ToggleNoCache&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2483"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2483"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -7574,7 +7574,7 @@ public static T ToggleNoCache&lt;T&gt;(this T o) where T : DotNetRestoreSettings
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleNoDependencies__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleNoDependencies``1(``0)">
   ToggleNoDependencies&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2500"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2500"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -7617,7 +7617,7 @@ public static T ToggleNoDependencies&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_TogglePackageRequireLicenseAcceptance__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.TogglePackageRequireLicenseAcceptance``1(``0)">
   TogglePackageRequireLicenseAcceptance&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2814"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2814"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7660,7 +7660,7 @@ public static T TogglePackageRequireLicenseAcceptance&lt;T&gt;(this T o) where T
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_TogglePublishReadyToRun__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.TogglePublishReadyToRun``1(``0)">
   TogglePublishReadyToRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2910"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2910"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/ready-to-run">ReadyToRun images</a>. Available since .NET Core 3.0 SDK.</p>
@@ -7705,7 +7705,7 @@ public static T TogglePublishReadyToRun&lt;T&gt;(this T o) where T : DotNetResto
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_TogglePublishSingleFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.TogglePublishSingleFile``1(``0)">
   TogglePublishSingleFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2927"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2927"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.</p>
@@ -7752,7 +7752,7 @@ public static T TogglePublishSingleFile&lt;T&gt;(this T o) where T : DotNetResto
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_TogglePublishTrimmed__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.TogglePublishTrimmed``1(``0)">
   TogglePublishTrimmed&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2944"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2944"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/trim-self-contained">Trim self-contained deployments and executables</a>. Available since .NET Core 3.0 SDK as a preview feature.</p>
@@ -7797,7 +7797,7 @@ public static T TogglePublishTrimmed&lt;T&gt;(this T o) where T : DotNetRestoreS
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleRunCodeAnalysis__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleRunCodeAnalysis``1(``0)">
   ToggleRunCodeAnalysis&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2631"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2631"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7840,7 +7840,7 @@ public static T ToggleRunCodeAnalysis&lt;T&gt;(this T o) where T : DotNetRestore
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleTreatWarningsAsErrors__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleTreatWarningsAsErrors``1(``0)">
   ToggleTreatWarningsAsErrors&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2702"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2702"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -7883,7 +7883,7 @@ public static T ToggleTreatWarningsAsErrors&lt;T&gt;(this T o) where T : DotNetR
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettingsExtensions_ToggleUseLockFile__1___0_" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettingsExtensions.ToggleUseLockFile``1(``0)">
   ToggleUseLockFile&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2548"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2548"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -7926,7 +7926,7 @@ public static T ToggleUseLockFile&lt;T&gt;(this T o) where T : DotNetRestoreSett
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2385" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L2385" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -7942,7 +7942,7 @@ public static T ToggleUseLockFile&lt;T&gt;(this T o) where T : DotNetRestoreSett
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/a96a8f2f0108e074afdb7b14d64e8b2ca2e48acc">a96a8f2</a></span>
         </div>
       </div>
     </footer>

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class HelmUpgradeSettings | gruke 10.3.1 </title>
+      <title>Class HelmUpgradeSettings | gruke 10.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class HelmUpgradeSettings | gruke 10.3.1 ">
+      <meta name="title" content="Class HelmUpgradeSettings | gruke 10.4.0 ">
       
       <meta name="description" content="This command upgrades a release to a specified version of a chart and/or updates chart values. Required arguments are release and chart. The chart argument can be one of:  - a chart reference(&#39;stable/mariadb&#39;); use &#39;--version&#39; and &#39;--devel&#39; flags for versions other than latest,  - a path to a chart directory,  - a packaged chart,  - a fully qualified URL. To customize the chart values, use any of  - &#39;--values&#39;/&#39;-f&#39; to pass in a yaml file holding settings,  - &#39;--set&#39; to provide one or more key=val pairs directly,  - &#39;--set-string&#39; to provide key=val forcing val to be stored as a string,  - &#39;--set-file&#39; to provide key=path to read a single large value from a file at path. To edit or append to the existing customized values, add the  &#39;--reuse-values&#39; flag, otherwise any existing customized values are ignored. If no chart value arguments are provided on the command line, any existing customized values are carried forward. If you want to revert to just the values provided in the chart, use the &#39;--reset-values&#39; flag. You can specify any of the chart value flags multiple times. The priority will be given to the last (right-most) value specified. For example, if both myvalues.yaml and override.yaml contained a key called &#39;Test&#39;, the value set in override.yaml would take precedence: 	$ helm upgrade -f myvalues.yaml -f override.yaml redis ./redis Note that the key name provided to the &#39;--set&#39;, &#39;--set-string&#39; and &#39;--set-file&#39; flags can reference structure elements. Examples:   - mybool=TRUE   - livenessProbe.timeoutSeconds=10   - metrics.annotations[0]=hey,metrics.annotations[1]=ho which sets the top level key mybool to true, the nested timeoutSeconds to 10, and two array values, respectively. Note that the value side of the key=val provided to &#39;--set&#39; and &#39;--set-string&#39; flags will pass through shell evaluation followed by yaml type parsing to produce the final value. This may alter inputs with special characters in unexpected ways, for example 	$ helm upgrade --set pwd=3jk$o2,z=f\30.e redis ./redis results in &quot;pwd: 3jk&quot; and &quot;z: f30.e&quot;. Use single quotes to avoid shell evaluation and argument delimiters, and use backslash to escape yaml special characters: 	$ helm upgrade --set pwd=&#39;3jk$o2z=f\\30.e&#39; redis ./redis which results in the expected &quot;pwd: 3jk$o2z=f\30.e&quot;. If a single quote occurs in your value then follow your shell convention for escaping it; for example in bash: 	$ helm upgrade --set pwd=&#39;3jk$o2z=f\\30with&#39;\&#39;&#39;quote&#39; which results in &quot;pwd: 3jk$o2z=f\30with&#39;quote&quot;.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_Helm_HelmUpgradeSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Helm.HelmUpgradeSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Helm_HelmUpgradeSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Helm.HelmUpgradeSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings" class="text-break">
-Class HelmUpgradeSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1300"><i class="bi bi-code-slash"></i></a>
+Class HelmUpgradeSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1300"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -724,7 +724,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Atomic" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Atomic">
   Atomic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If set, upgrade process rolls back changes made in case of failed upgrade, also sets --wait flag.</p>
@@ -756,7 +756,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_CaFile" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.CaFile">
   CaFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Verify certificates of HTTPS-enabled servers using this CA bundle.</p>
@@ -788,7 +788,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_CertFile" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.CertFile">
   CertFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1310"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Identify HTTPS client using this SSL certificate file.</p>
@@ -820,7 +820,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Chart" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Chart">
   Chart
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1376"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the chart to upgrade.</p>
@@ -852,7 +852,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_CreateNamespace" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.CreateNamespace">
   CreateNamespace
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1322"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If --install is set, create the release namespace if not present.</p>
@@ -884,7 +884,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Description" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Description">
   Description
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1312"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specify the description to use for the upgrade, rather than the default.</p>
@@ -916,7 +916,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Devel" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Devel">
   Devel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Use development versions, too. Equivalent to version '&gt;0.0.0-0'. If --version is set, this is ignored.</p>
@@ -948,7 +948,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_DryRun" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.DryRun">
   DryRun
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1316"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Simulate an upgrade.</p>
@@ -980,7 +980,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Force" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Force">
   Force
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1318"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Force resource update through delete/recreate if needed.</p>
@@ -1012,7 +1012,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Install" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Install">
   Install
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If a release by this name doesn't already exist, run an install.</p>
@@ -1044,7 +1044,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_KeyFile" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.KeyFile">
   KeyFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Identify HTTPS client using this SSL key file.</p>
@@ -1076,7 +1076,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Keyring" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Keyring">
   Keyring
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Path to the keyring that contains public signing keys (default &quot;~/.gnupg/pubring.gpg&quot;).</p>
@@ -1108,7 +1108,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Namespace" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Namespace">
   Namespace
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Namespace to install the release into (only used if --install is set). Defaults to the current kube config namespace.</p>
@@ -1140,7 +1140,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_NoHooks" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.NoHooks">
   NoHooks
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1330"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disable pre/post upgrade hooks.</p>
@@ -1172,7 +1172,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Password" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Password">
   Password
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Chart repository password where to locate the requested chart.</p>
@@ -1204,7 +1204,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_RecreatePods" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.RecreatePods">
   RecreatePods
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Performs pods restart for the resource if applicable.</p>
@@ -1236,7 +1236,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Release" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Release">
   Release
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the release to upgrade.</p>
@@ -1268,7 +1268,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_RenderSubchartNotes" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.RenderSubchartNotes">
   RenderSubchartNotes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1336"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Render subchart notes along with parent.</p>
@@ -1300,7 +1300,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Repo" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Repo">
   Repo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Chart repository url where to locate the requested chart.</p>
@@ -1332,7 +1332,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_ResetValues" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.ResetValues">
   ResetValues
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1340"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When upgrading, reset the values to the ones built into the chart.</p>
@@ -1364,7 +1364,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_ReuseValues" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.ReuseValues">
   ReuseValues
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1342"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When upgrading, reuse the last release's values and merge in any overrides from the command line via --set and -f. If '--reset-values' is specified, this is ignored.</p>
@@ -1396,7 +1396,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Set" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Set">
   Set
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2).</p>
@@ -1428,7 +1428,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_SetFile" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.SetFile">
   SetFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1346"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set values from respective files specified via the command line (can specify multiple or separate values with commas: key1=path1,key2=path2).</p>
@@ -1460,7 +1460,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_SetString" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.SetString">
   SetString
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set STRING values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2).</p>
@@ -1492,7 +1492,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Timeout" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Timeout">
   Timeout
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Time in seconds to wait for any individual Kubernetes operation (like Jobs for hooks) (default 300).</p>
@@ -1524,7 +1524,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Tls" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Tls">
   Tls
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1352"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enable TLS for request.</p>
@@ -1556,7 +1556,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_TlsCaCert" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.TlsCaCert">
   TlsCaCert
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1354"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Path to TLS CA certificate file (default &quot;$HELM_HOME/ca.pem&quot;).</p>
@@ -1588,7 +1588,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_TlsCert" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.TlsCert">
   TlsCert
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Path to TLS certificate file (default &quot;$HELM_HOME/cert.pem&quot;).</p>
@@ -1620,7 +1620,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_TlsHostname" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.TlsHostname">
   TlsHostname
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1358"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The server name used to verify the hostname on the returned certificates from the server.</p>
@@ -1652,7 +1652,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_TlsKey" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.TlsKey">
   TlsKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1360"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Path to TLS key file (default &quot;$HELM_HOME/key.pem&quot;).</p>
@@ -1684,7 +1684,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_TlsVerify" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.TlsVerify">
   TlsVerify
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enable TLS for request and verify remote.</p>
@@ -1716,7 +1716,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Username" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Username">
   Username
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1364"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Chart repository username where to locate the requested chart.</p>
@@ -1748,7 +1748,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Values" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Values">
   Values
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1366"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1366"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specify values in a YAML file or a URL(can specify multiple) (default []).</p>
@@ -1780,7 +1780,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Verify" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Verify">
   Verify
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1368"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1368"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Verify the provenance of the chart before upgrading.</p>
@@ -1812,7 +1812,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Version" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Version">
   Version
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1370"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specify the exact chart version to use. If this is not specified, the latest version is used.</p>
@@ -1844,7 +1844,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Helm_HelmUpgradeSettings_Wait" data-uid="Nuke.Common.Tools.Helm.HelmUpgradeSettings.Wait">
   Wait
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1372"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1372"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If set, will wait until all Pods, PVCs, Services, and minimum number of Pods of a Deployment are in a ready state before marking the release as successful. It will wait for as long as --timeout.</p>
@@ -1876,7 +1876,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1300" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Helm/Helm.Generated.cs/#L1300" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1892,7 +1892,7 @@ public class HelmUpgradeSettings : HelmOptionsBase, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/a96a8f2f0108e074afdb7b14d64e8b2ca2e48acc">a96a8f2</a></span>
         </div>
       </div>
     </footer>
