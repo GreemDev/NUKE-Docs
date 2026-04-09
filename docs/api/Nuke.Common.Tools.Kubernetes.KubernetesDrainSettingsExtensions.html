@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class KubernetesDrainSettingsExtensions | gruke 10.4.0 </title>
+      <title>Class KubernetesDrainSettingsExtensions | gruke 10.3.1 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class KubernetesDrainSettingsExtensions | gruke 10.4.0 ">
+      <meta name="title" content="Class KubernetesDrainSettingsExtensions | gruke 10.3.1 ">
       
       <meta name="description" content="Drain node in preparation for maintenance. The given node will be marked unschedulable to prevent new pods from arriving. &#39;drain&#39; evicts the pods if the APIServer supports eviction (http://kubernetes.io/docs/admin/disruptions/). Otherwise, it will use normal DELETE to delete the pods. The &#39;drain&#39; evicts or deletes all pods except mirror pods (which cannot be deleted through the API server).  If there are DaemonSet-managed pods, drain will not proceed without --ignore-daemonsets, and regardless it will not delete any DaemonSet-managed pods, because those pods would be immediately replaced by the DaemonSet controller, which ignores unschedulable markings.  If there are any pods that are neither mirror pods nor managed by ReplicationController, ReplicaSet, DaemonSet, StatefulSet or Job, then drain will not delete any pods unless you use --force.  --force will also allow deletion to proceed if the managing resource of one or more pods is missing. &#39;drain&#39; waits for graceful termination. You should not operate on the machine until the command completes. When you are ready to put the node back into service, use kubectl uncordon, which will make the node schedulable again. ! http://kubernetes.io/images/docs/kubectl_drain.svg.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions" class="text-break">
-Class KubernetesDrainSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1721"><i class="bi bi-code-slash"></i></a>
+Class KubernetesDrainSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1721"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -162,7 +162,7 @@ public static class KubernetesDrainSettingsExtensions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_DisableDeleteLocalData__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.DisableDeleteLocalData``1(``0)">
   DisableDeleteLocalData&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1736"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1736"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods using emptyDir (local data that will be deleted when the node is drained).</p>
@@ -205,7 +205,7 @@ public static T DisableDeleteLocalData&lt;T&gt;(this T o) where T : KubernetesDr
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_DisableDryRun__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.DisableDryRun``1(``0)">
   DisableDryRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1753"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1753"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If true, only print the object that would be sent, without sending it.</p>
@@ -248,7 +248,7 @@ public static T DisableDryRun&lt;T&gt;(this T o) where T : KubernetesDrainSettin
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_DisableForce__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.DisableForce``1(``0)">
   DisableForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1770"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1770"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods not managed by a ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet.</p>
@@ -291,7 +291,7 @@ public static T DisableForce&lt;T&gt;(this T o) where T : KubernetesDrainSetting
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_DisableIgnoreDaemonsets__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.DisableIgnoreDaemonsets``1(``0)">
   DisableIgnoreDaemonsets&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1795"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1795"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Ignore DaemonSet-managed pods.</p>
@@ -334,7 +334,7 @@ public static T DisableIgnoreDaemonsets&lt;T&gt;(this T o) where T : KubernetesD
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_EnableDeleteLocalData__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.EnableDeleteLocalData``1(``0)">
   EnableDeleteLocalData&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1733"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1733"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods using emptyDir (local data that will be deleted when the node is drained).</p>
@@ -377,7 +377,7 @@ public static T EnableDeleteLocalData&lt;T&gt;(this T o) where T : KubernetesDra
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_EnableDryRun__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.EnableDryRun``1(``0)">
   EnableDryRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1750"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1750"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If true, only print the object that would be sent, without sending it.</p>
@@ -420,7 +420,7 @@ public static T EnableDryRun&lt;T&gt;(this T o) where T : KubernetesDrainSetting
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_EnableForce__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.EnableForce``1(``0)">
   EnableForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1767"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1767"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods not managed by a ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet.</p>
@@ -463,7 +463,7 @@ public static T EnableForce&lt;T&gt;(this T o) where T : KubernetesDrainSettings
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_EnableIgnoreDaemonsets__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.EnableIgnoreDaemonsets``1(``0)">
   EnableIgnoreDaemonsets&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1792"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1792"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Ignore DaemonSet-managed pods.</p>
@@ -506,7 +506,7 @@ public static T EnableIgnoreDaemonsets&lt;T&gt;(this T o) where T : KubernetesDr
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetDeleteLocalData__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetDeleteLocalData``1(``0)">
   ResetDeleteLocalData&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1730"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1730"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods using emptyDir (local data that will be deleted when the node is drained).</p>
@@ -549,7 +549,7 @@ public static T ResetDeleteLocalData&lt;T&gt;(this T o) where T : KubernetesDrai
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetDryRun__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetDryRun``1(``0)">
   ResetDryRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1747"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1747"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If true, only print the object that would be sent, without sending it.</p>
@@ -592,7 +592,7 @@ public static T ResetDryRun&lt;T&gt;(this T o) where T : KubernetesDrainSettings
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetForce__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetForce``1(``0)">
   ResetForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1764"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1764"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods not managed by a ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet.</p>
@@ -635,7 +635,7 @@ public static T ResetForce&lt;T&gt;(this T o) where T : KubernetesDrainSettings<
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetGracePeriod__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetGracePeriod``1(``0)">
   ResetGracePeriod&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1781"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1781"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Period of time in seconds given to each pod to terminate gracefully. If negative, the default value specified in the pod will be used.</p>
@@ -678,7 +678,7 @@ public static T ResetGracePeriod&lt;T&gt;(this T o) where T : KubernetesDrainSet
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetIgnoreDaemonsets__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetIgnoreDaemonsets``1(``0)">
   ResetIgnoreDaemonsets&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1789"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1789"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Ignore DaemonSet-managed pods.</p>
@@ -721,7 +721,7 @@ public static T ResetIgnoreDaemonsets&lt;T&gt;(this T o) where T : KubernetesDra
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetPodSelector__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetPodSelector``1(``0)">
   ResetPodSelector&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1806"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1806"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Label selector to filter pods on the node.</p>
@@ -764,7 +764,7 @@ public static T ResetPodSelector&lt;T&gt;(this T o) where T : KubernetesDrainSet
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetSelector__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetSelector``1(``0)">
   ResetSelector&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1814"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1814"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Selector (label query) to filter on.</p>
@@ -807,7 +807,7 @@ public static T ResetSelector&lt;T&gt;(this T o) where T : KubernetesDrainSettin
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ResetTimeout__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ResetTimeout``1(``0)">
   ResetTimeout&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1822"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1822"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The length of time to wait before giving up, zero means infinite.</p>
@@ -850,7 +850,7 @@ public static T ResetTimeout&lt;T&gt;(this T o) where T : KubernetesDrainSetting
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetDeleteLocalData__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetDeleteLocalData``1(``0,System.Nullable{System.Boolean})">
   SetDeleteLocalData&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1727"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1727"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods using emptyDir (local data that will be deleted when the node is drained).</p>
@@ -895,7 +895,7 @@ public static T SetDeleteLocalData&lt;T&gt;(this T o, bool? v) where T : Kuberne
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetDryRun__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetDryRun``1(``0,System.Nullable{System.Boolean})">
   SetDryRun&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1744"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1744"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If true, only print the object that would be sent, without sending it.</p>
@@ -940,7 +940,7 @@ public static T SetDryRun&lt;T&gt;(this T o, bool? v) where T : KubernetesDrainS
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetForce__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetForce``1(``0,System.Nullable{System.Boolean})">
   SetForce&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1761"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1761"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods not managed by a ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet.</p>
@@ -985,7 +985,7 @@ public static T SetForce&lt;T&gt;(this T o, bool? v) where T : KubernetesDrainSe
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetGracePeriod__1___0_System_Nullable_System_Int32__" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetGracePeriod``1(``0,System.Nullable{System.Int32})">
   SetGracePeriod&lt;T&gt;(T, int?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1778"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1778"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Period of time in seconds given to each pod to terminate gracefully. If negative, the default value specified in the pod will be used.</p>
@@ -1030,7 +1030,7 @@ public static T SetGracePeriod&lt;T&gt;(this T o, int? v) where T : KubernetesDr
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetIgnoreDaemonsets__1___0_System_Nullable_System_Boolean__" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetIgnoreDaemonsets``1(``0,System.Nullable{System.Boolean})">
   SetIgnoreDaemonsets&lt;T&gt;(T, bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1786"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1786"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Ignore DaemonSet-managed pods.</p>
@@ -1075,7 +1075,7 @@ public static T SetIgnoreDaemonsets&lt;T&gt;(this T o, bool? v) where T : Kubern
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetPodSelector__1___0_System_String_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetPodSelector``1(``0,System.String)">
   SetPodSelector&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1803"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1803"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Label selector to filter pods on the node.</p>
@@ -1120,7 +1120,7 @@ public static T SetPodSelector&lt;T&gt;(this T o, string v) where T : Kubernetes
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetSelector__1___0_System_String_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetSelector``1(``0,System.String)">
   SetSelector&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1811"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1811"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Selector (label query) to filter on.</p>
@@ -1165,7 +1165,7 @@ public static T SetSelector&lt;T&gt;(this T o, string v) where T : KubernetesDra
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_SetTimeout__1___0_System_Nullable_System_TimeSpan__" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.SetTimeout``1(``0,System.Nullable{System.TimeSpan})">
   SetTimeout&lt;T&gt;(T, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1819"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1819"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The length of time to wait before giving up, zero means infinite.</p>
@@ -1210,7 +1210,7 @@ public static T SetTimeout&lt;T&gt;(this T o, TimeSpan? v) where T : KubernetesD
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ToggleDeleteLocalData__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ToggleDeleteLocalData``1(``0)">
   ToggleDeleteLocalData&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1739"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1739"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods using emptyDir (local data that will be deleted when the node is drained).</p>
@@ -1253,7 +1253,7 @@ public static T ToggleDeleteLocalData&lt;T&gt;(this T o) where T : KubernetesDra
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ToggleDryRun__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ToggleDryRun``1(``0)">
   ToggleDryRun&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1756"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1756"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If true, only print the object that would be sent, without sending it.</p>
@@ -1296,7 +1296,7 @@ public static T ToggleDryRun&lt;T&gt;(this T o) where T : KubernetesDrainSetting
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ToggleForce__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ToggleForce``1(``0)">
   ToggleForce&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1773"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1773"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods not managed by a ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet.</p>
@@ -1339,7 +1339,7 @@ public static T ToggleForce&lt;T&gt;(this T o) where T : KubernetesDrainSettings
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettingsExtensions_ToggleIgnoreDaemonsets__1___0_" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettingsExtensions.ToggleIgnoreDaemonsets``1(``0)">
   ToggleIgnoreDaemonsets&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1798"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1798"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Ignore DaemonSet-managed pods.</p>
@@ -1382,7 +1382,7 @@ public static T ToggleIgnoreDaemonsets&lt;T&gt;(this T o) where T : KubernetesDr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1721" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L1721" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1398,7 +1398,7 @@ public static T ToggleIgnoreDaemonsets&lt;T&gt;(this T o) where T : KubernetesDr
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
         </div>
       </div>
     </footer>

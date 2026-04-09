@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AzureSignToolSettings | gruke 10.4.0 </title>
+      <title>Class AzureSignToolSettings | gruke 10.3.1 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AzureSignToolSettings | gruke 10.4.0 ">
+      <meta name="title" content="Class AzureSignToolSettings | gruke 10.3.1 ">
       
       <meta name="description" content="Azure Sign Tool is similar to signtool in the Windows SDK, with the major difference being that it uses Azure Key Vault for performing the signing process. The usage is like signtool, except with a limited set of options for signing and options for authenticating to Azure Key Vault.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings" class="text-break">
-Class AzureSignToolSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L45"><i class="bi bi-code-slash"></i></a>
+Class AzureSignToolSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -489,7 +489,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_AdditionalCertificates" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.AdditionalCertificates">
   AdditionalCertificates
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A list of paths to additional certificates to aide in building a full chain for the signing certificate. Azure SignTool will build a chain, either as deep as it can or to a trusted root. This will also use the Windows certificate store, in addition to any certificates specified with this option. Specifying this option does not guarantee the inclusion of the certificate, only if it is part of the chain. The files specified must be public certificates only. They cannot be PFX, PKCS12 or PFX files.</p>
@@ -521,7 +521,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_ContinueOnError" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.ContinueOnError">
   ContinueOnError
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If multiple files to sign are specified, this flag will cause the signing process to move on to the next file when signing fails. This flag modifies the exit code of the program. See the <a href="https://github.com/vcsjones/AzureSignTool#exit-codes">Exit Codes section</a> for more information.</p>
@@ -553,7 +553,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_Description" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.Description">
   Description
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A description of the signed content. This parameter serves the same purpose as the <code>/d</code> option in the Windows SDK <code>signtool</code>. If this parameter is not supplied, the signature will not contain a description.</p>
@@ -585,7 +585,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_DescriptionUrl" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.DescriptionUrl">
   DescriptionUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A URL with more information of the signed content. This parameter serves the same purpose as the <code>/du</code> option in the Windows SDK <code>signtool</code>. If this parameter is not supplied, the signature will not contain a URL description.</p>
@@ -617,7 +617,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_FileDigest" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.FileDigest">
   FileDigest
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the digest algorithm used for hashing the file being signed. The default value is <code>sha256</code>.</p>
@@ -649,7 +649,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_Files" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.Files">
   Files
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Files to sign.</p>
@@ -681,7 +681,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_InputFileList" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.InputFileList">
   InputFileList
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a path to a text file which contains a list of files to sign, with one file per-line in the text file. If this parameter is specified, it is combined with files directly specified on the command line. The distinct result of the two options is signed.</p>
@@ -713,7 +713,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_KeyVaultAccessToken" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.KeyVaultAccessToken">
   KeyVaultAccessToken
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>An access token used to authenticate to Azure. This can be used instead of the <code>--azure-key-vault-managed-identity</code>, <code>--azure-key-vault-client-id</code> and <code>--azure-key-vault-client-secret</code> options. This is useful if AzureSignTool is being used as part of another program that is already authenticated and has an access token to Azure.</p>
@@ -745,7 +745,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_KeyVaultCertificateName" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.KeyVaultCertificateName">
   KeyVaultCertificateName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the certificate used to perform the signing operation.</p>
@@ -777,7 +777,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_KeyVaultClientId" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.KeyVaultClientId">
   KeyVaultClientId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This is the client ID used to authenticate to Azure, which will be used to generate an access token. This parameter is not required if an access token is supplied directly with the <code>--azure-key-vault-accesstoken</code> option. If this parameter is supplied, <code>--azure-key-vault-client-secret</code> and <code>--azure-key-vault-tenant-id</code> must be supplied as well.</p>
@@ -809,7 +809,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_KeyVaultClientSecret" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.KeyVaultClientSecret">
   KeyVaultClientSecret
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This is the client secret used to authenticate to Azure, which will be used to generate an access token. This parameter is not required if an access token is supplied directly with the <code>--azure-key-vault-accesstoken</code> option or when using managed identities with <code>--azure-key-vault-managed-identity</code>. If this parameter is supplied, <code>--azure-key-vault-client-id</code> and <code>--azure-key-vault-tenant-id</code> must be supplied as well.</p>
@@ -841,7 +841,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_KeyVaultManagedIdentity" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.KeyVaultManagedIdentity">
   KeyVaultManagedIdentity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Use the ambient Managed Identity to authenticate to Azure. This can be used instead of the <code>--azure-key-vault-accesstoken</code>, <code>--azure-key-vault-client-id</code> and <code>--azure-key-vault-client-secret</code> options. This is useful if AzureSignTool is being used on a VM/service/CLI that is configured for managed identities to Azure.</p>
@@ -873,7 +873,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_KeyVaultTenantId" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.KeyVaultTenantId">
   KeyVaultTenantId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This is the tenant id used to authenticate to Azure, which will be used to generate an access token. This parameter is not required if an access token is supplied directly with the <code>--azure-key-vault-accesstoken</code> option or when using managed identities with <code>--azure-key-vault-managed-identity</code>. If this parameter is supplied, <code>--azure-key-vault-client-id</code> and <code>--azure-key-vault-client-secret</code> must be supplied as well.</p>
@@ -905,7 +905,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_KeyVaultUrl" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.KeyVaultUrl">
   KeyVaultUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A fully qualified URL of the key vault with the certificate that will be used for signing. An example value might be <code>https://my-vault.vault.azure.net</code>.</p>
@@ -937,7 +937,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_MaxDegreeOfParallelism" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.MaxDegreeOfParallelism">
   MaxDegreeOfParallelism
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When signing multiple files, specifies the maximum number of concurrent operations. Setting this value does not guarentee that number of concurrent operations will be performed. If this value is unspecified, the system will use the default based on the number of available processor threads. Setting this value to <code>1</code> disable concurrent signing.</p>
@@ -969,7 +969,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_NoPageHashing" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.NoPageHashing">
   NoPageHashing
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Causes the Authenticode signing process to exclude hashes of pages for verifying when the application is paged in to memory. If this flag is omitted, the default configuration for the operating system will be used. This flag will not affect non-PE file formats.</p>
@@ -1001,7 +1001,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_PageHashing" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.PageHashing">
   PageHashing
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Causes the Authenticode signing process to generate hashes of pages for verifying when the application is paged in to memory. If this flag is omitted, the default configuration for the operating system will be used. This flag will not affect non-PE file formats.</p>
@@ -1033,7 +1033,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_Quiet" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.Quiet">
   Quiet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Do not print output to the log. This parameter does not accept a value and cannot be combine with the <code>--verbose</code> option. The exit code of the process can be used to determine success or failure of the sign operation.</p>
@@ -1065,7 +1065,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_SkipSigned" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.SkipSigned">
   SkipSigned
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If a file is already signed it will be skipped, rather than replacing the existing signature.</p>
@@ -1097,7 +1097,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_TimestampAuthenticodeUrl" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.TimestampAuthenticodeUrl">
   TimestampAuthenticodeUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A URL to a legacy Authenticode timestamping service. This parameter serves the same purpose as the <code>/t</code> option in the Windows SDK <code>signtool</code>. Using a Authenicode timestamping service is deprecated. Instead, use the <code>--timestamp-rfc3161</code> option.</p>
@@ -1129,7 +1129,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_TimestampDigest" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.TimestampDigest">
   TimestampDigest
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the digest algorithm used for timestamping. This parameter is ignored unless the <code>--timestamp-rfc3161</code> parameter is also supplied. The default value is <code>sha256</code>.</p>
@@ -1161,7 +1161,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_TimestampRfc3161Url" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.TimestampRfc3161Url">
   TimestampRfc3161Url
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A URL to an RFC3161 compliant timestamping service. This parameter serves the same purpose as the <code>/tr</code> option in the Windows SDK <code>signtool</code>. This parameter should be used in favor of the <code>--timestamp</code> option. Using this parameter will allow using modern, RFC3161 timestamps which also support timestamp digest algorithms other than SHA1.</p>
@@ -1193,7 +1193,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_AzureSignTool_AzureSignToolSettings_Verbose" data-uid="Nuke.Common.Tools.AzureSignTool.AzureSignToolSettings.Verbose">
   Verbose
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Include additional output in the log. This parameter does not accept a value and cannot be combine with the <code>--quiet</code> option.</p>
@@ -1225,7 +1225,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L45" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/AzureSignTool/AzureSignTool.Generated.cs/#L45" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1241,7 +1241,7 @@ public class AzureSignToolSettings : ToolOptions, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
         </div>
       </div>
     </footer>

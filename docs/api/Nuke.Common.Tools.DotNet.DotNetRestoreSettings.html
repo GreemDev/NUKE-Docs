@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DotNetRestoreSettings | gruke 10.4.0 </title>
+      <title>Class DotNetRestoreSettings | gruke 10.3.1 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DotNetRestoreSettings | gruke 10.4.0 ">
+      <meta name="title" content="Class DotNetRestoreSettings | gruke 10.3.1 ">
       
       <meta name="description" content="The dotnet restore command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.Starting with .NET Core 2.0, you don&#39;t have to run dotnet restore because it&#39;s run implicitly by all commands, such as dotnet build and dotnet run, that require a restore to occur. It&#39;s still a valid command in certain scenarios where doing an explicit restore makes sense, such as continuous integration builds in Visual Studio Team Services or in build systems that need to explicitly control the time at which the restore occurs.In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the NuGet.config configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own NuGet.config file in the project directory. You also specify additional feeds per invocation at a command prompt.For dependencies, you specify where the restored packages are placed during the restore operation using the --packages argument. If not specified, the default NuGet package cache is used, which is found in the .nuget/packages directory in the user&#39;s home directory on all operating systems (for example, /home/user1 on Linux or C:\Users\user1 on Windows).For project-specific tooling, dotnet restore first restores the package in which the tool is packed, and then proceeds to restore the tool&#39;s dependencies as specified in its project file.The behavior of the dotnet restore command is affected by some of the settings in the Nuget.Config file, if present. For example, setting the globalPackagesFolder in NuGet.Config places the restored NuGet packages in the specified folder. This is an alternative to specifying the --packages option on the dotnet restore command. For more information, see the NuGet.Config reference.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetRestoreSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetRestoreSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetRestoreSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetRestoreSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings" class="text-break">
-Class DotNetRestoreSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L359"><i class="bi bi-code-slash"></i></a>
+Class DotNetRestoreSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -786,7 +786,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_ConfigFile" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.ConfigFile">
   ConfigFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The NuGet configuration file (<em>NuGet.config</em>) to use for the restore operation.</p>
@@ -818,7 +818,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_DisableBuildServers" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.DisableBuildServers">
   DisableBuildServers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L369"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Force the command to ignore any persistent build servers. This option provides a consistent way to disable all use of build caching, which forces a build from scratch. A build that doesn't rely on caches is useful when the caches might be corrupted or incorrect for some reason. Available since .NET 7 SDK.</p>
@@ -850,7 +850,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_DisableParallel" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.DisableParallel">
   DisableParallel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -882,7 +882,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_Force" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.Force">
   Force
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L375"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -914,7 +914,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_ForceEvaluate" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.ForceEvaluate">
   ForceEvaluate
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L393"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -946,7 +946,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_IgnoreFailedSources" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.IgnoreFailedSources">
   IgnoreFailedSources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L377"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -978,7 +978,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_LockFilePath" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.LockFilePath">
   LockFilePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Output location where project lock file is written. By default, this is 'PROJECT_ROOT\packages.lock.json'.</p>
@@ -1010,7 +1010,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_LockedMode" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.LockedMode">
   LockedMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -1042,7 +1042,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_NoCache" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.NoCache">
   NoCache
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -1074,7 +1074,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_NoDependencies" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.NoDependencies">
   NoDependencies
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -1106,7 +1106,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_PackageDirectory" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.PackageDirectory">
   PackageDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the directory for restored packages.</p>
@@ -1138,7 +1138,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_ProjectFile" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.ProjectFile">
   ProjectFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L365"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Optional path to the project file to restore.</p>
@@ -1170,7 +1170,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_Properties" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.Properties">
   Properties
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1202,7 +1202,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_Runtime" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.Runtime">
   Runtime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the <code>&lt;RuntimeIdentifiers&gt;</code> tag in the <em>.csproj</em> file. For a list of Runtime Identifiers (RIDs), see the <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">RID catalog</a>. Provide multiple RIDs by specifying this option multiple times.</p>
@@ -1234,7 +1234,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_Sources" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.Sources">
   Sources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -1266,7 +1266,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_UseLockFile" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.UseLockFile">
   UseLockFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -1298,7 +1298,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetRestoreSettings_Verbosity" data-uid="Nuke.Common.Tools.DotNet.DotNetRestoreSettings.Verbosity">
   Verbosity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the verbosity level of the command. Allowed values are <code>q[uiet]</code>, <code>m[inimal]</code>, <code>n[ormal]</code>, <code>d[etailed]</code>, and <code>diag[nostic]</code>.</p>
@@ -1330,7 +1330,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L359" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L359" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1346,7 +1346,7 @@ public class DotNetRestoreSettings : ToolOptions, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
         </div>
       </div>
     </footer>

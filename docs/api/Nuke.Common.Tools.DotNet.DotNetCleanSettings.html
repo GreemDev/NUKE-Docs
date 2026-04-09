@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DotNetCleanSettings | gruke 10.4.0 </title>
+      <title>Class DotNetCleanSettings | gruke 10.3.1 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DotNetCleanSettings | gruke 10.4.0 ">
+      <meta name="title" content="Class DotNetCleanSettings | gruke 10.3.1 ">
       
       <meta name="description" content="The dotnet clean command cleans the output of the previous build. It&#39;s implemented as an MSBuild target, so the project is evaluated when the command is run. Only the outputs created during the build are cleaned. Both intermediate (obj) and final output (bin) folders are cleaned.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetCleanSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetCleanSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetCleanSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetCleanSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings" class="text-break">
-Class DotNetCleanSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L567"><i class="bi bi-code-slash"></i></a>
+Class DotNetCleanSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L567"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -666,7 +666,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_ArtifactsPath" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.ArtifactsPath">
   ArtifactsPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L589"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>All build output files from the executed command will go in subfolders under the specified path, separated by project. For more information see <a href="https://learn.microsoft.com/en-us/dotnet/core/sdk/artifacts-output">Artifacts Output Layout</a>. Available since .NET 8 SDK.</p>
@@ -698,7 +698,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_Configuration" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.Configuration">
   Configuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L575"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the build configuration. The default value is <code>Debug</code>. This option is only required when cleaning if you specified it during build time.</p>
@@ -730,7 +730,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_DisableBuildServers" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.DisableBuildServers">
   DisableBuildServers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L577"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Force the command to ignore any persistent build servers. This option provides a consistent way to disable all use of build caching, which forces a build from scratch. A build that doesn't rely on caches is useful when the caches might be corrupted or incorrect for some reason. Available since .NET 7 SDK.</p>
@@ -762,7 +762,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_Framework" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.Framework">
   Framework
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L579"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The <a href="https://docs.microsoft.com/en-us/dotnet/standard/frameworks">framework</a> that was specified at build time. The framework must be defined in the <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/csproj">project file</a>. If you specified the framework at build time, you must specify the framework when cleaning.</p>
@@ -794,7 +794,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_NoLogo" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.NoLogo">
   NoLogo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L587"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.</p>
@@ -826,7 +826,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_Output" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.Output">
   Output
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L581"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Directory in which the build outputs are placed. Specify the <code>--framework</code> switch with the output directory switch if you specified the framework when the project was built.</p>
@@ -858,7 +858,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_Project" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.Project">
   Project
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L573"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The MSBuild project to clean. If a project file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in <em>proj</em> and uses that file.</p>
@@ -890,7 +890,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_Properties" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.Properties">
   Properties
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L591"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L591"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>--property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -922,7 +922,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_Runtime" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.Runtime">
   Runtime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L583"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Cleans the output folder of the specified runtime. This is used when a <a href="https://docs.microsoft.com/en-us/dotnet/core/deploying/index#self-contained-deployments-scd">self-contained deployment</a> was created.</p>
@@ -954,7 +954,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetCleanSettings_Verbosity" data-uid="Nuke.Common.Tools.DotNet.DotNetCleanSettings.Verbosity">
   Verbosity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L585"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L585"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].</p>
@@ -986,7 +986,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L567" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L567" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1002,7 +1002,7 @@ public class DotNetCleanSettings : ToolOptions, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
         </div>
       </div>
     </footer>

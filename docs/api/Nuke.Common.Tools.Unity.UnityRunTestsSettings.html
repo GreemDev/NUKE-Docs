@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UnityRunTestsSettings | gruke 10.4.0 </title>
+      <title>Class UnityRunTestsSettings | gruke 10.3.1 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UnityRunTestsSettings | gruke 10.4.0 ">
+      <meta name="title" content="Class UnityRunTestsSettings | gruke 10.3.1 ">
       
       <meta name="description" content="(2019.2+) Run tests in the project using Unity Test Framework. This argument requires the projectPath, and it&#39;s good practice to run it with batchmode argument. quit is not required, because the Editor automatically closes down after the run is finished.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Unity_UnityRunTestsSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Unity.UnityRunTestsSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.1/apiSpec/new?filename=Nuke_Common_Tools_Unity_UnityRunTestsSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Unity.UnityRunTestsSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings" class="text-break">
-Class UnityRunTestsSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L196"><i class="bi bi-code-slash"></i></a>
+Class UnityRunTestsSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -734,7 +734,7 @@ public class UnityRunTestsSettings : UnityProjectOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_BatchMode" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.BatchMode">
   BatchMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run Unity in batch mode. This should always be used in conjunction with the other command line arguments, because it ensures no pop-up windows appear and eliminates the need for any human intervention. When an exception occurs during execution of the script code, the Asset server updates fail, or other operations that fail, Unity immediately exits with return code <b>1</b>.</p>
@@ -768,7 +768,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_NoGraphics" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.NoGraphics">
   NoGraphics
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When running in batch mode, do not initialize the graphics device at all. This makes it possible to run your automated workflows on machines that don't even have a GPU (automated workflows only work when you have a window in focus, otherwise you can't send simulated input commands). Please note that <code>-nographics</code> does not allow you to bake GI on OSX, since Enlighten requires GPU acceleration.</p>
@@ -800,7 +800,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_Password" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.Password">
   Password
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a password into the log-in form during activation of the Unity Editor.</p>
@@ -832,7 +832,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_Quit" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.Quit">
   Quit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Quit the Unity Editor after other commands have finished executing. Note that this can cause error messages to be hidden (however, they still appear in the Editor.log file).</p>
@@ -864,7 +864,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_Serial" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.Serial">
   Serial
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Activate Unity with the specified serial key. It is good practice to pass the <code>-batchmode</code> and <code>-quit</code> arguments as well, in order to quit Unity when done, if using this for automated activation of Unity. Please allow a few seconds before the license file is created, because Unity needs to communicate with the license server. Make sure that license file folder exists, and has appropriate permissions before running Unity with this argument. If activation fails, see the <a href="https://docs.unity3d.com/Manual/LogFiles.html">Editor.log</a> for info.</p>
@@ -896,7 +896,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_SilentCrashes" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.SilentCrashes">
   SilentCrashes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't display a crash dialog.</p>
@@ -928,7 +928,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_TestCategories" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.TestCategories">
   TestCategories
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A list of test categories to include in the run, or a regular expression pattern to match category names. If using both <code>TestFilters</code> and <code>TestCategories</code>, then only tests that match both are run. This argument supports negation using '!'. If using '!MyCategory' then no tests with the 'MyCategory' category will be included in the run.</p>
@@ -960,7 +960,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_TestFilters" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.TestFilters">
   TestFilters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A list of test names to run, or a regular expression pattern to match tests by their full name. This argument supports negation using '!'. If using the test filter '!MyNamespace.Something.MyTest', then all tests except that test will be run. It is also possible to run a specific variation of a parameterized test like so: 'ClassName.MethodName(Param1,Param2)'.</p>
@@ -992,7 +992,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_TestPlatform" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.TestPlatform">
   TestPlatform
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The platform to run tests on.</p>
@@ -1024,7 +1024,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_TestResultFile" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.TestResultFile">
   TestResultFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Path where the result file should be placed. If the path is a folder, a default file name is used. If not specified, the results are placed in the project's root folder.</p>
@@ -1056,7 +1056,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 
   <h3 id="Nuke_Common_Tools_Unity_UnityRunTestsSettings_Username" data-uid="Nuke.Common.Tools.Unity.UnityRunTestsSettings.Username">
   Username
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enter a username into the log-in form during activation of the Unity Editor.</p>
@@ -1088,7 +1088,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L196" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/10.3.1/source/Nuke.Common/Tools/Unity/Unity.Generated.cs/#L196" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1104,7 +1104,7 @@ Note that in batch mode, Unity sends a minimal version of its log output to the 
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
+          <span>The next-generation .NET build automation system.<br>10.3.1 @ <a href="https://github.com/gruke-build/src/commit/124d9e20539878e2f1131363d348363da90871c1">124d9e2</a></span>
         </div>
       </div>
     </footer>
