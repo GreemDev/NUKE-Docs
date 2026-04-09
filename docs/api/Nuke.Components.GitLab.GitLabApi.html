@@ -155,8 +155,8 @@ public static class GitLabApi</code></pre>
 
   <a id="Nuke_Components_GitLab_GitLabApi_CreateHttpClient_" data-uid="Nuke.Components.GitLab.GitLabApi.CreateHttpClient*"></a>
 
-  <h3 id="Nuke_Components_GitLab_GitLabApi_CreateHttpClient_System_String_System_String_System_Nullable_System_TimeSpan__" data-uid="Nuke.Components.GitLab.GitLabApi.CreateHttpClient(System.String,System.String,System.Nullable{System.TimeSpan})">
-  CreateHttpClient(string, string, TimeSpan?)
+  <h3 id="Nuke_Components_GitLab_GitLabApi_CreateHttpClient_System_String_System_Boolean_System_String_System_Nullable_System_TimeSpan__" data-uid="Nuke.Components.GitLab.GitLabApi.CreateHttpClient(System.String,System.Boolean,System.String,System.Nullable{System.TimeSpan})">
+  CreateHttpClient(string, bool, string, TimeSpan?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.GitLab/REST/GitLabApi.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -164,12 +164,14 @@ public static class GitLabApi</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IHttpClientProxy CreateHttpClient(string host, string accessToken, TimeSpan? timeout = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IHttpClientProxy CreateHttpClient(string host, bool useHttps, string accessToken, TimeSpan? timeout = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>host</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>useHttps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
@@ -717,7 +719,7 @@ public static Task&lt;IReadOnlyList&lt;string&gt;&gt; UploadGenericPackagesToSpe
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/a96a8f2f0108e074afdb7b14d64e8b2ca2e48acc">a96a8f2</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.3 @ <a href="https://github.com/gruke-build/src/commit/a8abbd5937fe3fd421a578d8fe7035c0f6a0d92d">a8abbd5</a></span>
         </div>
       </div>
     </footer>

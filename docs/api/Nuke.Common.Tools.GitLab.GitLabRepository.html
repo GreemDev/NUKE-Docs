@@ -394,8 +394,8 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
 
   <a id="Nuke_Common_Tools_GitLab_GitLabRepository_GetBrowseUrl_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetBrowseUrl*"></a>
 
-  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetBrowseUrl_System_String_System_String_Nuke_Common_Tools_GitLab_GitLabItemType_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetBrowseUrl(System.String,System.String,Nuke.Common.Tools.GitLab.GitLabItemType)">
-  GetBrowseUrl(string, string, GitLabItemType)
+  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetBrowseUrl_System_String_System_String_Nuke_Common_Tools_GitLab_GitLabItemType_System_Boolean_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetBrowseUrl(System.String,System.String,Nuke.Common.Tools.GitLab.GitLabItemType,System.Boolean)">
+  GetBrowseUrl(string, string, GitLabItemType, bool)
   <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitLabRepository.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -405,7 +405,7 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetBrowseUrl(string path = null, string branch = null, GitLabItemType itemType = GitLabItemType.Automatic)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetBrowseUrl(string path = null, string branch = null, GitLabItemType itemType = GitLabItemType.Automatic, bool useHttps = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -415,6 +415,8 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
     <dt><code>branch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>itemType</code> <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabItemType.html">GitLabItemType</a></dt>
+    <dd></dd>
+    <dt><code>useHttps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -436,8 +438,8 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
 
   <a id="Nuke_Common_Tools_GitLab_GitLabRepository_GetCommitUrl_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetCommitUrl*"></a>
 
-  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetCommitUrl_System_String_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetCommitUrl(System.String)">
-  GetCommitUrl(string)
+  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetCommitUrl_System_String_System_Boolean_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetCommitUrl(System.String,System.Boolean)">
+  GetCommitUrl(string, bool)
   <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitLabRepository.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -445,12 +447,14 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetCommitUrl(string commitSha)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetCommitUrl(string commitSha, bool useHttps = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>commitSha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>useHttps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -472,8 +476,8 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
 
   <a id="Nuke_Common_Tools_GitLab_GitLabRepository_GetCompareUrl_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetCompareUrl*"></a>
 
-  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetCompareUrl_System_String_System_String_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetCompareUrl(System.String,System.String)">
-  GetCompareUrl(string, string)
+  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetCompareUrl_System_String_System_String_System_Boolean_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetCompareUrl(System.String,System.String,System.Boolean)">
+  GetCompareUrl(string, string, bool)
   <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitLabRepository.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -481,7 +485,7 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetCompareUrl(string startCommitShaOrTag, string endCommitShaOrTagOrBranch)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetCompareUrl(string startCommitShaOrTag, string endCommitShaOrTagOrBranch, bool useHttps = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -489,6 +493,8 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
     <dt><code>startCommitShaOrTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>endCommitShaOrTagOrBranch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>useHttps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -510,8 +516,8 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
 
   <a id="Nuke_Common_Tools_GitLab_GitLabRepository_GetDownloadUrl_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetDownloadUrl*"></a>
 
-  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetDownloadUrl_System_String_System_String_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetDownloadUrl(System.String,System.String)">
-  GetDownloadUrl(string, string)
+  <h3 id="Nuke_Common_Tools_GitLab_GitLabRepository_GetDownloadUrl_System_String_System_String_System_Boolean_" data-uid="Nuke.Common.Tools.GitLab.GitLabRepository.GetDownloadUrl(System.String,System.String,System.Boolean)">
+  GetDownloadUrl(string, string, bool)
   <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Build/VCS/GitLabRepository.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -520,7 +526,7 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetDownloadUrl(string file, string branch = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetDownloadUrl(string file, string branch = null, bool useHttps = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -528,6 +534,8 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
     <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>branch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>useHttps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -567,7 +575,7 @@ If you are using <a class="xref" href="Nuke.Common.Tools.GitLab.GitLabRepository
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/a96a8f2f0108e074afdb7b14d64e8b2ca2e48acc">a96a8f2</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.3 @ <a href="https://github.com/gruke-build/src/commit/a8abbd5937fe3fd421a578d8fe7035c0f6a0d92d">a8abbd5</a></span>
         </div>
       </div>
     </footer>
