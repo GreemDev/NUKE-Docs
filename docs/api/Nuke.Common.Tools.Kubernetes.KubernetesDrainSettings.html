@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class KubernetesDrainSettings | gruke 10.3.0 </title>
+      <title>Class KubernetesDrainSettings | gruke 10.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class KubernetesDrainSettings | gruke 10.3.0 ">
+      <meta name="title" content="Class KubernetesDrainSettings | gruke 10.4.0 ">
       
       <meta name="description" content="Drain node in preparation for maintenance. The given node will be marked unschedulable to prevent new pods from arriving. &#39;drain&#39; evicts the pods if the APIServer supports eviction (http://kubernetes.io/docs/admin/disruptions/). Otherwise, it will use normal DELETE to delete the pods. The &#39;drain&#39; evicts or deletes all pods except mirror pods (which cannot be deleted through the API server).  If there are DaemonSet-managed pods, drain will not proceed without --ignore-daemonsets, and regardless it will not delete any DaemonSet-managed pods, because those pods would be immediately replaced by the DaemonSet controller, which ignores unschedulable markings.  If there are any pods that are neither mirror pods nor managed by ReplicationController, ReplicaSet, DaemonSet, StatefulSet or Job, then drain will not delete any pods unless you use --force.  --force will also allow deletion to proceed if the managing resource of one or more pods is missing. &#39;drain&#39; waits for graceful termination. You should not operate on the machine until the command completes. When you are ready to put the node back into service, use kubectl uncordon, which will make the node schedulable again. ! http://kubernetes.io/images/docs/kubectl_drain.svg.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.0/apiSpec/new?filename=Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings" class="text-break">
-Class KubernetesDrainSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L373"><i class="bi bi-code-slash"></i></a>
+Class KubernetesDrainSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -610,7 +610,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_DeleteLocalData" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.DeleteLocalData">
   DeleteLocalData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods using emptyDir (local data that will be deleted when the node is drained).</p>
@@ -642,7 +642,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_DryRun" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.DryRun">
   DryRun
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If true, only print the object that would be sent, without sending it.</p>
@@ -674,7 +674,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_Force" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.Force">
   Force
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Continue even if there are pods not managed by a ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet.</p>
@@ -706,7 +706,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_GracePeriod" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.GracePeriod">
   GracePeriod
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Period of time in seconds given to each pod to terminate gracefully. If negative, the default value specified in the pod will be used.</p>
@@ -738,7 +738,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_IgnoreDaemonsets" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.IgnoreDaemonsets">
   IgnoreDaemonsets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Ignore DaemonSet-managed pods.</p>
@@ -770,7 +770,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_PodSelector" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.PodSelector">
   PodSelector
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Label selector to filter pods on the node.</p>
@@ -802,7 +802,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_Selector" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.Selector">
   Selector
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Selector (label query) to filter on.</p>
@@ -834,7 +834,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 
   <h3 id="Nuke_Common_Tools_Kubernetes_KubernetesDrainSettings_Timeout" data-uid="Nuke.Common.Tools.Kubernetes.KubernetesDrainSettings.Timeout">
   Timeout
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L393"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The length of time to wait before giving up, zero means infinite.</p>
@@ -866,7 +866,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L373" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Kubernetes/Kubernetes.Generated.cs/#L373" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -882,7 +882,7 @@ public class KubernetesDrainSettings : KubernetesOptionsBase, IOptions</code></p
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0 @ <a href="https://github.com/gruke-build/src/commit/ce3651cf4f4bcd5dd12176eb77def28ed0870a81">ce3651c</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
         </div>
       </div>
     </footer>

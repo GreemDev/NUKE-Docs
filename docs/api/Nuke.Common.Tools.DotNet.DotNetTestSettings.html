@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DotNetTestSettings | gruke 10.3.0 </title>
+      <title>Class DotNetTestSettings | gruke 10.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DotNetTestSettings | gruke 10.3.0 ">
+      <meta name="title" content="Class DotNetTestSettings | gruke 10.4.0 ">
       
       <meta name="description" content="The dotnet test command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.For more details, visit the official website.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.0/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetTestSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetTestSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_DotNet_DotNetTestSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.DotNet.DotNetTestSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_DotNet_DotNetTestSettings" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings" class="text-break">
-Class DotNetTestSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L205"><i class="bi bi-code-slash"></i></a>
+Class DotNetTestSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -732,7 +732,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_ArtifactsPath" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.ArtifactsPath">
   ArtifactsPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>All build output files from the executed command will go in subfolders under the specified path, separated by project. For more information see <a href="https://learn.microsoft.com/en-us/dotnet/core/sdk/artifacts-output">Artifacts Output Layout</a>. Available since .NET 8 SDK.</p>
@@ -764,7 +764,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_BlameCrash" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.BlameCrash">
   BlameCrash
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.</p><p>For exceptions in managed code, a dump will be automatically collected on .NET 5.0 and later versions. It will generate a dump for testhost or any child process that also ran on .NET 5.0 and crashed. Crashes in native code will not generate a dump. This option works on Windows, macOS, and Linux.</p><p>Crash dumps in native code, or when using .NET Core 3.1 or earlier versions, can only be collected on Windows, by using Procdump. A directory that contains procdump.exe and procdump64.exe must be in the PATH or PROCDUMP_PATH environment variable. <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/procdump">Download the tools</a>. Implies <em>--blame</em>.</p><p>To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the <em>VSTEST_DUMP_FORCEPROCDUMP</em> environment variable to <em>1</em>.</p>
@@ -796,7 +796,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_BlameCrashCollectAlways" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.BlameCrashCollectAlways">
   BlameCrashCollectAlways
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Collects a crash dump on expected as well as unexpected test host exit.</p>
@@ -828,7 +828,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_BlameCrashDumpType" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.BlameCrashDumpType">
   BlameCrashDumpType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The type of crash dump to be collected. Implies <em>--blame-crash</em>.</p>
@@ -860,7 +860,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_BlameHang" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.BlameHang">
   BlameHang
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run the tests in blame mode and collects a hang dump when a test exceeds the given timeout.</p>
@@ -892,7 +892,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_BlameHangDumpType" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.BlameHangDumpType">
   BlameHangDumpType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The type of crash dump to be collected. It should be <em>full</em>, <em>mini</em>, or <em>none</em>. When <em>none</em> is specified, test host is terminated on timeout, but no dump is collected. Implies <em>--blame-hang</em>.</p>
@@ -924,7 +924,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_BlameHangTimeout" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.BlameHangTimeout">
   BlameHangTimeout
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:</p><p><ul><li>1.5h, 1.5hour, 1.5hours</li><li>90m, 90min, 90minute, 90minutes</li><li>5400s, 5400sec, 5400second, 5400seconds</li><li>5400000ms, 5400000mil, 5400000millisecond, 5400000milliseconds</li></ul><p>When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, on Linux with netcoreapp3.1 and later, and on macOS with net5.0 or later. Implies <em>--blame</em> and <em>--blame-hang</em>.</p>
@@ -956,7 +956,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_BlameMode" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.BlameMode">
   BlameMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Runs the tests in blame mode. This option is helpful in isolating the problematic tests causing test host to crash. It creates an output file in the current directory as <em>Sequence.xml</em> that captures the order of tests execution before the crash.</p>
@@ -988,7 +988,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Configuration" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Configuration">
   Configuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configuration under which to build. The default value is <code>Debug</code>, but your project's configuration could override this default SDK setting.</p>
@@ -1020,7 +1020,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_DataCollector" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.DataCollector">
   DataCollector
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables data collector for the test run. For more information, see <a href="https://aka.ms/vstest-collect">Monitor and analyze test run</a>.</p>
@@ -1052,7 +1052,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_DiagnosticsFile" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.DiagnosticsFile">
   DiagnosticsFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables diagnostic mode for the test platform and write diagnostic messages to the specified file.</p>
@@ -1084,7 +1084,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_DisableBuildServers" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.DisableBuildServers">
   DisableBuildServers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Force the command to ignore any persistent build servers. This option provides a consistent way to disable all use of build caching, which forces a build from scratch. A build that doesn't rely on caches is useful when the caches might be corrupted or incorrect for some reason. Available since .NET 7 SDK.</p>
@@ -1116,7 +1116,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_DisableParallel" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.DisableParallel">
   DisableParallel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disables restoring multiple projects in parallel.</p>
@@ -1148,7 +1148,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Filter" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Filter">
   Filter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Filters out tests in the current project using the given expression. For more information, see the <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test#filter-option-details">Filter option details</a> section. For additional information and examples on how to use selective unit test filtering, see <a href="https://docs.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests">Running selective unit tests</a>.</p>
@@ -1180,7 +1180,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Force" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Force">
   Force
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the <em>project.assets.json</em> file.</p>
@@ -1212,7 +1212,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_ForceEvaluate" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.ForceEvaluate">
   ForceEvaluate
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Forces restore to reevaluate all dependencies even if a lock file already exists.</p>
@@ -1244,7 +1244,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Framework" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Framework">
   Framework
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Looks for test binaries for a specific <a href="https://docs.microsoft.com/en-us/dotnet/standard/frameworks">framework</a>.</p>
@@ -1276,7 +1276,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_IgnoreFailedSources" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.IgnoreFailedSources">
   IgnoreFailedSources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L269"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only warn about failed sources if there are packages meeting the version requirement.</p>
@@ -1308,7 +1308,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_ListTests" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.ListTests">
   ListTests
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>List all of the discovered tests in the current project.</p>
@@ -1340,7 +1340,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_LockFilePath" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.LockFilePath">
   LockFilePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Output location where project lock file is written. By default, this is 'PROJECT_ROOT\packages.lock.json'.</p>
@@ -1372,7 +1372,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_LockedMode" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.LockedMode">
   LockedMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L281"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Don't allow updating project lock file.</p>
@@ -1404,7 +1404,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Loggers" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Loggers">
   Loggers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a logger for test results. Specify the parameter multiple times to enable multiple loggers.</p>
@@ -1436,7 +1436,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_NoBuild" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.NoBuild">
   NoBuild
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Does not build the test project prior to running it.</p>
@@ -1468,7 +1468,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_NoCache" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.NoCache">
   NoCache
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies to not cache packages and HTTP requests.</p>
@@ -1500,7 +1500,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_NoDependencies" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.NoDependencies">
   NoDependencies
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When restoring a project with project-to-project (P2P) references, restore the root project and not the references.</p>
@@ -1532,7 +1532,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_NoLogo" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.NoLogo">
   NoLogo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run test(s), without displaying Microsoft Testplatform banner. Available since .NET Core 3.0 SDK.</p>
@@ -1564,7 +1564,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_NoRestore" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.NoRestore">
   NoRestore
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Doesn't perform an implicit restore when running the command.</p>
@@ -1596,7 +1596,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Output" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Output">
   Output
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Directory in which to find the binaries to run.</p>
@@ -1628,7 +1628,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_PackageDirectory" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.PackageDirectory">
   PackageDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the directory for restored packages.</p>
@@ -1660,7 +1660,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_ProjectFile" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.ProjectFile">
   ProjectFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a path to the test project. If omitted, it defaults to current directory.</p>
@@ -1692,7 +1692,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Properties" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Properties">
   Properties
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set or override the specified project-level properties, where name is the property name and value is the property value. Specify each property separately, or use a semicolon or comma to separate multiple properties, as the following example shows:</p><p><code>/property:WarningLevel=2;OutDir=bin\Debug</code></p>
@@ -1724,7 +1724,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_ResultsDirectory" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.ResultsDirectory">
   ResultsDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The directory where the test results are going to be placed. The specified directory will be created if it doesn't exist.</p>
@@ -1756,7 +1756,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_RunSettings" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.RunSettings">
   RunSettings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1787,7 +1787,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Runtime" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Runtime">
   Runtime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the <code>&lt;RuntimeIdentifiers&gt;</code> tag in the <em>.csproj</em> file. For a list of Runtime Identifiers (RIDs), see the <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">RID catalog</a>. Provide multiple RIDs by specifying this option multiple times.</p>
@@ -1819,7 +1819,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_SettingsFile" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.SettingsFile">
   SettingsFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Settings to use when running tests.</p>
@@ -1851,7 +1851,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Sources" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Sources">
   Sources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the <em>NuGet.config</em> file(s). Multiple sources can be provided by specifying this option multiple times.</p>
@@ -1883,7 +1883,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_TestAdapterPath" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.TestAdapterPath">
   TestAdapterPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Use the custom test adapters from the specified path in the test run.</p>
@@ -1915,7 +1915,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_UseLockFile" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.UseLockFile">
   UseLockFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L279"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables project lock file to be generated and used with restore.</p>
@@ -1947,7 +1947,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_DotNet_DotNetTestSettings_Verbosity" data-uid="Nuke.Common.Tools.DotNet.DotNetTestSettings.Verbosity">
   Verbosity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the verbosity level of the command. Allowed values are <code>q[uiet]</code>, <code>m[inimal]</code>, <code>n[ormal]</code>, <code>d[etailed]</code>, and <code>diag[nostic]</code>.</p>
@@ -1979,7 +1979,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L205" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/DotNet/DotNet.Generated.cs/#L205" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -1995,7 +1995,7 @@ public class DotNetTestSettings : ToolOptions, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0 @ <a href="https://github.com/gruke-build/src/commit/ce3651cf4f4bcd5dd12176eb77def28ed0870a81">ce3651c</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
         </div>
       </div>
     </footer>

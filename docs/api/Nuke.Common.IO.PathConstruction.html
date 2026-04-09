@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class PathConstruction | gruke 10.3.0 </title>
+      <title>Class PathConstruction | gruke 10.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class PathConstruction | gruke 10.3.0 ">
+      <meta name="title" content="Class PathConstruction | gruke 10.4.0 ">
       
       <meta name="description" content="Provides an abstraction for generating Windows/Unix/UNC-compliant file-system paths independently of the underlying operating system. Usages should be restricted to the moment of construction, i.e., avoid using it as part of an API. Casting a string with (RelativePath) will construct any intermediate part of a path using the specific separators for the currently running operating-system. By using (WinRelativePath) and (UnixRelativePath) other separators can be used intentionally. Casting with (AbsolutePath) ensures that the path is rooted as Windows/Unix/UNC-path. The operators / and + allow to append sub-directories. Resulting paths are automatically normalized if possible. So C:\foo\..\bar\. will become C:\bar.">
       <link rel="icon" href="../images/icon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/10.3.0/apiSpec/new?filename=Nuke_Common_IO_PathConstruction.md&amp;value=---%0Auid%3A%20Nuke.Common.IO.PathConstruction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_IO_PathConstruction.md&amp;value=---%0Auid%3A%20Nuke.Common.IO.PathConstruction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_IO_PathConstruction" data-uid="Nuke.Common.IO.PathConstruction" class="text-break">
-Class PathConstruction  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L41"><i class="bi bi-code-slash"></i></a>
+Class PathConstruction  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -174,7 +174,7 @@ string absolutePath2 = (AbsolutePath) "foo" / "bar"  // Throws exception</code><
 
   <h3 id="Nuke_Common_IO_PathConstruction_Combine_System_String_System_String_System_Nullable_System_Char__" data-uid="Nuke.Common.IO.PathConstruction.Combine(System.String,System.String,System.Nullable{System.Char})">
   Combine(string, string, char?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -214,7 +214,7 @@ string absolutePath2 = (AbsolutePath) "foo" / "bar"  // Throws exception</code><
 
   <h3 id="Nuke_Common_IO_PathConstruction_Contains_Nuke_Common_IO_AbsolutePath_System_String_" data-uid="Nuke.Common.IO.PathConstruction.Contains(Nuke.Common.IO.AbsolutePath,System.String)">
   Contains(AbsolutePath, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -252,7 +252,7 @@ string absolutePath2 = (AbsolutePath) "foo" / "bar"  // Throws exception</code><
 
   <h3 id="Nuke_Common_IO_PathConstruction_GetPathRoot_System_String_" data-uid="Nuke.Common.IO.PathConstruction.GetPathRoot(System.String)">
   GetPathRoot(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -289,7 +289,7 @@ public static string GetPathRoot(string path)</code></pre>
 
   <h3 id="Nuke_Common_IO_PathConstruction_GetRelativePath_System_String_System_String_" data-uid="Nuke.Common.IO.PathConstruction.GetRelativePath(System.String,System.String)">
   GetRelativePath(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -330,7 +330,7 @@ public static string GetRelativePath(string basePath, string destinationPath)</c
 
   <h3 id="Nuke_Common_IO_PathConstruction_GetRelativePathTo_Nuke_Common_IO_AbsolutePath_System_String_" data-uid="Nuke.Common.IO.PathConstruction.GetRelativePathTo(Nuke.Common.IO.AbsolutePath,System.String)">
   GetRelativePathTo(AbsolutePath, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -368,7 +368,7 @@ public static string GetRelativePath(string basePath, string destinationPath)</c
 
   <h3 id="Nuke_Common_IO_PathConstruction_GetUnixRelativePath_System_String_System_String_" data-uid="Nuke.Common.IO.PathConstruction.GetUnixRelativePath(System.String,System.String)">
   GetUnixRelativePath(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -407,7 +407,7 @@ public static UnixRelativePath GetUnixRelativePath(string basePath, string desti
 
   <h3 id="Nuke_Common_IO_PathConstruction_GetUnixRelativePathTo_Nuke_Common_IO_AbsolutePath_System_String_" data-uid="Nuke.Common.IO.PathConstruction.GetUnixRelativePathTo(Nuke.Common.IO.AbsolutePath,System.String)">
   GetUnixRelativePathTo(AbsolutePath, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -445,7 +445,7 @@ public static UnixRelativePath GetUnixRelativePath(string basePath, string desti
 
   <h3 id="Nuke_Common_IO_PathConstruction_GetWinRelativePath_System_String_System_String_" data-uid="Nuke.Common.IO.PathConstruction.GetWinRelativePath(System.String,System.String)">
   GetWinRelativePath(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -484,7 +484,7 @@ public static WinRelativePath GetWinRelativePath(string basePath, string destina
 
   <h3 id="Nuke_Common_IO_PathConstruction_GetWinRelativePathTo_Nuke_Common_IO_AbsolutePath_System_String_" data-uid="Nuke.Common.IO.PathConstruction.GetWinRelativePathTo(Nuke.Common.IO.AbsolutePath,System.String)">
   GetWinRelativePathTo(AbsolutePath, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -522,7 +522,7 @@ public static WinRelativePath GetWinRelativePath(string basePath, string destina
 
   <h3 id="Nuke_Common_IO_PathConstruction_HasPathRoot_System_String_" data-uid="Nuke.Common.IO.PathConstruction.HasPathRoot(System.String)">
   HasPathRoot(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -558,7 +558,7 @@ public static WinRelativePath GetWinRelativePath(string basePath, string destina
 
   <h3 id="Nuke_Common_IO_PathConstruction_IsDescendantPath_System_String_System_String_" data-uid="Nuke.Common.IO.PathConstruction.IsDescendantPath(System.String,System.String)">
   IsDescendantPath(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -599,7 +599,7 @@ public static bool IsDescendantPath(string basePath, string destinationPath)</co
 
   <h3 id="Nuke_Common_IO_PathConstruction_NormalizePath_System_String_System_Nullable_System_Char__" data-uid="Nuke.Common.IO.PathConstruction.NormalizePath(System.String,System.Nullable{System.Char})">
   NormalizePath(string, char?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -637,7 +637,7 @@ public static bool IsDescendantPath(string basePath, string destinationPath)</co
 
   <h3 id="Nuke_Common_IO_PathConstruction_ToUnixRelativePath_Nuke_Common_IO_RelativePath_" data-uid="Nuke.Common.IO.PathConstruction.ToUnixRelativePath(Nuke.Common.IO.RelativePath)">
   ToUnixRelativePath(RelativePath)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -673,7 +673,7 @@ public static bool IsDescendantPath(string basePath, string destinationPath)</co
 
   <h3 id="Nuke_Common_IO_PathConstruction_ToWinRelativePath_Nuke_Common_IO_RelativePath_" data-uid="Nuke.Common.IO.PathConstruction.ToWinRelativePath(Nuke.Common.IO.RelativePath)">
   ToWinRelativePath(RelativePath)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -709,7 +709,7 @@ public static bool IsDescendantPath(string basePath, string destinationPath)</co
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/10.3.0/source/Nuke.Utilities/IO/PathConstruction.cs/#L41" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Utilities/IO/PathConstruction.cs/#L41" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -725,7 +725,7 @@ public static bool IsDescendantPath(string basePath, string destinationPath)</co
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.3.0 @ <a href="https://github.com/gruke-build/src/commit/ce3651cf4f4bcd5dd12176eb77def28ed0870a81">ce3651c</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.2 @ <a href="https://github.com/gruke-build/src/commit/d125a52f754f70c3683f9a9673f915679f8b45a0">d125a52</a></span>
         </div>
       </div>
     </footer>
