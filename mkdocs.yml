@@ -48,7 +48,6 @@ nav:
     - Installation: getting-started/installation.md
     - "Build Setup": getting-started/setup.md
     - "Build Execution": getting-started/execution.md
-    - Telemetry: getting-started/telemetry.md
   - Fundamentals:
     - Builds: fundamentals/builds.md
     - Targets: fundamentals/targets.md
@@ -56,14 +55,15 @@ nav:
     - Logging: fundamentals/logging.md
     - Assertions: fundamentals/assertions.md
   - "Common Tasks":
-    - "Constructing Paths": common/paths.md
-    - "Repository Insights": common/repository.md
-    - "Data Serialization": common/serialization.md
-    - "Versioning Artifacts": common/versioning.md
-    - "Solution & Project Model": common/solution-project-model.md
-    - "Executing CLI Tools": common/cli-tools.md
     - "Archive Compression": common/compression.md
     - "Chats & Social Media": common/chats.md
+    - "Constructing Paths": common/paths.md
+    - "Data Serialization": common/serialization.md
+    - "Executing CLI Tools": common/cli-tools.md
+    - "Repository Insights": common/repository.md
+    - "Versioning Artifacts": common/versioning.md
+    - "Solution & Project Model": common/solution-project-model.md
+
   - "Build Sharing":
     - "Global Builds": sharing/global-builds.md
     - "Build Components": sharing/build-components.md
@@ -71,11 +71,13 @@ nav:
     - AppVeyor: cicd/appveyor.md
     - "Azure Pipelines": cicd/azure-pipelines.md
     - BitBucket: cicd/bitbucket.md
+    - "Forgejo Actions": cicd/forgejo-actions.md
     - "GitHub Actions": cicd/github-actions.md
     - GitLab: cicd/gitlab.md
     - Jenkins: cicd/jenkins.md
     - "Space Automation": cicd/space-automation.md
-    - "TeamCity": cicd/teamcity.md
+    - TeamCity: cicd/teamcity.md
+    - "Woodpecker CI": cicd/woodpecker-ci.md
   - "Global Tool":
     - "Shell Completion": global-tool/shell-completion.md
     - "Adding NuGet Packages": global-tool/packages.md
