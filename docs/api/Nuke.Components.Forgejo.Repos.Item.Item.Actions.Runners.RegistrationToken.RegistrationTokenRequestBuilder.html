@@ -295,15 +295,16 @@ Class RegistrationTokenRequestBuilder  <a class="header-action link-secondary" t
 
   <h3 id="Nuke_Components_Forgejo_Repos_Item_Item_Actions_Runners_RegistrationToken_RegistrationTokenRequestBuilder_GetAsync_System_Action_Microsoft_Kiota_Abstractions_RequestConfiguration_Microsoft_Kiota_Abstractions_DefaultQueryParameters___System_Threading_CancellationToken_" data-uid="Nuke.Components.Forgejo.Repos.Item.Item.Actions.Runners.RegistrationToken.RegistrationTokenRequestBuilder.GetAsync(System.Action{Microsoft.Kiota.Abstractions.RequestConfiguration{Microsoft.Kiota.Abstractions.DefaultQueryParameters}},System.Threading.CancellationToken)">
   GetAsync(Action&lt;RequestConfiguration&lt;DefaultQueryParameters&gt;&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Repos/Item/Item/Actions/Runners/RegistrationToken/RegistrationTokenRequestBuilder.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Repos/Item/Item/Actions/Runners/RegistrationToken/RegistrationTokenRequestBuilder.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get a repository's actions runner registration token</p>
+  <div class="markdown level1 summary"><p>This operation has been deprecated in Forgejo 15. Use the web UI or <a href="#/repository/registerRepoRunner"><code>/repos/{owner}/{repo}/actions/runners</code></a> instead.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;RegistrationToken?&gt; GetAsync(Action&lt;RequestConfiguration&lt;DefaultQueryParameters&gt;&gt;? requestConfiguration = null, CancellationToken cancellationToken = default)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public Task&lt;RegistrationToken?&gt; GetAsync(Action&lt;RequestConfiguration&lt;DefaultQueryParameters&gt;&gt;? requestConfiguration = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -337,15 +338,16 @@ Class RegistrationTokenRequestBuilder  <a class="header-action link-secondary" t
 
   <h3 id="Nuke_Components_Forgejo_Repos_Item_Item_Actions_Runners_RegistrationToken_RegistrationTokenRequestBuilder_ToGetRequestInformation_System_Action_Microsoft_Kiota_Abstractions_RequestConfiguration_Microsoft_Kiota_Abstractions_DefaultQueryParameters___" data-uid="Nuke.Components.Forgejo.Repos.Item.Item.Actions.Runners.RegistrationToken.RegistrationTokenRequestBuilder.ToGetRequestInformation(System.Action{Microsoft.Kiota.Abstractions.RequestConfiguration{Microsoft.Kiota.Abstractions.DefaultQueryParameters}})">
   ToGetRequestInformation(Action&lt;RequestConfiguration&lt;DefaultQueryParameters&gt;&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Repos/Item/Item/Actions/Runners/RegistrationToken/RegistrationTokenRequestBuilder.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Repos/Item/Item/Actions/Runners/RegistrationToken/RegistrationTokenRequestBuilder.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get a repository's actions runner registration token</p>
+  <div class="markdown level1 summary"><p>This operation has been deprecated in Forgejo 15. Use the web UI or <a href="#/repository/registerRepoRunner"><code>/repos/{owner}/{repo}/actions/runners</code></a> instead.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RequestInformation ToGetRequestInformation(Action&lt;RequestConfiguration&lt;DefaultQueryParameters&gt;&gt;? requestConfiguration = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public RequestInformation ToGetRequestInformation(Action&lt;RequestConfiguration&lt;DefaultQueryParameters&gt;&gt;? requestConfiguration = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -376,7 +378,7 @@ Class RegistrationTokenRequestBuilder  <a class="header-action link-secondary" t
 
   <h3 id="Nuke_Components_Forgejo_Repos_Item_Item_Actions_Runners_RegistrationToken_RegistrationTokenRequestBuilder_WithUrl_System_String_" data-uid="Nuke.Components.Forgejo.Repos.Item.Item.Actions.Runners.RegistrationToken.RegistrationTokenRequestBuilder.WithUrl(System.String)">
   WithUrl(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Repos/Item/Item/Actions/Runners/RegistrationToken/RegistrationTokenRequestBuilder.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Components.Forgejo/generated/Repos/Item/Item/Actions/Runners/RegistrationToken/RegistrationTokenRequestBuilder.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.</p>
@@ -384,7 +386,8 @@ Class RegistrationTokenRequestBuilder  <a class="header-action link-secondary" t
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RegistrationTokenRequestBuilder WithUrl(string rawUrl)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public RegistrationTokenRequestBuilder WithUrl(string rawUrl)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -431,7 +434,7 @@ Class RegistrationTokenRequestBuilder  <a class="header-action link-secondary" t
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.16 @ <a href="https://github.com/gruke-build/src/commit/7fa29e65076d7a51737dd32bfd613a0cd8657ab4">7fa29e6</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.27 @ <a href="https://github.com/gruke-build/src/commit/8176a8941b50adf2f4b0b9022f7f3d8bbd135d92">8176a89</a></span>
         </div>
       </div>
     </footer>
