@@ -75,7 +75,38 @@
 
 <h2 id="vnext"><a href="https://github.com/gruke-build/src/compare/10.3.1...HEAD">vNext</a></h2>
 <ul>
+<li>chore: Regenerated <code>GreemDev.Nuke.Components.Forgejo</code> Kiota API client for <a href="https://forgejo.org/2026-04-release-v15-0/">Forgejo v15</a>.</li>
+<li><a href="https://github.com/gruke-build/src/pull/5">gruke-build/src#5</a>: Change ASCII art to reflect the actual project name.
+<ul>
+<li>Thanks <a href="https://github.com/ITaluone">@ITaluone</a>!</li>
+</ul>
+</li>
 <li>fix: Allow <code>http://</code> URLs for GitLab &amp; Forgejo; requires opt-in.</li>
+<li>chore: The <code>Configuration.cs</code> file generated with a new GRUKE build script from the global tool now <a href="https://github.com/gruke-build/src/commit/6a6dc2d17b620f7ac8da9f287dc3bb9c2c80d864">has readonly members</a>.</li>
+<li><a href="https://github.com/gruke-build/src/pull/8">gruke-build/src#8</a>: Added <a href="https://github.com/apps/renovate">Renovate bot</a> to update dependencies automatically.
+<ul>
+<li>Azure.Identity: <code>1.17.1</code> -&gt; <code>1.21.0</code></li>
+<li>Azure.Security.KeyVault.Keys: <code>4.8.0</code> -&gt; <code>4.10.0</code></li>
+<li>Azure.Security.KeyVault.Secrets: <code>4.8.0</code> -&gt; <code>4.11.0</code></li>
+<li>Basic.Reference.Assemblies.NetStandard20: <code>1.7.9</code> -&gt; <code>1.8.7</code></li>
+<li>coverlet.msbuild: <code>6.0.4</code> -&gt; <code>10.0.0</code></li>
+<li>HtmlAgilityPack: <code>1.11.71</code> -&gt; <code>1.12.4</code></li>
+<li>Humanizer: <code>3.0.1</code> -&gt; <code>3.0.10</code></li>
+<li>JetBrains.Annotations: <code>2025.2.2</code> -&gt; <code>2025.2.4</code></li>
+<li>Microsoft.Build.Locator: <code>1.7.8</code> -&gt; <code>1.11.2</code></li>
+<li>Microsoft.Kiota.Bundle: <code>1.22.1</code> -&gt; <code>2.0.0</code></li>
+<li>Microsoft.NET.Test.Sdk: <code>18.0.1</code> -&gt; <code>18.5.1</code></li>
+<li>NGitLab: <code>11.5.0</code> -&gt; <code>11.7.0</code></li>
+<li>NJsonSchema.NewtonsoftJson: <code>11.5.2</code> -&gt; <code>11.6.1</code></li>
+<li>NJsonSchema: <code>11.5.2</code> -&gt; <code>11.6.1</code></li>
+<li>NuGet.Frameworks: <code>6.12.1</code> -&gt; <code>6.14.3</code></li>
+<li>NuGet.Packaging: <code>6.12.1</code> -&gt; <code>6.14.3</code></li>
+<li>Scriban: <code>6.6.0</code> -&gt; <code>7.2.6</code></li>
+<li>Serilog: <code>4.3.0</code> -&gt; <code>4.3.1</code></li>
+<li>Verify.Xunit: <code>31.7.1</code> -&gt; <code>31.12.5</code></li>
+<li>YamlDotNet: <code>16.3.0</code> -&gt; <code>17.1.0</code></li>
+</ul>
+</li>
 </ul>
 <h2 id="1031--2026-04-08"><a href="https://github.com/gruke-build/src/compare/10.3.0...10.3.1">10.3.1</a> / 2026-04-08</h2>
 <ul>
@@ -137,7 +168,7 @@
 </li>
 </ul>
 </li>
-<li><p>Moved <code>GitterTasks</code> to the namespace <code>Nuke.Common.Tools.Gitter</code>.</p>
+<li><p>Removed <code>GitterTasks</code>, Gitter uses Matrix now and has an entirely different API as a result.</p>
 </li>
 <li><p><code>SetBranch</code> on <code>GitRepository</code> has been removed; use <code>GitRepository.ModifyCopy(branch: ...)</code> instead.</p>
 </li>
@@ -1583,7 +1614,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.28 @ <a href="https://github.com/gruke-build/src/commit/82744e9d8c33f4d3ee2fc66ee0f896fe4da7595a">82744e9</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.43 @ <a href="https://github.com/gruke-build/src/commit/4dff8492927233a0acfff446946e1088bbd7b00b">4dff849</a></span>
         </div>
       </div>
     </footer>
