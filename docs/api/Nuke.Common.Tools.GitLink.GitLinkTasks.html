@@ -366,7 +366,8 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; GitLink(ArgumentStringHandler arguments, string workingDirectory = null, IReadOnlyDictionary&lt;string, string&gt; environmentVariables = null, int? timeout = null, bool? logOutput = null, bool? logInvocation = null, Action&lt;OutputType, string&gt; logger = null, Func&lt;IProcess, object&gt; exitHandler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; GitLink(ArgumentStringHandler arguments, string workingDirectory = null, IReadOnlyDictionary&lt;string, string&gt; environmentVariables = null, int? timeout = null, bool? logOutput = null, bool? logInvocation = null, Action&lt;OutputType, string&gt; logger = null, Func&lt;IProcess, object&gt; exitHandler = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -409,7 +410,7 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLinkTasks_GitLink2_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_GitLink_GitLink2Settings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.GitLink.GitLinkTasks.GitLink2(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.GitLink.GitLink2Settings},System.Int32,System.Boolean)">
   GitLink2(CombinatorialConfigure&lt;GitLink2Settings&gt;, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>GitLink makes symbol servers obsolete which saves you both time with uploading source files with symbols and the user no longer has to specify custom symbol servers (such as symbolsource.org). The advantage of GitLink is that it is fully customized for Git. It also works with GitHub or BitBucket urls so it does not require a local git repository to work. This makes it perfectly usable in continuous integration servers such as Continua CI. Updating all the pdb files is very fast. A solution with over 85 projects will be handled in less than 30 seconds. When using GitLink, the user no longer has to specify symbol servers. The only requirement is to ensure the check the Enable source server support option in Visual Studio.</p><p>For more details, visit the <a href="https://github.com/GitTools/GitLink/">official website</a>.</p>
@@ -417,7 +418,8 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(GitLink2Settings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; GitLink2(CombinatorialConfigure&lt;GitLink2Settings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
+public static IEnumerable&lt;(GitLink2Settings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; GitLink2(CombinatorialConfigure&lt;GitLink2Settings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -453,7 +455,7 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLinkTasks_GitLink2_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_GitLink_GitLink2Settings__" data-uid="Nuke.Common.Tools.GitLink.GitLinkTasks.GitLink2(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.GitLink.GitLink2Settings})">
   GitLink2(Configure&lt;GitLink2Settings&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>GitLink makes symbol servers obsolete which saves you both time with uploading source files with symbols and the user no longer has to specify custom symbol servers (such as symbolsource.org). The advantage of GitLink is that it is fully customized for Git. It also works with GitHub or BitBucket urls so it does not require a local git repository to work. This makes it perfectly usable in continuous integration servers such as Continua CI. Updating all the pdb files is very fast. A solution with over 85 projects will be handled in less than 30 seconds. When using GitLink, the user no longer has to specify symbol servers. The only requirement is to ensure the check the Enable source server support option in Visual Studio.</p><p>For more details, visit the <a href="https://github.com/GitTools/GitLink/">official website</a>.</p>
@@ -461,7 +463,8 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; GitLink2(Configure&lt;GitLink2Settings&gt; configurator)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; GitLink2(Configure&lt;GitLink2Settings&gt; configurator)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -493,7 +496,7 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLinkTasks_GitLink2_Nuke_Common_Tools_GitLink_GitLink2Settings_" data-uid="Nuke.Common.Tools.GitLink.GitLinkTasks.GitLink2(Nuke.Common.Tools.GitLink.GitLink2Settings)">
   GitLink2(GitLink2Settings)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>GitLink makes symbol servers obsolete which saves you both time with uploading source files with symbols and the user no longer has to specify custom symbol servers (such as symbolsource.org). The advantage of GitLink is that it is fully customized for Git. It also works with GitHub or BitBucket urls so it does not require a local git repository to work. This makes it perfectly usable in continuous integration servers such as Continua CI. Updating all the pdb files is very fast. A solution with over 85 projects will be handled in less than 30 seconds. When using GitLink, the user no longer has to specify symbol servers. The only requirement is to ensure the check the Enable source server support option in Visual Studio.</p><p>For more details, visit the <a href="https://github.com/GitTools/GitLink/">official website</a>.</p>
@@ -501,7 +504,8 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; GitLink2(GitLink2Settings options = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; GitLink2(GitLink2Settings options = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -533,7 +537,7 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLinkTasks_GitLink3_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_GitLink_GitLink3Settings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.GitLink.GitLinkTasks.GitLink3(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.GitLink.GitLink3Settings},System.Int32,System.Boolean)">
   GitLink3(CombinatorialConfigure&lt;GitLink3Settings&gt;, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>GitLink makes symbol servers obsolete which saves you both time with uploading source files with symbols and the user no longer has to specify custom symbol servers (such as symbolsource.org). The advantage of GitLink is that it is fully customized for Git. It also works with GitHub or BitBucket urls so it does not require a local git repository to work. This makes it perfectly usable in continuous integration servers such as Continua CI. Updating all the pdb files is very fast. A solution with over 85 projects will be handled in less than 30 seconds. When using GitLink, the user no longer has to specify symbol servers. The only requirement is to ensure the check the Enable source server support option in Visual Studio.</p><p>For more details, visit the <a href="https://github.com/GitTools/GitLink/">official website</a>.</p>
@@ -541,7 +545,8 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(GitLink3Settings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; GitLink3(CombinatorialConfigure&lt;GitLink3Settings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
+public static IEnumerable&lt;(GitLink3Settings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; GitLink3(CombinatorialConfigure&lt;GitLink3Settings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -577,7 +582,7 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLinkTasks_GitLink3_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_GitLink_GitLink3Settings__" data-uid="Nuke.Common.Tools.GitLink.GitLinkTasks.GitLink3(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.GitLink.GitLink3Settings})">
   GitLink3(Configure&lt;GitLink3Settings&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>GitLink makes symbol servers obsolete which saves you both time with uploading source files with symbols and the user no longer has to specify custom symbol servers (such as symbolsource.org). The advantage of GitLink is that it is fully customized for Git. It also works with GitHub or BitBucket urls so it does not require a local git repository to work. This makes it perfectly usable in continuous integration servers such as Continua CI. Updating all the pdb files is very fast. A solution with over 85 projects will be handled in less than 30 seconds. When using GitLink, the user no longer has to specify symbol servers. The only requirement is to ensure the check the Enable source server support option in Visual Studio.</p><p>For more details, visit the <a href="https://github.com/GitTools/GitLink/">official website</a>.</p>
@@ -585,7 +590,8 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; GitLink3(Configure&lt;GitLink3Settings&gt; configurator)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; GitLink3(Configure&lt;GitLink3Settings&gt; configurator)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -617,7 +623,7 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLinkTasks_GitLink3_Nuke_Common_Tools_GitLink_GitLink3Settings_" data-uid="Nuke.Common.Tools.GitLink.GitLinkTasks.GitLink3(Nuke.Common.Tools.GitLink.GitLink3Settings)">
   GitLink3(GitLink3Settings)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>GitLink makes symbol servers obsolete which saves you both time with uploading source files with symbols and the user no longer has to specify custom symbol servers (such as symbolsource.org). The advantage of GitLink is that it is fully customized for Git. It also works with GitHub or BitBucket urls so it does not require a local git repository to work. This makes it perfectly usable in continuous integration servers such as Continua CI. Updating all the pdb files is very fast. A solution with over 85 projects will be handled in less than 30 seconds. When using GitLink, the user no longer has to specify symbol servers. The only requirement is to ensure the check the Enable source server support option in Visual Studio.</p><p>For more details, visit the <a href="https://github.com/GitTools/GitLink/">official website</a>.</p>
@@ -625,7 +631,8 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; GitLink3(GitLink3Settings options = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; GitLink3(GitLink3Settings options = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -673,7 +680,7 @@ public class GitLinkTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRequ
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.59 @ <a href="https://github.com/gruke-build/src/commit/ad1a4da8e7def6e4d0bf76803fbd4393589a0e2b">ad1a4da</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.61 @ <a href="https://github.com/gruke-build/src/commit/f017c95adbec3454446d5f1e357473f13528b1bb">f017c95</a></span>
         </div>
       </div>
     </footer>

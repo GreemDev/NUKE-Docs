@@ -366,7 +366,8 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; TestCloud(ArgumentStringHandler arguments, string workingDirectory = null, IReadOnlyDictionary&lt;string, string&gt; environmentVariables = null, int? timeout = null, bool? logOutput = null, bool? logInvocation = null, Action&lt;OutputType, string&gt; logger = null, Func&lt;IProcess, object&gt; exitHandler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Xamarin has been deprecated since May 1 2024, replaced with .NET MAUI. For more information, see the End of Support FAQ: https://github.com/dotnet/maui/discussions/21214&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; TestCloud(ArgumentStringHandler arguments, string workingDirectory = null, IReadOnlyDictionary&lt;string, string&gt; environmentVariables = null, int? timeout = null, bool? logOutput = null, bool? logInvocation = null, Action&lt;OutputType, string&gt; logger = null, Func&lt;IProcess, object&gt; exitHandler = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -409,7 +410,7 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
 
   <h3 id="Nuke_Common_Tools_TestCloud_TestCloudTasks_TestCloud_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_TestCloud_TestCloudSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.TestCloud.TestCloudTasks.TestCloud(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.TestCloud.TestCloudSettings},System.Int32,System.Boolean)">
   TestCloud(CombinatorialConfigure&lt;TestCloudSettings&gt;, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/TestCloud/TestCloud.Generated.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/TestCloud/TestCloud.Generated.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Test Cloud is a cloud based service consisting of thousands of physical mobile devices. Users upload their apps and tests to Test Cloud, which will install the apps on the devices and run the tests. When the tests are complete, Test Cloud, the results made available to users through an easy to use and informative web-based front end.</p><p>For more details, visit the <a href="https://developer.xamarin.com/guides/testcloud/">official website</a>.</p>
@@ -417,7 +418,8 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(TestCloudSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; TestCloud(CombinatorialConfigure&lt;TestCloudSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Xamarin has been deprecated since May 1 2024, replaced with .NET MAUI. For more information, see the End of Support FAQ: https://github.com/dotnet/maui/discussions/21214&quot;)]
+public static IEnumerable&lt;(TestCloudSettings Settings, IReadOnlyCollection&lt;Output&gt; Output)&gt; TestCloud(CombinatorialConfigure&lt;TestCloudSettings&gt; configurator, int degreeOfParallelism = 1, bool completeOnFailure = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -453,7 +455,7 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
 
   <h3 id="Nuke_Common_Tools_TestCloud_TestCloudTasks_TestCloud_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_TestCloud_TestCloudSettings__" data-uid="Nuke.Common.Tools.TestCloud.TestCloudTasks.TestCloud(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.TestCloud.TestCloudSettings})">
   TestCloud(Configure&lt;TestCloudSettings&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/TestCloud/TestCloud.Generated.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/TestCloud/TestCloud.Generated.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Test Cloud is a cloud based service consisting of thousands of physical mobile devices. Users upload their apps and tests to Test Cloud, which will install the apps on the devices and run the tests. When the tests are complete, Test Cloud, the results made available to users through an easy to use and informative web-based front end.</p><p>For more details, visit the <a href="https://developer.xamarin.com/guides/testcloud/">official website</a>.</p>
@@ -461,7 +463,8 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; TestCloud(Configure&lt;TestCloudSettings&gt; configurator)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Xamarin has been deprecated since May 1 2024, replaced with .NET MAUI. For more information, see the End of Support FAQ: https://github.com/dotnet/maui/discussions/21214&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; TestCloud(Configure&lt;TestCloudSettings&gt; configurator)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -493,7 +496,7 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
 
   <h3 id="Nuke_Common_Tools_TestCloud_TestCloudTasks_TestCloud_Nuke_Common_Tools_TestCloud_TestCloudSettings_" data-uid="Nuke.Common.Tools.TestCloud.TestCloudTasks.TestCloud(Nuke.Common.Tools.TestCloud.TestCloudSettings)">
   TestCloud(TestCloudSettings)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/TestCloud/TestCloud.Generated.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/TestCloud/TestCloud.Generated.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Test Cloud is a cloud based service consisting of thousands of physical mobile devices. Users upload their apps and tests to Test Cloud, which will install the apps on the devices and run the tests. When the tests are complete, Test Cloud, the results made available to users through an easy to use and informative web-based front end.</p><p>For more details, visit the <a href="https://developer.xamarin.com/guides/testcloud/">official website</a>.</p>
@@ -501,7 +504,8 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; TestCloud(TestCloudSettings options = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Xamarin has been deprecated since May 1 2024, replaced with .NET MAUI. For more information, see the End of Support FAQ: https://github.com/dotnet/maui/discussions/21214&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; TestCloud(TestCloudSettings options = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -549,7 +553,7 @@ public class TestCloudTasks : ToolTasks, IRequireNuGetPackage, IRequireTool, IRe
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.59 @ <a href="https://github.com/gruke-build/src/commit/ad1a4da8e7def6e4d0bf76803fbd4393589a0e2b">ad1a4da</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.61 @ <a href="https://github.com/gruke-build/src/commit/f017c95adbec3454446d5f1e357473f13528b1bb">f017c95</a></span>
         </div>
       </div>
     </footer>

@@ -89,7 +89,7 @@
 
 
   <h1 id="Nuke_Common_Tools_GitLink_GitLink3Settings" data-uid="Nuke.Common.Tools.GitLink.GitLink3Settings" class="text-break">
-Class GitLink3Settings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L87"><i class="bi bi-code-slash"></i></a>
+Class GitLink3Settings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,6 +103,7 @@ Class GitLink3Settings  <a class="header-action link-secondary" title="View sour
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
+[Obsolete(&quot;This project is archived. The recommended approach is to use SourceLink (https://github.com/dotnet/sourcelink), which is a great tool originally created by @ctaggart on GitHub and has been adopted by the .NET Foundation.&quot;)]
 [ExcludeFromCodeCoverage]
 public class GitLink3Settings : ToolOptions, IOptions</code></pre>
   </div>
@@ -303,7 +304,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLink3Settings_BaseDirectory" data-uid="Nuke.Common.Tools.GitLink.GitLink3Settings.BaseDirectory">
   BaseDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The path to the root of the git repo.</p>
@@ -335,7 +336,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLink3Settings_CommitSha" data-uid="Nuke.Common.Tools.GitLink.GitLink3Settings.CommitSha">
   CommitSha
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The git ref to assume all the source code belongs to.</p>
@@ -367,7 +368,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLink3Settings_Method" data-uid="Nuke.Common.Tools.GitLink.GitLink3Settings.Method">
   Method
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method for SRCSRV to retrieve source code. One of &lt;Http|Powershell&gt;. Default is Http.</p>
@@ -399,7 +400,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLink3Settings_PdbFile" data-uid="Nuke.Common.Tools.GitLink.GitLink3Settings.PdbFile">
   PdbFile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The PDB to add source indexing to.</p>
@@ -431,7 +432,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLink3Settings_RepositoryUrl" data-uid="Nuke.Common.Tools.GitLink.GitLink3Settings.RepositoryUrl">
   RepositoryUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Url to remote git repository.</p>
@@ -463,7 +464,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
 
   <h3 id="Nuke_Common_Tools_GitLink_GitLink3Settings_SkipVerification" data-uid="Nuke.Common.Tools.GitLink.GitLink3Settings.SkipVerification">
   SkipVerification
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Skip verification that all source files are available in source control.</p>
@@ -495,7 +496,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L87" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/GitLink/GitLink.Generated.cs/#L95" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -511,7 +512,7 @@ public class GitLink3Settings : ToolOptions, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.59 @ <a href="https://github.com/gruke-build/src/commit/ad1a4da8e7def6e4d0bf76803fbd4393589a0e2b">ad1a4da</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.61 @ <a href="https://github.com/gruke-build/src/commit/f017c95adbec3454446d5f1e357473f13528b1bb">f017c95</a></span>
         </div>
       </div>
     </footer>

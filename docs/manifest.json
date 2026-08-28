@@ -5778,7 +5778,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Coverlet.CoverletSettings",
-      "Summary": "<p><code>Coverlet</code> is a cross platform code coverage library for .NET Core, with support for line, branch and method coverage.The <code>dotnet test</code> command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.</p><p>For more details, visit the <a href=\"https://github.com/tonerdo/coverlet/\">official website</a>.</p>\n"
+      "Summary": "<p><code>Coverlet</code> is a cross platform code coverage library for .NET, with support for line, branch and method coverage.The <code>dotnet test</code> command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.</p><p>For more details, visit the <a href=\"https://github.com/coverlet-coverage/coverlet/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -5792,7 +5792,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Coverlet.CoverletSettingsExtensions",
-      "Summary": "<p><code>Coverlet</code> is a cross platform code coverage library for .NET Core, with support for line, branch and method coverage.The <code>dotnet test</code> command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.</p><p>For more details, visit the <a href=\"https://github.com/tonerdo/coverlet/\">official website</a>.</p>\n"
+      "Summary": "<p><code>Coverlet</code> is a cross platform code coverage library for .NET, with support for line, branch and method coverage.The <code>dotnet test</code> command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.</p><p>For more details, visit the <a href=\"https://github.com/coverlet-coverage/coverlet/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -5806,7 +5806,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Coverlet.CoverletTasks",
-      "Summary": "<p><code>Coverlet</code> is a cross platform code coverage library for .NET Core, with support for line, branch and method coverage.The <code>dotnet test</code> command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.</p><p>For more details, visit the <a href=\"https://github.com/tonerdo/coverlet/\">official website</a>.</p>\n"
+      "Summary": "<p><code>Coverlet</code> is a cross platform code coverage library for .NET, with support for line, branch and method coverage.The <code>dotnet test</code> command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.</p><p>For more details, visit the <a href=\"https://github.com/coverlet-coverage/coverlet/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18042,7 +18042,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagAspNetCoreToOpenApiSettings",
-      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18056,7 +18056,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagAspNetCoreToOpenApiSettingsExtensions",
-      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18070,7 +18070,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagAspNetCoreToSwaggerSettings",
-      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer (obsolete: use aspnetcore2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer (obsolete: use aspnetcore2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18084,7 +18084,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagAspNetCoreToSwaggerSettingsExtensions",
-      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer (obsolete: use aspnetcore2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger specification ASP.NET Core Mvc application using ApiExplorer (obsolete: use aspnetcore2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18098,7 +18098,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagCreateDocumentSettings",
-      "Summary": "<p>Creates a new nswag.json file in the current directory.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Creates a new nswag.json file in the current directory.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18112,7 +18112,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagCreateDocumentSettingsExtensions",
-      "Summary": "<p>Creates a new nswag.json file in the current directory.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Creates a new nswag.json file in the current directory.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18126,7 +18126,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagExecuteDocumentSettings",
-      "Summary": "<p>Executes an .nswag file. If 'input' is not specified then all *.nswag files and the nswag.json file is executed.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Executes an .nswag file. If 'input' is not specified then all *.nswag files and the nswag.json file is executed.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18140,7 +18140,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagExecuteDocumentSettingsExtensions",
-      "Summary": "<p>Executes an .nswag file. If 'input' is not specified then all *.nswag files and the nswag.json file is executed.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Executes an .nswag file. If 'input' is not specified then all *.nswag files and the nswag.json file is executed.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18154,7 +18154,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagJsonSchemaToCSharpSettings",
-      "Summary": "<p>Generates CSharp classes from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp classes from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18168,7 +18168,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagJsonSchemaToCSharpSettingsExtensions",
-      "Summary": "<p>Generates CSharp classes from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp classes from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18182,7 +18182,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagJsonSchemaToTypeScriptSettings",
-      "Summary": "<p>Generates TypeScript interfaces from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates TypeScript interfaces from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18196,7 +18196,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagJsonSchemaToTypeScriptSettingsExtensions",
-      "Summary": "<p>Generates TypeScript interfaces from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates TypeScript interfaces from a JSON Schema.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18210,7 +18210,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagListTypesSettings",
-      "Summary": "<p>List all types for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>List all types for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18224,7 +18224,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagListTypesSettingsExtensions",
-      "Summary": "<p>List all types for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>List all types for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18238,7 +18238,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagListWebApiControllersSettings",
-      "Summary": "<p>List all controllers classes for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>List all controllers classes for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18252,7 +18252,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagListWebApiControllersSettingsExtensions",
-      "Summary": "<p>List all controllers classes for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>List all controllers classes for the given assembly and settings.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18266,7 +18266,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagOpenApiToCSharpClientSettings",
-      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18280,7 +18280,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagOpenApiToCSharpClientSettingsExtensions",
-      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18294,7 +18294,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagOpenApiToCSharpControllerSettings",
-      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18308,7 +18308,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagOpenApiToCSharpControllerSettingsExtensions",
-      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18322,7 +18322,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagOpenApiToTypeScriptClientSettings",
-      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18336,7 +18336,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagOpenApiToTypeScriptClientSettingsExtensions",
-      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18350,7 +18350,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagSwaggerToCSharpClientSettings",
-      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification (obsolete: use openapi2csclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification (obsolete: use openapi2csclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18364,7 +18364,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagSwaggerToCSharpClientSettingsExtensions",
-      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification (obsolete: use openapi2csclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp client code from a Swagger/OpenAPI specification (obsolete: use openapi2csclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18378,7 +18378,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagSwaggerToCSharpControllerSettings",
-      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification (obsolete: use openapi2cscontroller instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification (obsolete: use openapi2cscontroller instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18392,7 +18392,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagSwaggerToCSharpControllerSettingsExtensions",
-      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification (obsolete: use openapi2cscontroller instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates CSharp Web API controller code from a Swagger/OpenAPI specification (obsolete: use openapi2cscontroller instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18406,7 +18406,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagSwaggerToTypeScriptClientSettings",
-      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification (obsolete: use openapi2tsclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification (obsolete: use openapi2tsclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18420,7 +18420,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagSwaggerToTypeScriptClientSettingsExtensions",
-      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification (obsolete: use openapi2tsclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates TypeScript client code from a Swagger/OpenAPI specification (obsolete: use openapi2tsclient instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18434,7 +18434,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagTasks",
-      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18448,7 +18448,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagTypesToOpenApiSettings",
-      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18462,7 +18462,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagTypesToOpenApiSettingsExtensions",
-      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18476,7 +18476,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagTypesToSwaggerSettings",
-      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18490,7 +18490,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagTypesToSwaggerSettingsExtensions",
-      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>The project combines the functionality of Swashbuckle (Swagger generation) and AutoRest (client generation) in one toolchain. This way a lot of incompatibilites can be avoided and features which are not well described by the Swagger specification or JSON Schema are better supported (e.g. <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Inheritance\">inheritance</a>, <a href=\"https://github.com/NJsonSchema/NJsonSchema/wiki/Enums\">enum</a> and reference handling). The NSwag project heavily uses <a href=\"http://njsonschema.org/\">NJsonSchema for .NET</a> for JSON Schema handling and C#/TypeScript class/interface generation.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18504,7 +18504,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagVersionSettings",
-      "Summary": "<p>Prints the toolchain version.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Prints the toolchain version.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18518,7 +18518,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagVersionSettingsExtensions",
-      "Summary": "<p>Prints the toolchain version.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Prints the toolchain version.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18532,7 +18532,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagWebApiToOpenApiSettings",
-      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18546,7 +18546,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagWebApiToOpenApiSettingsExtensions",
-      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly.</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly.</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18560,7 +18560,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagWebApiToSwaggerSettings",
-      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly (obsolete: use webapi2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly (obsolete: use webapi2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18574,7 +18574,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NSwag.NSwagWebApiToSwaggerSettingsExtensions",
-      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly (obsolete: use webapi2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RSuter/NSwag\">official website</a>.</p>\n"
+      "Summary": "<p>Generates a Swagger/OpenAPI specification for a controller or controlles contained in a .NET Web API assembly (obsolete: use webapi2openapi instead).</p><p>For more details, visit the <a href=\"https://github.com/RicoSuter/NSwag\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18896,7 +18896,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningCloudSettings",
-      "Summary": "<p>Communicates with the ambient cloud build to set the build number and/or other cloud build variables.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Communicates with the ambient cloud build to set the build number and/or other cloud build variables.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18910,7 +18910,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningCloudSettingsExtensions",
-      "Summary": "<p>Communicates with the ambient cloud build to set the build number and/or other cloud build variables.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Communicates with the ambient cloud build to set the build number and/or other cloud build variables.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18938,7 +18938,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningGetCommitsSettings",
-      "Summary": "<p>Gets the commit(s) that match a given version.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Gets the commit(s) that match a given version.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18952,7 +18952,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningGetCommitsSettingsExtensions",
-      "Summary": "<p>Gets the commit(s) that match a given version.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Gets the commit(s) that match a given version.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18966,7 +18966,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningGetVersionSettings",
-      "Summary": "<p>Gets the version information for a project.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Gets the version information for a project.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18980,7 +18980,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningGetVersionSettingsExtensions",
-      "Summary": "<p>Gets the version information for a project.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Gets the version information for a project.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18994,7 +18994,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningInstallSettings",
-      "Summary": "<p>Prepares a project to have version stamps applied using Nerdbank.GitVersioning.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Prepares a project to have version stamps applied using Nerdbank.GitVersioning.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19008,7 +19008,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningInstallSettingsExtensions",
-      "Summary": "<p>Prepares a project to have version stamps applied using Nerdbank.GitVersioning.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Prepares a project to have version stamps applied using Nerdbank.GitVersioning.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19022,7 +19022,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningPrepareReleaseSettings",
-      "Summary": "<p>Prepares a release by creating a release branch for the current version and adjusting the version on the current branch.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Prepares a release by creating a release branch for the current version and adjusting the version on the current branch.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19036,7 +19036,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningPrepareReleaseSettingsExtensions",
-      "Summary": "<p>Prepares a release by creating a release branch for the current version and adjusting the version on the current branch.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Prepares a release by creating a release branch for the current version and adjusting the version on the current branch.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19050,7 +19050,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningSetVersionSettings",
-      "Summary": "<p>Updates the version stamp that is applied to a project.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Updates the version stamp that is applied to a project.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19064,7 +19064,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningSetVersionSettingsExtensions",
-      "Summary": "<p>Updates the version stamp that is applied to a project.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Updates the version stamp that is applied to a project.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19078,7 +19078,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningTagSettings",
-      "Summary": "<p>Creates a git tag to mark a version.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Creates a git tag to mark a version.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19092,7 +19092,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningTagSettingsExtensions",
-      "Summary": "<p>Creates a git tag to mark a version.</p><p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>Creates a git tag to mark a version.</p><p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19106,7 +19106,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.NerdbankGitVersioning.NerdbankGitVersioningTasks",
-      "Summary": "<p>For more details, visit the <a href=\"https://github.com/AArnott/Nerdbank.GitVersioning\">official website</a>.</p>\n"
+      "Summary": "<p>For more details, visit the <a href=\"https://github.com/dotnet/Nerdbank.GitVersioning\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20030,7 +20030,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.OctoVersion.OctoVersionTasks",
-      "Summary": "<p>For more details, visit the <a href=\"https://github.com/OctopusDeploy/OctoVersion\">official website</a>.</p>\n"
+      "Summary": "<p>.NET tool for determining version number based on the Git revision graph</p><p>For more details, visit the <a href=\"https://github.com/OctopusDeploy/OctoVersion\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20366,7 +20366,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketPackSettings",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20380,7 +20380,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketPackSettingsExtensions",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20394,7 +20394,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketPushSettings",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20408,7 +20408,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketPushSettingsExtensions",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20422,7 +20422,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketRestoreSettings",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20436,7 +20436,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketRestoreSettingsExtensions",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20450,7 +20450,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketTasks",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20464,7 +20464,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketUpdateSettings",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20478,7 +20478,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Paket.PaketUpdateSettingsExtensions",
-      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/paket\">official website</a>.</p>\n"
+      "Summary": "<p>Paket is a dependency manager for .NET and mono projects, which is designed to work well with <a href=\"https://www.nuget.org/\">NuGet</a> packages and also enables referencing files directly from <a href=\"https://fsprojects.github.io/Paket/git-dependencies.html\">Git repositories</a> or any <a href=\"https://fsprojects.github.io/Paket/http-dependencies.html\">HTTP resource</a>. It enables precise and predictable control over what packages the projects within your application reference.</p><p>If you want to learn how to use Paket then read the <a href=\"https://fsprojects.github.io/Paket/getting-started.html\"><em>Getting started</em> tutorial</a> and take a look at the <a href=\"https://fsprojects.github.io/Paket/faq.html\">FAQs</a>.</p><p>If you are already using NuGet for package management in your solution then you can learn about the upgrade process in the <a href=\"https://fsprojects.github.io/Paket/getting-started.html#Automatic-NuGet-conversion\">convert from NuGet</a> section.</p><p>For more details, visit the <a href=\"https://fsprojects.github.io/Paket/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -23278,7 +23278,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.WebConfigTransformRunner.WebConfigTransformRunnerSettings",
-      "Summary": "<p>This is a commandline tool to run an ASP.Net web.config tranformation.</p><p>For more details, visit the <a href=\"https://github.com/erichexter/WebConfigTransformRunner\">official website</a>.</p>\n"
+      "Summary": "<p>This is a commandline tool to run an ASP.NET web.config transformation.</p><p>For more details, visit the <a href=\"https://github.com/erichexter/WebConfigTransformRunner\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -23292,7 +23292,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.WebConfigTransformRunner.WebConfigTransformRunnerSettingsExtensions",
-      "Summary": "<p>This is a commandline tool to run an ASP.Net web.config tranformation.</p><p>For more details, visit the <a href=\"https://github.com/erichexter/WebConfigTransformRunner\">official website</a>.</p>\n"
+      "Summary": "<p>This is a commandline tool to run an ASP.NET web.config transformation.</p><p>For more details, visit the <a href=\"https://github.com/erichexter/WebConfigTransformRunner\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -23306,7 +23306,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.WebConfigTransformRunner.WebConfigTransformRunnerTasks",
-      "Summary": "<p>This is a commandline tool to run an ASP.Net web.config tranformation.</p><p>For more details, visit the <a href=\"https://github.com/erichexter/WebConfigTransformRunner\">official website</a>.</p>\n"
+      "Summary": "<p>This is a commandline tool to run an ASP.NET web.config transformation.</p><p>For more details, visit the <a href=\"https://github.com/erichexter/WebConfigTransformRunner\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -23390,7 +23390,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Xunit.Xunit2Settings",
-      "Summary": "<p>xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing C#, F#, VB.NET and other .NET languages. xUnit.net works with ReSharper, CodeRush, TestDriven.NET and Xamarin. It is part of the <a href=\"https://www.dotnetfoundation.org/\">.NET Foundation</a>, and operates under their <a href=\"https://www.dotnetfoundation.org/code-of-conduct\">code of conduct</a>. It is licensed under <a href=\"https://opensource.org/licenses/Apache-2.0\">Apache 2</a> (an OSI approved license).</p><p>For more details, visit the <a href=\"https://xunit.github.io\">official website</a>.</p>\n"
+      "Summary": "<p>xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing C#, F#, VB.NET and other .NET languages. xUnit.net works with ReSharper, CodeRush, TestDriven.NET and Xamarin. It is part of the <a href=\"https://www.dotnetfoundation.org/\">.NET Foundation</a>, and operates under their <a href=\"https://www.dotnetfoundation.org/code-of-conduct\">code of conduct</a>. It is licensed under <a href=\"https://opensource.org/licenses/Apache-2.0\">Apache 2</a> (an OSI approved license).</p><p>For more details, visit the <a href=\"https://xunit.net/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -23404,7 +23404,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Xunit.Xunit2SettingsExtensions",
-      "Summary": "<p>xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing C#, F#, VB.NET and other .NET languages. xUnit.net works with ReSharper, CodeRush, TestDriven.NET and Xamarin. It is part of the <a href=\"https://www.dotnetfoundation.org/\">.NET Foundation</a>, and operates under their <a href=\"https://www.dotnetfoundation.org/code-of-conduct\">code of conduct</a>. It is licensed under <a href=\"https://opensource.org/licenses/Apache-2.0\">Apache 2</a> (an OSI approved license).</p><p>For more details, visit the <a href=\"https://xunit.github.io\">official website</a>.</p>\n"
+      "Summary": "<p>xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing C#, F#, VB.NET and other .NET languages. xUnit.net works with ReSharper, CodeRush, TestDriven.NET and Xamarin. It is part of the <a href=\"https://www.dotnetfoundation.org/\">.NET Foundation</a>, and operates under their <a href=\"https://www.dotnetfoundation.org/code-of-conduct\">code of conduct</a>. It is licensed under <a href=\"https://opensource.org/licenses/Apache-2.0\">Apache 2</a> (an OSI approved license).</p><p>For more details, visit the <a href=\"https://xunit.net/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -23418,7 +23418,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Xunit.XunitTasks",
-      "Summary": "<p>xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing C#, F#, VB.NET and other .NET languages. xUnit.net works with ReSharper, CodeRush, TestDriven.NET and Xamarin. It is part of the <a href=\"https://www.dotnetfoundation.org/\">.NET Foundation</a>, and operates under their <a href=\"https://www.dotnetfoundation.org/code-of-conduct\">code of conduct</a>. It is licensed under <a href=\"https://opensource.org/licenses/Apache-2.0\">Apache 2</a> (an OSI approved license).</p><p>For more details, visit the <a href=\"https://xunit.github.io\">official website</a>.</p>\n"
+      "Summary": "<p>xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing C#, F#, VB.NET and other .NET languages. xUnit.net works with ReSharper, CodeRush, TestDriven.NET and Xamarin. It is part of the <a href=\"https://www.dotnetfoundation.org/\">.NET Foundation</a>, and operates under their <a href=\"https://www.dotnetfoundation.org/code-of-conduct\">code of conduct</a>. It is licensed under <a href=\"https://opensource.org/licenses/Apache-2.0\">Apache 2</a> (an OSI approved license).</p><p>For more details, visit the <a href=\"https://xunit.net/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
