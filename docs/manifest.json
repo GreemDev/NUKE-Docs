@@ -14084,6 +14084,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleInvokeSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleInvokeSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gradle.GradleInvokeSettings",
+      "Summary": "<p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions",
+      "Summary": "<p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleTasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleTasks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gradle.GradleTasks",
+      "Summary": "<p>Gradle is the open source build system of choice for Kotlin, Java, and Android developers; offering an extensive range of DSLs to configure the build process, as well as plugins to augment various functionalities and provide new ones.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gradle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gradle",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "apimeta/Nuke.Common.Tools.Helm.HelmCompletionSettings.yml",
       "output": {
         ".html": {

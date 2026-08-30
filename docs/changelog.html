@@ -75,6 +75,19 @@
 
 <h2 id="vnext"><a href="https://github.com/gruke-build/src/compare/10.3.1...HEAD">vNext</a></h2>
 <ul>
+<li>feature: Minimal Gradle support via <code>GradleTasks</code>.
+<ul>
+<li>This wrapper is <em>intentionally</em> minimal, and is mostly meant for your GRUKE scripts to be able to build Kotlin/Java/Android projects and manipulate their artifacts.</li>
+<li>Simply call <code>GradleInvoke(_ =&gt; _.SetTask(&quot;:yourTask&quot;).SetProcessWorkingDirectory(&quot;/path/to/project&quot;))</code>, and the tool will:
+<ul>
+<li>automatically resolve the working directory's Gradle wrapper (if present), falling back to system installation;</li>
+<li>act as if you had opened a terminal at that path and ran Gradle yourself.</li>
+</ul>
+</li>
+<li>Avoid using <code>Gradle()</code>, as that does not get the working directory context to the tool path resolver.</li>
+<li>Helpful for multi-language repositories!</li>
+</ul>
+</li>
 <li>chore: Regenerated <code>GreemDev.Nuke.Components.Forgejo</code> Kiota API client for <a href="https://forgejo.org/2026-04-release-v15-0/">Forgejo v15</a>.</li>
 <li><a href="https://github.com/gruke-build/src/pull/5">gruke-build/src#5</a>: Change ASCII art to reflect the actual project name.
 <ul>
@@ -1617,7 +1630,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.63 @ <a href="https://github.com/gruke-build/src/commit/266c4b6d9791122575827d2bfb87b9ca5274b5a6">266c4b6</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.64 @ <a href="https://github.com/gruke-build/src/commit/1680722c475838abe0630c629f5ea4f10a8252a2">1680722</a></span>
         </div>
       </div>
     </footer>
