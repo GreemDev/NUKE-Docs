@@ -75,7 +75,31 @@
 
 <h2 id="vnext"><a href="https://github.com/gruke-build/src/compare/10.3.1...HEAD">vNext</a></h2>
 <ul>
-<li>feature: Minimal Gradle support via <code>GradleTasks</code>.
+<li><p><strong>BREAKING CHANGES</strong>:</p>
+<ul>
+<li>Add <code>&lt;DisableMSBuildAssemblyCopyCheck&gt;true&lt;/DisableMSBuildAssemblyCopyCheck&gt;</code> to your GRUKE build script's <code>.csproj</code> file.</li>
+<li>Not adding this to your project file results in:
+<ul>
+<li><code>&lt;nuget cache dir&gt;/packages/microsoft.build.locator/1.11.2/buildTransitive/Microsoft.Build.Locator.targets(19,5): error MSBL001: A PackageReference to the package 'NuGet.Frameworks' at version '6.14.3' is present in this project without ExcludeAssets=&quot;runtime&quot; and PrivateAssets=&quot;all&quot; set. This can cause errors at run-time due to MSBuild assembly-loading.</code></li>
+<li>We want these assemblies, so the fix is to disable the check, unfortunately.</li>
+<li>This has also been added to the Global Tool's new project template.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Fixes</strong></p>
+<ul>
+<li>fix: Allow <code>http://</code> URLs for GitLab &amp; Forgejo; requires opt-in.</li>
+<li><a href="https://github.com/gruke-build/src/pull/5">gruke-build/src#5</a>: Change ASCII art to reflect the actual project name.
+<ul>
+<li>Thanks <a href="https://github.com/ITaluone">@ITaluone</a>!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>New Features</strong></p>
+<ul>
+<li>feature: Minimal Gradle support via <a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.Tools.Gradle.GradleTasks.html"><code>GradleTasks</code></a>.
 <ul>
 <li>This wrapper is <em>intentionally</em> minimal, and is mostly meant for your GRUKE scripts to be able to build Kotlin/Java/Android projects and manipulate their artifacts.</li>
 <li>Simply call <code>GradleInvoke(_ =&gt; _.SetTask(&quot;:yourTask&quot;).SetProcessWorkingDirectory(&quot;/path/to/project&quot;))</code>, and the tool will:
@@ -84,17 +108,15 @@
 <li>act as if you had opened a terminal at that path and ran Gradle yourself.</li>
 </ul>
 </li>
-<li>Avoid using <code>Gradle()</code>, as that does not get the working directory context to the tool path resolver.</li>
+<li>Avoid using <code>Gradle()</code>, as the tool path resolver <strong>does not get working directory context</strong> when using that.</li>
 <li>Helpful for multi-language repositories!</li>
 </ul>
 </li>
-<li>chore: Regenerated <code>GreemDev.Nuke.Components.Forgejo</code> Kiota API client for <a href="https://forgejo.org/2026-04-release-v15-0/">Forgejo v15</a>.</li>
-<li><a href="https://github.com/gruke-build/src/pull/5">gruke-build/src#5</a>: Change ASCII art to reflect the actual project name.
-<ul>
-<li>Thanks <a href="https://github.com/ITaluone">@ITaluone</a>!</li>
 </ul>
 </li>
-<li>fix: Allow <code>http://</code> URLs for GitLab &amp; Forgejo; requires opt-in.</li>
+<li><p><strong>Project Maintenance</strong></p>
+<ul>
+<li>chore: Regenerated <code>GreemDev.Nuke.Components.Forgejo</code> Kiota API client for <a href="https://forgejo.org/2026-04-release-v15-0/">Forgejo v15</a>.</li>
 <li>chore: The <code>Configuration.cs</code> file generated with a new GRUKE build script from the global tool now <a href="https://github.com/gruke-build/src/commit/6a6dc2d17b620f7ac8da9f287dc3bb9c2c80d864">has readonly members</a>.</li>
 <li><a href="https://github.com/gruke-build/src/pull/8">gruke-build/src#8</a>: Added <a href="https://github.com/apps/renovate">Renovate bot</a> to update dependencies automatically.
 <ul>
@@ -121,6 +143,8 @@
 <li>Verify.Xunit: <code>31.7.1</code> -&gt; <code>31.12.5</code></li>
 <li>xunit.runner.visualstudio: <code>3.1.5</code> -&gt; <code>4.0.0</code></li>
 <li>YamlDotNet: <code>16.3.0</code> -&gt; <code>18.1.0</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1630,7 +1654,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.65 @ <a href="https://github.com/gruke-build/src/commit/3b8207cdac7e0b816434197ceea4be7a914b508d">3b8207c</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.67 @ <a href="https://github.com/gruke-build/src/commit/150a73872e03ea4535ade9700e82439ec0225176">150a738</a></span>
         </div>
       </div>
     </footer>
