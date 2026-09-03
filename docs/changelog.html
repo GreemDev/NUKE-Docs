@@ -80,11 +80,14 @@
 <li>Add <code>&lt;DisableMSBuildAssemblyCopyCheck&gt;true&lt;/DisableMSBuildAssemblyCopyCheck&gt;</code> to your GRUKE build script's <code>.csproj</code> file.</li>
 <li>Not adding this to your project file results in:
 <ul>
-<li><code>&lt;nuget cache dir&gt;/packages/microsoft.build.locator/1.11.2/buildTransitive/Microsoft.Build.Locator.targets(19,5): error MSBL001: A PackageReference to the package 'NuGet.Frameworks' at version '6.14.3' is present in this project without ExcludeAssets=&quot;runtime&quot; and PrivateAssets=&quot;all&quot; set. This can cause errors at run-time due to MSBuild assembly-loading.</code></li>
+<li><code>&lt;nuget cache dir&gt;/packages/microsoft.build.locator/1.11.2/buildTransitive/Microsoft.Build.Locator.targets(19,5): error MSBL001: A PackageReference to the package 'NuGet.Frameworks' at version '6.14.3' is present in this project without ExcludeAssets=&quot;runtime&quot; and PrivateAssets=&quot;all&quot; set. This can cause errors at run-time due to MSBuild assembly-loading.</code>
+<ul>
 <li>We want these assemblies, so the fix is to disable the check, unfortunately.</li>
-<li>This has also been added to the Global Tool's new project template.</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>This has been added to the Global Tool's new project template, as well as the project updater command.</li>
 </ul>
 </li>
 <li><p><strong>Fixes</strong></p>
@@ -93,6 +96,13 @@
 <li><a href="https://github.com/gruke-build/src/pull/5">gruke-build/src#5</a>: Change ASCII art to reflect the actual project name.
 <ul>
 <li>Thanks <a href="https://github.com/ITaluone">@ITaluone</a>!</li>
+</ul>
+</li>
+<li>fix: Restored Latest/Latest Prerelease Global Tool behavior for creating a new project.
+<ul>
+<li>Previously, the pre-release version checker was checking nuget.org's API for our pre-release packages. Our pre-releases are on GitLab.</li>
+<li>Additionally, it was using the outdated package ID <code>GreemDev.Nuke.Common</code>, which is now <code>GreemDev.Nuke</code> to package consumers.</li>
+<li>This functionality has been restored, and you can create a project using the full feature-set of the global tool once again!</li>
 </ul>
 </li>
 </ul>
@@ -1654,7 +1664,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.67 @ <a href="https://github.com/gruke-build/src/commit/150a73872e03ea4535ade9700e82439ec0225176">150a738</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.70 @ <a href="https://github.com/gruke-build/src/commit/fb6688512db6c847d434de1035924d3152b4eb73">fb66885</a></span>
         </div>
       </div>
     </footer>
