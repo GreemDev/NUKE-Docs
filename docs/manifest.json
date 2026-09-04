@@ -14084,30 +14084,72 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleInvokeSettings.yml",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleConsoleOutput.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleInvokeSettings.html"
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleConsoleOutput.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Nuke.Common.Tools.Gradle.GradleInvokeSettings",
+      "Title": "Nuke.Common.Tools.Gradle.GradleConsoleOutput",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Gradle.GradleConsoleOutput.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Gradle.GradleTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleConsoleUnicode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleConsoleUnicode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gradle.GradleConsoleUnicode",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Gradle.GradleConsoleUnicode.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Gradle.GradleTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradlePriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradlePriority.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gradle.GradlePriority",
+      "Summary": "<p sourcefile=\"apimeta/Nuke.Common.Tools.Gradle.GradlePriority.yml\" sourcestartlinenumber=\"1\">Used within <xref href=\"Nuke.Common.Tools.Gradle.GradleTasks\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Nuke.Common.Tools.Gradle.GradleSettings",
       "Summary": "<p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions.yml",
+      "source_relative_path": "apimeta/Nuke.Common.Tools.Gradle.GradleSettingsExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions.html"
+          "relative_path": "api/Nuke.Common.Tools.Gradle.GradleSettingsExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions",
+      "Title": "Nuke.Common.Tools.Gradle.GradleSettingsExtensions",
       "Summary": "<p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
     },
     {
@@ -39342,11 +39384,11 @@
       "type": "Toc",
       "source_relative_path": "apimeta/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "api/toc.json"
-        },
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -39375,11 +39417,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

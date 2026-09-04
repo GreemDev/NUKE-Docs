@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class GradleInvokeSettings | gruke 10.4.0 </title>
+      <title>Class GradlePriority | gruke 10.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GradleInvokeSettings | gruke 10.4.0 ">
+      <meta name="title" content="Class GradlePriority | gruke 10.4.0 ">
       
-      <meta name="description" content="Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.For more details, visit the official website.">
+      <meta name="description" content="Used within .">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Gradle_GradleInvokeSettings.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Gradle.GradleInvokeSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Gradle_GradlePriority.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Gradle.GradlePriority%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nuke.Common.Tools.Gradle.GradleInvokeSettings">
+        <article data-uid="Nuke.Common.Tools.Gradle.GradlePriority">
 
 
 
-  <h1 id="Nuke_Common_Tools_Gradle_GradleInvokeSettings" data-uid="Nuke.Common.Tools.Gradle.GradleInvokeSettings" class="text-break">
-Class GradleInvokeSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Nuke_Common_Tools_Gradle_GradlePriority" data-uid="Nuke.Common.Tools.Gradle.GradlePriority" class="text-break">
+Class GradlePriority  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,14 +97,16 @@ Class GradleInvokeSettings  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href="https://docs.gradle.org/">official website</a>.</p>
+  <div class="markdown summary"><p>Used within <a class="xref" href="Nuke.Common.Tools.Gradle.GradleTasks.html">GradleTasks</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
+[Serializable]
 [ExcludeFromCodeCoverage]
-public class GradleInvokeSettings : ToolOptions, IOptions</code></pre>
+[TypeConverter(typeof(Enumeration.TypeConverter&lt;GradlePriority&gt;))]
+public class GradlePriority : Enumeration</code></pre>
   </div>
 
 
@@ -114,67 +116,33 @@ public class GradleInvokeSettings : ToolOptions, IOptions</code></pre>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Nuke.Common.Tooling.Options.html">Options</a></div>
-      <div><a class="xref" href="Nuke.Common.Tooling.ToolOptions.html">ToolOptions</a></div>
-      <div><span class="xref">GradleInvokeSettings</span></div>
+      <div><a class="xref" href="Nuke.Common.Tooling.Enumeration.html">Enumeration</a></div>
+      <div><span class="xref">GradlePriority</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="Nuke.Common.Tooling.IOptions.html">IOptions</a></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessToolPath">ToolOptions.ProcessToolPath</a>
+      <a class="xref" href="Nuke.Common.Tooling.Enumeration.html#Nuke_Common_Tooling_Enumeration_Value">Enumeration.Value</a>
     </div>
     <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessWorkingDirectory">ToolOptions.ProcessWorkingDirectory</a>
+      <a class="xref" href="Nuke.Common.Tooling.Enumeration.html#Nuke_Common_Tooling_Enumeration_Equals_Nuke_Common_Tooling_Enumeration_">Enumeration.Equals(Enumeration)</a>
     </div>
     <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessEnvironmentVariables">ToolOptions.ProcessEnvironmentVariables</a>
+      <a class="xref" href="Nuke.Common.Tooling.Enumeration.html#Nuke_Common_Tooling_Enumeration_Equals_System_Object_">Enumeration.Equals(object)</a>
     </div>
     <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessExecutionTimeout">ToolOptions.ProcessExecutionTimeout</a>
+      <a class="xref" href="Nuke.Common.Tooling.Enumeration.html#Nuke_Common_Tooling_Enumeration_GetHashCode">Enumeration.GetHashCode()</a>
     </div>
     <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessOutputLogging">ToolOptions.ProcessOutputLogging</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessInvocationLogging">ToolOptions.ProcessInvocationLogging</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessExitHandling">ToolOptions.ProcessExitHandling</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessRedactedSecrets">ToolOptions.ProcessRedactedSecrets</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Tooling.ToolOptions.html#Nuke_Common_Tooling_ToolOptions_ProcessAdditionalArguments">ToolOptions.ProcessAdditionalArguments</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Tooling.Options.html#Nuke_Common_Tooling_Options_InternalOptions">Options.InternalOptions</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Tooling.Options.html#Nuke_Common_Tooling_Options_Set__1_System_Linq_Expressions_Expression_System_Func___0___System_Object_">Options.Set&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nuke.Common.Tooling.Options.html#Nuke_Common_Tooling_Options_Get__1_System_Linq_Expressions_Expression_System_Func_System_Object___">Options.Get&lt;T&gt;(Expression&lt;Func&lt;object&gt;&gt;)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+      <a class="xref" href="Nuke.Common.Tooling.Enumeration.html#Nuke_Common_Tooling_Enumeration_ToString">Enumeration.ToString()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -185,9 +153,6 @@ public class GradleInvokeSettings : ToolOptions, IOptions</code></pre>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -195,12 +160,6 @@ public class GradleInvokeSettings : ToolOptions, IOptions</code></pre>
     <dd>
   <div>
       <a class="xref" href="Nuke.Common.Assert.html#Nuke_Common_Assert_NotNull__1___0_System_String_System_String_">Assert.NotNull&lt;T&gt;(T, string, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions.html#Nuke_Common_Tools_Gradle_GradleInvokeSettingsExtensions_ResetTask__1___0_">GradleInvokeSettingsExtensions.ResetTask&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="Nuke.Common.Tools.Gradle.GradleInvokeSettingsExtensions.html#Nuke_Common_Tools_Gradle_GradleInvokeSettingsExtensions_SetTask__1___0_System_String_">GradleInvokeSettingsExtensions.SetTask&lt;T&gt;(T, string)</a>
   </div>
   <div>
       <a class="xref" href="Nuke.Common.Utilities.Collections.EnumerableExtensions.html#Nuke_Common_Utilities_Collections_EnumerableExtensions_Concat__1___0_System_Collections_Generic_IEnumerable___0__">EnumerableExtensions.Concat&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
@@ -251,38 +210,104 @@ public class GradleInvokeSettings : ToolOptions, IOptions</code></pre>
 
 
 
-  <h2 id="Nuke_Common_Tools_Gradle_GradleInvokeSettings_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;task&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleInvokeSettings.html#Nuke_Common_Tools_Gradle_GradleInvokeSettings_Task">Task</a></li></ul>
-</div>
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="fields">Fields
 </h2>
 
 
-  <a id="Nuke_Common_Tools_Gradle_GradleInvokeSettings_Task_" data-uid="Nuke.Common.Tools.Gradle.GradleInvokeSettings.Task*"></a>
 
-  <h3 id="Nuke_Common_Tools_Gradle_GradleInvokeSettings_Task" data-uid="Nuke.Common.Tools.Gradle.GradleInvokeSettings.Task">
-  Task
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Nuke_Common_Tools_Gradle_GradlePriority_low" data-uid="Nuke.Common.Tools.Gradle.GradlePriority.low">
+  low
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Task { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly GradlePriority low</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="Nuke.Common.Tools.Gradle.GradlePriority.html">GradlePriority</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradlePriority_normal" data-uid="Nuke.Common.Tools.Gradle.GradlePriority.normal">
+  normal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly GradlePriority normal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Tools.Gradle.GradlePriority.html">GradlePriority</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradlePriority_op_Implicit_" data-uid="Nuke.Common.Tools.Gradle.GradlePriority.op_Implicit*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradlePriority_op_Implicit_System_String__Nuke_Common_Tools_Gradle_GradlePriority" data-uid="Nuke.Common.Tools.Gradle.GradlePriority.op_Implicit(System.String)~Nuke.Common.Tools.Gradle.GradlePriority">
+  implicit operator GradlePriority(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator GradlePriority(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nuke.Common.Tools.Gradle.GradlePriority.html">GradlePriority</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
 
 
 
@@ -295,7 +320,7 @@ public class GradleInvokeSettings : ToolOptions, IOptions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L42" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L432" class="edit-link">Edit this page</a>
         </div>
 
 
@@ -311,7 +336,7 @@ public class GradleInvokeSettings : ToolOptions, IOptions</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.70 @ <a href="https://github.com/gruke-build/src/commit/fb6688512db6c847d434de1035924d3152b4eb73">fb66885</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.71 @ <a href="https://github.com/gruke-build/src/commit/41ce609e5ce7f5718e567d40fc3f6cd1404ecd3b">41ce609</a></span>
         </div>
       </div>
     </footer>

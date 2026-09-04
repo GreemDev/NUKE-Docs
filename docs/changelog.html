@@ -109,16 +109,15 @@
 </li>
 <li><p><strong>New Features</strong></p>
 <ul>
-<li>feature: Minimal Gradle support via <a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.Tools.Gradle.GradleTasks.html"><code>GradleTasks</code></a>.
+<li>feature: Mostly complete <a href="https://docs.gradle.org/current/userguide/command_line_interface.html">Gradle CLI</a> support via <a href="https://nuke.greemdev.net/docfx/api/Nuke.Common.Tools.Gradle.GradleTasks.html"><code>GradleTasks</code></a>.
 <ul>
-<li>This wrapper is <em>intentionally</em> minimal, and is mostly meant for your GRUKE scripts to be able to build Kotlin/Java/Android projects and manipulate their artifacts.</li>
-<li>Simply call <code>GradleInvoke(_ =&gt; _.SetTask(&quot;:yourTask&quot;).SetProcessWorkingDirectory(&quot;/path/to/project&quot;))</code>, and the tool will:
+<li>Simply call <code>Gradle(_ =&gt; _.SetTask(&quot;:yourTask&quot;).SetProcessWorkingDirectory(&quot;/path/to/project&quot;))</code>, and the tool will:
 <ul>
 <li>automatically resolve the working directory's Gradle wrapper (if present), falling back to system installation;</li>
 <li>act as if you had opened a terminal at that path and ran Gradle yourself.</li>
 </ul>
 </li>
-<li>Avoid using <code>Gradle()</code>, as the tool path resolver <strong>does not get working directory context</strong> when using that.</li>
+<li>Avoid using <code>Gradle()</code> (the one with a lot of arguments), as the tool path resolver <strong>does not get working directory context</strong> when using that.</li>
 <li>Helpful for multi-language repositories!</li>
 </ul>
 </li>
@@ -1664,7 +1663,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.70 @ <a href="https://github.com/gruke-build/src/commit/fb6688512db6c847d434de1035924d3152b4eb73">fb66885</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.71 @ <a href="https://github.com/gruke-build/src/commit/41ce609e5ce7f5718e567d40fc3f6cd1404ecd3b">41ce609</a></span>
         </div>
       </div>
     </footer>

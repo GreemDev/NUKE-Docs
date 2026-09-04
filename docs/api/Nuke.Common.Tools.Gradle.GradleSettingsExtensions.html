@@ -1,0 +1,3123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GradleSettingsExtensions | gruke 10.4.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GradleSettingsExtensions | gruke 10.4.0 ">
+      
+      <meta name="description" content="Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.For more details, visit the official website.">
+      <link rel="icon" href="../images/icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gruke-build/src/new/develop/apiSpec/new?filename=Nuke_Common_Tools_Gradle_GradleSettingsExtensions.md&amp;value=---%0Auid%3A%20Nuke.Common.Tools.Gradle.GradleSettingsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-tiny.png" alt="gruke">
+            gruke
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions">
+
+
+
+  <h1 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions" class="text-break">
+Class GradleSettingsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nuke.html">Nuke</a>.<a class="xref" href="Nuke.Common.html">Common</a>.<a class="xref" href="Nuke.Common.Tools.html">Tools</a>.<a class="xref" href="Nuke.Common.Tools.Gradle.html">Gradle</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Nuke.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href="https://docs.gradle.org/">official website</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[ExcludeFromCodeCoverage]
+public static class GradleSettingsExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GradleSettingsExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This is a <a href="https://nuke.greemdev.net/release/common/cli-tools/#fluent-api">CLI wrapper with fluent API</a> that allows to modify the following arguments:</p><ul><li><code>&lt;task&gt;</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_Task">Task</a></li><li><code>--build-cache</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_BuildCache">BuildCache</a></li><li><code>--configuration-cache</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ConfigurationCache">ConfigurationCache</a></li><li><code>--configure-on-demand</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ConfigureOnDemand">ConfigureOnDemand</a></li><li><code>--console</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_Console">Console</a></li><li><code>--console-unicode</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ConsoleUnicode">ConsoleUnicode</a></li><li><code>--continue</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ContinueOnTaskFailure">ContinueOnTaskFailure</a></li><li><code>--daemon</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_Daemon">Daemon</a></li><li><code>--debug</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_DebugLogging">DebugLogging</a></li><li><code>--dry-run</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_DryRun">DryRun</a></li><li><code>--exclude-task</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ExcludedTasks">ExcludedTasks</a></li><li><code>--foreground</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ForegroundDaemon">ForegroundDaemon</a></li><li><code>--gradle-user-home</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_GradleUserHome">GradleUserHome</a></li><li><code>--include-build</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_IncludeBuild">IncludeBuild</a></li><li><code>--info</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_InfoLogging">InfoLogging</a></li><li><code>--init-script</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_InitScript">InitScript</a></li><li><code>--isolated-projects</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_IsolatedProjects">IsolatedProjects</a></li><li><code>--max-workers</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_MaxWorkers">MaxWorkers</a></li><li><code>--no-build-cache</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoBuildCache">NoBuildCache</a></li><li><code>--no-configuration-cache</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoConfigurationCache">NoConfigurationCache</a></li><li><code>--no-configure-on-demand</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoConfigureOnDemand">NoConfigureOnDemand</a></li><li><code>--no-continue</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoContinueOnTaskFailure">NoContinueOnTaskFailure</a></li><li><code>--no-daemon</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoDaemon">NoDaemon</a></li><li><code>--no-isolated-projects</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoIsolatedProjects">NoIsolatedProjects</a></li><li><code>--no-parallel</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoParallel">NoParallel</a></li><li><code>--no-rebuild</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoRebuildDependencies">NoRebuildDependencies</a></li><li><code>--no-watch-fs</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NoWatchFileSystem">NoWatchFileSystem</a></li><li><code>--non-interactive</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_NonInteractive">NonInteractive</a></li><li><code>--offline</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_Offline">Offline</a></li><li><code>--parallel</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_Parallel">Parallel</a></li><li><code>--priority</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_Priority">Priority</a></li><li><code>--project-cache-dir</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ProjectCacheDir">ProjectCacheDir</a></li><li><code>--project-dir</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ProjectDir">ProjectDir</a></li><li><code>--project-prop</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_ProjectProperties">ProjectProperties</a></li><li><code>--quiet</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_MinimalLogging">MinimalLogging</a></li><li><code>--refresh-dependencies</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_RefreshDependencies">RefreshDependencies</a></li><li><code>--rerun-tasks</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_RerunTasks">RerunTasks</a></li><li><code>--stop</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_StopDaemon">StopDaemon</a></li><li><code>--system-prop</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_SystemProperties">SystemProperties</a></li><li><code>--warn</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_WarnLogging">WarnLogging</a></li><li><code>--warn</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_Stacktrace">Stacktrace</a></li><li><code>--warn</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_FullStacktrace">FullStacktrace</a></li><li><code>--watch-fs</code> via <a class="xref" href="Nuke.Common.Tools.Gradle.GradleSettings.html#Nuke_Common_Tools_Gradle_GradleSettings_WatchFileSystem">WatchFileSystem</a></li></ul>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddExcludedTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddExcludedTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddExcludedTasks__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddExcludedTasks``1(``0,System.Collections.Generic.IEnumerable{System.String})">
+  AddExcludedTasks&lt;T&gt;(T, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies a task to exclude from execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T AddExcludedTasks&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddExcludedTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddExcludedTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddExcludedTasks__1___0_System_String___" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddExcludedTasks``1(``0,System.String[])">
+  AddExcludedTasks&lt;T&gt;(T, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies a task to exclude from execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T AddExcludedTasks&lt;T&gt;(this T o, params string[] v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddProjectProperty_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddProjectProperty*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddProjectProperty__1___0_System_String_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddProjectProperty``1(``0,System.String,System.String)">
+  AddProjectProperty&lt;T&gt;(T, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The property values to pass to the Gradle invocation, for access within the build script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T AddProjectProperty&lt;T&gt;(this T o, string k, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddSystemProperty_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddSystemProperty*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_AddSystemProperty__1___0_System_String_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.AddSystemProperty``1(``0,System.String,System.String)">
+  AddSystemProperty&lt;T&gt;(T, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The JVM system properties to invoke Gradle with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T AddSystemProperty&lt;T&gt;(this T o, string k, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ClearExcludedTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ClearExcludedTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ClearExcludedTasks__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ClearExcludedTasks``1(``0)">
+  ClearExcludedTasks&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies a task to exclude from execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ClearExcludedTasks&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ClearProjectProperties_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ClearProjectProperties*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ClearProjectProperties__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ClearProjectProperties``1(``0)">
+  ClearProjectProperties&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The property values to pass to the Gradle invocation, for access within the build script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ClearProjectProperties&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ClearSystemProperties_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ClearSystemProperties*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ClearSystemProperties__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ClearSystemProperties``1(``0)">
+  ClearSystemProperties&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The JVM system properties to invoke Gradle with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ClearSystemProperties&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ContinueOnTaskFailure_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ContinueOnTaskFailure*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ContinueOnTaskFailure__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ContinueOnTaskFailure``1(``0)">
+  ContinueOnTaskFailure&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Continues task execution after a task failure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ContinueOnTaskFailure&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_DebugLogging_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.DebugLogging*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_DebugLogging__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.DebugLogging``1(``0)">
+  DebugLogging&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets log level to debug. Includes the normal stacktrace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T DebugLogging&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_DryRun_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.DryRun*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_DryRun__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.DryRun``1(``0)">
+  DryRun&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs the build with all task actions disabled. Use this to show which task(s) would have executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T DryRun&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ForegroundDaemon_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ForegroundDaemon*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ForegroundDaemon__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ForegroundDaemon``1(``0)">
+  ForegroundDaemon&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the Gradle daemon in the foreground.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ForegroundDaemon&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_InfoLogging_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.InfoLogging*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_InfoLogging__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.InfoLogging``1(``0)">
+  InfoLogging&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the log level to info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T InfoLogging&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_MinimalLogging_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.MinimalLogging*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_MinimalLogging__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.MinimalLogging``1(``0)">
+  MinimalLogging&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs errors only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T MinimalLogging&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoBuildCache_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoBuildCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoBuildCache__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoBuildCache``1(``0)">
+  NoBuildCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables the Gradle build cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoBuildCache&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoConfigurationCache_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoConfigurationCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoConfigurationCache__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoConfigurationCache``1(``0)">
+  NoConfigurationCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables the Gradle configuration cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoConfigurationCache&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoConfigureOnDemand_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoConfigureOnDemand*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoConfigureOnDemand__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoConfigureOnDemand``1(``0)">
+  NoConfigureOnDemand&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables the use of configuration on demand. [<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Incubating.html">incubating</a>]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoConfigureOnDemand&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoContinueOnTaskFailure_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoContinueOnTaskFailure*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoContinueOnTaskFailure__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoContinueOnTaskFailure``1(``0)">
+  NoContinueOnTaskFailure&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops task execution after a task failure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoContinueOnTaskFailure&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoDaemon_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoDaemon*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoDaemon__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoDaemon``1(``0)">
+  NoDaemon&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs the build without the Gradle daemon. Useful occasionally if you have configured Gradle to always run with the daemon by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoDaemon&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoIsolatedProjects_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoIsolatedProjects*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoIsolatedProjects__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoIsolatedProjects``1(``0)">
+  NoIsolatedProjects&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables Isolated Projects. [<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Incubating.html">incubating</a>]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoIsolatedProjects&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoParallel_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoParallel*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoParallel__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoParallel``1(``0)">
+  NoParallel&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables parallel project execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoParallel&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoRebuildDependencies_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoRebuildDependencies*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoRebuildDependencies__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoRebuildDependencies``1(``0)">
+  NoRebuildDependencies&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables rebuilding of project dependencies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoRebuildDependencies&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoWatchFileSystem_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoWatchFileSystem*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NoWatchFileSystem__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NoWatchFileSystem``1(``0)">
+  NoWatchFileSystem&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables file system watching.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NoWatchFileSystem&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NonInteractive_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NonInteractive*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_NonInteractive__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.NonInteractive``1(``0)">
+  NonInteractive&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Do not do interactive prompting. [<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Incubating.html">incubating</a>]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T NonInteractive&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_Offline_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.Offline*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_Offline__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.Offline``1(``0)">
+  Offline&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs the build without accessing network resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T Offline&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RefreshDependencies_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RefreshDependencies*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RefreshDependencies__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RefreshDependencies``1(``0)">
+  RefreshDependencies&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Refreshes the state of dependencies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RefreshDependencies&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveExcludedTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveExcludedTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveExcludedTasks__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveExcludedTasks``1(``0,System.Collections.Generic.IEnumerable{System.String})">
+  RemoveExcludedTasks&lt;T&gt;(T, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies a task to exclude from execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RemoveExcludedTasks&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveExcludedTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveExcludedTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveExcludedTasks__1___0_System_String___" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveExcludedTasks``1(``0,System.String[])">
+  RemoveExcludedTasks&lt;T&gt;(T, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies a task to exclude from execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RemoveExcludedTasks&lt;T&gt;(this T o, params string[] v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveProjectProperty_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveProjectProperty*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveProjectProperty__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveProjectProperty``1(``0,System.String)">
+  RemoveProjectProperty&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The property values to pass to the Gradle invocation, for access within the build script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RemoveProjectProperty&lt;T&gt;(this T o, string k) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveSystemProperty_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveSystemProperty*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RemoveSystemProperty__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RemoveSystemProperty``1(``0,System.String)">
+  RemoveSystemProperty&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The JVM system properties to invoke Gradle with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RemoveSystemProperty&lt;T&gt;(this T o, string k) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RerunTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RerunTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_RerunTasks__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.RerunTasks``1(``0)">
+  RerunTasks&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ignores previously cached task results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T RerunTasks&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetConsoleUnicode_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetConsoleUnicode*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetConsoleUnicode__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetConsoleUnicode``1(``0)">
+  ResetConsoleUnicode&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies which character types are allowed in the console output. Default value is <code>auto</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetConsoleUnicode&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetConsole_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetConsole*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetConsole__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetConsole``1(``0)">
+  ResetConsole&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies which type of console output to generate. Default value is <code>auto</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetConsole&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetGradleUserHome_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetGradleUserHome*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetGradleUserHome__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetGradleUserHome``1(``0)">
+  ResetGradleUserHome&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the Gradle user home directory. Default is <code>~/.gradle</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetGradleUserHome&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetIncludeBuild_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetIncludeBuild*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetIncludeBuild__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetIncludeBuild``1(``0)">
+  ResetIncludeBuild&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Run the build as a <a href="https://docs.gradle.org/current/userguide/composite_builds.html#composite_builds">composite</a>, including the specified build.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetIncludeBuild&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetInitScript_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetInitScript*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetInitScript__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetInitScript``1(``0)">
+  ResetInitScript&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops task execution after a task failure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetInitScript&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetMaxWorkers_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetMaxWorkers*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetMaxWorkers__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetMaxWorkers``1(``0)">
+  ResetMaxWorkers&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures the maximum number of concurrent workers Gradle is allowed to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetMaxWorkers&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetPriority_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetPriority*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetPriority__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetPriority``1(``0)">
+  ResetPriority&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the scheduling priority for the Gradle daemon and all processes launched by it. Default value is <code>normal</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetPriority&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetProjectCacheDir_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetProjectCacheDir*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetProjectCacheDir__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetProjectCacheDir``1(``0)">
+  ResetProjectCacheDir&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the project-specific cache directory. Default is <code>.gradle</code> in the root project directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetProjectCacheDir&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetProjectDir_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetProjectDir*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetProjectDir__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetProjectDir``1(``0)">
+  ResetProjectDir&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the start directory for Gradle. Default is the current directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetProjectDir&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetTask_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetTask*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ResetTask__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ResetTask``1(``0)">
+  ResetTask&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The fully formed Gradle task string or strings to invoke.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ResetTask&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetConsoleUnicode_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetConsoleUnicode*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetConsoleUnicode__1___0_Nuke_Common_Tools_Gradle_GradleConsoleUnicode_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetConsoleUnicode``1(``0,Nuke.Common.Tools.Gradle.GradleConsoleUnicode)">
+  SetConsoleUnicode&lt;T&gt;(T, GradleConsoleUnicode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies which character types are allowed in the console output. Default value is <code>auto</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetConsoleUnicode&lt;T&gt;(this T o, GradleConsoleUnicode v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Gradle.GradleConsoleUnicode.html">GradleConsoleUnicode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetConsole_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetConsole*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetConsole__1___0_Nuke_Common_Tools_Gradle_GradleConsoleOutput_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetConsole``1(``0,Nuke.Common.Tools.Gradle.GradleConsoleOutput)">
+  SetConsole&lt;T&gt;(T, GradleConsoleOutput)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies which type of console output to generate. Default value is <code>auto</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetConsole&lt;T&gt;(this T o, GradleConsoleOutput v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Gradle.GradleConsoleOutput.html">GradleConsoleOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetExcludedTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetExcludedTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetExcludedTasks__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetExcludedTasks``1(``0,System.Collections.Generic.IEnumerable{System.String})">
+  SetExcludedTasks&lt;T&gt;(T, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies a task to exclude from execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetExcludedTasks&lt;T&gt;(this T o, IEnumerable&lt;string&gt; v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetExcludedTasks_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetExcludedTasks*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetExcludedTasks__1___0_System_String___" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetExcludedTasks``1(``0,System.String[])">
+  SetExcludedTasks&lt;T&gt;(T, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies a task to exclude from execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetExcludedTasks&lt;T&gt;(this T o, params string[] v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetGradleUserHome_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetGradleUserHome*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetGradleUserHome__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetGradleUserHome``1(``0,System.String)">
+  SetGradleUserHome&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the Gradle user home directory. Default is <code>~/.gradle</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetGradleUserHome&lt;T&gt;(this T o, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetIncludeBuild_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetIncludeBuild*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetIncludeBuild__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetIncludeBuild``1(``0,System.String)">
+  SetIncludeBuild&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Run the build as a <a href="https://docs.gradle.org/current/userguide/composite_builds.html#composite_builds">composite</a>, including the specified build.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetIncludeBuild&lt;T&gt;(this T o, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetInitScript_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetInitScript*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetInitScript__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetInitScript``1(``0,System.String)">
+  SetInitScript&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops task execution after a task failure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetInitScript&lt;T&gt;(this T o, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetMaxWorkers_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetMaxWorkers*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetMaxWorkers__1___0_System_Nullable_System_Int32__" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetMaxWorkers``1(``0,System.Nullable{System.Int32})">
+  SetMaxWorkers&lt;T&gt;(T, int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures the maximum number of concurrent workers Gradle is allowed to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetMaxWorkers&lt;T&gt;(this T o, int? v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetPriority_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetPriority*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetPriority__1___0_Nuke_Common_Tools_Gradle_GradlePriority_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetPriority``1(``0,Nuke.Common.Tools.Gradle.GradlePriority)">
+  SetPriority&lt;T&gt;(T, GradlePriority)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the scheduling priority for the Gradle daemon and all processes launched by it. Default value is <code>normal</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetPriority&lt;T&gt;(this T o, GradlePriority v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Nuke.Common.Tools.Gradle.GradlePriority.html">GradlePriority</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectCacheDir_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectCacheDir*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectCacheDir__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectCacheDir``1(``0,System.String)">
+  SetProjectCacheDir&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the project-specific cache directory. Default is <code>.gradle</code> in the root project directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetProjectCacheDir&lt;T&gt;(this T o, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectDir_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectDir*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectDir__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectDir``1(``0,System.String)">
+  SetProjectDir&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the start directory for Gradle. Default is the current directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetProjectDir&lt;T&gt;(this T o, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectProperties_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectProperties*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectProperties__1___0_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectProperties``1(``0,System.Collections.Generic.IDictionary{System.String,System.String})">
+  SetProjectProperties&lt;T&gt;(T, IDictionary&lt;string, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The property values to pass to the Gradle invocation, for access within the build script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetProjectProperties&lt;T&gt;(this T o, IDictionary&lt;string, string&gt; v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectProperty_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectProperty*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetProjectProperty__1___0_System_String_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetProjectProperty``1(``0,System.String,System.String)">
+  SetProjectProperty&lt;T&gt;(T, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The property values to pass to the Gradle invocation, for access within the build script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetProjectProperty&lt;T&gt;(this T o, string k, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetSystemProperties_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetSystemProperties*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetSystemProperties__1___0_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetSystemProperties``1(``0,System.Collections.Generic.IDictionary{System.String,System.String})">
+  SetSystemProperties&lt;T&gt;(T, IDictionary&lt;string, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The JVM system properties to invoke Gradle with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetSystemProperties&lt;T&gt;(this T o, IDictionary&lt;string, string&gt; v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetSystemProperty_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetSystemProperty*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetSystemProperty__1___0_System_String_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetSystemProperty``1(``0,System.String,System.String)">
+  SetSystemProperty&lt;T&gt;(T, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The JVM system properties to invoke Gradle with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetSystemProperty&lt;T&gt;(this T o, string k, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetTask_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetTask*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_SetTask__1___0_System_String_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.SetTask``1(``0,System.String)">
+  SetTask&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The fully formed Gradle task string or strings to invoke.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T SetTask&lt;T&gt;(this T o, string v) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ShowFullStacktrace_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ShowFullStacktrace*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ShowFullStacktrace__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ShowFullStacktrace``1(``0)">
+  ShowFullStacktrace&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prints the full (very verbose) stacktrace for all exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ShowFullStacktrace&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ShowStacktrace_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ShowStacktrace*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_ShowStacktrace__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.ShowStacktrace``1(``0)">
+  ShowStacktrace&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prints the stacktrace for all exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T ShowStacktrace&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_StopDaemon_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.StopDaemon*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_StopDaemon__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.StopDaemon``1(``0)">
+  StopDaemon&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the Gradle daemon if it is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T StopDaemon&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseBuildCache_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseBuildCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseBuildCache__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseBuildCache``1(``0)">
+  UseBuildCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables the Gradle build cache. Gradle will try to reuse outputs from previous builds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T UseBuildCache&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseConfigurationCache_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseConfigurationCache*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseConfigurationCache__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseConfigurationCache``1(``0)">
+  UseConfigurationCache&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables the configuration cache. Gradle will try to reuse the build configuration from previous builds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T UseConfigurationCache&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseConfigureOnDemand_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseConfigureOnDemand*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseConfigureOnDemand__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseConfigureOnDemand``1(``0)">
+  UseConfigureOnDemand&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures necessary projects only. Gradle will attempt to reduce configuration time for large multi-project builds. [<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Incubating.html">incubating</a>]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T UseConfigureOnDemand&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseDaemon_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseDaemon*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseDaemon__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseDaemon``1(``0)">
+  UseDaemon&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uses the Gradle daemon to run the build. Starts the daemon if it is not running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T UseDaemon&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseIsolatedProjects_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseIsolatedProjects*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseIsolatedProjects__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseIsolatedProjects``1(``0)">
+  UseIsolatedProjects&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables Isolated Projects. Projects are configured in parallel. Implies <code>--configuration-cache</code>. [<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Incubating.html">incubating</a>]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T UseIsolatedProjects&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseParallel_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseParallel*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseParallel__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseParallel``1(``0)">
+  UseParallel&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds projects in parallel. Gradle will attempt to determine the optimal number of executor threads to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T UseParallel&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseWatchFileSystem_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseWatchFileSystem*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_UseWatchFileSystem__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.UseWatchFileSystem``1(``0)">
+  UseWatchFileSystem&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables file system watching. Reuses file system data for subsequent builds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T UseWatchFileSystem&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_WarnLogging_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.WarnLogging*"></a>
+
+  <h3 id="Nuke_Common_Tools_Gradle_GradleSettingsExtensions_WarnLogging__1___0_" data-uid="Nuke.Common.Tools.Gradle.GradleSettingsExtensions.WarnLogging``1(``0)">
+  WarnLogging&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the log level to warn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T WarnLogging&lt;T&gt;(this T o) where T : GradleSettings</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L137" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.71 @ <a href="https://github.com/gruke-build/src/commit/41ce609e5ce7f5718e567d40fc3f6cd1404ecd3b">41ce609</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
