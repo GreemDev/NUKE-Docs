@@ -327,7 +327,8 @@ public class GradleTasks : ToolTasks</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;Output&gt; Gradle(ArgumentStringHandler arguments, string workingDirectory = null, IReadOnlyDictionary&lt;string, string&gt; environmentVariables = null, int? timeout = null, bool? logOutput = null, bool? logInvocation = null, Action&lt;OutputType, string&gt; logger = null, Func&lt;IProcess, object&gt; exitHandler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The untyped generic task is unable to resolve the gradle wrapper from a working directory you provide it. The typed API can do this, however.&quot;)]
+public static IReadOnlyCollection&lt;Output&gt; Gradle(ArgumentStringHandler arguments, string workingDirectory = null, IReadOnlyDictionary&lt;string, string&gt; environmentVariables = null, int? timeout = null, bool? logOutput = null, bool? logInvocation = null, Action&lt;OutputType, string&gt; logger = null, Func&lt;IProcess, object&gt; exitHandler = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -370,7 +371,7 @@ public class GradleTasks : ToolTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_Gradle_GradleTasks_Gradle_Nuke_Common_Tooling_CombinatorialConfigure_Nuke_Common_Tools_Gradle_GradleSettings__System_Int32_System_Boolean_" data-uid="Nuke.Common.Tools.Gradle.GradleTasks.Gradle(Nuke.Common.Tooling.CombinatorialConfigure{Nuke.Common.Tools.Gradle.GradleSettings},System.Int32,System.Boolean)">
   Gradle(CombinatorialConfigure&lt;GradleSettings&gt;, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invoke any Gradle task, by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href="https://docs.gradle.org/">official website</a>.</p>
@@ -414,7 +415,7 @@ public class GradleTasks : ToolTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_Gradle_GradleTasks_Gradle_Nuke_Common_Tooling_Configure_Nuke_Common_Tools_Gradle_GradleSettings__" data-uid="Nuke.Common.Tools.Gradle.GradleTasks.Gradle(Nuke.Common.Tooling.Configure{Nuke.Common.Tools.Gradle.GradleSettings})">
   Gradle(Configure&lt;GradleSettings&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invoke any Gradle task, by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href="https://docs.gradle.org/">official website</a>.</p>
@@ -454,7 +455,7 @@ public class GradleTasks : ToolTasks</code></pre>
 
   <h3 id="Nuke_Common_Tools_Gradle_GradleTasks_Gradle_Nuke_Common_Tools_Gradle_GradleSettings_" data-uid="Nuke.Common.Tools.Gradle.GradleTasks.Gradle(Nuke.Common.Tools.Gradle.GradleSettings)">
   Gradle(GradleSettings)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Common/Tools/Gradle/Gradle.Generated.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invoke any Gradle task, by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href="https://docs.gradle.org/">official website</a>.</p>
@@ -510,7 +511,7 @@ public class GradleTasks : ToolTasks</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.72 @ <a href="https://github.com/gruke-build/src/commit/734550efcb536a4de01891986ffd6350841edbba">734550e</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.73 @ <a href="https://github.com/gruke-build/src/commit/b4d804c790d0eb0036899d6d946c438ed71fc8f9">b4d804c</a></span>
         </div>
       </div>
     </footer>

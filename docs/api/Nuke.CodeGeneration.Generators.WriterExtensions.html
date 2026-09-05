@@ -156,7 +156,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteInherit__1___0_Nuke_CodeGeneration_Model_Task_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteInherit``1(``0,Nuke.CodeGeneration.Model.Task)">
   WriteInherit&lt;T&gt;(T, Task)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -197,16 +197,16 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <a id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteObsoleteAttributeWhenObsolete_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteObsoleteAttributeWhenObsolete*"></a>
 
-  <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteObsoleteAttributeWhenObsolete__1___0_Nuke_CodeGeneration_Model_IDeprecatable_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteObsoleteAttributeWhenObsolete``1(``0,Nuke.CodeGeneration.Model.IDeprecatable)">
-  WriteObsoleteAttributeWhenObsolete&lt;T&gt;(T, IDeprecatable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteObsoleteAttributeWhenObsolete__1___0_Nuke_CodeGeneration_Model_IDeprecatable_System_Boolean__" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteObsoleteAttributeWhenObsolete``1(``0,Nuke.CodeGeneration.Model.IDeprecatable,System.Boolean@)">
+  WriteObsoleteAttributeWhenObsolete&lt;T&gt;(T, IDeprecatable, out bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T WriteObsoleteAttributeWhenObsolete&lt;T&gt;(this T writerWrapper, IDeprecatable deprecatable) where T : IWriterWrapper</code></pre>
+    <pre><code class="lang-csharp hljs">public static T WriteObsoleteAttributeWhenObsolete&lt;T&gt;(this T writerWrapper, IDeprecatable deprecatable, out bool written) where T : IWriterWrapper</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -214,6 +214,51 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
     <dt><code>writerWrapper</code> <span class="xref">T</span></dt>
     <dd></dd>
     <dt><code>deprecatable</code> <a class="xref" href="Nuke.CodeGeneration.Model.IDeprecatable.html">IDeprecatable</a></dt>
+    <dd></dd>
+    <dt><code>written</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nuke_CodeGeneration_Generators_WriterExtensions_WritePreferTypedApiAttribute_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WritePreferTypedApiAttribute*"></a>
+
+  <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WritePreferTypedApiAttribute__1___0_Nuke_CodeGeneration_Model_Tool_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WritePreferTypedApiAttribute``1(``0,Nuke.CodeGeneration.Model.Tool)">
+  WritePreferTypedApiAttribute&lt;T&gt;(T, Tool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T WritePreferTypedApiAttribute&lt;T&gt;(this T writerWrapper, Tool tool) where T : IWriterWrapper</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writerWrapper</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>tool</code> <a class="xref" href="Nuke.CodeGeneration.Model.Tool.html">Tool</a></dt>
     <dd></dd>
   </dl>
 
@@ -242,7 +287,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteRemarks__1___0_Nuke_CodeGeneration_Model_Task_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteRemarks``1(``0,Nuke.CodeGeneration.Model.Task)">
   WriteRemarks&lt;T&gt;(T, Task)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -285,7 +330,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteSummaryExtension__1___0_System_String_Nuke_CodeGeneration_Model_Property_Nuke_CodeGeneration_Model_Property_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteSummaryExtension``1(``0,System.String,Nuke.CodeGeneration.Model.Property,Nuke.CodeGeneration.Model.Property)">
   WriteSummaryExtension&lt;T&gt;(T, string, Property, Property)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -332,7 +377,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteSummary__1___0_Nuke_CodeGeneration_Model_DataClass_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteSummary``1(``0,Nuke.CodeGeneration.Model.DataClass)">
   WriteSummary&lt;T&gt;(T, DataClass)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -375,7 +420,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteSummary__1___0_Nuke_CodeGeneration_Model_Enumeration_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteSummary``1(``0,Nuke.CodeGeneration.Model.Enumeration)">
   WriteSummary&lt;T&gt;(T, Enumeration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -418,7 +463,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteSummary__1___0_Nuke_CodeGeneration_Model_Task_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteSummary``1(``0,Nuke.CodeGeneration.Model.Task)">
   WriteSummary&lt;T&gt;(T, Task)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -461,7 +506,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteSummary__1___0_Nuke_CodeGeneration_Model_Tool_" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteSummary``1(``0,Nuke.CodeGeneration.Model.Tool)">
   WriteSummary&lt;T&gt;(T, Tool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -504,7 +549,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nuke_CodeGeneration_Generators_WriterExtensions_WriteSummary__1___0_System_String___" data-uid="Nuke.CodeGeneration.Generators.WriterExtensions.WriteSummary``1(``0,System.String[])">
   WriteSummary&lt;T&gt;(T, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gruke-build/src/blob/develop/source/Nuke.Tooling.Generator/Generators/WriterExtensions.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -563,7 +608,7 @@ Class WriterExtensions  <a class="header-action link-secondary" title="View sour
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.72 @ <a href="https://github.com/gruke-build/src/commit/734550efcb536a4de01891986ffd6350841edbba">734550e</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.73 @ <a href="https://github.com/gruke-build/src/commit/b4d804c790d0eb0036899d6d946c438ed71fc8f9">b4d804c</a></span>
         </div>
       </div>
     </footer>

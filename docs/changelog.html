@@ -117,7 +117,11 @@
 <li>act as if you had opened a terminal at that path and ran Gradle yourself.</li>
 </ul>
 </li>
-<li>Avoid using <code>Gradle()</code> (the one with a lot of arguments), as the tool path resolver <strong>does not get working directory context</strong> when using that.</li>
+<li>Avoid using <code>Gradle()</code> (the one with a lot of arguments), as the tool path resolver <strong>does not get working directory context</strong> when using that.
+<ul>
+<li>If you use it by accident, it's marked as deprecated; so your IDE will let you know about this at the call-site.</li>
+</ul>
+</li>
 <li>Helpful for multi-language repositories!</li>
 </ul>
 </li>
@@ -1663,7 +1667,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.72 @ <a href="https://github.com/gruke-build/src/commit/734550efcb536a4de01891986ffd6350841edbba">734550e</a></span>
+          <span>The next-generation .NET build automation system.<br>10.4.0-alpha.73 @ <a href="https://github.com/gruke-build/src/commit/b4d804c790d0eb0036899d6d946c438ed71fc8f9">b4d804c</a></span>
         </div>
       </div>
     </footer>
