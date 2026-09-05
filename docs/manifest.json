@@ -14136,7 +14136,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Gradle.GradleSettings",
-      "Summary": "<p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
+      "Summary": "<p>Invoke any Gradle task, by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -14150,7 +14150,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Nuke.Common.Tools.Gradle.GradleSettingsExtensions",
-      "Summary": "<p>Invoke any Gradle task(s), by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
+      "Summary": "<p>Invoke any Gradle task, by name. Capable of using the Gradle Wrapper in the working directory.</p><p>For more details, visit the <a href=\"https://docs.gradle.org/\">official website</a>.</p>\n"
     },
     {
       "type": "ManagedReference",
